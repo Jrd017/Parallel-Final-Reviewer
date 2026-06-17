@@ -10,7 +10,9 @@ const state = {
 };
 
 const banks = REVIEWER_DATA.quizBanks;
-const everythingQuestions = [
+const combinedPrelimQuestions = banks.combinedPrelim || [...banks.prelimA, ...banks.prelimB];
+const combinedQuizQuestions = banks.combinedQuiz || [...banks.quizA, ...banks.quizB];
+const everythingQuestions = banks.everything || [
   ...banks.prelimA,
   ...banks.prelimB,
   ...banks.week3,
@@ -22,9 +24,16 @@ const everythingQuestions = [
 const quizModes = [
   { id: "prelimA", title: "Prelim Exam Set A", detail: "Original prelim bank from the live reviewer.", questions: banks.prelimA },
   { id: "prelimB", title: "Prelim Exam Set B", detail: "Second original prelim bank from the live reviewer.", questions: banks.prelimB },
+  { id: "combinedPrelimA", title: "Combined Prelim Exam Set A", detail: "First half of the full combined prelim exam bank.", questions: banks.combinedPrelimA },
+  { id: "combinedPrelimB", title: "Combined Prelim Exam Set B", detail: "Second half of the full combined prelim exam bank.", questions: banks.combinedPrelimB },
   { id: "quizA", title: "Quiz Set A", detail: "Recent final quiz split from Q1 to Q25.", questions: banks.quizA },
   { id: "quizB", title: "Quiz Set B", detail: "Recent final quiz split from Q26 to Q50.", questions: banks.quizB },
-  { id: "combinedPrelim", title: "Combine Prelim Exam", detail: "Prelim Set A and Set B mixed together.", questions: [...banks.prelimA, ...banks.prelimB] },
+  { id: "combinedQuizA", title: "Combined Quiz Set A", detail: "First half of Quiz Set A and Quiz Set B combined.", questions: banks.combinedQuizA },
+  { id: "combinedQuizB", title: "Combined Quiz Set B", detail: "Second half of Quiz Set A and Quiz Set B combined.", questions: banks.combinedQuizB },
+  { id: "combinedPrelim", title: "Combine Prelim Exam", detail: "Prelim Set A and Set B mixed together.", questions: combinedPrelimQuestions },
+  { id: "combinedQuiz", title: "Combine Quiz", detail: "Quiz Set A and Quiz Set B mixed together.", questions: combinedQuizQuestions },
+  { id: "everythingA", title: "Combined Quiz of Everything Set A", detail: "First half of prelim, Week 3, module-finals, and recent quiz banks.", questions: banks.everythingA },
+  { id: "everythingB", title: "Combined Quiz of Everything Set B", detail: "Second half of prelim, Week 3, module-finals, and recent quiz banks.", questions: banks.everythingB },
   { id: "everything", title: "Combine Quiz of Everything", detail: "Prelim, Week 3, Module Finals, and recent quiz banks.", questions: everythingQuestions },
 ];
 

@@ -2368,6 +2368,1412 @@ window.REVIEWER_DATA = {
         "explanation": "Inconsistent results at larger scale often point to race conditions from improper synchronization."
       }
     ],
+    "combinedPrelim": [
+      {
+        "id": "prelim-a-1",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What is the primary objective of parallel computing systems?",
+        "answer": "Reducing program execution time through simultaneous processing",
+        "wrong": [
+          "Improving reliability by duplicating hardware resources",
+          "Organizing large databases across independent machines",
+          "Expanding network connectivity between computer systems"
+        ],
+        "explanation": "Parallel computing uses simultaneous processing to reduce wall-clock execution time."
+      },
+      {
+        "id": "prelim-a-2",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "In shared memory programming, what is a major responsibility of the developer?",
+        "answer": "Coordinating synchronization to prevent race conditions",
+        "wrong": [
+          "Managing distributed file replication across clusters",
+          "Configuring communication protocols between remote nodes",
+          "Creating routing policies for message transmission systems"
+        ],
+        "explanation": "Shared memory is fast, but the developer must protect shared data with synchronization."
+      },
+      {
+        "id": "prelim-a-3",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which option best represents distributed computing?",
+        "answer": "A Hadoop cluster analyzing massive datasets collaboratively",
+        "wrong": [
+          "A graphics card rendering frames for a video game",
+          "A desktop processor running several browser applications",
+          "A laptop processor executing spreadsheet calculations locally"
+        ],
+        "explanation": "A Hadoop cluster is made of multiple computers collaborating across a network."
+      },
+      {
+        "id": "prelim-a-4",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What is the main function of the Map phase in MapReduce?",
+        "answer": "Splitting data into segments for simultaneous computation",
+        "wrong": [
+          "Saving generated outputs within distributed storage systems",
+          "Directing communication requests among participating servers",
+          "Combining processed results into a completed final output"
+        ],
+        "explanation": "The Map phase splits and processes chunks in parallel. Reduce combines the intermediate results."
+      },
+      {
+        "id": "prelim-a-5",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which architecture provides each processor with independent local memory?",
+        "answer": "An architecture using separate local memory per processor",
+        "wrong": [
+          "A multiprocessing model built around centralized memory access",
+          "A design where memory latency varies between processors",
+          "A memory structure where all processors share equal access"
+        ],
+        "explanation": "Distributed memory gives processors or nodes their own local memory."
+      },
+      {
+        "id": "prelim-a-6",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which pair of operations forms the basis of message passing systems?",
+        "answer": "Sending information packets and receiving transmitted data",
+        "wrong": [
+          "Reading information and writing information to storage",
+          "Allocating memory blocks and releasing unused resources",
+          "Encoding communication streams and decoding transferred signals"
+        ],
+        "explanation": "Message passing is built on send and receive operations."
+      },
+      {
+        "id": "prelim-a-7",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which architecture allows every node to function as both client and server?",
+        "answer": "A decentralized model where nodes share equal responsibilities",
+        "wrong": [
+          "A processing framework based on mapping and reducing tasks",
+          "A cloud platform distributing applications through virtual servers",
+          "A centralized system controlled by dedicated server machines"
+        ],
+        "explanation": "Peer-to-peer architecture gives each node both client and server roles."
+      },
+      {
+        "id": "prelim-a-8",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Flynn's taxonomy categorizes parallel systems according to what criteria?",
+        "answer": "The arrangement of instruction streams and data streams",
+        "wrong": [
+          "The operating systems and processor manufacturing designs",
+          "The communication speed and network transmission capacity",
+          "The quantity of processors and available memory resources"
+        ],
+        "explanation": "Flynn's taxonomy uses instruction streams and data streams."
+      },
+      {
+        "id": "prelim-a-9",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A computer executing one instruction stream on one data stream belongs to which category?",
+        "answer": "A system processing one instruction and one data stream",
+        "wrong": [
+          "A model supporting multiple instructions on shared datasets",
+          "A configuration applying varied operations to identical inputs",
+          "A structure executing many tasks across separate processors"
+        ],
+        "explanation": "Single Instruction, Single Data is SISD, the classic serial category."
+      },
+      {
+        "id": "prelim-a-10",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which term describes the relationship between computation and communication in parallel systems?",
+        "answer": "The balance between computational work and communication",
+        "wrong": [
+          "The quantity of completed operations within a time period",
+          "The delay experienced during data transfer between systems",
+          "The capability of a system to increase processing capacity"
+        ],
+        "explanation": "Granularity describes the ratio or balance between computation and communication."
+      },
+      {
+        "id": "prelim-a-11",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A hospital system must analyze millions of patient records for an AI diagnosis platform. Their current single-server setup requires 72 hours to finish processing. Which approach is most appropriate?",
+        "answer": "Using parallel processing across multiple processing cores",
+        "wrong": [
+          "Migrating services toward a decentralized peer network design",
+          "Replacing the current processor with a higher clock-speed model",
+          "Implementing a traditional client-server communication structure"
+        ],
+        "explanation": "Large analysis workloads can be split and processed in parallel to reduce completion time."
+      },
+      {
+        "id": "prelim-a-12",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "An online shopping platform experiences severe slowdowns during holiday traffic spikes. The company wants to increase server capacity without redesigning the application. Which distributed computing characteristic best solves this issue?",
+        "answer": "The ability to scale resources efficiently as demand grows",
+        "wrong": [
+          "A single instruction single data processing organization",
+          "Uniform processor access to centrally managed memory blocks",
+          "A memory-sharing structure across connected processing units"
+        ],
+        "explanation": "Scalability lets a distributed or cloud system add resources as demand grows."
+      },
+      {
+        "id": "prelim-a-13",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "During a climate simulation, one node in a computing cluster unexpectedly crashes. The simulation continues operating successfully without losing results. Which distributed computing feature enabled this?",
+        "answer": "Maintaining operation despite hardware or software failures",
+        "wrong": [
+          "Exchanging information continuously between independent processes",
+          "Executing instructions sequentially through staged processing units",
+          "Automatically distributing workloads across active processors evenly"
+        ],
+        "explanation": "Fault tolerance means the system can keep operating despite component failures."
+      },
+      {
+        "id": "prelim-a-14",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A rendering studio divides a 4K movie into thousands of independent frames processed simultaneously across 200 computers. Which concept best describes this situation?",
+        "answer": "Large processing tasks divided into loosely connected workloads",
+        "wrong": [
+          "Multiple instruction streams operating on identical data values",
+          "A memory-sharing approach spanning several distributed systems",
+          "Highly independent tasks executed simultaneously without interaction"
+        ],
+        "explanation": "This is coarse-grained or embarrassingly parallel work: large tasks split into mostly independent units."
+      },
+      {
+        "id": "prelim-a-15",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Two processors running on the same machine frequently exchange extremely large datasets. Performance speed is the highest priority. Which communication method is most suitable?",
+        "answer": "Shared memory because it minimizes communication overhead costs",
+        "wrong": [
+          "Shared memory because synchronization is completely unnecessary",
+          "Message passing because operating system calls improve protection",
+          "Message passing because it supports communication across networks"
+        ],
+        "explanation": "Shared memory is usually faster for large same-machine data exchange because it avoids per-message overhead."
+      },
+      {
+        "id": "prelim-a-16",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A startup rapidly increases from 5 to 50 virtual machines during a product launch, then reduces usage afterward. Which computing model makes this possible?",
+        "answer": "An elastic infrastructure delivered through cloud platforms",
+        "wrong": [
+          "A tightly coupled cluster operating within one local network",
+          "A decentralized network without dedicated control mechanisms",
+          "A grid-based environment connecting geographically separated systems"
+        ],
+        "explanation": "Cloud computing provides elastic, on-demand resources."
+      },
+      {
+        "id": "prelim-a-17",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A graphics processor applies the same blur operation simultaneously across thousands of image pixels. Which Flynn taxonomy category best represents this process?",
+        "answer": "A single operation applied simultaneously to multiple datasets",
+        "wrong": [
+          "One instruction stream operating on one sequence of data",
+          "Multiple operations performed on one shared stream of data",
+          "Different instructions executing independently across many datasets"
+        ],
+        "explanation": "SIMD applies a single instruction or operation across many data elements."
+      },
+      {
+        "id": "prelim-a-18",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Engineers design a fraud-detection system where several processors perform different analyses on the same transaction stream. Which Flynn classification matches this setup?",
+        "answer": "Multiple instruction streams analyzing the same incoming dataset",
+        "wrong": [
+          "A single processor executing sequential instructions on data",
+          "One instruction stream simultaneously handling many data values",
+          "Independent processors executing separate tasks on unique data"
+        ],
+        "explanation": "Multiple instructions acting on a single data stream is MISD."
+      },
+      {
+        "id": "prelim-a-19",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A parallel program finishes in 2 hours using 16 processors, while the serial version requires 20 hours. A colleague claims the parallel version is always more efficient. Which response is most accurate?",
+        "answer": "Coordination overhead can reduce benefits for smaller workloads",
+        "wrong": [
+          "Parallel systems waste processing resources because of idle time",
+          "Additional processors consistently improve efficiency for all workloads",
+          "Parallel execution always decreases total processor utilization time"
+        ],
+        "explanation": "This key was corrected: more processors do not always improve efficiency because overhead can dominate."
+      },
+      {
+        "id": "prelim-a-20",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A developer notices performance decreases after adding more processors because processors spend excessive time exchanging information. Which overhead factor is the likely cause?",
+        "answer": "The communication costs associated with transferring shared data",
+        "wrong": [
+          "The delay occurring when tasks complete and release resources",
+          "The licensing restrictions imposed by distributed software vendors",
+          "The initialization time required before parallel tasks can begin"
+        ],
+        "explanation": "Communication overhead can erase the benefits of adding processors."
+      },
+      {
+        "id": "prelim-a-21",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A NUMA architecture links two SMP systems. Processor A accesses local memory in 50ns but remote memory in 150ns. Which statement is most accurate?",
+        "answer": "Memory access latency differs between regions in NUMA systems",
+        "wrong": [
+          "The system qualifies as UMA because processors remain identical",
+          "Separate SMP systems require exclusive use of message passing",
+          "Cache coherency cannot function correctly in NUMA architectures"
+        ],
+        "explanation": "NUMA means memory access time is non-uniform and depends on memory location."
+      },
+      {
+        "id": "prelim-a-22",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Why does increasing CPUs in a shared memory system not always improve performance proportionally?",
+        "answer": "Traffic contention creates bottlenecks on memory communication paths",
+        "wrong": [
+          "Shared memory systems cannot expand storage capacity efficiently",
+          "Distributed memory becomes mandatory after adding several processors",
+          "Shared memory processors cannot execute tasks independently"
+        ],
+        "explanation": "More CPUs can increase traffic and contention on shared memory paths."
+      },
+      {
+        "id": "prelim-a-23",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A parallel application uses fine-grained granularity. What consequence is most likely?",
+        "answer": "Communication overhead becomes larger relative to computation",
+        "wrong": [
+          "Execution becomes slower because fewer tasks are generated",
+          "Distributed architectures become unnecessary for coordination",
+          "Communication demands decrease as processor counts increase"
+        ],
+        "explanation": "Fine-grained tasks communicate frequently, so overhead can become large."
+      },
+      {
+        "id": "prelim-a-24",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What distinguishes distributed shared memory systems from pure distributed memory systems?",
+        "answer": "Software creates a shared-memory illusion across distributed nodes",
+        "wrong": [
+          "Every processor physically accesses one universal memory structure",
+          "Communication between machines becomes completely unnecessary",
+          "All processors execute identical instructions on identical datasets"
+        ],
+        "explanation": "DSM hides physical distribution and presents an illusion of shared memory."
+      },
+      {
+        "id": "prelim-a-25",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A MIMD computer may execute tasks non-deterministically. What does this imply for developers?",
+        "answer": "Synchronization mechanisms are required to ensure correctness",
+        "wrong": [
+          "Scientific applications cannot operate reliably on MIMD systems",
+          "Deterministic execution is unnecessary in parallel applications",
+          "SIMD systems experience more synchronization concerns than MIMD"
+        ],
+        "explanation": "Non-deterministic execution means synchronization is needed to keep shared results correct."
+      },
+      {
+        "id": "prelim-b-1",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What distinguishes distributed computing from parallel computing?",
+        "answer": "Distributed computing uses multiple networked computers with independent memory spaces",
+        "wrong": [
+          "Parallel computing depends entirely on wide-area communication architecture systems",
+          "Distributed computing always requires identical processors within shared architectures",
+          "Parallel computing eliminates coordination between processors during task execution"
+        ],
+        "explanation": "Distributed computing uses independent networked machines, while parallel computing often focuses on simultaneous execution using multiple processors or cores."
+      },
+      {
+        "id": "prelim-b-2",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which of the following is a key advantage of distributed memory architecture over shared memory?",
+        "answer": "Higher scalability through independent nodes added across environments",
+        "wrong": [
+          "Faster synchronization between tightly coupled computational workloads",
+          "Simplified address spaces allowing transparent memory access globally",
+          "Lower communication overhead during real-time synchronization across processor groups"
+        ],
+        "explanation": "Distributed memory can scale by adding independent nodes, each with its own memory."
+      },
+      {
+        "id": "prelim-b-3",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "In the von Neumann architecture, what is stored in electronic memory?",
+        "answer": "Program instructions together with data required for execution processes",
+        "wrong": [
+          "Operating system services and communication protocols",
+          "Arithmetic processing rules controlling processor execution stages",
+          "Hardware interrupt signals coordinating communication between connected input devices"
+        ],
+        "explanation": "The von Neumann model stores both program instructions and data in memory."
+      },
+      {
+        "id": "prelim-b-4",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is the Reduce phase responsible for in MapReduce?",
+        "answer": "Combining intermediate outputs into summarized results for final processing stages",
+        "wrong": [
+          "Splitting data before assigning tasks across processing nodes",
+          "Replicating distributed data across clusters for system fault tolerance",
+          "Scheduling worker processes during parallel execution of distributed jobs"
+        ],
+        "explanation": "Reduce combines intermediate Map outputs into final summarized results."
+      },
+      {
+        "id": "prelim-b-5",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which parallel computing resource is specifically mentioned as suitable for machine learning and scientific simulations?",
+        "answer": "Graphics processing units (GPUs) enabling repetitive mathematical operations efficiently simultaneously",
+        "wrong": [
+          "Distributed storage platforms coordinating replicated blocks across computing environments",
+          "Symmetric multiprocessing architectures supporting coordinated memory sharing operations globally",
+          "Cluster middleware frameworks balancing workloads among geographically separated processors"
+        ],
+        "explanation": "GPUs are well suited for repetitive parallel mathematical operations used in machine learning and simulations."
+      },
+      {
+        "id": "prelim-b-6",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is a node in the context of parallel computing clusters?",
+        "answer": "Independent computers containing processors, memory and networking communication interfaces together",
+        "wrong": [
+          "Routing hardware connecting distributed systems across communication infrastructure environments",
+          "Virtualized services executing distributed applications within cloud infrastructures remotely",
+          "Shared processor cores executing synchronized instructions within multiprocessor architectures"
+        ],
+        "explanation": "A cluster node is a standalone computer with processors, memory, and network interfaces."
+      },
+      {
+        "id": "prelim-b-7",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which statement correctly describes the shared memory inter-process communication model?",
+        "answer": "Processes access and coordinate through spaces and regions containing shared information together",
+        "wrong": [
+          "Processes exchange information exclusively through synchronized message queue communication mechanisms",
+          "Processes communicate indirectly using distributed packet switching across network infrastructures",
+          "Processes isolate execution environments while communicating through independent storage replication systems"
+        ],
+        "explanation": "Shared memory IPC lets processes communicate by reading and writing a shared memory region."
+      },
+      {
+        "id": "prelim-b-8",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is the primary purpose of synchronization in parallel applications?",
+        "answer": "Coordinating concurrent tasks while preventing inconsistent shared data modifications simultaneously",
+        "wrong": [
+          "Increasing processor speed during independent execution of distributed computational workloads",
+          "Minimizing memory allocation requirements across geographically distributed processing environments globally",
+          "Reducing network latency between geographically distributed computational resource infrastructures entirely"
+        ],
+        "explanation": "Synchronization coordinates concurrent work and protects shared data from inconsistent updates."
+      },
+      {
+        "id": "prelim-b-9",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "An SMP (Symmetric Multi-Processor) system is characterized by:",
+        "answer": "Processors sharing equal access to memory and computing resources together",
+        "wrong": [
+          "Processors connected geographically using distributed communication infrastructures and middleware frameworks",
+          "Nodes maintaining isolated memory spaces without coordinated synchronization mechanisms",
+          "Nonuniform memory access architectures requiring specialized optimization and coordination strategies"
+        ],
+        "explanation": "In SMP, processors share memory and resources with equal access."
+      },
+      {
+        "id": "prelim-b-10",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Why is message passing described as both useful and slower compared to shared memory communication?",
+        "answer": "Message passing requires physical data transfers through operating system communication services",
+        "wrong": [
+          "Shared memory communication depends entirely upon geographically distributed network infrastructures globally",
+          "Variable-length communication reduces synchronization requirements between processing components completely",
+          "Message passing architectures require fewer processing distributed computational coordination tasks"
+        ],
+        "explanation": "Message passing is useful across separate address spaces, but it is slower because data transfer is mediated by the OS or network services."
+      },
+      {
+        "id": "prelim-b-11",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A developer converts a serial program to run on 16 processors. Total CPU time increases from 4 hours to 48 hours while wall-clock time decreases slightly. What conclusion is most accurate?",
+        "answer": "Parallel overhead may reduce overall efficiency when workload distribution across processors consumes resources",
+        "wrong": [
+          "Additional processors automatically guarantee greater processing resources",
+          "Serial execution remains best because synchronization always reduces performance substantially",
+          "Processor utilization increases substantially despite application executed across clustered infrastructures"
+        ],
+        "explanation": "The program may use more total CPU time because overhead, communication, and coordination reduce efficiency."
+      },
+      {
+        "id": "prelim-b-12",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "In P2P architecture, each node is both client and server. What makes this fundamentally different from client-server regarding fault tolerance?",
+        "answer": "Distributed peer participation removes central dependency while improving system resilience significantly",
+        "wrong": [
+          "Centralized coordination improves replicated communication routing infrastructures globally",
+          "Dedicated servers eliminate synchronization problems during workload distribution between participating systems",
+          "Peer architectures depend entirely upon specialized hardware supporting coordinated resource allocation mechanisms"
+        ],
+        "explanation": "P2P removes a central server dependency, improving resilience compared with a single central server design."
+      },
+      {
+        "id": "prelim-b-13",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A SIMD architecture processes the same data stream for fraud detection, where multiple independent cryptographic algorithms simultaneously analyze the same data stream. Which Flynn classification applies and why?",
+        "answer": "MISD because multiple instructions analyze one shared transaction data stream",
+        "wrong": [
+          "SIMD because identical instructions operate across multiple independent transaction datasets simultaneously",
+          "MIMD because processors execute unrelated algorithms using independent transaction processing streams",
+          "SISD because transaction processing occurs sequentially through centralized computing architecture exclusively"
+        ],
+        "explanation": "Multiple instruction streams analyzing the same data stream corresponds to MISD."
+      },
+      {
+        "id": "prelim-b-14",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A grid computing system spans multiple organizations globally. Compare this to cluster computing regarding governance, resource ownership, and scale.",
+        "answer": "Grid systems involve distributed governance and heterogeneous resources across organizations globally",
+        "wrong": [
+          "Cluster systems depend entirely upon geographically separated organizations coordinating shared control",
+          "Grid architectures operate exclusively within homogeneous environments managed through centralized administration systems",
+          "Cluster infrastructures require distributed governance supporting independently managed computational resource networks worldwide"
+        ],
+        "explanation": "Grid computing often spans organizations and heterogeneous resources, while clusters are usually more tightly managed."
+      },
+      {
+        "id": "prelim-b-15",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Why is complexity listed as both a challenge and cost multiplier in parallel software development?",
+        "answer": "Concurrent execution coordination increases effort across design, debugging, tuning, and maintenance phases",
+        "wrong": [
+          "Specialized hardware infrastructures dramatically eliminate software licensing and deployment requirements globally",
+          "Parallel programming languages restrict interoperability between distributed applications and operating systems entirely",
+          "Proprietary debugging frameworks eliminate open-source development support for distributed computing projects globally"
+        ],
+        "explanation": "Parallel software adds coordination complexity throughout design, coding, debugging, tuning, and maintenance."
+      },
+      {
+        "id": "prelim-b-16",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A weather forecasting agency must process satellite data from 50 regions simultaneously and independently. What is the most appropriate computing model?",
+        "answer": "Embarrassingly parallel distribution supporting independent regional processing tasks simultaneously efficiently",
+        "wrong": [
+          "Client-server architecture coordinating centralized processing through dedicated communication infrastructures globally",
+          "SISD processing executing sequential instructions through synchronized processor architectures exclusively",
+          "High-speed serial processing environments minimizing synchronization across distributed computational infrastructures entirely"
+        ],
+        "explanation": "Independent regional workloads are a good fit for embarrassingly parallel processing."
+      },
+      {
+        "id": "prelim-b-17",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A logistics company stores shipment records across geographically separate data centers. A query must search all locations simultaneously. Which component addresses this?",
+        "answer": "Distributed file systems enabling coordinated access across geographically separated storage infrastructures",
+        "wrong": [
+          "Shared memory architectures supporting centralized synchronization between geographically separated processors globally",
+          "Vector processing pipelines accelerating repetitive instructions during sequential database search operations",
+          "Symmetric multiprocessing systems coordinating shared memory access between distributed processing systems"
+        ],
+        "explanation": "Distributed file systems coordinate access to data stored across geographically separated locations."
+      },
+      {
+        "id": "prelim-b-18",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Two processes on different machines connected by a network need to share computation results. Shared memory is unavailable. Which IPC mechanism must they use?",
+        "answer": "Message passing through send and receive communication operations across network infrastructures",
+        "wrong": [
+          "Direct cache coherency mechanisms coordinating memory synchronization between distributed processors continuously",
+          "Shared address spaces supporting transparent remote memory access across geographically separated processing systems globally",
+          "Uniform memory architectures coordinating synchronized processor access within shared computing environments together"
+        ],
+        "explanation": "Processes on different machines without shared memory communicate through message passing."
+      },
+      {
+        "id": "prelim-b-19",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A machine learning model trains by splitting datasets into batches processed by GPU cores applying identical operations. Which Flynn taxonomy class describes this?",
+        "answer": "SIMD because processing occurs through synchronized instruction execution across processor architectures",
+        "wrong": [
+          "SISD because processing occurs sequentially through synchronized processor architecture globally",
+          "MIMD because processors execute unrelated instructions across multiple independent computational data streams independently",
+          "MISD because multiple instruction streams coordinate processing across centralized communication environments globally"
+        ],
+        "explanation": "GPU cores applying the same operation to many data items are an example of SIMD."
+      },
+      {
+        "id": "prelim-b-20",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "An online multiplayer game server crashes but users reconnect seamlessly to a backup server without data loss. Which distributed characteristic enabled this?",
+        "answer": "Fault tolerance maintaining service continuity despite failures within distributed computing environments effectively",
+        "wrong": [
+          "Load balancing distributing computational requests across synchronized server communication infrastructures globally",
+          "Scalability mechanisms supporting increased processor coordination during high-demand computational workloads simultaneously",
+          "Parallel decomposition separating independent tasks during coordinated distributed application processing operations globally"
+        ],
+        "explanation": "Fault tolerance allows service continuity when a server fails."
+      },
+      {
+        "id": "prelim-b-21",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A university shares CPU cycles from multiple countries to simulate protein folding. Which distributed architecture best fits?",
+        "answer": "Grid computing integrating heterogeneous resources from geographically distributed organizations collaboratively worldwide",
+        "wrong": [
+          "Cluster computing supporting homogeneous systems managed through centralized administrative infrastructures together",
+          "Peer-to-peer architectures coordinating decentralized file exchanges between participating computational environments globally",
+          "Client-server computing centralizing resource allocation through dedicated administrative infrastructure globally"
+        ],
+        "explanation": "Grid computing fits geographically distributed, heterogeneous resources across organizations."
+      },
+      {
+        "id": "prelim-b-22",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A parallel program splits work into microtasks constantly exchanging small updates. Performance becomes worse than the serial version. What is the most likely cause?",
+        "answer": "Excessive communication overhead caused by extremely fine-grained task decomposition strategies continuously",
+        "wrong": [
+          "Coarse-grained decomposition reducing synchronization requirements across distributed processing environments entirely globally",
+          "Distributed memory architectures providing synchronized communication between computational microtasks completely",
+          "Processor underutilization resulting from insufficient workload distribution across available computing infrastructures globally"
+        ],
+        "explanation": "Fine-grained work can communicate so frequently that overhead outweighs parallel speedup."
+      },
+      {
+        "id": "prelim-b-23",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A social media recommendation engine processes different users with different algorithms simultaneously across thousands of servers. Which Flynn classification applies?",
+        "answer": "MIMD because independent instructions process separate datasets across distributed processors concurrently",
+        "wrong": [
+          "SIMD because identical operations process recommendation datasets simultaneously together",
+          "SISD because execution remains sequential through centralized algorithmic processing architectures exclusively",
+          "MISD because multiple algorithms analyze synchronized datasets through coordinated instruction execution simultaneously"
+        ],
+        "explanation": "Different algorithms on separate user datasets across many servers is MIMD."
+      },
+      {
+        "id": "prelim-b-24",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A developer prioritizes simpler programming over system-level efficiency when choosing between fixed-size and variable-size messages. Which should they choose?",
+        "answer": "Variable-size messages simplifying application programming despite increased implementation complexity internally globally",
+        "wrong": [
+          "Fixed-size messages because implementation through predictable communication packet structures globally",
+          "Fixed-size communication structures automatically supporting flexible distributed application requirements completely",
+          "Variable-length communication packets consistently reducing transmission overhead across distributed infrastructures worldwide"
+        ],
+        "explanation": "Variable-size messages require more system-level implementation but make the programming task simpler."
+      },
+      {
+        "id": "prelim-b-25",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A parallel scientific simulation runs correctly on 8 processors but produces inconsistent results on 32 processors. What is the most likely cause?",
+        "answer": "Improper synchronization causing race conditions during larger-scale parallel execution environments simultaneously",
+        "wrong": [
+          "Network communication bandwidth preventing synchronization between distributed processing environments effectively globally",
+          "NUMA architectures introducing incompatible processor communication patterns during synchronized computational execution processes",
+          "Insufficient memory allocation preventing processor coordination across distributed computational workloads successfully"
+        ],
+        "explanation": "Inconsistent results at larger scale often point to race conditions from improper synchronization."
+      }
+    ],
+    "combinedPrelimA": [
+      {
+        "id": "prelim-a-1",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What is the primary objective of parallel computing systems?",
+        "answer": "Reducing program execution time through simultaneous processing",
+        "wrong": [
+          "Improving reliability by duplicating hardware resources",
+          "Organizing large databases across independent machines",
+          "Expanding network connectivity between computer systems"
+        ],
+        "explanation": "Parallel computing uses simultaneous processing to reduce wall-clock execution time."
+      },
+      {
+        "id": "prelim-a-2",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "In shared memory programming, what is a major responsibility of the developer?",
+        "answer": "Coordinating synchronization to prevent race conditions",
+        "wrong": [
+          "Managing distributed file replication across clusters",
+          "Configuring communication protocols between remote nodes",
+          "Creating routing policies for message transmission systems"
+        ],
+        "explanation": "Shared memory is fast, but the developer must protect shared data with synchronization."
+      },
+      {
+        "id": "prelim-a-3",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which option best represents distributed computing?",
+        "answer": "A Hadoop cluster analyzing massive datasets collaboratively",
+        "wrong": [
+          "A graphics card rendering frames for a video game",
+          "A desktop processor running several browser applications",
+          "A laptop processor executing spreadsheet calculations locally"
+        ],
+        "explanation": "A Hadoop cluster is made of multiple computers collaborating across a network."
+      },
+      {
+        "id": "prelim-a-4",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What is the main function of the Map phase in MapReduce?",
+        "answer": "Splitting data into segments for simultaneous computation",
+        "wrong": [
+          "Saving generated outputs within distributed storage systems",
+          "Directing communication requests among participating servers",
+          "Combining processed results into a completed final output"
+        ],
+        "explanation": "The Map phase splits and processes chunks in parallel. Reduce combines the intermediate results."
+      },
+      {
+        "id": "prelim-a-5",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which architecture provides each processor with independent local memory?",
+        "answer": "An architecture using separate local memory per processor",
+        "wrong": [
+          "A multiprocessing model built around centralized memory access",
+          "A design where memory latency varies between processors",
+          "A memory structure where all processors share equal access"
+        ],
+        "explanation": "Distributed memory gives processors or nodes their own local memory."
+      },
+      {
+        "id": "prelim-a-6",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which pair of operations forms the basis of message passing systems?",
+        "answer": "Sending information packets and receiving transmitted data",
+        "wrong": [
+          "Reading information and writing information to storage",
+          "Allocating memory blocks and releasing unused resources",
+          "Encoding communication streams and decoding transferred signals"
+        ],
+        "explanation": "Message passing is built on send and receive operations."
+      },
+      {
+        "id": "prelim-a-7",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which architecture allows every node to function as both client and server?",
+        "answer": "A decentralized model where nodes share equal responsibilities",
+        "wrong": [
+          "A processing framework based on mapping and reducing tasks",
+          "A cloud platform distributing applications through virtual servers",
+          "A centralized system controlled by dedicated server machines"
+        ],
+        "explanation": "Peer-to-peer architecture gives each node both client and server roles."
+      },
+      {
+        "id": "prelim-a-8",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Flynn's taxonomy categorizes parallel systems according to what criteria?",
+        "answer": "The arrangement of instruction streams and data streams",
+        "wrong": [
+          "The operating systems and processor manufacturing designs",
+          "The communication speed and network transmission capacity",
+          "The quantity of processors and available memory resources"
+        ],
+        "explanation": "Flynn's taxonomy uses instruction streams and data streams."
+      },
+      {
+        "id": "prelim-a-9",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A computer executing one instruction stream on one data stream belongs to which category?",
+        "answer": "A system processing one instruction and one data stream",
+        "wrong": [
+          "A model supporting multiple instructions on shared datasets",
+          "A configuration applying varied operations to identical inputs",
+          "A structure executing many tasks across separate processors"
+        ],
+        "explanation": "Single Instruction, Single Data is SISD, the classic serial category."
+      },
+      {
+        "id": "prelim-a-10",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which term describes the relationship between computation and communication in parallel systems?",
+        "answer": "The balance between computational work and communication",
+        "wrong": [
+          "The quantity of completed operations within a time period",
+          "The delay experienced during data transfer between systems",
+          "The capability of a system to increase processing capacity"
+        ],
+        "explanation": "Granularity describes the ratio or balance between computation and communication."
+      },
+      {
+        "id": "prelim-a-11",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A hospital system must analyze millions of patient records for an AI diagnosis platform. Their current single-server setup requires 72 hours to finish processing. Which approach is most appropriate?",
+        "answer": "Using parallel processing across multiple processing cores",
+        "wrong": [
+          "Migrating services toward a decentralized peer network design",
+          "Replacing the current processor with a higher clock-speed model",
+          "Implementing a traditional client-server communication structure"
+        ],
+        "explanation": "Large analysis workloads can be split and processed in parallel to reduce completion time."
+      },
+      {
+        "id": "prelim-a-12",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "An online shopping platform experiences severe slowdowns during holiday traffic spikes. The company wants to increase server capacity without redesigning the application. Which distributed computing characteristic best solves this issue?",
+        "answer": "The ability to scale resources efficiently as demand grows",
+        "wrong": [
+          "A single instruction single data processing organization",
+          "Uniform processor access to centrally managed memory blocks",
+          "A memory-sharing structure across connected processing units"
+        ],
+        "explanation": "Scalability lets a distributed or cloud system add resources as demand grows."
+      },
+      {
+        "id": "prelim-a-13",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "During a climate simulation, one node in a computing cluster unexpectedly crashes. The simulation continues operating successfully without losing results. Which distributed computing feature enabled this?",
+        "answer": "Maintaining operation despite hardware or software failures",
+        "wrong": [
+          "Exchanging information continuously between independent processes",
+          "Executing instructions sequentially through staged processing units",
+          "Automatically distributing workloads across active processors evenly"
+        ],
+        "explanation": "Fault tolerance means the system can keep operating despite component failures."
+      },
+      {
+        "id": "prelim-a-14",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A rendering studio divides a 4K movie into thousands of independent frames processed simultaneously across 200 computers. Which concept best describes this situation?",
+        "answer": "Large processing tasks divided into loosely connected workloads",
+        "wrong": [
+          "Multiple instruction streams operating on identical data values",
+          "A memory-sharing approach spanning several distributed systems",
+          "Highly independent tasks executed simultaneously without interaction"
+        ],
+        "explanation": "This is coarse-grained or embarrassingly parallel work: large tasks split into mostly independent units."
+      },
+      {
+        "id": "prelim-a-15",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Two processors running on the same machine frequently exchange extremely large datasets. Performance speed is the highest priority. Which communication method is most suitable?",
+        "answer": "Shared memory because it minimizes communication overhead costs",
+        "wrong": [
+          "Shared memory because synchronization is completely unnecessary",
+          "Message passing because operating system calls improve protection",
+          "Message passing because it supports communication across networks"
+        ],
+        "explanation": "Shared memory is usually faster for large same-machine data exchange because it avoids per-message overhead."
+      },
+      {
+        "id": "prelim-a-16",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A startup rapidly increases from 5 to 50 virtual machines during a product launch, then reduces usage afterward. Which computing model makes this possible?",
+        "answer": "An elastic infrastructure delivered through cloud platforms",
+        "wrong": [
+          "A tightly coupled cluster operating within one local network",
+          "A decentralized network without dedicated control mechanisms",
+          "A grid-based environment connecting geographically separated systems"
+        ],
+        "explanation": "Cloud computing provides elastic, on-demand resources."
+      },
+      {
+        "id": "prelim-a-17",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A graphics processor applies the same blur operation simultaneously across thousands of image pixels. Which Flynn taxonomy category best represents this process?",
+        "answer": "A single operation applied simultaneously to multiple datasets",
+        "wrong": [
+          "One instruction stream operating on one sequence of data",
+          "Multiple operations performed on one shared stream of data",
+          "Different instructions executing independently across many datasets"
+        ],
+        "explanation": "SIMD applies a single instruction or operation across many data elements."
+      },
+      {
+        "id": "prelim-a-18",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Engineers design a fraud-detection system where several processors perform different analyses on the same transaction stream. Which Flynn classification matches this setup?",
+        "answer": "Multiple instruction streams analyzing the same incoming dataset",
+        "wrong": [
+          "A single processor executing sequential instructions on data",
+          "One instruction stream simultaneously handling many data values",
+          "Independent processors executing separate tasks on unique data"
+        ],
+        "explanation": "Multiple instructions acting on a single data stream is MISD."
+      },
+      {
+        "id": "prelim-a-19",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A parallel program finishes in 2 hours using 16 processors, while the serial version requires 20 hours. A colleague claims the parallel version is always more efficient. Which response is most accurate?",
+        "answer": "Coordination overhead can reduce benefits for smaller workloads",
+        "wrong": [
+          "Parallel systems waste processing resources because of idle time",
+          "Additional processors consistently improve efficiency for all workloads",
+          "Parallel execution always decreases total processor utilization time"
+        ],
+        "explanation": "This key was corrected: more processors do not always improve efficiency because overhead can dominate."
+      },
+      {
+        "id": "prelim-a-20",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A developer notices performance decreases after adding more processors because processors spend excessive time exchanging information. Which overhead factor is the likely cause?",
+        "answer": "The communication costs associated with transferring shared data",
+        "wrong": [
+          "The delay occurring when tasks complete and release resources",
+          "The licensing restrictions imposed by distributed software vendors",
+          "The initialization time required before parallel tasks can begin"
+        ],
+        "explanation": "Communication overhead can erase the benefits of adding processors."
+      },
+      {
+        "id": "prelim-a-21",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A NUMA architecture links two SMP systems. Processor A accesses local memory in 50ns but remote memory in 150ns. Which statement is most accurate?",
+        "answer": "Memory access latency differs between regions in NUMA systems",
+        "wrong": [
+          "The system qualifies as UMA because processors remain identical",
+          "Separate SMP systems require exclusive use of message passing",
+          "Cache coherency cannot function correctly in NUMA architectures"
+        ],
+        "explanation": "NUMA means memory access time is non-uniform and depends on memory location."
+      },
+      {
+        "id": "prelim-a-22",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Why does increasing CPUs in a shared memory system not always improve performance proportionally?",
+        "answer": "Traffic contention creates bottlenecks on memory communication paths",
+        "wrong": [
+          "Shared memory systems cannot expand storage capacity efficiently",
+          "Distributed memory becomes mandatory after adding several processors",
+          "Shared memory processors cannot execute tasks independently"
+        ],
+        "explanation": "More CPUs can increase traffic and contention on shared memory paths."
+      },
+      {
+        "id": "prelim-a-23",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A parallel application uses fine-grained granularity. What consequence is most likely?",
+        "answer": "Communication overhead becomes larger relative to computation",
+        "wrong": [
+          "Execution becomes slower because fewer tasks are generated",
+          "Distributed architectures become unnecessary for coordination",
+          "Communication demands decrease as processor counts increase"
+        ],
+        "explanation": "Fine-grained tasks communicate frequently, so overhead can become large."
+      },
+      {
+        "id": "prelim-a-24",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What distinguishes distributed shared memory systems from pure distributed memory systems?",
+        "answer": "Software creates a shared-memory illusion across distributed nodes",
+        "wrong": [
+          "Every processor physically accesses one universal memory structure",
+          "Communication between machines becomes completely unnecessary",
+          "All processors execute identical instructions on identical datasets"
+        ],
+        "explanation": "DSM hides physical distribution and presents an illusion of shared memory."
+      },
+      {
+        "id": "prelim-a-25",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A MIMD computer may execute tasks non-deterministically. What does this imply for developers?",
+        "answer": "Synchronization mechanisms are required to ensure correctness",
+        "wrong": [
+          "Scientific applications cannot operate reliably on MIMD systems",
+          "Deterministic execution is unnecessary in parallel applications",
+          "SIMD systems experience more synchronization concerns than MIMD"
+        ],
+        "explanation": "Non-deterministic execution means synchronization is needed to keep shared results correct."
+      }
+    ],
+    "combinedPrelimB": [
+      {
+        "id": "prelim-b-1",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What distinguishes distributed computing from parallel computing?",
+        "answer": "Distributed computing uses multiple networked computers with independent memory spaces",
+        "wrong": [
+          "Parallel computing depends entirely on wide-area communication architecture systems",
+          "Distributed computing always requires identical processors within shared architectures",
+          "Parallel computing eliminates coordination between processors during task execution"
+        ],
+        "explanation": "Distributed computing uses independent networked machines, while parallel computing often focuses on simultaneous execution using multiple processors or cores."
+      },
+      {
+        "id": "prelim-b-2",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which of the following is a key advantage of distributed memory architecture over shared memory?",
+        "answer": "Higher scalability through independent nodes added across environments",
+        "wrong": [
+          "Faster synchronization between tightly coupled computational workloads",
+          "Simplified address spaces allowing transparent memory access globally",
+          "Lower communication overhead during real-time synchronization across processor groups"
+        ],
+        "explanation": "Distributed memory can scale by adding independent nodes, each with its own memory."
+      },
+      {
+        "id": "prelim-b-3",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "In the von Neumann architecture, what is stored in electronic memory?",
+        "answer": "Program instructions together with data required for execution processes",
+        "wrong": [
+          "Operating system services and communication protocols",
+          "Arithmetic processing rules controlling processor execution stages",
+          "Hardware interrupt signals coordinating communication between connected input devices"
+        ],
+        "explanation": "The von Neumann model stores both program instructions and data in memory."
+      },
+      {
+        "id": "prelim-b-4",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is the Reduce phase responsible for in MapReduce?",
+        "answer": "Combining intermediate outputs into summarized results for final processing stages",
+        "wrong": [
+          "Splitting data before assigning tasks across processing nodes",
+          "Replicating distributed data across clusters for system fault tolerance",
+          "Scheduling worker processes during parallel execution of distributed jobs"
+        ],
+        "explanation": "Reduce combines intermediate Map outputs into final summarized results."
+      },
+      {
+        "id": "prelim-b-5",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which parallel computing resource is specifically mentioned as suitable for machine learning and scientific simulations?",
+        "answer": "Graphics processing units (GPUs) enabling repetitive mathematical operations efficiently simultaneously",
+        "wrong": [
+          "Distributed storage platforms coordinating replicated blocks across computing environments",
+          "Symmetric multiprocessing architectures supporting coordinated memory sharing operations globally",
+          "Cluster middleware frameworks balancing workloads among geographically separated processors"
+        ],
+        "explanation": "GPUs are well suited for repetitive parallel mathematical operations used in machine learning and simulations."
+      },
+      {
+        "id": "prelim-b-6",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is a node in the context of parallel computing clusters?",
+        "answer": "Independent computers containing processors, memory and networking communication interfaces together",
+        "wrong": [
+          "Routing hardware connecting distributed systems across communication infrastructure environments",
+          "Virtualized services executing distributed applications within cloud infrastructures remotely",
+          "Shared processor cores executing synchronized instructions within multiprocessor architectures"
+        ],
+        "explanation": "A cluster node is a standalone computer with processors, memory, and network interfaces."
+      },
+      {
+        "id": "prelim-b-7",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which statement correctly describes the shared memory inter-process communication model?",
+        "answer": "Processes access and coordinate through spaces and regions containing shared information together",
+        "wrong": [
+          "Processes exchange information exclusively through synchronized message queue communication mechanisms",
+          "Processes communicate indirectly using distributed packet switching across network infrastructures",
+          "Processes isolate execution environments while communicating through independent storage replication systems"
+        ],
+        "explanation": "Shared memory IPC lets processes communicate by reading and writing a shared memory region."
+      },
+      {
+        "id": "prelim-b-8",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is the primary purpose of synchronization in parallel applications?",
+        "answer": "Coordinating concurrent tasks while preventing inconsistent shared data modifications simultaneously",
+        "wrong": [
+          "Increasing processor speed during independent execution of distributed computational workloads",
+          "Minimizing memory allocation requirements across geographically distributed processing environments globally",
+          "Reducing network latency between geographically distributed computational resource infrastructures entirely"
+        ],
+        "explanation": "Synchronization coordinates concurrent work and protects shared data from inconsistent updates."
+      },
+      {
+        "id": "prelim-b-9",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "An SMP (Symmetric Multi-Processor) system is characterized by:",
+        "answer": "Processors sharing equal access to memory and computing resources together",
+        "wrong": [
+          "Processors connected geographically using distributed communication infrastructures and middleware frameworks",
+          "Nodes maintaining isolated memory spaces without coordinated synchronization mechanisms",
+          "Nonuniform memory access architectures requiring specialized optimization and coordination strategies"
+        ],
+        "explanation": "In SMP, processors share memory and resources with equal access."
+      },
+      {
+        "id": "prelim-b-10",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Why is message passing described as both useful and slower compared to shared memory communication?",
+        "answer": "Message passing requires physical data transfers through operating system communication services",
+        "wrong": [
+          "Shared memory communication depends entirely upon geographically distributed network infrastructures globally",
+          "Variable-length communication reduces synchronization requirements between processing components completely",
+          "Message passing architectures require fewer processing distributed computational coordination tasks"
+        ],
+        "explanation": "Message passing is useful across separate address spaces, but it is slower because data transfer is mediated by the OS or network services."
+      },
+      {
+        "id": "prelim-b-11",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A developer converts a serial program to run on 16 processors. Total CPU time increases from 4 hours to 48 hours while wall-clock time decreases slightly. What conclusion is most accurate?",
+        "answer": "Parallel overhead may reduce overall efficiency when workload distribution across processors consumes resources",
+        "wrong": [
+          "Additional processors automatically guarantee greater processing resources",
+          "Serial execution remains best because synchronization always reduces performance substantially",
+          "Processor utilization increases substantially despite application executed across clustered infrastructures"
+        ],
+        "explanation": "The program may use more total CPU time because overhead, communication, and coordination reduce efficiency."
+      },
+      {
+        "id": "prelim-b-12",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "In P2P architecture, each node is both client and server. What makes this fundamentally different from client-server regarding fault tolerance?",
+        "answer": "Distributed peer participation removes central dependency while improving system resilience significantly",
+        "wrong": [
+          "Centralized coordination improves replicated communication routing infrastructures globally",
+          "Dedicated servers eliminate synchronization problems during workload distribution between participating systems",
+          "Peer architectures depend entirely upon specialized hardware supporting coordinated resource allocation mechanisms"
+        ],
+        "explanation": "P2P removes a central server dependency, improving resilience compared with a single central server design."
+      },
+      {
+        "id": "prelim-b-13",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A SIMD architecture processes the same data stream for fraud detection, where multiple independent cryptographic algorithms simultaneously analyze the same data stream. Which Flynn classification applies and why?",
+        "answer": "MISD because multiple instructions analyze one shared transaction data stream",
+        "wrong": [
+          "SIMD because identical instructions operate across multiple independent transaction datasets simultaneously",
+          "MIMD because processors execute unrelated algorithms using independent transaction processing streams",
+          "SISD because transaction processing occurs sequentially through centralized computing architecture exclusively"
+        ],
+        "explanation": "Multiple instruction streams analyzing the same data stream corresponds to MISD."
+      },
+      {
+        "id": "prelim-b-14",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A grid computing system spans multiple organizations globally. Compare this to cluster computing regarding governance, resource ownership, and scale.",
+        "answer": "Grid systems involve distributed governance and heterogeneous resources across organizations globally",
+        "wrong": [
+          "Cluster systems depend entirely upon geographically separated organizations coordinating shared control",
+          "Grid architectures operate exclusively within homogeneous environments managed through centralized administration systems",
+          "Cluster infrastructures require distributed governance supporting independently managed computational resource networks worldwide"
+        ],
+        "explanation": "Grid computing often spans organizations and heterogeneous resources, while clusters are usually more tightly managed."
+      },
+      {
+        "id": "prelim-b-15",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Why is complexity listed as both a challenge and cost multiplier in parallel software development?",
+        "answer": "Concurrent execution coordination increases effort across design, debugging, tuning, and maintenance phases",
+        "wrong": [
+          "Specialized hardware infrastructures dramatically eliminate software licensing and deployment requirements globally",
+          "Parallel programming languages restrict interoperability between distributed applications and operating systems entirely",
+          "Proprietary debugging frameworks eliminate open-source development support for distributed computing projects globally"
+        ],
+        "explanation": "Parallel software adds coordination complexity throughout design, coding, debugging, tuning, and maintenance."
+      },
+      {
+        "id": "prelim-b-16",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A weather forecasting agency must process satellite data from 50 regions simultaneously and independently. What is the most appropriate computing model?",
+        "answer": "Embarrassingly parallel distribution supporting independent regional processing tasks simultaneously efficiently",
+        "wrong": [
+          "Client-server architecture coordinating centralized processing through dedicated communication infrastructures globally",
+          "SISD processing executing sequential instructions through synchronized processor architectures exclusively",
+          "High-speed serial processing environments minimizing synchronization across distributed computational infrastructures entirely"
+        ],
+        "explanation": "Independent regional workloads are a good fit for embarrassingly parallel processing."
+      },
+      {
+        "id": "prelim-b-17",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A logistics company stores shipment records across geographically separate data centers. A query must search all locations simultaneously. Which component addresses this?",
+        "answer": "Distributed file systems enabling coordinated access across geographically separated storage infrastructures",
+        "wrong": [
+          "Shared memory architectures supporting centralized synchronization between geographically separated processors globally",
+          "Vector processing pipelines accelerating repetitive instructions during sequential database search operations",
+          "Symmetric multiprocessing systems coordinating shared memory access between distributed processing systems"
+        ],
+        "explanation": "Distributed file systems coordinate access to data stored across geographically separated locations."
+      },
+      {
+        "id": "prelim-b-18",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Two processes on different machines connected by a network need to share computation results. Shared memory is unavailable. Which IPC mechanism must they use?",
+        "answer": "Message passing through send and receive communication operations across network infrastructures",
+        "wrong": [
+          "Direct cache coherency mechanisms coordinating memory synchronization between distributed processors continuously",
+          "Shared address spaces supporting transparent remote memory access across geographically separated processing systems globally",
+          "Uniform memory architectures coordinating synchronized processor access within shared computing environments together"
+        ],
+        "explanation": "Processes on different machines without shared memory communicate through message passing."
+      },
+      {
+        "id": "prelim-b-19",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A machine learning model trains by splitting datasets into batches processed by GPU cores applying identical operations. Which Flynn taxonomy class describes this?",
+        "answer": "SIMD because processing occurs through synchronized instruction execution across processor architectures",
+        "wrong": [
+          "SISD because processing occurs sequentially through synchronized processor architecture globally",
+          "MIMD because processors execute unrelated instructions across multiple independent computational data streams independently",
+          "MISD because multiple instruction streams coordinate processing across centralized communication environments globally"
+        ],
+        "explanation": "GPU cores applying the same operation to many data items are an example of SIMD."
+      },
+      {
+        "id": "prelim-b-20",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "An online multiplayer game server crashes but users reconnect seamlessly to a backup server without data loss. Which distributed characteristic enabled this?",
+        "answer": "Fault tolerance maintaining service continuity despite failures within distributed computing environments effectively",
+        "wrong": [
+          "Load balancing distributing computational requests across synchronized server communication infrastructures globally",
+          "Scalability mechanisms supporting increased processor coordination during high-demand computational workloads simultaneously",
+          "Parallel decomposition separating independent tasks during coordinated distributed application processing operations globally"
+        ],
+        "explanation": "Fault tolerance allows service continuity when a server fails."
+      },
+      {
+        "id": "prelim-b-21",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A university shares CPU cycles from multiple countries to simulate protein folding. Which distributed architecture best fits?",
+        "answer": "Grid computing integrating heterogeneous resources from geographically distributed organizations collaboratively worldwide",
+        "wrong": [
+          "Cluster computing supporting homogeneous systems managed through centralized administrative infrastructures together",
+          "Peer-to-peer architectures coordinating decentralized file exchanges between participating computational environments globally",
+          "Client-server computing centralizing resource allocation through dedicated administrative infrastructure globally"
+        ],
+        "explanation": "Grid computing fits geographically distributed, heterogeneous resources across organizations."
+      },
+      {
+        "id": "prelim-b-22",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A parallel program splits work into microtasks constantly exchanging small updates. Performance becomes worse than the serial version. What is the most likely cause?",
+        "answer": "Excessive communication overhead caused by extremely fine-grained task decomposition strategies continuously",
+        "wrong": [
+          "Coarse-grained decomposition reducing synchronization requirements across distributed processing environments entirely globally",
+          "Distributed memory architectures providing synchronized communication between computational microtasks completely",
+          "Processor underutilization resulting from insufficient workload distribution across available computing infrastructures globally"
+        ],
+        "explanation": "Fine-grained work can communicate so frequently that overhead outweighs parallel speedup."
+      },
+      {
+        "id": "prelim-b-23",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A social media recommendation engine processes different users with different algorithms simultaneously across thousands of servers. Which Flynn classification applies?",
+        "answer": "MIMD because independent instructions process separate datasets across distributed processors concurrently",
+        "wrong": [
+          "SIMD because identical operations process recommendation datasets simultaneously together",
+          "SISD because execution remains sequential through centralized algorithmic processing architectures exclusively",
+          "MISD because multiple algorithms analyze synchronized datasets through coordinated instruction execution simultaneously"
+        ],
+        "explanation": "Different algorithms on separate user datasets across many servers is MIMD."
+      },
+      {
+        "id": "prelim-b-24",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A developer prioritizes simpler programming over system-level efficiency when choosing between fixed-size and variable-size messages. Which should they choose?",
+        "answer": "Variable-size messages simplifying application programming despite increased implementation complexity internally globally",
+        "wrong": [
+          "Fixed-size messages because implementation through predictable communication packet structures globally",
+          "Fixed-size communication structures automatically supporting flexible distributed application requirements completely",
+          "Variable-length communication packets consistently reducing transmission overhead across distributed infrastructures worldwide"
+        ],
+        "explanation": "Variable-size messages require more system-level implementation but make the programming task simpler."
+      },
+      {
+        "id": "prelim-b-25",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A parallel scientific simulation runs correctly on 8 processors but produces inconsistent results on 32 processors. What is the most likely cause?",
+        "answer": "Improper synchronization causing race conditions during larger-scale parallel execution environments simultaneously",
+        "wrong": [
+          "Network communication bandwidth preventing synchronization between distributed processing environments effectively globally",
+          "NUMA architectures introducing incompatible processor communication patterns during synchronized computational execution processes",
+          "Insufficient memory allocation preventing processor coordination across distributed computational workloads successfully"
+        ],
+        "explanation": "Inconsistent results at larger scale often point to race conditions from improper synchronization."
+      }
+    ],
     "quizA": [
       {
         "id": "quiz-a-1",
@@ -2746,6 +4152,1512 @@ window.REVIEWER_DATA = {
       }
     ],
     "quizB": [
+      {
+        "id": "quiz-b-26",
+        "number": 26,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "In shared-memory programming, what is the key difference between multithreading and multiprocessing?",
+        "answer": "Multithreading creates multiple execution units within one process sharing the same memory; multiprocessing creates separate processes each with independent memory.",
+        "wrong": [
+          "Multithreading allocates a separate CPU socket to each thread while multiprocessing runs all tasks on a single CPU core in rotation.",
+          "Multithreading is exclusively used for input/output tasks while multiprocessing handles all mathematical and computational operations.",
+          "Multithreading requires a special OS kernel module while multiprocessing runs on any standard operating system without modification."
+        ],
+        "explanation": "Multithreading creates multiple execution units within one process sharing the same memory; multiprocessing creates separate processes each with independent memory."
+      },
+      {
+        "id": "quiz-b-27",
+        "number": 27,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which parallel processing framework uses pragma compiler directives to parallelize loops and is specifically designed for shared-memory multi-core systems?",
+        "answer": "OpenMP, which uses #pragma omp directives so developers can parallelize loops and sections without restructuring sequential code.",
+        "wrong": [
+          "CUDA (Compute Unified Device Architecture), which offloads massively parallel computations to GPU streaming multiprocessors.",
+          "MPI (Message Passing Interface), which uses explicit send/receive calls to coordinate work across distributed-memory compute nodes.",
+          "Hadoop MapReduce, which distributes large dataset processing across a cluster of commodity servers using a key-value paradigm."
+        ],
+        "explanation": "OpenMP, which uses #pragma omp directives so developers can parallelize loops and sections without restructuring sequential code."
+      },
+      {
+        "id": "quiz-b-28",
+        "number": 28,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Thread A and Thread B both execute 'counter++' on a shared variable 1,000 times each without any synchronization. The final value is 1,743 instead of 2,000. What caused the discrepancy of 257?",
+        "answer": "A race condition caused both threads to read the same counter value before either could write back, so some increments were overwritten and lost.",
+        "wrong": [
+          "The operating system's thread scheduler assigned both threads to the same CPU core, causing them to alternate too slowly to complete all increments.",
+          "The threads consumed excessive CPU cache capacity causing some increment operations to be silently discarded by the cache coherence protocol.",
+          "The compiler optimized away 257 redundant increment operations because it detected that both threads were modifying the same variable."
+        ],
+        "explanation": "A race condition caused both threads to read the same counter value before either could write back, so some increments were overwritten and lost."
+      },
+      {
+        "id": "quiz-b-29",
+        "number": 29,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "As the number of threads in a shared-memory program increases to very large numbers, what performance limitation typically emerges?",
+        "answer": "Scalability degrades because increasing threads means more contention for shared resources and growing synchronization overhead that reduces gains.",
+        "wrong": [
+          "The operating system automatically converts the shared-memory program to a message-passing program to handle the extra threads efficiently.",
+          "Memory usage drops to zero because the threads share so much data that very little unique information needs to be stored per thread.",
+          "The compiler automatically inserts additional mutex locks that protect all shared variables so thread safety improves as thread count grows."
+        ],
+        "explanation": "Scalability degrades because increasing threads means more contention for shared resources and growing synchronization overhead that reduces gains."
+      },
+      {
+        "id": "quiz-b-30",
+        "number": 30,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "An online exam system on a 32-core server handles 5,000 simultaneous student registrations. Each registration decrements a shared 'seats_remaining' counter. Which approach correctly prevents registration count errors in shared-memory programming?",
+        "answer": "Use a mutex lock around the decrement operation so only one thread modifies seats_remaining at a time, preventing lost updates.",
+        "wrong": [
+          "Allow all 5,000 threads to update the counter simultaneously and rely on the CPU's out-of-order execution to merge the updates correctly.",
+          "Run each student's session on a separate virtual machine so that each VM maintains its own independent copy of the counter value.",
+          "Use file locking to write the counter to disk before each decrement so the persistent file serves as the authoritative shared state."
+        ],
+        "explanation": "Use a mutex lock around the decrement operation so only one thread modifies seats_remaining at a time, preventing lost updates."
+      },
+      {
+        "id": "quiz-b-31",
+        "number": 31,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Two Java threads process bank account transactions on the same account object. Both read a balance of PHP 10,000, each deducts PHP 8,000, and both write PHP 2,000 back — leaving PHP 2,000 instead of detecting an overdraft. Which concurrency problem caused this and what is the correct fix?",
+        "answer": "A race condition caused a lost update; using Java's synchronized keyword on the transaction method ensures only one thread reads-and-writes at a time.",
+        "wrong": [
+          "A deadlock caused both threads to block waiting for the account object lock; adding a second lock object on the transaction class resolves it.",
+          "A memory leak caused transaction objects to pile up; calling System.gc() after each transaction frees the excess objects and corrects the balance.",
+          "A stack overflow in the transaction recursion caused the balance to be partially written; increasing the JVM thread stack size resolves the issue."
+        ],
+        "explanation": "A race condition caused a lost update; using Java's synchronized keyword on the transaction method ensures only one thread reads-and-writes at a time."
+      },
+      {
+        "id": "quiz-b-32",
+        "number": 32,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which statement accurately describes the communication advantage of shared-memory programming over message-passing for tasks on a single machine?",
+        "answer": "Shared-memory programs allow threads to communicate by directly reading and writing shared data structures with no message serialization overhead.",
+        "wrong": [
+          "Shared-memory programs automatically distribute their computations across multiple physical servers with no network configuration needed.",
+          "Shared-memory programs prevent all race conditions by default because the compiler inserts atomic operations around every memory access.",
+          "Shared-memory programs scale to unlimited thread counts because lock contention decreases automatically as more cores are added to the system."
+        ],
+        "explanation": "Shared-memory programs allow threads to communicate by directly reading and writing shared data structures with no message serialization overhead."
+      },
+      {
+        "id": "quiz-b-33",
+        "number": 33,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does complexity analysis measure about a computer program or algorithm?",
+        "answer": "Complexity analysis measures how efficiently an algorithm uses time (number of operations) and memory (RAM) as input size grows.",
+        "wrong": [
+          "Complexity analysis counts the total number of lines of source code and evaluates how readable the code is for future developers.",
+          "Complexity analysis evaluates the quality of a program's user interface and measures user interaction response times under load.",
+          "Complexity analysis audits the number of external library dependencies and scores how maintainable the program is over time."
+        ],
+        "explanation": "Complexity analysis measures how efficiently an algorithm uses time (number of operations) and memory (RAM) as input size grows."
+      },
+      {
+        "id": "quiz-b-34",
+        "number": 34,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does Big O notation (O) specifically represent when describing algorithm complexity?",
+        "answer": "Big O represents the worst-case upper bound",
+        "wrong": [
+          "Big O represents the best-case minimum number of steps the algorithm will perform when given the most favorable possible input.",
+          "Big O represents the average-case expected performance across all typical real-world inputs for the algorithm.",
+          "Big O represents the exact number of operations the algorithm performs for every specific input of a given size n."
+        ],
+        "explanation": "the maximum growth rate the algorithm's resource usage will ever reach."
+      },
+      {
+        "id": "quiz-b-35",
+        "number": 35,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does Big Omega notation (Ω) represent in algorithm complexity analysis?",
+        "answer": "Big Omega represents the best-case lower bound",
+        "wrong": [
+          "Big Omega represents the worst-case upper bound",
+          "Big Omega represents the average-case expected growth rate when inputs are drawn uniformly at random from all possible values.",
+          "Big Omega represents the memory complexity of the algorithm expressed in terms of the number of recursive function call frames."
+        ],
+        "explanation": "the minimum number of steps the algorithm will ever need on any input."
+      },
+      {
+        "id": "quiz-b-36",
+        "number": 36,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An algorithm performs exactly 7 operations whether the input list has 10 items or 10,000,000 items. What time complexity class does this represent?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "explanation": "constant complexity, because the number of operations never changes regardless of how large the input becomes."
+      },
+      {
+        "id": "quiz-b-37",
+        "number": 37,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Binary Search on a sorted array of 1,024 elements finds the target in at most 10 steps. On 1,048,576 elements it finds it in at most 20 steps. What time complexity does this pattern represent?",
+        "answer": "O(log n)",
+        "wrong": [
+          "O(n)",
+          "O(n²)",
+          "O(1)"
+        ],
+        "explanation": "logarithmic complexity, where each step eliminates half the remaining candidates so steps grow very slowly with array size."
+      },
+      {
+        "id": "quiz-b-38",
+        "number": 38,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A loop visits every element in an array of n items exactly once and performs one operation on each. What is the time complexity of this loop?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "explanation": "linear complexity, because the total number of operations grows in direct proportion to the number of items in the array."
+      },
+      {
+        "id": "quiz-b-39",
+        "number": 39,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An algorithm contains an outer loop running n times and an inner loop that also runs n times for each outer iteration. What is the time complexity?",
+        "answer": "O(n²)",
+        "wrong": [
+          "O(n)",
+          "O(n log n)",
+          "O(2n)"
+        ],
+        "explanation": "quadratic, because the inner loop executes n times for each of the n outer iterations giving n multiplied by n total steps."
+      },
+      {
+        "id": "quiz-b-40",
+        "number": 40,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A hospital's patient lookup system uses linear search on 1,000,000 unsorted records. In the worst case, approximately how many record comparisons are made and what is the Big O complexity?",
+        "answer": "Up to 1,000,000 comparisons",
+        "wrong": [
+          "About 20 comparisons",
+          "Exactly 1 comparison",
+          "Up to 1,000,000,000,000 comparisons"
+        ],
+        "explanation": "O(n), because linear search checks every record until a match is found or the list is exhausted."
+      },
+      {
+        "id": "quiz-b-41",
+        "number": 41,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Sorting 1,000 student scores with Merge Sort takes roughly 10,000 operations. Using the same O(n log n) relationship, approximately how many operations does sorting 1,000,000 scores require?",
+        "answer": "About 20,000,000 operations, because O(n log n) scales as n × log₂(n), and 1,000,000 × log₂(1,000,000) ≈ 1,000,000 × 20 = 20,000,000.",
+        "wrong": [
+          "About 20,000,000,000 operations, because the sort switches to O(n²) behavior once the input exceeds one million elements.",
+          "About 1,000,000 operations, because O(n log n) scales at the same rate as O(n) when the logarithmic factor remains near constant.",
+          "About 1,000 operations, because the logarithmic factor reduces the linear component proportionally."
+        ],
+        "explanation": "About 20,000,000 operations, because O(n log n) scales as n × log₂(n), and 1,000,000 × log₂(1,000,000) ≈ 1,000,000 × 20 = 20,000,000."
+      },
+      {
+        "id": "quiz-b-42",
+        "number": 42,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A cashier program sums all item prices in a shopping cart using one variable: 'int sum = 0; for(item: cart) sum += item.price;'. What is the space complexity of this algorithm?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(n²)",
+          "O(log n)"
+        ],
+        "explanation": "constant space, because only one variable (sum) is ever allocated regardless of how many items appear in the cart."
+      },
+      {
+        "id": "quiz-b-43",
+        "number": 43,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Binary Search runs in O(log n) time. What critical requirement must the data meet BEFORE Binary Search can be applied correctly?",
+        "answer": "The data must be sorted in either ascending or descending order so that Binary Search can correctly determine which half to discard.",
+        "wrong": [
+          "The data must be stored in a hash table so that each element can be located by computing its position from its key value directly.",
+          "The data must be stored in a linked list so that Binary Search can traverse forward and backward from a given starting element.",
+          "The data must fit entirely within the CPU's L1 cache so that each Binary Search probe accesses an element in a single clock cycle."
+        ],
+        "explanation": "The data must be sorted in either ascending or descending order so that Binary Search can correctly determine which half to discard."
+      },
+      {
+        "id": "quiz-b-44",
+        "number": 44,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An app runs in 0.1 seconds for 500 users. After going viral with 500,000 users (a 1,000× growth), response time is 100,000 seconds. A developer suspects a quadratic algorithm. Is O(n²) consistent with this observation?",
+        "answer": "Yes",
+        "wrong": [
+          "No",
+          "No",
+          "Yes"
+        ],
+        "explanation": "under O(n²), a 1,000× user increase causes a 1,000²=1,000,000× time increase: 0.1s × 1,000,000 = 100,000s, which matches exactly."
+      },
+      {
+        "id": "quiz-b-45",
+        "number": 45,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An e-commerce platform with 10 million products evaluates two search algorithms. Algorithm X completes in 23 fixed operations regardless of product count. Algorithm Y takes up to 10,000,000 operations. What are their complexities and which should power the product search?",
+        "answer": "Algorithm X is O(1); Algorithm Y is O(n). Algorithm X should be used because its operation count stays constant even if products grow to 1 billion.",
+        "wrong": [
+          "Both are O(n); Algorithm X should be chosen because 23 operations is numerically smaller than 10,000,000 for this specific dataset.",
+          "Algorithm X is O(log n); Algorithm Y is O(n²). Algorithm X is better because logarithmic growth is slower than quadratic growth at all sizes.",
+          "Both are O(log n); Algorithm X is preferred because its constant factor of 23 is smaller than Algorithm Y's constant factor at this dataset size."
+        ],
+        "explanation": "Algorithm X is O(1); Algorithm Y is O(n). Algorithm X should be used because its operation count stays constant even if products grow to 1 billion."
+      },
+      {
+        "id": "quiz-b-46",
+        "number": 46,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A mobile app loads all contacts into memory so users can scroll through them. A user with 50 contacts uses 50 memory slots; a user with 5,000 contacts uses 5,000 slots. What is the space complexity and is it appropriate?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(n²)",
+          "O(log n)"
+        ],
+        "explanation": "linear space; memory grows proportionally with contact count, which is expected and acceptable for a contact list application."
+      },
+      {
+        "id": "quiz-b-47",
+        "number": 47,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "When Ω (best case) = Θ (average case) = O (worst case) for an algorithm, what does this equal relationship mean for the algorithm's behavior?",
+        "answer": "The algorithm has tight complexity",
+        "wrong": [
+          "The algorithm is asymptotically unstable and produces widely varying step counts on different inputs even of the same size n.",
+          "The algorithm uses exponential memory in all three cases, making it impractical for any input size larger than a few dozen elements.",
+          "The algorithm degenerates to sequential execution when best and worst cases match, losing all parallel performance benefits."
+        ],
+        "explanation": "it performs the same number of steps on every input of size n, making its behavior perfectly predictable."
+      },
+      {
+        "id": "quiz-b-48",
+        "number": 48,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A naive duplicate file detector compares every file to every other file. With 10,000 files, how many comparisons are made, what is the complexity, and what smarter approach reduces it?",
+        "answer": "100,000,000 comparisons",
+        "wrong": [
+          "10,000 comparisons",
+          "20,000 comparisons",
+          "10,000,000,000,000 comparisons"
+        ],
+        "explanation": "O(n²); computing a hash for each file and comparing hashes instead of file contents reduces this to O(n)."
+      },
+      {
+        "id": "quiz-b-49",
+        "number": 49,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A government portal expects 50 million citizen logins. System A stores usernames in an unsorted list and checks them sequentially. System B uses a hash table. What are their Big O worst-case complexities and which must be chosen?",
+        "answer": "System A is O(n); System B is O(1). System B must be chosen because O(n) means up to 50 million comparisons per login while O(1) stays constant.",
+        "wrong": [
+          "System A is O(log n); System B is O(n²). System A is the better choice because logarithmic growth is manageable at 50 million users.",
+          "Both systems are O(1) in the worst case; System B should be chosen because hash tables have a smaller constant factor than linear search.",
+          "System A is O(n log n); System B is O(n). System B is better because linear growth is slower than linearithmic growth for large user counts."
+        ],
+        "explanation": "System A is O(n); System B is O(1). System B must be chosen because O(n) means up to 50 million comparisons per login while O(1) stays constant."
+      },
+      {
+        "id": "quiz-b-50",
+        "number": 50,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A teacher asks students to rank these five algorithms from MOST efficient to LEAST efficient for very large inputs: (I) O(n) Linear Search, (II) O(1) Hash Lookup, (III) O(n log n) Merge Sort, (IV) O(n²) Bubble Sort, (V) O(log n) Binary Search. What is the correct ranking?",
+        "answer": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort",
+        "wrong": [
+          "O(n) Linear Search → O(1) Hash Lookup → O(log n) Binary Search → O(n log n) Merge Sort → O(n²) Bubble Sort",
+          "O(log n) Binary Search → O(n) Linear Search → O(1) Hash Lookup → O(n log n) Merge Sort → O(n²) Bubble Sort",
+          "O(1) Hash Lookup → O(n) Linear Search → O(n²) Bubble Sort → O(log n) Binary Search → O(n log n) Merge Sort"
+        ],
+        "explanation": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort"
+      }
+    ],
+    "combinedQuiz": [
+      {
+        "id": "quiz-a-1",
+        "number": 1,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What is the primary characteristic that defines message-passing programming as distinct from shared-memory programming?",
+        "answer": "Processes run in separate memory spaces and communicate explicitly by sending and receiving messages to each other.",
+        "wrong": [
+          "Processes share a distributed cache layer that all nodes can read from and write to simultaneously.",
+          "Processes communicate through a central coordinator node that manages all data transfers between workers.",
+          "Processes share a single common memory space and communicate by reading and writing the same variables directly."
+        ],
+        "explanation": "Processes run in separate memory spaces and communicate explicitly by sending and receiving messages to each other."
+      },
+      {
+        "id": "quiz-a-2",
+        "number": 2,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement best describes asynchronous communication in a message-passing program?",
+        "answer": "A sending process posts its message and immediately continues executing other work without waiting for the receiver to accept it.",
+        "wrong": [
+          "A sending process suspends all computation and remains idle until the receiving process explicitly confirms the message arrived.",
+          "All participating processes coordinate to send and receive messages at a pre-agreed synchronized time checkpoint.",
+          "The operating system buffers all messages and delivers them in the exact sequence they were originally transmitted."
+        ],
+        "explanation": "A sending process posts its message and immediately continues executing other work without waiting for the receiver to accept it."
+      },
+      {
+        "id": "quiz-a-3",
+        "number": 3,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "In message-passing programming, what accurately describes point-to-point communication?",
+        "answer": "One process sends a message to one specific, individually addressed target process for direct exchange.",
+        "wrong": [
+          "Every process in the group sends its local data to every other process simultaneously in a ring pattern.",
+          "A group of processes collectively computes a result and delivers it to all members of the communicator.",
+          "One root process distributes identical copies of a message to every other process in the communicator group."
+        ],
+        "explanation": "One process sends a message to one specific, individually addressed target process for direct exchange."
+      },
+      {
+        "id": "quiz-a-4",
+        "number": 4,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What does the acronym MPI stand for in high-performance parallel computing?",
+        "answer": "Message Passing Interface, the widely adopted standard library for distributed-memory parallel programming.",
+        "wrong": [
+          "Memory Partitioned Interface, the specification for dividing RAM equally among parallel worker threads.",
+          "Modular Parallel Implementation, a framework for automatically decomposing sequential programs into tasks.",
+          "Multi-Process Integration, the standard protocol for combining results across multi-core processors."
+        ],
+        "explanation": "Message Passing Interface, the widely adopted standard library for distributed-memory parallel programming."
+      },
+      {
+        "id": "quiz-a-5",
+        "number": 5,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A 500-node cluster runs a weather simulation where each node independently processes one geographic region and exchanges boundary values only with adjacent nodes. Which parallel paradigm fits best?",
+        "answer": "Message-passing using MPI, because each node has separate memory and communicates boundary data via explicit send and receive calls.",
+        "wrong": [
+          "Shared-memory using Intel TBB, because the threading library efficiently manages work queues across all cluster nodes.",
+          "Shared-memory using POSIX threads, because pthreads allow fine-grained control over each node's regional data buffer.",
+          "Shared-memory using OpenMP, because compiler directives automatically distribute the regional computation across all 500 nodes."
+        ],
+        "explanation": "Message-passing using MPI, because each node has separate memory and communicates boundary data via explicit send and receive calls."
+      },
+      {
+        "id": "quiz-a-6",
+        "number": 6,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement correctly describes a key scalability advantage of message-passing programming over shared-memory programming?",
+        "answer": "Message-passing programs scale across hundreds of distributed nodes because each process owns private memory and communicates explicitly.",
+        "wrong": [
+          "Message-passing programs use a global shared bus so that adding more nodes directly increases available memory bandwidth.",
+          "Message-passing programs depend on a shared heap segment that grows proportionally as more compute nodes join the cluster.",
+          "Message-passing programs run on a single machine with shared RAM and scale well because the OS manages lock contention automatically."
+        ],
+        "explanation": "Message-passing programs scale across hundreds of distributed nodes because each process owns private memory and communicates explicitly."
+      },
+      {
+        "id": "quiz-a-7",
+        "number": 7,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What is collective communication in message-passing systems and which operation is an example of it?",
+        "answer": "Collective communication describes group-level operations involving all processes, such as MPI_Bcast which sends one value to every process.",
+        "wrong": [
+          "Collective communication describes the technique of buffering multiple point-to-point messages to reduce individual transmission overhead.",
+          "Collective communication describes a fault-tolerance protocol where surviving processes redistribute work from a failed process automatically.",
+          "Collective communication describes one process sending a private message to one specific partner, as in a standard MPI_Send call."
+        ],
+        "explanation": "Collective communication describes group-level operations involving all processes, such as MPI_Bcast which sends one value to every process."
+      },
+      {
+        "id": "quiz-a-8",
+        "number": 8,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Two MPI processes — P0 and P1 — each call a blocking MPI_Send to the other before calling MPI_Recv. Neither process ever proceeds past its send call and the program freezes permanently. What condition has occurred and how is it resolved?",
+        "answer": "A message deadlock has occurred; the fix is to reorder calls so one process sends while the other receives, or to use non-blocking MPI_Isend.",
+        "wrong": [
+          "A scheduling conflict has occurred; the fix is to assign each process to a dedicated CPU core using processor affinity settings.",
+          "A collective communication mismatch has occurred; the fix is to replace MPI_Send with MPI_Bcast so both processes receive the message.",
+          "A memory overflow has occurred because each blocking send allocated a buffer larger than the available RAM on each node."
+        ],
+        "explanation": "A message deadlock has occurred; the fix is to reorder calls so one process sends while the other receives, or to use non-blocking MPI_Isend."
+      },
+      {
+        "id": "quiz-a-9",
+        "number": 9,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A financial HPC cluster shows no speedup gain after 150 nodes even when 50 more nodes are added. The computation per node remains constant but inter-node messaging has grown. What does this indicate about the message-passing workload?",
+        "answer": "Communication overhead between processes is growing fast enough to cancel out the computational benefit that the extra nodes provide.",
+        "wrong": [
+          "The financial dataset is too small for the cluster size, so each extra node receives zero work items and sits idle during the run.",
+          "The network switch is running at capacity so the OS automatically throttles new nodes to prevent packet loss on the interconnect.",
+          "The MPI library reached its maximum registered process count of 150 and stopped accepting new worker registrations."
+        ],
+        "explanation": "Communication overhead between processes is growing fast enough to cancel out the computational benefit that the extra nodes provide."
+      },
+      {
+        "id": "quiz-a-10",
+        "number": 10,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement correctly identifies a significant debugging challenge that is specific to message-passing programs?",
+        "answer": "Message-passing programs can suffer from deadlocks or non-deterministic message ordering, making bugs difficult to reproduce consistently.",
+        "wrong": [
+          "Message-passing programs share a global heap, so memory corruption in one process is immediately visible and easy to isolate.",
+          "Message-passing programs always execute sequentially on one core, so the debugger can single-step through every instruction in order.",
+          "Message-passing programs store all communication logs in a shared database, giving the developer a complete audit trail of every exchange."
+        ],
+        "explanation": "Message-passing programs can suffer from deadlocks or non-deterministic message ordering, making bugs difficult to reproduce consistently."
+      },
+      {
+        "id": "quiz-a-11",
+        "number": 11,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "How is synchronization between processes handled in the message-passing programming model?",
+        "answer": "Synchronization is explicit; processes deliberately issue send, receive, or barrier calls to coordinate their activities with other processes.",
+        "wrong": [
+          "Synchronization is fully automatic; the MPI runtime inserts barriers between every communication call without developer intervention.",
+          "Synchronization is unnecessary because each process runs in complete isolation and never needs to coordinate timing with any peer.",
+          "Synchronization is handled by a dedicated master process that polls all workers and issues clock signals at fixed time intervals."
+        ],
+        "explanation": "Synchronization is explicit; processes deliberately issue send, receive, or barrier calls to coordinate their activities with other processes."
+      },
+      {
+        "id": "quiz-a-12",
+        "number": 12,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A physics simulation on 1,000 nodes produces partial results on each node. At the end, all partial sums must be totaled into a single global result held on Node 0. Which MPI collective operation is the correct and most efficient choice?",
+        "answer": "MPI_Reduce, where all processes send their partial values to Node 0 which combines them using a SUM operation into one result.",
+        "wrong": [
+          "MPI_Bcast, where Node 0 transmits its partial result to all other nodes so every process holds the same starting value.",
+          "MPI_Scatter, where Node 0 breaks a large dataset into chunks and distributes one unique chunk to each of the 1,000 nodes.",
+          "MPI_Alltoall, where every node exchanges its partial result with every other node so all nodes hold all partial sums."
+        ],
+        "explanation": "MPI_Reduce, where all processes send their partial values to Node 0 which combines them using a SUM operation into one result."
+      },
+      {
+        "id": "quiz-a-13",
+        "number": 13,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "What are the three sequential steps that the Divide and Conquer algorithm technique performs at each level of recursion?",
+        "answer": "Divide the problem into smaller sub-problems, conquer each sub-problem recursively, then combine their solutions into the final answer.",
+        "wrong": [
+          "Initialize the data structure, process each element sequentially, then output the final combined result to storage.",
+          "Partition the input data evenly, sort each partition with an insertion pass, then merge adjacent sorted partitions repeatedly.",
+          "Select the optimal sub-problem to solve first, execute it greedily, then propagate the result to dependent sub-problems."
+        ],
+        "explanation": "Divide the problem into smaller sub-problems, conquer each sub-problem recursively, then combine their solutions into the final answer."
+      },
+      {
+        "id": "quiz-a-14",
+        "number": 14,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which algorithm design technique makes the locally optimal choice at each decision step and never revisits a previous decision?",
+        "answer": "The Greedy Method, which always selects the best-looking option at the current step without reconsidering earlier choices.",
+        "wrong": [
+          "Dynamic Programming, which stores every sub-problem solution in a table and reuses those stored answers in future computations.",
+          "Backtracking, which explores each candidate solution fully and retreats to the previous checkpoint when a dead end is encountered.",
+          "Branch and Bound, which maintains a priority queue of partial solutions ranked by their lower-bound cost estimate."
+        ],
+        "explanation": "The Greedy Method, which always selects the best-looking option at the current step without reconsidering earlier choices."
+      },
+      {
+        "id": "quiz-a-15",
+        "number": 15,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "What is the key distinguishing difference between Dynamic Programming and the Divide and Conquer technique?",
+        "answer": "Dynamic Programming stores and reuses overlapping sub-problem solutions, while Divide and Conquer solves each sub-problem independently.",
+        "wrong": [
+          "Divide and Conquer stores solutions to sub-problems in a lookup table while Dynamic Programming always recomputes them from scratch.",
+          "Dynamic Programming works only on graph problems while Divide and Conquer applies only to array and sorting problems.",
+          "Divide and Conquer requires distributed memory clusters while Dynamic Programming runs only on shared-memory multi-core systems."
+        ],
+        "explanation": "Dynamic Programming stores and reuses overlapping sub-problem solutions, while Divide and Conquer solves each sub-problem independently."
+      },
+      {
+        "id": "quiz-a-16",
+        "number": 16,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which description most accurately defines how the Backtracking algorithm works?",
+        "answer": "The algorithm starts with a promising candidate, advances step by step checking constraints, and retreats one level when a constraint fails.",
+        "wrong": [
+          "The algorithm builds a priority queue of candidate solutions ranked by their estimated cost and processes the cheapest candidate first.",
+          "The algorithm expresses the problem as a set of linear constraints and finds the assignment of variables that satisfies all constraints optimally.",
+          "The algorithm divides the solution space into two halves repeatedly and processes each half on a separate processor simultaneously."
+        ],
+        "explanation": "The algorithm starts with a promising candidate, advances step by step checking constraints, and retreats one level when a constraint fails."
+      },
+      {
+        "id": "quiz-a-17",
+        "number": 17,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which real-world combinatorial puzzle is the most classically cited example of the Backtracking algorithm in computer science textbooks?",
+        "answer": "The Eight Queens Problem, where eight chess queens must be placed on a board so that no queen threatens any other queen.",
+        "wrong": [
+          "The Fibonacci Series problem, where each term depends on the sum of the two immediately preceding terms in the sequence.",
+          "The Travelling Salesman Problem, where the total distance of a route connecting all cities must be minimized globally.",
+          "The Shortest Path Problem, where the minimum-cost route between two nodes in a weighted graph must be identified."
+        ],
+        "explanation": "The Eight Queens Problem, where eight chess queens must be placed on a board so that no queen threatens any other queen."
+      },
+      {
+        "id": "quiz-a-18",
+        "number": 18,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A delivery company must find the minimum-distance route visiting 12 cities. The solution space is enormous. Which design technique intelligently prunes unpromising routes without evaluating every possibility?",
+        "answer": "Branch and Bound, which explores partial routes and discards any branch whose lower-bound cost already exceeds the best complete route found.",
+        "wrong": [
+          "The Greedy Method, which builds the route one city at a time by always traveling to the nearest unvisited city from the current location.",
+          "Dynamic Programming, which breaks the route into overlapping city-pair sub-problems and stores the shortest sub-route for each pair.",
+          "Linear Programming, which models the routing decision as a set of linear equations and solves for the assignment that minimizes total distance."
+        ],
+        "explanation": "Branch and Bound, which explores partial routes and discards any branch whose lower-bound cost already exceeds the best complete route found."
+      },
+      {
+        "id": "quiz-a-19",
+        "number": 19,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "The Fibonacci algorithm (Fib(n) = Fib(n-1) + Fib(n-2)) implemented with a lookup table to avoid repeated computation is a classic example of which technique?",
+        "answer": "Dynamic Programming, because overlapping sub-problems (Fib(n-1), Fib(n-2)) are computed once, stored, and reused in later calls.",
+        "wrong": [
+          "Backtracking, because the recursion explores multiple candidate values before settling on the correct Fibonacci term at depth n.",
+          "Branch and Bound, because the recursion tree branches into two sub-calls and prunes branches where Fib values are already known.",
+          "Divide and Conquer, because the problem is split into two independent halves that are solved separately and their results summed."
+        ],
+        "explanation": "Dynamic Programming, because overlapping sub-problems (Fib(n-1), Fib(n-2)) are computed once, stored, and reused in later calls."
+      },
+      {
+        "id": "quiz-a-20",
+        "number": 20,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Both Binary Search and Merge Sort are textbook examples of which parallel algorithm design technique?",
+        "answer": "Divide and Conquer, because both algorithms recursively split the input in half, solve each half, and then combine the results.",
+        "wrong": [
+          "Greedy Method, because both algorithms commit to a locally optimal decision at each step without reconsidering prior choices.",
+          "Dynamic Programming, because both algorithms store results from smaller input sizes to avoid re-scanning previously processed data.",
+          "Branch and Bound, because both algorithms prune sections of the input that cannot possibly contribute to the final answer."
+        ],
+        "explanation": "Divide and Conquer, because both algorithms recursively split the input in half, solve each half, and then combine the results."
+      },
+      {
+        "id": "quiz-a-21",
+        "number": 21,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A logistics firm assigns delivery drivers to routes to maximize total deliveries in an 8-hour shift. Driver assignment, shift-hour limits, and vehicle capacity all have linear relationships. Which design technique directly models and solves this optimization problem?",
+        "answer": "Linear Programming, which models the objective and all constraints as linear functions and finds the optimal variable assignment mathematically.",
+        "wrong": [
+          "Branch and Bound, which generates a tree of partial assignments and prunes branches where estimated deliveries fall below the current best.",
+          "Greedy Method, which assigns the driver with the greatest remaining shift time to the longest available route at each decision step.",
+          "Backtracking, which tries every possible driver-to-route assignment and retreats whenever a shift-hour or capacity constraint is violated."
+        ],
+        "explanation": "Linear Programming, which models the objective and all constraints as linear functions and finds the optimal variable assignment mathematically."
+      },
+      {
+        "id": "quiz-a-22",
+        "number": 22,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A game developer builds a maze solver that explores a path step by step, and when it hits a dead end, it reverses to the last junction and tries a different direction. This continues until the exit is found. Which design technique is being implemented?",
+        "answer": "Backtracking, because the solver builds a path incrementally and retreats to the previous decision point whenever a dead end is encountered.",
+        "wrong": [
+          "Greedy Method, because at each junction the solver picks the corridor that appears to lead most directly toward the exit position.",
+          "Branch and Bound, because at each junction the solver calculates the minimum remaining distance and prunes corridors that exceed the limit.",
+          "Divide and Conquer, because the maze is split into quadrants and each quadrant is solved independently by a recursive sub-call."
+        ],
+        "explanation": "Backtracking, because the solver builds a path incrementally and retreats to the previous decision point whenever a dead end is encountered."
+      },
+      {
+        "id": "quiz-a-23",
+        "number": 23,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "What is the defining characteristic of the shared-memory parallel programming model?",
+        "answer": "All threads running on the same system can access the same memory addresses and communicate by reading and writing shared variables.",
+        "wrong": [
+          "Threads are assigned to separate physical servers and synchronize by exchanging data packets over a high-speed network interconnect.",
+          "Each thread operates on an independent memory bank that is readable by the CPU but not directly accessible by any other thread.",
+          "Each thread holds a private copy of all program variables and must explicitly send updates to other threads through a message queue."
+        ],
+        "explanation": "All threads running on the same system can access the same memory addresses and communicate by reading and writing shared variables."
+      },
+      {
+        "id": "quiz-a-24",
+        "number": 24,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Two threads simultaneously read a shared counter, each adds one to it, and each writes back the result. The counter increments by one instead of two. What is this concurrency problem called?",
+        "answer": "A race condition, where two threads access and modify shared data concurrently without synchronization causing one update to be lost.",
+        "wrong": [
+          "A memory leak, where each thread allocates a new buffer for the counter value but never frees the old buffer after writing.",
+          "A stack overflow, where the counter variable exceeds the maximum integer range supported by the thread's private call stack memory.",
+          "A deadlock, where both threads are blocked waiting for a resource that the other thread currently holds and refuses to release."
+        ],
+        "explanation": "A race condition, where two threads access and modify shared data concurrently without synchronization causing one update to be lost."
+      },
+      {
+        "id": "quiz-a-25",
+        "number": 25,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which synchronization mechanism in shared-memory programming ensures that only one thread at a time can execute a critical section of code?",
+        "answer": "A mutex lock (mutual exclusion lock), which allows only the thread holding the lock to enter the critical section at any given time.",
+        "wrong": [
+          "A network socket, which provides a reliable byte-stream channel between two threads running on different CPU cores.",
+          "A memory-mapped file, which maps shared data to a file on disk so multiple threads can access it through the file system.",
+          "A message queue, which buffers outgoing data from one thread and delivers it to another thread in the order it was enqueued."
+        ],
+        "explanation": "A mutex lock (mutual exclusion lock), which allows only the thread holding the lock to enter the critical section at any given time."
+      },
+      {
+        "id": "quiz-b-26",
+        "number": 26,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "In shared-memory programming, what is the key difference between multithreading and multiprocessing?",
+        "answer": "Multithreading creates multiple execution units within one process sharing the same memory; multiprocessing creates separate processes each with independent memory.",
+        "wrong": [
+          "Multithreading allocates a separate CPU socket to each thread while multiprocessing runs all tasks on a single CPU core in rotation.",
+          "Multithreading is exclusively used for input/output tasks while multiprocessing handles all mathematical and computational operations.",
+          "Multithreading requires a special OS kernel module while multiprocessing runs on any standard operating system without modification."
+        ],
+        "explanation": "Multithreading creates multiple execution units within one process sharing the same memory; multiprocessing creates separate processes each with independent memory."
+      },
+      {
+        "id": "quiz-b-27",
+        "number": 27,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which parallel processing framework uses pragma compiler directives to parallelize loops and is specifically designed for shared-memory multi-core systems?",
+        "answer": "OpenMP, which uses #pragma omp directives so developers can parallelize loops and sections without restructuring sequential code.",
+        "wrong": [
+          "CUDA (Compute Unified Device Architecture), which offloads massively parallel computations to GPU streaming multiprocessors.",
+          "MPI (Message Passing Interface), which uses explicit send/receive calls to coordinate work across distributed-memory compute nodes.",
+          "Hadoop MapReduce, which distributes large dataset processing across a cluster of commodity servers using a key-value paradigm."
+        ],
+        "explanation": "OpenMP, which uses #pragma omp directives so developers can parallelize loops and sections without restructuring sequential code."
+      },
+      {
+        "id": "quiz-b-28",
+        "number": 28,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Thread A and Thread B both execute 'counter++' on a shared variable 1,000 times each without any synchronization. The final value is 1,743 instead of 2,000. What caused the discrepancy of 257?",
+        "answer": "A race condition caused both threads to read the same counter value before either could write back, so some increments were overwritten and lost.",
+        "wrong": [
+          "The operating system's thread scheduler assigned both threads to the same CPU core, causing them to alternate too slowly to complete all increments.",
+          "The threads consumed excessive CPU cache capacity causing some increment operations to be silently discarded by the cache coherence protocol.",
+          "The compiler optimized away 257 redundant increment operations because it detected that both threads were modifying the same variable."
+        ],
+        "explanation": "A race condition caused both threads to read the same counter value before either could write back, so some increments were overwritten and lost."
+      },
+      {
+        "id": "quiz-b-29",
+        "number": 29,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "As the number of threads in a shared-memory program increases to very large numbers, what performance limitation typically emerges?",
+        "answer": "Scalability degrades because increasing threads means more contention for shared resources and growing synchronization overhead that reduces gains.",
+        "wrong": [
+          "The operating system automatically converts the shared-memory program to a message-passing program to handle the extra threads efficiently.",
+          "Memory usage drops to zero because the threads share so much data that very little unique information needs to be stored per thread.",
+          "The compiler automatically inserts additional mutex locks that protect all shared variables so thread safety improves as thread count grows."
+        ],
+        "explanation": "Scalability degrades because increasing threads means more contention for shared resources and growing synchronization overhead that reduces gains."
+      },
+      {
+        "id": "quiz-b-30",
+        "number": 30,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "An online exam system on a 32-core server handles 5,000 simultaneous student registrations. Each registration decrements a shared 'seats_remaining' counter. Which approach correctly prevents registration count errors in shared-memory programming?",
+        "answer": "Use a mutex lock around the decrement operation so only one thread modifies seats_remaining at a time, preventing lost updates.",
+        "wrong": [
+          "Allow all 5,000 threads to update the counter simultaneously and rely on the CPU's out-of-order execution to merge the updates correctly.",
+          "Run each student's session on a separate virtual machine so that each VM maintains its own independent copy of the counter value.",
+          "Use file locking to write the counter to disk before each decrement so the persistent file serves as the authoritative shared state."
+        ],
+        "explanation": "Use a mutex lock around the decrement operation so only one thread modifies seats_remaining at a time, preventing lost updates."
+      },
+      {
+        "id": "quiz-b-31",
+        "number": 31,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Two Java threads process bank account transactions on the same account object. Both read a balance of PHP 10,000, each deducts PHP 8,000, and both write PHP 2,000 back — leaving PHP 2,000 instead of detecting an overdraft. Which concurrency problem caused this and what is the correct fix?",
+        "answer": "A race condition caused a lost update; using Java's synchronized keyword on the transaction method ensures only one thread reads-and-writes at a time.",
+        "wrong": [
+          "A deadlock caused both threads to block waiting for the account object lock; adding a second lock object on the transaction class resolves it.",
+          "A memory leak caused transaction objects to pile up; calling System.gc() after each transaction frees the excess objects and corrects the balance.",
+          "A stack overflow in the transaction recursion caused the balance to be partially written; increasing the JVM thread stack size resolves the issue."
+        ],
+        "explanation": "A race condition caused a lost update; using Java's synchronized keyword on the transaction method ensures only one thread reads-and-writes at a time."
+      },
+      {
+        "id": "quiz-b-32",
+        "number": 32,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which statement accurately describes the communication advantage of shared-memory programming over message-passing for tasks on a single machine?",
+        "answer": "Shared-memory programs allow threads to communicate by directly reading and writing shared data structures with no message serialization overhead.",
+        "wrong": [
+          "Shared-memory programs automatically distribute their computations across multiple physical servers with no network configuration needed.",
+          "Shared-memory programs prevent all race conditions by default because the compiler inserts atomic operations around every memory access.",
+          "Shared-memory programs scale to unlimited thread counts because lock contention decreases automatically as more cores are added to the system."
+        ],
+        "explanation": "Shared-memory programs allow threads to communicate by directly reading and writing shared data structures with no message serialization overhead."
+      },
+      {
+        "id": "quiz-b-33",
+        "number": 33,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does complexity analysis measure about a computer program or algorithm?",
+        "answer": "Complexity analysis measures how efficiently an algorithm uses time (number of operations) and memory (RAM) as input size grows.",
+        "wrong": [
+          "Complexity analysis counts the total number of lines of source code and evaluates how readable the code is for future developers.",
+          "Complexity analysis evaluates the quality of a program's user interface and measures user interaction response times under load.",
+          "Complexity analysis audits the number of external library dependencies and scores how maintainable the program is over time."
+        ],
+        "explanation": "Complexity analysis measures how efficiently an algorithm uses time (number of operations) and memory (RAM) as input size grows."
+      },
+      {
+        "id": "quiz-b-34",
+        "number": 34,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does Big O notation (O) specifically represent when describing algorithm complexity?",
+        "answer": "Big O represents the worst-case upper bound",
+        "wrong": [
+          "Big O represents the best-case minimum number of steps the algorithm will perform when given the most favorable possible input.",
+          "Big O represents the average-case expected performance across all typical real-world inputs for the algorithm.",
+          "Big O represents the exact number of operations the algorithm performs for every specific input of a given size n."
+        ],
+        "explanation": "the maximum growth rate the algorithm's resource usage will ever reach."
+      },
+      {
+        "id": "quiz-b-35",
+        "number": 35,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does Big Omega notation (Ω) represent in algorithm complexity analysis?",
+        "answer": "Big Omega represents the best-case lower bound",
+        "wrong": [
+          "Big Omega represents the worst-case upper bound",
+          "Big Omega represents the average-case expected growth rate when inputs are drawn uniformly at random from all possible values.",
+          "Big Omega represents the memory complexity of the algorithm expressed in terms of the number of recursive function call frames."
+        ],
+        "explanation": "the minimum number of steps the algorithm will ever need on any input."
+      },
+      {
+        "id": "quiz-b-36",
+        "number": 36,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An algorithm performs exactly 7 operations whether the input list has 10 items or 10,000,000 items. What time complexity class does this represent?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "explanation": "constant complexity, because the number of operations never changes regardless of how large the input becomes."
+      },
+      {
+        "id": "quiz-b-37",
+        "number": 37,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Binary Search on a sorted array of 1,024 elements finds the target in at most 10 steps. On 1,048,576 elements it finds it in at most 20 steps. What time complexity does this pattern represent?",
+        "answer": "O(log n)",
+        "wrong": [
+          "O(n)",
+          "O(n²)",
+          "O(1)"
+        ],
+        "explanation": "logarithmic complexity, where each step eliminates half the remaining candidates so steps grow very slowly with array size."
+      },
+      {
+        "id": "quiz-b-38",
+        "number": 38,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A loop visits every element in an array of n items exactly once and performs one operation on each. What is the time complexity of this loop?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "explanation": "linear complexity, because the total number of operations grows in direct proportion to the number of items in the array."
+      },
+      {
+        "id": "quiz-b-39",
+        "number": 39,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An algorithm contains an outer loop running n times and an inner loop that also runs n times for each outer iteration. What is the time complexity?",
+        "answer": "O(n²)",
+        "wrong": [
+          "O(n)",
+          "O(n log n)",
+          "O(2n)"
+        ],
+        "explanation": "quadratic, because the inner loop executes n times for each of the n outer iterations giving n multiplied by n total steps."
+      },
+      {
+        "id": "quiz-b-40",
+        "number": 40,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A hospital's patient lookup system uses linear search on 1,000,000 unsorted records. In the worst case, approximately how many record comparisons are made and what is the Big O complexity?",
+        "answer": "Up to 1,000,000 comparisons",
+        "wrong": [
+          "About 20 comparisons",
+          "Exactly 1 comparison",
+          "Up to 1,000,000,000,000 comparisons"
+        ],
+        "explanation": "O(n), because linear search checks every record until a match is found or the list is exhausted."
+      },
+      {
+        "id": "quiz-b-41",
+        "number": 41,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Sorting 1,000 student scores with Merge Sort takes roughly 10,000 operations. Using the same O(n log n) relationship, approximately how many operations does sorting 1,000,000 scores require?",
+        "answer": "About 20,000,000 operations, because O(n log n) scales as n × log₂(n), and 1,000,000 × log₂(1,000,000) ≈ 1,000,000 × 20 = 20,000,000.",
+        "wrong": [
+          "About 20,000,000,000 operations, because the sort switches to O(n²) behavior once the input exceeds one million elements.",
+          "About 1,000,000 operations, because O(n log n) scales at the same rate as O(n) when the logarithmic factor remains near constant.",
+          "About 1,000 operations, because the logarithmic factor reduces the linear component proportionally."
+        ],
+        "explanation": "About 20,000,000 operations, because O(n log n) scales as n × log₂(n), and 1,000,000 × log₂(1,000,000) ≈ 1,000,000 × 20 = 20,000,000."
+      },
+      {
+        "id": "quiz-b-42",
+        "number": 42,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A cashier program sums all item prices in a shopping cart using one variable: 'int sum = 0; for(item: cart) sum += item.price;'. What is the space complexity of this algorithm?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(n²)",
+          "O(log n)"
+        ],
+        "explanation": "constant space, because only one variable (sum) is ever allocated regardless of how many items appear in the cart."
+      },
+      {
+        "id": "quiz-b-43",
+        "number": 43,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Binary Search runs in O(log n) time. What critical requirement must the data meet BEFORE Binary Search can be applied correctly?",
+        "answer": "The data must be sorted in either ascending or descending order so that Binary Search can correctly determine which half to discard.",
+        "wrong": [
+          "The data must be stored in a hash table so that each element can be located by computing its position from its key value directly.",
+          "The data must be stored in a linked list so that Binary Search can traverse forward and backward from a given starting element.",
+          "The data must fit entirely within the CPU's L1 cache so that each Binary Search probe accesses an element in a single clock cycle."
+        ],
+        "explanation": "The data must be sorted in either ascending or descending order so that Binary Search can correctly determine which half to discard."
+      },
+      {
+        "id": "quiz-b-44",
+        "number": 44,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An app runs in 0.1 seconds for 500 users. After going viral with 500,000 users (a 1,000× growth), response time is 100,000 seconds. A developer suspects a quadratic algorithm. Is O(n²) consistent with this observation?",
+        "answer": "Yes",
+        "wrong": [
+          "No",
+          "No",
+          "Yes"
+        ],
+        "explanation": "under O(n²), a 1,000× user increase causes a 1,000²=1,000,000× time increase: 0.1s × 1,000,000 = 100,000s, which matches exactly."
+      },
+      {
+        "id": "quiz-b-45",
+        "number": 45,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An e-commerce platform with 10 million products evaluates two search algorithms. Algorithm X completes in 23 fixed operations regardless of product count. Algorithm Y takes up to 10,000,000 operations. What are their complexities and which should power the product search?",
+        "answer": "Algorithm X is O(1); Algorithm Y is O(n). Algorithm X should be used because its operation count stays constant even if products grow to 1 billion.",
+        "wrong": [
+          "Both are O(n); Algorithm X should be chosen because 23 operations is numerically smaller than 10,000,000 for this specific dataset.",
+          "Algorithm X is O(log n); Algorithm Y is O(n²). Algorithm X is better because logarithmic growth is slower than quadratic growth at all sizes.",
+          "Both are O(log n); Algorithm X is preferred because its constant factor of 23 is smaller than Algorithm Y's constant factor at this dataset size."
+        ],
+        "explanation": "Algorithm X is O(1); Algorithm Y is O(n). Algorithm X should be used because its operation count stays constant even if products grow to 1 billion."
+      },
+      {
+        "id": "quiz-b-46",
+        "number": 46,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A mobile app loads all contacts into memory so users can scroll through them. A user with 50 contacts uses 50 memory slots; a user with 5,000 contacts uses 5,000 slots. What is the space complexity and is it appropriate?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(n²)",
+          "O(log n)"
+        ],
+        "explanation": "linear space; memory grows proportionally with contact count, which is expected and acceptable for a contact list application."
+      },
+      {
+        "id": "quiz-b-47",
+        "number": 47,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "When Ω (best case) = Θ (average case) = O (worst case) for an algorithm, what does this equal relationship mean for the algorithm's behavior?",
+        "answer": "The algorithm has tight complexity",
+        "wrong": [
+          "The algorithm is asymptotically unstable and produces widely varying step counts on different inputs even of the same size n.",
+          "The algorithm uses exponential memory in all three cases, making it impractical for any input size larger than a few dozen elements.",
+          "The algorithm degenerates to sequential execution when best and worst cases match, losing all parallel performance benefits."
+        ],
+        "explanation": "it performs the same number of steps on every input of size n, making its behavior perfectly predictable."
+      },
+      {
+        "id": "quiz-b-48",
+        "number": 48,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A naive duplicate file detector compares every file to every other file. With 10,000 files, how many comparisons are made, what is the complexity, and what smarter approach reduces it?",
+        "answer": "100,000,000 comparisons",
+        "wrong": [
+          "10,000 comparisons",
+          "20,000 comparisons",
+          "10,000,000,000,000 comparisons"
+        ],
+        "explanation": "O(n²); computing a hash for each file and comparing hashes instead of file contents reduces this to O(n)."
+      },
+      {
+        "id": "quiz-b-49",
+        "number": 49,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A government portal expects 50 million citizen logins. System A stores usernames in an unsorted list and checks them sequentially. System B uses a hash table. What are their Big O worst-case complexities and which must be chosen?",
+        "answer": "System A is O(n); System B is O(1). System B must be chosen because O(n) means up to 50 million comparisons per login while O(1) stays constant.",
+        "wrong": [
+          "System A is O(log n); System B is O(n²). System A is the better choice because logarithmic growth is manageable at 50 million users.",
+          "Both systems are O(1) in the worst case; System B should be chosen because hash tables have a smaller constant factor than linear search.",
+          "System A is O(n log n); System B is O(n). System B is better because linear growth is slower than linearithmic growth for large user counts."
+        ],
+        "explanation": "System A is O(n); System B is O(1). System B must be chosen because O(n) means up to 50 million comparisons per login while O(1) stays constant."
+      },
+      {
+        "id": "quiz-b-50",
+        "number": 50,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A teacher asks students to rank these five algorithms from MOST efficient to LEAST efficient for very large inputs: (I) O(n) Linear Search, (II) O(1) Hash Lookup, (III) O(n log n) Merge Sort, (IV) O(n²) Bubble Sort, (V) O(log n) Binary Search. What is the correct ranking?",
+        "answer": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort",
+        "wrong": [
+          "O(n) Linear Search → O(1) Hash Lookup → O(log n) Binary Search → O(n log n) Merge Sort → O(n²) Bubble Sort",
+          "O(log n) Binary Search → O(n) Linear Search → O(1) Hash Lookup → O(n log n) Merge Sort → O(n²) Bubble Sort",
+          "O(1) Hash Lookup → O(n) Linear Search → O(n²) Bubble Sort → O(log n) Binary Search → O(n log n) Merge Sort"
+        ],
+        "explanation": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort"
+      }
+    ],
+    "combinedQuizA": [
+      {
+        "id": "quiz-a-1",
+        "number": 1,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What is the primary characteristic that defines message-passing programming as distinct from shared-memory programming?",
+        "answer": "Processes run in separate memory spaces and communicate explicitly by sending and receiving messages to each other.",
+        "wrong": [
+          "Processes share a distributed cache layer that all nodes can read from and write to simultaneously.",
+          "Processes communicate through a central coordinator node that manages all data transfers between workers.",
+          "Processes share a single common memory space and communicate by reading and writing the same variables directly."
+        ],
+        "explanation": "Processes run in separate memory spaces and communicate explicitly by sending and receiving messages to each other."
+      },
+      {
+        "id": "quiz-a-2",
+        "number": 2,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement best describes asynchronous communication in a message-passing program?",
+        "answer": "A sending process posts its message and immediately continues executing other work without waiting for the receiver to accept it.",
+        "wrong": [
+          "A sending process suspends all computation and remains idle until the receiving process explicitly confirms the message arrived.",
+          "All participating processes coordinate to send and receive messages at a pre-agreed synchronized time checkpoint.",
+          "The operating system buffers all messages and delivers them in the exact sequence they were originally transmitted."
+        ],
+        "explanation": "A sending process posts its message and immediately continues executing other work without waiting for the receiver to accept it."
+      },
+      {
+        "id": "quiz-a-3",
+        "number": 3,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "In message-passing programming, what accurately describes point-to-point communication?",
+        "answer": "One process sends a message to one specific, individually addressed target process for direct exchange.",
+        "wrong": [
+          "Every process in the group sends its local data to every other process simultaneously in a ring pattern.",
+          "A group of processes collectively computes a result and delivers it to all members of the communicator.",
+          "One root process distributes identical copies of a message to every other process in the communicator group."
+        ],
+        "explanation": "One process sends a message to one specific, individually addressed target process for direct exchange."
+      },
+      {
+        "id": "quiz-a-4",
+        "number": 4,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What does the acronym MPI stand for in high-performance parallel computing?",
+        "answer": "Message Passing Interface, the widely adopted standard library for distributed-memory parallel programming.",
+        "wrong": [
+          "Memory Partitioned Interface, the specification for dividing RAM equally among parallel worker threads.",
+          "Modular Parallel Implementation, a framework for automatically decomposing sequential programs into tasks.",
+          "Multi-Process Integration, the standard protocol for combining results across multi-core processors."
+        ],
+        "explanation": "Message Passing Interface, the widely adopted standard library for distributed-memory parallel programming."
+      },
+      {
+        "id": "quiz-a-5",
+        "number": 5,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A 500-node cluster runs a weather simulation where each node independently processes one geographic region and exchanges boundary values only with adjacent nodes. Which parallel paradigm fits best?",
+        "answer": "Message-passing using MPI, because each node has separate memory and communicates boundary data via explicit send and receive calls.",
+        "wrong": [
+          "Shared-memory using Intel TBB, because the threading library efficiently manages work queues across all cluster nodes.",
+          "Shared-memory using POSIX threads, because pthreads allow fine-grained control over each node's regional data buffer.",
+          "Shared-memory using OpenMP, because compiler directives automatically distribute the regional computation across all 500 nodes."
+        ],
+        "explanation": "Message-passing using MPI, because each node has separate memory and communicates boundary data via explicit send and receive calls."
+      },
+      {
+        "id": "quiz-a-6",
+        "number": 6,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement correctly describes a key scalability advantage of message-passing programming over shared-memory programming?",
+        "answer": "Message-passing programs scale across hundreds of distributed nodes because each process owns private memory and communicates explicitly.",
+        "wrong": [
+          "Message-passing programs use a global shared bus so that adding more nodes directly increases available memory bandwidth.",
+          "Message-passing programs depend on a shared heap segment that grows proportionally as more compute nodes join the cluster.",
+          "Message-passing programs run on a single machine with shared RAM and scale well because the OS manages lock contention automatically."
+        ],
+        "explanation": "Message-passing programs scale across hundreds of distributed nodes because each process owns private memory and communicates explicitly."
+      },
+      {
+        "id": "quiz-a-7",
+        "number": 7,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What is collective communication in message-passing systems and which operation is an example of it?",
+        "answer": "Collective communication describes group-level operations involving all processes, such as MPI_Bcast which sends one value to every process.",
+        "wrong": [
+          "Collective communication describes the technique of buffering multiple point-to-point messages to reduce individual transmission overhead.",
+          "Collective communication describes a fault-tolerance protocol where surviving processes redistribute work from a failed process automatically.",
+          "Collective communication describes one process sending a private message to one specific partner, as in a standard MPI_Send call."
+        ],
+        "explanation": "Collective communication describes group-level operations involving all processes, such as MPI_Bcast which sends one value to every process."
+      },
+      {
+        "id": "quiz-a-8",
+        "number": 8,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Two MPI processes — P0 and P1 — each call a blocking MPI_Send to the other before calling MPI_Recv. Neither process ever proceeds past its send call and the program freezes permanently. What condition has occurred and how is it resolved?",
+        "answer": "A message deadlock has occurred; the fix is to reorder calls so one process sends while the other receives, or to use non-blocking MPI_Isend.",
+        "wrong": [
+          "A scheduling conflict has occurred; the fix is to assign each process to a dedicated CPU core using processor affinity settings.",
+          "A collective communication mismatch has occurred; the fix is to replace MPI_Send with MPI_Bcast so both processes receive the message.",
+          "A memory overflow has occurred because each blocking send allocated a buffer larger than the available RAM on each node."
+        ],
+        "explanation": "A message deadlock has occurred; the fix is to reorder calls so one process sends while the other receives, or to use non-blocking MPI_Isend."
+      },
+      {
+        "id": "quiz-a-9",
+        "number": 9,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A financial HPC cluster shows no speedup gain after 150 nodes even when 50 more nodes are added. The computation per node remains constant but inter-node messaging has grown. What does this indicate about the message-passing workload?",
+        "answer": "Communication overhead between processes is growing fast enough to cancel out the computational benefit that the extra nodes provide.",
+        "wrong": [
+          "The financial dataset is too small for the cluster size, so each extra node receives zero work items and sits idle during the run.",
+          "The network switch is running at capacity so the OS automatically throttles new nodes to prevent packet loss on the interconnect.",
+          "The MPI library reached its maximum registered process count of 150 and stopped accepting new worker registrations."
+        ],
+        "explanation": "Communication overhead between processes is growing fast enough to cancel out the computational benefit that the extra nodes provide."
+      },
+      {
+        "id": "quiz-a-10",
+        "number": 10,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement correctly identifies a significant debugging challenge that is specific to message-passing programs?",
+        "answer": "Message-passing programs can suffer from deadlocks or non-deterministic message ordering, making bugs difficult to reproduce consistently.",
+        "wrong": [
+          "Message-passing programs share a global heap, so memory corruption in one process is immediately visible and easy to isolate.",
+          "Message-passing programs always execute sequentially on one core, so the debugger can single-step through every instruction in order.",
+          "Message-passing programs store all communication logs in a shared database, giving the developer a complete audit trail of every exchange."
+        ],
+        "explanation": "Message-passing programs can suffer from deadlocks or non-deterministic message ordering, making bugs difficult to reproduce consistently."
+      },
+      {
+        "id": "quiz-a-11",
+        "number": 11,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "How is synchronization between processes handled in the message-passing programming model?",
+        "answer": "Synchronization is explicit; processes deliberately issue send, receive, or barrier calls to coordinate their activities with other processes.",
+        "wrong": [
+          "Synchronization is fully automatic; the MPI runtime inserts barriers between every communication call without developer intervention.",
+          "Synchronization is unnecessary because each process runs in complete isolation and never needs to coordinate timing with any peer.",
+          "Synchronization is handled by a dedicated master process that polls all workers and issues clock signals at fixed time intervals."
+        ],
+        "explanation": "Synchronization is explicit; processes deliberately issue send, receive, or barrier calls to coordinate their activities with other processes."
+      },
+      {
+        "id": "quiz-a-12",
+        "number": 12,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A physics simulation on 1,000 nodes produces partial results on each node. At the end, all partial sums must be totaled into a single global result held on Node 0. Which MPI collective operation is the correct and most efficient choice?",
+        "answer": "MPI_Reduce, where all processes send their partial values to Node 0 which combines them using a SUM operation into one result.",
+        "wrong": [
+          "MPI_Bcast, where Node 0 transmits its partial result to all other nodes so every process holds the same starting value.",
+          "MPI_Scatter, where Node 0 breaks a large dataset into chunks and distributes one unique chunk to each of the 1,000 nodes.",
+          "MPI_Alltoall, where every node exchanges its partial result with every other node so all nodes hold all partial sums."
+        ],
+        "explanation": "MPI_Reduce, where all processes send their partial values to Node 0 which combines them using a SUM operation into one result."
+      },
+      {
+        "id": "quiz-a-13",
+        "number": 13,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "What are the three sequential steps that the Divide and Conquer algorithm technique performs at each level of recursion?",
+        "answer": "Divide the problem into smaller sub-problems, conquer each sub-problem recursively, then combine their solutions into the final answer.",
+        "wrong": [
+          "Initialize the data structure, process each element sequentially, then output the final combined result to storage.",
+          "Partition the input data evenly, sort each partition with an insertion pass, then merge adjacent sorted partitions repeatedly.",
+          "Select the optimal sub-problem to solve first, execute it greedily, then propagate the result to dependent sub-problems."
+        ],
+        "explanation": "Divide the problem into smaller sub-problems, conquer each sub-problem recursively, then combine their solutions into the final answer."
+      },
+      {
+        "id": "quiz-a-14",
+        "number": 14,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which algorithm design technique makes the locally optimal choice at each decision step and never revisits a previous decision?",
+        "answer": "The Greedy Method, which always selects the best-looking option at the current step without reconsidering earlier choices.",
+        "wrong": [
+          "Dynamic Programming, which stores every sub-problem solution in a table and reuses those stored answers in future computations.",
+          "Backtracking, which explores each candidate solution fully and retreats to the previous checkpoint when a dead end is encountered.",
+          "Branch and Bound, which maintains a priority queue of partial solutions ranked by their lower-bound cost estimate."
+        ],
+        "explanation": "The Greedy Method, which always selects the best-looking option at the current step without reconsidering earlier choices."
+      },
+      {
+        "id": "quiz-a-15",
+        "number": 15,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "What is the key distinguishing difference between Dynamic Programming and the Divide and Conquer technique?",
+        "answer": "Dynamic Programming stores and reuses overlapping sub-problem solutions, while Divide and Conquer solves each sub-problem independently.",
+        "wrong": [
+          "Divide and Conquer stores solutions to sub-problems in a lookup table while Dynamic Programming always recomputes them from scratch.",
+          "Dynamic Programming works only on graph problems while Divide and Conquer applies only to array and sorting problems.",
+          "Divide and Conquer requires distributed memory clusters while Dynamic Programming runs only on shared-memory multi-core systems."
+        ],
+        "explanation": "Dynamic Programming stores and reuses overlapping sub-problem solutions, while Divide and Conquer solves each sub-problem independently."
+      },
+      {
+        "id": "quiz-a-16",
+        "number": 16,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which description most accurately defines how the Backtracking algorithm works?",
+        "answer": "The algorithm starts with a promising candidate, advances step by step checking constraints, and retreats one level when a constraint fails.",
+        "wrong": [
+          "The algorithm builds a priority queue of candidate solutions ranked by their estimated cost and processes the cheapest candidate first.",
+          "The algorithm expresses the problem as a set of linear constraints and finds the assignment of variables that satisfies all constraints optimally.",
+          "The algorithm divides the solution space into two halves repeatedly and processes each half on a separate processor simultaneously."
+        ],
+        "explanation": "The algorithm starts with a promising candidate, advances step by step checking constraints, and retreats one level when a constraint fails."
+      },
+      {
+        "id": "quiz-a-17",
+        "number": 17,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which real-world combinatorial puzzle is the most classically cited example of the Backtracking algorithm in computer science textbooks?",
+        "answer": "The Eight Queens Problem, where eight chess queens must be placed on a board so that no queen threatens any other queen.",
+        "wrong": [
+          "The Fibonacci Series problem, where each term depends on the sum of the two immediately preceding terms in the sequence.",
+          "The Travelling Salesman Problem, where the total distance of a route connecting all cities must be minimized globally.",
+          "The Shortest Path Problem, where the minimum-cost route between two nodes in a weighted graph must be identified."
+        ],
+        "explanation": "The Eight Queens Problem, where eight chess queens must be placed on a board so that no queen threatens any other queen."
+      },
+      {
+        "id": "quiz-a-18",
+        "number": 18,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A delivery company must find the minimum-distance route visiting 12 cities. The solution space is enormous. Which design technique intelligently prunes unpromising routes without evaluating every possibility?",
+        "answer": "Branch and Bound, which explores partial routes and discards any branch whose lower-bound cost already exceeds the best complete route found.",
+        "wrong": [
+          "The Greedy Method, which builds the route one city at a time by always traveling to the nearest unvisited city from the current location.",
+          "Dynamic Programming, which breaks the route into overlapping city-pair sub-problems and stores the shortest sub-route for each pair.",
+          "Linear Programming, which models the routing decision as a set of linear equations and solves for the assignment that minimizes total distance."
+        ],
+        "explanation": "Branch and Bound, which explores partial routes and discards any branch whose lower-bound cost already exceeds the best complete route found."
+      },
+      {
+        "id": "quiz-a-19",
+        "number": 19,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "The Fibonacci algorithm (Fib(n) = Fib(n-1) + Fib(n-2)) implemented with a lookup table to avoid repeated computation is a classic example of which technique?",
+        "answer": "Dynamic Programming, because overlapping sub-problems (Fib(n-1), Fib(n-2)) are computed once, stored, and reused in later calls.",
+        "wrong": [
+          "Backtracking, because the recursion explores multiple candidate values before settling on the correct Fibonacci term at depth n.",
+          "Branch and Bound, because the recursion tree branches into two sub-calls and prunes branches where Fib values are already known.",
+          "Divide and Conquer, because the problem is split into two independent halves that are solved separately and their results summed."
+        ],
+        "explanation": "Dynamic Programming, because overlapping sub-problems (Fib(n-1), Fib(n-2)) are computed once, stored, and reused in later calls."
+      },
+      {
+        "id": "quiz-a-20",
+        "number": 20,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Both Binary Search and Merge Sort are textbook examples of which parallel algorithm design technique?",
+        "answer": "Divide and Conquer, because both algorithms recursively split the input in half, solve each half, and then combine the results.",
+        "wrong": [
+          "Greedy Method, because both algorithms commit to a locally optimal decision at each step without reconsidering prior choices.",
+          "Dynamic Programming, because both algorithms store results from smaller input sizes to avoid re-scanning previously processed data.",
+          "Branch and Bound, because both algorithms prune sections of the input that cannot possibly contribute to the final answer."
+        ],
+        "explanation": "Divide and Conquer, because both algorithms recursively split the input in half, solve each half, and then combine the results."
+      },
+      {
+        "id": "quiz-a-21",
+        "number": 21,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A logistics firm assigns delivery drivers to routes to maximize total deliveries in an 8-hour shift. Driver assignment, shift-hour limits, and vehicle capacity all have linear relationships. Which design technique directly models and solves this optimization problem?",
+        "answer": "Linear Programming, which models the objective and all constraints as linear functions and finds the optimal variable assignment mathematically.",
+        "wrong": [
+          "Branch and Bound, which generates a tree of partial assignments and prunes branches where estimated deliveries fall below the current best.",
+          "Greedy Method, which assigns the driver with the greatest remaining shift time to the longest available route at each decision step.",
+          "Backtracking, which tries every possible driver-to-route assignment and retreats whenever a shift-hour or capacity constraint is violated."
+        ],
+        "explanation": "Linear Programming, which models the objective and all constraints as linear functions and finds the optimal variable assignment mathematically."
+      },
+      {
+        "id": "quiz-a-22",
+        "number": 22,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A game developer builds a maze solver that explores a path step by step, and when it hits a dead end, it reverses to the last junction and tries a different direction. This continues until the exit is found. Which design technique is being implemented?",
+        "answer": "Backtracking, because the solver builds a path incrementally and retreats to the previous decision point whenever a dead end is encountered.",
+        "wrong": [
+          "Greedy Method, because at each junction the solver picks the corridor that appears to lead most directly toward the exit position.",
+          "Branch and Bound, because at each junction the solver calculates the minimum remaining distance and prunes corridors that exceed the limit.",
+          "Divide and Conquer, because the maze is split into quadrants and each quadrant is solved independently by a recursive sub-call."
+        ],
+        "explanation": "Backtracking, because the solver builds a path incrementally and retreats to the previous decision point whenever a dead end is encountered."
+      },
+      {
+        "id": "quiz-a-23",
+        "number": 23,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "What is the defining characteristic of the shared-memory parallel programming model?",
+        "answer": "All threads running on the same system can access the same memory addresses and communicate by reading and writing shared variables.",
+        "wrong": [
+          "Threads are assigned to separate physical servers and synchronize by exchanging data packets over a high-speed network interconnect.",
+          "Each thread operates on an independent memory bank that is readable by the CPU but not directly accessible by any other thread.",
+          "Each thread holds a private copy of all program variables and must explicitly send updates to other threads through a message queue."
+        ],
+        "explanation": "All threads running on the same system can access the same memory addresses and communicate by reading and writing shared variables."
+      },
+      {
+        "id": "quiz-a-24",
+        "number": 24,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Two threads simultaneously read a shared counter, each adds one to it, and each writes back the result. The counter increments by one instead of two. What is this concurrency problem called?",
+        "answer": "A race condition, where two threads access and modify shared data concurrently without synchronization causing one update to be lost.",
+        "wrong": [
+          "A memory leak, where each thread allocates a new buffer for the counter value but never frees the old buffer after writing.",
+          "A stack overflow, where the counter variable exceeds the maximum integer range supported by the thread's private call stack memory.",
+          "A deadlock, where both threads are blocked waiting for a resource that the other thread currently holds and refuses to release."
+        ],
+        "explanation": "A race condition, where two threads access and modify shared data concurrently without synchronization causing one update to be lost."
+      },
+      {
+        "id": "quiz-a-25",
+        "number": 25,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which synchronization mechanism in shared-memory programming ensures that only one thread at a time can execute a critical section of code?",
+        "answer": "A mutex lock (mutual exclusion lock), which allows only the thread holding the lock to enter the critical section at any given time.",
+        "wrong": [
+          "A network socket, which provides a reliable byte-stream channel between two threads running on different CPU cores.",
+          "A memory-mapped file, which maps shared data to a file on disk so multiple threads can access it through the file system.",
+          "A message queue, which buffers outgoing data from one thread and delivers it to another thread in the order it was enqueued."
+        ],
+        "explanation": "A mutex lock (mutual exclusion lock), which allows only the thread holding the lock to enter the critical section at any given time."
+      }
+    ],
+    "combinedQuizB": [
       {
         "id": "quiz-b-26",
         "number": 26,
@@ -5435,15 +8347,7548 @@ window.REVIEWER_DATA = {
         ],
         "explanation": "MIMD expands to Multiple Instruction, Multiple Data."
       }
+    ],
+    "everything": [
+      {
+        "id": "prelim-a-1",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What is the primary objective of parallel computing systems?",
+        "answer": "Reducing program execution time through simultaneous processing",
+        "wrong": [
+          "Improving reliability by duplicating hardware resources",
+          "Organizing large databases across independent machines",
+          "Expanding network connectivity between computer systems"
+        ],
+        "explanation": "Parallel computing uses simultaneous processing to reduce wall-clock execution time."
+      },
+      {
+        "id": "prelim-a-2",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "In shared memory programming, what is a major responsibility of the developer?",
+        "answer": "Coordinating synchronization to prevent race conditions",
+        "wrong": [
+          "Managing distributed file replication across clusters",
+          "Configuring communication protocols between remote nodes",
+          "Creating routing policies for message transmission systems"
+        ],
+        "explanation": "Shared memory is fast, but the developer must protect shared data with synchronization."
+      },
+      {
+        "id": "prelim-a-3",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which option best represents distributed computing?",
+        "answer": "A Hadoop cluster analyzing massive datasets collaboratively",
+        "wrong": [
+          "A graphics card rendering frames for a video game",
+          "A desktop processor running several browser applications",
+          "A laptop processor executing spreadsheet calculations locally"
+        ],
+        "explanation": "A Hadoop cluster is made of multiple computers collaborating across a network."
+      },
+      {
+        "id": "prelim-a-4",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What is the main function of the Map phase in MapReduce?",
+        "answer": "Splitting data into segments for simultaneous computation",
+        "wrong": [
+          "Saving generated outputs within distributed storage systems",
+          "Directing communication requests among participating servers",
+          "Combining processed results into a completed final output"
+        ],
+        "explanation": "The Map phase splits and processes chunks in parallel. Reduce combines the intermediate results."
+      },
+      {
+        "id": "prelim-a-5",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which architecture provides each processor with independent local memory?",
+        "answer": "An architecture using separate local memory per processor",
+        "wrong": [
+          "A multiprocessing model built around centralized memory access",
+          "A design where memory latency varies between processors",
+          "A memory structure where all processors share equal access"
+        ],
+        "explanation": "Distributed memory gives processors or nodes their own local memory."
+      },
+      {
+        "id": "prelim-a-6",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which pair of operations forms the basis of message passing systems?",
+        "answer": "Sending information packets and receiving transmitted data",
+        "wrong": [
+          "Reading information and writing information to storage",
+          "Allocating memory blocks and releasing unused resources",
+          "Encoding communication streams and decoding transferred signals"
+        ],
+        "explanation": "Message passing is built on send and receive operations."
+      },
+      {
+        "id": "prelim-a-7",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which architecture allows every node to function as both client and server?",
+        "answer": "A decentralized model where nodes share equal responsibilities",
+        "wrong": [
+          "A processing framework based on mapping and reducing tasks",
+          "A cloud platform distributing applications through virtual servers",
+          "A centralized system controlled by dedicated server machines"
+        ],
+        "explanation": "Peer-to-peer architecture gives each node both client and server roles."
+      },
+      {
+        "id": "prelim-a-8",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Flynn's taxonomy categorizes parallel systems according to what criteria?",
+        "answer": "The arrangement of instruction streams and data streams",
+        "wrong": [
+          "The operating systems and processor manufacturing designs",
+          "The communication speed and network transmission capacity",
+          "The quantity of processors and available memory resources"
+        ],
+        "explanation": "Flynn's taxonomy uses instruction streams and data streams."
+      },
+      {
+        "id": "prelim-a-9",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A computer executing one instruction stream on one data stream belongs to which category?",
+        "answer": "A system processing one instruction and one data stream",
+        "wrong": [
+          "A model supporting multiple instructions on shared datasets",
+          "A configuration applying varied operations to identical inputs",
+          "A structure executing many tasks across separate processors"
+        ],
+        "explanation": "Single Instruction, Single Data is SISD, the classic serial category."
+      },
+      {
+        "id": "prelim-a-10",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which term describes the relationship between computation and communication in parallel systems?",
+        "answer": "The balance between computational work and communication",
+        "wrong": [
+          "The quantity of completed operations within a time period",
+          "The delay experienced during data transfer between systems",
+          "The capability of a system to increase processing capacity"
+        ],
+        "explanation": "Granularity describes the ratio or balance between computation and communication."
+      },
+      {
+        "id": "prelim-a-11",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A hospital system must analyze millions of patient records for an AI diagnosis platform. Their current single-server setup requires 72 hours to finish processing. Which approach is most appropriate?",
+        "answer": "Using parallel processing across multiple processing cores",
+        "wrong": [
+          "Migrating services toward a decentralized peer network design",
+          "Replacing the current processor with a higher clock-speed model",
+          "Implementing a traditional client-server communication structure"
+        ],
+        "explanation": "Large analysis workloads can be split and processed in parallel to reduce completion time."
+      },
+      {
+        "id": "prelim-a-12",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "An online shopping platform experiences severe slowdowns during holiday traffic spikes. The company wants to increase server capacity without redesigning the application. Which distributed computing characteristic best solves this issue?",
+        "answer": "The ability to scale resources efficiently as demand grows",
+        "wrong": [
+          "A single instruction single data processing organization",
+          "Uniform processor access to centrally managed memory blocks",
+          "A memory-sharing structure across connected processing units"
+        ],
+        "explanation": "Scalability lets a distributed or cloud system add resources as demand grows."
+      },
+      {
+        "id": "prelim-a-13",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "During a climate simulation, one node in a computing cluster unexpectedly crashes. The simulation continues operating successfully without losing results. Which distributed computing feature enabled this?",
+        "answer": "Maintaining operation despite hardware or software failures",
+        "wrong": [
+          "Exchanging information continuously between independent processes",
+          "Executing instructions sequentially through staged processing units",
+          "Automatically distributing workloads across active processors evenly"
+        ],
+        "explanation": "Fault tolerance means the system can keep operating despite component failures."
+      },
+      {
+        "id": "prelim-a-14",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A rendering studio divides a 4K movie into thousands of independent frames processed simultaneously across 200 computers. Which concept best describes this situation?",
+        "answer": "Large processing tasks divided into loosely connected workloads",
+        "wrong": [
+          "Multiple instruction streams operating on identical data values",
+          "A memory-sharing approach spanning several distributed systems",
+          "Highly independent tasks executed simultaneously without interaction"
+        ],
+        "explanation": "This is coarse-grained or embarrassingly parallel work: large tasks split into mostly independent units."
+      },
+      {
+        "id": "prelim-a-15",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Two processors running on the same machine frequently exchange extremely large datasets. Performance speed is the highest priority. Which communication method is most suitable?",
+        "answer": "Shared memory because it minimizes communication overhead costs",
+        "wrong": [
+          "Shared memory because synchronization is completely unnecessary",
+          "Message passing because operating system calls improve protection",
+          "Message passing because it supports communication across networks"
+        ],
+        "explanation": "Shared memory is usually faster for large same-machine data exchange because it avoids per-message overhead."
+      },
+      {
+        "id": "prelim-a-16",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A startup rapidly increases from 5 to 50 virtual machines during a product launch, then reduces usage afterward. Which computing model makes this possible?",
+        "answer": "An elastic infrastructure delivered through cloud platforms",
+        "wrong": [
+          "A tightly coupled cluster operating within one local network",
+          "A decentralized network without dedicated control mechanisms",
+          "A grid-based environment connecting geographically separated systems"
+        ],
+        "explanation": "Cloud computing provides elastic, on-demand resources."
+      },
+      {
+        "id": "prelim-a-17",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A graphics processor applies the same blur operation simultaneously across thousands of image pixels. Which Flynn taxonomy category best represents this process?",
+        "answer": "A single operation applied simultaneously to multiple datasets",
+        "wrong": [
+          "One instruction stream operating on one sequence of data",
+          "Multiple operations performed on one shared stream of data",
+          "Different instructions executing independently across many datasets"
+        ],
+        "explanation": "SIMD applies a single instruction or operation across many data elements."
+      },
+      {
+        "id": "prelim-a-18",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Engineers design a fraud-detection system where several processors perform different analyses on the same transaction stream. Which Flynn classification matches this setup?",
+        "answer": "Multiple instruction streams analyzing the same incoming dataset",
+        "wrong": [
+          "A single processor executing sequential instructions on data",
+          "One instruction stream simultaneously handling many data values",
+          "Independent processors executing separate tasks on unique data"
+        ],
+        "explanation": "Multiple instructions acting on a single data stream is MISD."
+      },
+      {
+        "id": "prelim-a-19",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A parallel program finishes in 2 hours using 16 processors, while the serial version requires 20 hours. A colleague claims the parallel version is always more efficient. Which response is most accurate?",
+        "answer": "Coordination overhead can reduce benefits for smaller workloads",
+        "wrong": [
+          "Parallel systems waste processing resources because of idle time",
+          "Additional processors consistently improve efficiency for all workloads",
+          "Parallel execution always decreases total processor utilization time"
+        ],
+        "explanation": "This key was corrected: more processors do not always improve efficiency because overhead can dominate."
+      },
+      {
+        "id": "prelim-a-20",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A developer notices performance decreases after adding more processors because processors spend excessive time exchanging information. Which overhead factor is the likely cause?",
+        "answer": "The communication costs associated with transferring shared data",
+        "wrong": [
+          "The delay occurring when tasks complete and release resources",
+          "The licensing restrictions imposed by distributed software vendors",
+          "The initialization time required before parallel tasks can begin"
+        ],
+        "explanation": "Communication overhead can erase the benefits of adding processors."
+      },
+      {
+        "id": "prelim-a-21",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A NUMA architecture links two SMP systems. Processor A accesses local memory in 50ns but remote memory in 150ns. Which statement is most accurate?",
+        "answer": "Memory access latency differs between regions in NUMA systems",
+        "wrong": [
+          "The system qualifies as UMA because processors remain identical",
+          "Separate SMP systems require exclusive use of message passing",
+          "Cache coherency cannot function correctly in NUMA architectures"
+        ],
+        "explanation": "NUMA means memory access time is non-uniform and depends on memory location."
+      },
+      {
+        "id": "prelim-a-22",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Why does increasing CPUs in a shared memory system not always improve performance proportionally?",
+        "answer": "Traffic contention creates bottlenecks on memory communication paths",
+        "wrong": [
+          "Shared memory systems cannot expand storage capacity efficiently",
+          "Distributed memory becomes mandatory after adding several processors",
+          "Shared memory processors cannot execute tasks independently"
+        ],
+        "explanation": "More CPUs can increase traffic and contention on shared memory paths."
+      },
+      {
+        "id": "prelim-a-23",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A parallel application uses fine-grained granularity. What consequence is most likely?",
+        "answer": "Communication overhead becomes larger relative to computation",
+        "wrong": [
+          "Execution becomes slower because fewer tasks are generated",
+          "Distributed architectures become unnecessary for coordination",
+          "Communication demands decrease as processor counts increase"
+        ],
+        "explanation": "Fine-grained tasks communicate frequently, so overhead can become large."
+      },
+      {
+        "id": "prelim-a-24",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What distinguishes distributed shared memory systems from pure distributed memory systems?",
+        "answer": "Software creates a shared-memory illusion across distributed nodes",
+        "wrong": [
+          "Every processor physically accesses one universal memory structure",
+          "Communication between machines becomes completely unnecessary",
+          "All processors execute identical instructions on identical datasets"
+        ],
+        "explanation": "DSM hides physical distribution and presents an illusion of shared memory."
+      },
+      {
+        "id": "prelim-a-25",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A MIMD computer may execute tasks non-deterministically. What does this imply for developers?",
+        "answer": "Synchronization mechanisms are required to ensure correctness",
+        "wrong": [
+          "Scientific applications cannot operate reliably on MIMD systems",
+          "Deterministic execution is unnecessary in parallel applications",
+          "SIMD systems experience more synchronization concerns than MIMD"
+        ],
+        "explanation": "Non-deterministic execution means synchronization is needed to keep shared results correct."
+      },
+      {
+        "id": "prelim-b-1",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What distinguishes distributed computing from parallel computing?",
+        "answer": "Distributed computing uses multiple networked computers with independent memory spaces",
+        "wrong": [
+          "Parallel computing depends entirely on wide-area communication architecture systems",
+          "Distributed computing always requires identical processors within shared architectures",
+          "Parallel computing eliminates coordination between processors during task execution"
+        ],
+        "explanation": "Distributed computing uses independent networked machines, while parallel computing often focuses on simultaneous execution using multiple processors or cores."
+      },
+      {
+        "id": "prelim-b-2",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which of the following is a key advantage of distributed memory architecture over shared memory?",
+        "answer": "Higher scalability through independent nodes added across environments",
+        "wrong": [
+          "Faster synchronization between tightly coupled computational workloads",
+          "Simplified address spaces allowing transparent memory access globally",
+          "Lower communication overhead during real-time synchronization across processor groups"
+        ],
+        "explanation": "Distributed memory can scale by adding independent nodes, each with its own memory."
+      },
+      {
+        "id": "prelim-b-3",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "In the von Neumann architecture, what is stored in electronic memory?",
+        "answer": "Program instructions together with data required for execution processes",
+        "wrong": [
+          "Operating system services and communication protocols",
+          "Arithmetic processing rules controlling processor execution stages",
+          "Hardware interrupt signals coordinating communication between connected input devices"
+        ],
+        "explanation": "The von Neumann model stores both program instructions and data in memory."
+      },
+      {
+        "id": "prelim-b-4",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is the Reduce phase responsible for in MapReduce?",
+        "answer": "Combining intermediate outputs into summarized results for final processing stages",
+        "wrong": [
+          "Splitting data before assigning tasks across processing nodes",
+          "Replicating distributed data across clusters for system fault tolerance",
+          "Scheduling worker processes during parallel execution of distributed jobs"
+        ],
+        "explanation": "Reduce combines intermediate Map outputs into final summarized results."
+      },
+      {
+        "id": "prelim-b-5",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which parallel computing resource is specifically mentioned as suitable for machine learning and scientific simulations?",
+        "answer": "Graphics processing units (GPUs) enabling repetitive mathematical operations efficiently simultaneously",
+        "wrong": [
+          "Distributed storage platforms coordinating replicated blocks across computing environments",
+          "Symmetric multiprocessing architectures supporting coordinated memory sharing operations globally",
+          "Cluster middleware frameworks balancing workloads among geographically separated processors"
+        ],
+        "explanation": "GPUs are well suited for repetitive parallel mathematical operations used in machine learning and simulations."
+      },
+      {
+        "id": "prelim-b-6",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is a node in the context of parallel computing clusters?",
+        "answer": "Independent computers containing processors, memory and networking communication interfaces together",
+        "wrong": [
+          "Routing hardware connecting distributed systems across communication infrastructure environments",
+          "Virtualized services executing distributed applications within cloud infrastructures remotely",
+          "Shared processor cores executing synchronized instructions within multiprocessor architectures"
+        ],
+        "explanation": "A cluster node is a standalone computer with processors, memory, and network interfaces."
+      },
+      {
+        "id": "prelim-b-7",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which statement correctly describes the shared memory inter-process communication model?",
+        "answer": "Processes access and coordinate through spaces and regions containing shared information together",
+        "wrong": [
+          "Processes exchange information exclusively through synchronized message queue communication mechanisms",
+          "Processes communicate indirectly using distributed packet switching across network infrastructures",
+          "Processes isolate execution environments while communicating through independent storage replication systems"
+        ],
+        "explanation": "Shared memory IPC lets processes communicate by reading and writing a shared memory region."
+      },
+      {
+        "id": "prelim-b-8",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is the primary purpose of synchronization in parallel applications?",
+        "answer": "Coordinating concurrent tasks while preventing inconsistent shared data modifications simultaneously",
+        "wrong": [
+          "Increasing processor speed during independent execution of distributed computational workloads",
+          "Minimizing memory allocation requirements across geographically distributed processing environments globally",
+          "Reducing network latency between geographically distributed computational resource infrastructures entirely"
+        ],
+        "explanation": "Synchronization coordinates concurrent work and protects shared data from inconsistent updates."
+      },
+      {
+        "id": "prelim-b-9",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "An SMP (Symmetric Multi-Processor) system is characterized by:",
+        "answer": "Processors sharing equal access to memory and computing resources together",
+        "wrong": [
+          "Processors connected geographically using distributed communication infrastructures and middleware frameworks",
+          "Nodes maintaining isolated memory spaces without coordinated synchronization mechanisms",
+          "Nonuniform memory access architectures requiring specialized optimization and coordination strategies"
+        ],
+        "explanation": "In SMP, processors share memory and resources with equal access."
+      },
+      {
+        "id": "prelim-b-10",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Why is message passing described as both useful and slower compared to shared memory communication?",
+        "answer": "Message passing requires physical data transfers through operating system communication services",
+        "wrong": [
+          "Shared memory communication depends entirely upon geographically distributed network infrastructures globally",
+          "Variable-length communication reduces synchronization requirements between processing components completely",
+          "Message passing architectures require fewer processing distributed computational coordination tasks"
+        ],
+        "explanation": "Message passing is useful across separate address spaces, but it is slower because data transfer is mediated by the OS or network services."
+      },
+      {
+        "id": "prelim-b-11",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A developer converts a serial program to run on 16 processors. Total CPU time increases from 4 hours to 48 hours while wall-clock time decreases slightly. What conclusion is most accurate?",
+        "answer": "Parallel overhead may reduce overall efficiency when workload distribution across processors consumes resources",
+        "wrong": [
+          "Additional processors automatically guarantee greater processing resources",
+          "Serial execution remains best because synchronization always reduces performance substantially",
+          "Processor utilization increases substantially despite application executed across clustered infrastructures"
+        ],
+        "explanation": "The program may use more total CPU time because overhead, communication, and coordination reduce efficiency."
+      },
+      {
+        "id": "prelim-b-12",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "In P2P architecture, each node is both client and server. What makes this fundamentally different from client-server regarding fault tolerance?",
+        "answer": "Distributed peer participation removes central dependency while improving system resilience significantly",
+        "wrong": [
+          "Centralized coordination improves replicated communication routing infrastructures globally",
+          "Dedicated servers eliminate synchronization problems during workload distribution between participating systems",
+          "Peer architectures depend entirely upon specialized hardware supporting coordinated resource allocation mechanisms"
+        ],
+        "explanation": "P2P removes a central server dependency, improving resilience compared with a single central server design."
+      },
+      {
+        "id": "prelim-b-13",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A SIMD architecture processes the same data stream for fraud detection, where multiple independent cryptographic algorithms simultaneously analyze the same data stream. Which Flynn classification applies and why?",
+        "answer": "MISD because multiple instructions analyze one shared transaction data stream",
+        "wrong": [
+          "SIMD because identical instructions operate across multiple independent transaction datasets simultaneously",
+          "MIMD because processors execute unrelated algorithms using independent transaction processing streams",
+          "SISD because transaction processing occurs sequentially through centralized computing architecture exclusively"
+        ],
+        "explanation": "Multiple instruction streams analyzing the same data stream corresponds to MISD."
+      },
+      {
+        "id": "prelim-b-14",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A grid computing system spans multiple organizations globally. Compare this to cluster computing regarding governance, resource ownership, and scale.",
+        "answer": "Grid systems involve distributed governance and heterogeneous resources across organizations globally",
+        "wrong": [
+          "Cluster systems depend entirely upon geographically separated organizations coordinating shared control",
+          "Grid architectures operate exclusively within homogeneous environments managed through centralized administration systems",
+          "Cluster infrastructures require distributed governance supporting independently managed computational resource networks worldwide"
+        ],
+        "explanation": "Grid computing often spans organizations and heterogeneous resources, while clusters are usually more tightly managed."
+      },
+      {
+        "id": "prelim-b-15",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Why is complexity listed as both a challenge and cost multiplier in parallel software development?",
+        "answer": "Concurrent execution coordination increases effort across design, debugging, tuning, and maintenance phases",
+        "wrong": [
+          "Specialized hardware infrastructures dramatically eliminate software licensing and deployment requirements globally",
+          "Parallel programming languages restrict interoperability between distributed applications and operating systems entirely",
+          "Proprietary debugging frameworks eliminate open-source development support for distributed computing projects globally"
+        ],
+        "explanation": "Parallel software adds coordination complexity throughout design, coding, debugging, tuning, and maintenance."
+      },
+      {
+        "id": "prelim-b-16",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A weather forecasting agency must process satellite data from 50 regions simultaneously and independently. What is the most appropriate computing model?",
+        "answer": "Embarrassingly parallel distribution supporting independent regional processing tasks simultaneously efficiently",
+        "wrong": [
+          "Client-server architecture coordinating centralized processing through dedicated communication infrastructures globally",
+          "SISD processing executing sequential instructions through synchronized processor architectures exclusively",
+          "High-speed serial processing environments minimizing synchronization across distributed computational infrastructures entirely"
+        ],
+        "explanation": "Independent regional workloads are a good fit for embarrassingly parallel processing."
+      },
+      {
+        "id": "prelim-b-17",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A logistics company stores shipment records across geographically separate data centers. A query must search all locations simultaneously. Which component addresses this?",
+        "answer": "Distributed file systems enabling coordinated access across geographically separated storage infrastructures",
+        "wrong": [
+          "Shared memory architectures supporting centralized synchronization between geographically separated processors globally",
+          "Vector processing pipelines accelerating repetitive instructions during sequential database search operations",
+          "Symmetric multiprocessing systems coordinating shared memory access between distributed processing systems"
+        ],
+        "explanation": "Distributed file systems coordinate access to data stored across geographically separated locations."
+      },
+      {
+        "id": "prelim-b-18",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Two processes on different machines connected by a network need to share computation results. Shared memory is unavailable. Which IPC mechanism must they use?",
+        "answer": "Message passing through send and receive communication operations across network infrastructures",
+        "wrong": [
+          "Direct cache coherency mechanisms coordinating memory synchronization between distributed processors continuously",
+          "Shared address spaces supporting transparent remote memory access across geographically separated processing systems globally",
+          "Uniform memory architectures coordinating synchronized processor access within shared computing environments together"
+        ],
+        "explanation": "Processes on different machines without shared memory communicate through message passing."
+      },
+      {
+        "id": "prelim-b-19",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A machine learning model trains by splitting datasets into batches processed by GPU cores applying identical operations. Which Flynn taxonomy class describes this?",
+        "answer": "SIMD because processing occurs through synchronized instruction execution across processor architectures",
+        "wrong": [
+          "SISD because processing occurs sequentially through synchronized processor architecture globally",
+          "MIMD because processors execute unrelated instructions across multiple independent computational data streams independently",
+          "MISD because multiple instruction streams coordinate processing across centralized communication environments globally"
+        ],
+        "explanation": "GPU cores applying the same operation to many data items are an example of SIMD."
+      },
+      {
+        "id": "prelim-b-20",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "An online multiplayer game server crashes but users reconnect seamlessly to a backup server without data loss. Which distributed characteristic enabled this?",
+        "answer": "Fault tolerance maintaining service continuity despite failures within distributed computing environments effectively",
+        "wrong": [
+          "Load balancing distributing computational requests across synchronized server communication infrastructures globally",
+          "Scalability mechanisms supporting increased processor coordination during high-demand computational workloads simultaneously",
+          "Parallel decomposition separating independent tasks during coordinated distributed application processing operations globally"
+        ],
+        "explanation": "Fault tolerance allows service continuity when a server fails."
+      },
+      {
+        "id": "prelim-b-21",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A university shares CPU cycles from multiple countries to simulate protein folding. Which distributed architecture best fits?",
+        "answer": "Grid computing integrating heterogeneous resources from geographically distributed organizations collaboratively worldwide",
+        "wrong": [
+          "Cluster computing supporting homogeneous systems managed through centralized administrative infrastructures together",
+          "Peer-to-peer architectures coordinating decentralized file exchanges between participating computational environments globally",
+          "Client-server computing centralizing resource allocation through dedicated administrative infrastructure globally"
+        ],
+        "explanation": "Grid computing fits geographically distributed, heterogeneous resources across organizations."
+      },
+      {
+        "id": "prelim-b-22",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A parallel program splits work into microtasks constantly exchanging small updates. Performance becomes worse than the serial version. What is the most likely cause?",
+        "answer": "Excessive communication overhead caused by extremely fine-grained task decomposition strategies continuously",
+        "wrong": [
+          "Coarse-grained decomposition reducing synchronization requirements across distributed processing environments entirely globally",
+          "Distributed memory architectures providing synchronized communication between computational microtasks completely",
+          "Processor underutilization resulting from insufficient workload distribution across available computing infrastructures globally"
+        ],
+        "explanation": "Fine-grained work can communicate so frequently that overhead outweighs parallel speedup."
+      },
+      {
+        "id": "prelim-b-23",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A social media recommendation engine processes different users with different algorithms simultaneously across thousands of servers. Which Flynn classification applies?",
+        "answer": "MIMD because independent instructions process separate datasets across distributed processors concurrently",
+        "wrong": [
+          "SIMD because identical operations process recommendation datasets simultaneously together",
+          "SISD because execution remains sequential through centralized algorithmic processing architectures exclusively",
+          "MISD because multiple algorithms analyze synchronized datasets through coordinated instruction execution simultaneously"
+        ],
+        "explanation": "Different algorithms on separate user datasets across many servers is MIMD."
+      },
+      {
+        "id": "prelim-b-24",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A developer prioritizes simpler programming over system-level efficiency when choosing between fixed-size and variable-size messages. Which should they choose?",
+        "answer": "Variable-size messages simplifying application programming despite increased implementation complexity internally globally",
+        "wrong": [
+          "Fixed-size messages because implementation through predictable communication packet structures globally",
+          "Fixed-size communication structures automatically supporting flexible distributed application requirements completely",
+          "Variable-length communication packets consistently reducing transmission overhead across distributed infrastructures worldwide"
+        ],
+        "explanation": "Variable-size messages require more system-level implementation but make the programming task simpler."
+      },
+      {
+        "id": "prelim-b-25",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A parallel scientific simulation runs correctly on 8 processors but produces inconsistent results on 32 processors. What is the most likely cause?",
+        "answer": "Improper synchronization causing race conditions during larger-scale parallel execution environments simultaneously",
+        "wrong": [
+          "Network communication bandwidth preventing synchronization between distributed processing environments effectively globally",
+          "NUMA architectures introducing incompatible processor communication patterns during synchronized computational execution processes",
+          "Insufficient memory allocation preventing processor coordination across distributed computational workloads successfully"
+        ],
+        "explanation": "Inconsistent results at larger scale often point to race conditions from improper synchronization."
+      },
+      {
+        "id": "week3-1",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What best describes a process?",
+        "answer": "A running program with its own memory space and resources",
+        "wrong": [
+          "A single variable stored inside shared memory",
+          "A hardware-only instruction decoder",
+          "A message header used in distributed systems"
+        ],
+        "explanation": "A process is an independent running program with its own memory space."
+      },
+      {
+        "id": "week3-2",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What best describes a thread?",
+        "answer": "A lightweight execution unit inside a process",
+        "wrong": [
+          "A separate physical computer in a cluster",
+          "A storage partition in HDFS",
+          "A network protocol for RPC"
+        ],
+        "explanation": "A thread is the smallest execution unit inside a process and shares process memory."
+      },
+      {
+        "id": "week3-3",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What is the key distinction between concurrency and parallelism?",
+        "answer": "Concurrency manages multiple tasks; parallelism executes tasks simultaneously",
+        "wrong": [
+          "Concurrency requires multiple machines; parallelism requires only one core",
+          "Concurrency is slower storage; parallelism is faster storage",
+          "Concurrency means no synchronization is required"
+        ],
+        "explanation": "Concurrency is about dealing with multiple tasks; parallelism is about doing them at the same time."
+      },
+      {
+        "id": "week3-4",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Why do threads require synchronization?",
+        "answer": "They share memory within a process",
+        "wrong": [
+          "They cannot communicate with each other",
+          "They always run on separate networks",
+          "They only execute serial instructions"
+        ],
+        "explanation": "Threads share memory, so access to shared data must be coordinated."
+      },
+      {
+        "id": "week3-5",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Which primitive provides exclusive access to a shared resource?",
+        "answer": "Mutex or lock",
+        "wrong": [
+          "Map phase",
+          "HDFS block",
+          "Client request"
+        ],
+        "explanation": "A lock or mutex allows only one thread or process to enter a protected section at a time."
+      },
+      {
+        "id": "week3-6",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Which synchronization primitive uses a counter for limited resources?",
+        "answer": "Semaphore",
+        "wrong": [
+          "Condition variable",
+          "RPC",
+          "Pipeline"
+        ],
+        "explanation": "A semaphore tracks available resource count."
+      },
+      {
+        "id": "week3-7",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What is a condition variable used for?",
+        "answer": "Waiting until a specific condition becomes true",
+        "wrong": [
+          "Classifying instruction streams",
+          "Storing files across Hadoop nodes",
+          "Dividing a program into Map and Reduce"
+        ],
+        "explanation": "Condition variables let threads wait and be signaled when a condition changes."
+      },
+      {
+        "id": "week3-8",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What is a monitor?",
+        "answer": "An abstraction that encapsulates shared data and controlled access procedures",
+        "wrong": [
+          "A screen that displays processor temperature",
+          "A network cable for clusters",
+          "A serial-only execution unit"
+        ],
+        "explanation": "A monitor bundles shared data with synchronized procedures."
+      },
+      {
+        "id": "week3-9",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Which communication primitive supports asynchronous ordered messages?",
+        "answer": "Message queue",
+        "wrong": [
+          "Mutex",
+          "Barrier",
+          "SMP"
+        ],
+        "explanation": "Message queues let tasks send asynchronous messages while preserving order."
+      },
+      {
+        "id": "week3-10",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Which primitive is used to execute a procedure on another machine?",
+        "answer": "RPC",
+        "wrong": [
+          "UMA",
+          "SIMD",
+          "Pthreads"
+        ],
+        "explanation": "Remote Procedure Call invokes a remote procedure as if it were local."
+      },
+      {
+        "id": "week3-11",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What is a deadlock?",
+        "answer": "Tasks wait forever for each other to release resources",
+        "wrong": [
+          "Tasks execute the same instruction on many data values",
+          "A cluster scales down after demand falls",
+          "A program completes with perfect speedup"
+        ],
+        "explanation": "Deadlock is permanent waiting caused by circular resource dependencies."
+      },
+      {
+        "id": "week3-12",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What is a livelock?",
+        "answer": "Tasks keep reacting to each other but fail to make progress",
+        "wrong": [
+          "A single instruction operates on one data stream",
+          "A file is replicated across nodes",
+          "A GPU applies one operation to pixels"
+        ],
+        "explanation": "In livelock, tasks are active but still make no progress."
+      },
+      {
+        "id": "week3-13",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Which technique lets a web server handle many client requests concurrently without one request blocking all others?",
+        "answer": "Threads or asynchronous I/O",
+        "wrong": [
+          "Only SISD execution",
+          "Turning off IPC",
+          "Using no synchronization primitives"
+        ],
+        "explanation": "Web servers commonly use threads, async I/O, or event loops to handle concurrent requests."
+      },
+      {
+        "id": "week3-14",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Why are processes more isolated than threads?",
+        "answer": "Each process has its own memory space",
+        "wrong": [
+          "Each process always runs on a different physical country",
+          "Processes cannot use operating system resources",
+          "Threads never share memory"
+        ],
+        "explanation": "Process memory isolation improves stability and security."
+      },
+      {
+        "id": "week3-15",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Which is an example of communication rather than synchronization?",
+        "answer": "Channel",
+        "wrong": [
+          "Mutex",
+          "Semaphore",
+          "Barrier"
+        ],
+        "explanation": "Channels pass messages. Mutexes, semaphores, and barriers primarily coordinate access or timing."
+      },
+      {
+        "id": "module-final-a-1",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "A program creates several threads inside one process, and each thread reads and writes the same array. Which model is being used?",
+        "answer": "Shared-memory programming",
+        "wrong": [
+          "Message-passing programming",
+          "Linear programming",
+          "Branch and bound"
+        ],
+        "explanation": "Shared-memory programming uses a common memory space that all threads can access."
+      },
+      {
+        "id": "module-final-a-2",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "Which statement best describes shared memory?",
+        "answer": "All threads can access the same memory addresses",
+        "wrong": [
+          "Every process must use separate private memory",
+          "Data is exchanged only through network packets",
+          "Only one processor can read memory at a time"
+        ],
+        "explanation": "The key clue is common memory addresses accessible by multiple threads or processes."
+      },
+      {
+        "id": "module-final-a-3",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "In shared-memory programming, how do threads usually communicate?",
+        "answer": "By reading and writing shared variables",
+        "wrong": [
+          "By sending emails between processes",
+          "By compiling separate programs",
+          "By using only linear constraints"
+        ],
+        "explanation": "Shared variables are the communication channel in a shared-memory model."
+      },
+      {
+        "id": "module-final-a-4",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Synchronization",
+        "prompt": "Two threads update the same counter at the same time and the final value is wrong. What is the most likely issue?",
+        "answer": "Race condition",
+        "wrong": [
+          "Point-to-point communication",
+          "Linearithmic runtime",
+          "Greedy selection"
+        ],
+        "explanation": "Race conditions happen when concurrent access to shared data is not properly synchronized."
+      },
+      {
+        "id": "module-final-a-5",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Synchronization",
+        "prompt": "Which mechanism is used to coordinate access to shared variables?",
+        "answer": "Locks, semaphores, and barriers",
+        "wrong": [
+          "Only binary search",
+          "Only message broadcasting",
+          "Only matrix multiplication"
+        ],
+        "explanation": "Locks, semaphores, and barriers prevent conflicting updates in shared memory."
+      },
+      {
+        "id": "module-final-a-6",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "What is the key difference between multithreading and multiprocessing in the shared-memory discussion?",
+        "answer": "Multithreading creates multiple threads within one process, while multiprocessing uses independent processes",
+        "wrong": [
+          "Multithreading always uses networks, while multiprocessing never uses memory",
+          "Multiprocessing is another name for binary search",
+          "Multithreading cannot run in parallel"
+        ],
+        "explanation": "The distinction is thread units inside a process versus independent processes."
+      },
+      {
+        "id": "module-final-a-7",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "Why is shared-memory communication often fast?",
+        "answer": "Threads can directly access shared data structures",
+        "wrong": [
+          "Every message must cross a wide-area network",
+          "It always avoids all synchronization",
+          "It uses factorial-time scheduling"
+        ],
+        "explanation": "Direct memory access is usually faster than communication between distributed nodes."
+      },
+      {
+        "id": "module-final-a-8",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "Which is a real challenge of shared-memory programming?",
+        "answer": "Synchronization overhead",
+        "wrong": [
+          "No possibility of data sharing",
+          "No need for debugging",
+          "Automatic perfect scalability"
+        ],
+        "explanation": "Correct synchronization is necessary, but too much synchronization can reduce performance."
+      },
+      {
+        "id": "module-final-a-9",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Scalability",
+        "prompt": "As the number of shared-memory threads increases, performance may stop improving because of what?",
+        "answer": "Contention for shared resources",
+        "wrong": [
+          "Lack of any common address space",
+          "Guaranteed message ordering",
+          "Fewer variables in memory"
+        ],
+        "explanation": "More threads can fight over shared data, locks, cache lines, or memory bandwidth."
+      },
+      {
+        "id": "module-final-a-10",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Synchronization",
+        "prompt": "A developer says shared memory is easy because threads can share variables. What important warning should you add?",
+        "answer": "Shared variables must be synchronized to avoid inconsistent data",
+        "wrong": [
+          "Shared variables remove all debugging problems",
+          "Shared memory cannot create race conditions",
+          "Threads are never allowed to write shared data"
+        ],
+        "explanation": "The convenience of shared variables is exactly why synchronization is important."
+      },
+      {
+        "id": "module-final-a-11",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "Which programming paradigm uses independent processes that exchange explicit messages?",
+        "answer": "Message-passing programming",
+        "wrong": [
+          "Shared-memory programming",
+          "Dynamic programming",
+          "Constant-space programming"
+        ],
+        "explanation": "Message passing uses send/receive communication instead of a common memory space."
+      },
+      {
+        "id": "module-final-a-12",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "In message-passing programming, what is usually true about memory?",
+        "answer": "Processes run in separate memory spaces",
+        "wrong": [
+          "All processes share one global address space",
+          "Only GPU memory can be used",
+          "Memory is replaced by linear equations"
+        ],
+        "explanation": "The model communicates by explicit messages because memory is not shared."
+      },
+      {
+        "id": "module-final-a-13",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "Which pair best represents the basic operations of message passing?",
+        "answer": "Send and receive",
+        "wrong": [
+          "Divide and combine",
+          "Lock and unlock only",
+          "Push and pop only"
+        ],
+        "explanation": "Message-passing programs coordinate by sending and receiving messages."
+      },
+      {
+        "id": "module-final-a-14",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "What does asynchronous communication mean in message passing?",
+        "answer": "A process can continue execution while waiting for a message",
+        "wrong": [
+          "All processes must stop until every message arrives",
+          "Messages are impossible to receive out of order",
+          "Only one process may exist"
+        ],
+        "explanation": "Asynchronous communication lets execution continue instead of always blocking immediately."
+      },
+      {
+        "id": "module-final-a-15",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "What makes synchronization explicit in message passing?",
+        "answer": "Processes intentionally wait for or react to message receipt",
+        "wrong": [
+          "The operating system hides all communication decisions",
+          "Shared variables are automatically protected",
+          "The compiler removes all messages"
+        ],
+        "explanation": "The program explicitly coordinates around messages."
+      },
+      {
+        "id": "module-final-a-16",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "A process sends a message directly to one specific target process. What communication pattern is this?",
+        "answer": "Point-to-point communication",
+        "wrong": [
+          "Collective communication",
+          "Dynamic programming",
+          "Quadratic space"
+        ],
+        "explanation": "Point-to-point means one sender targets one receiver."
+      },
+      {
+        "id": "module-final-a-17",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "Broadcasting a value from one process to all processes is what kind of message-passing operation?",
+        "answer": "Collective communication",
+        "wrong": [
+          "Constant-time access",
+          "Backtracking",
+          "Shared variable assignment"
+        ],
+        "explanation": "Collective communication involves a group of processes exchanging data by a pattern like broadcast, reduce, or gather."
+      },
+      {
+        "id": "module-final-a-18",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "Which standard is widely used for high-performance message passing?",
+        "answer": "MPI",
+        "wrong": [
+          "HTML",
+          "CSS",
+          "SQL injection"
+        ],
+        "explanation": "MPI stands for Message Passing Interface and is widely used in HPC and distributed memory systems."
+      },
+      {
+        "id": "module-final-a-19",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Scalability",
+        "prompt": "Why does message passing scale well for clusters?",
+        "answer": "It does not depend on a single shared memory space",
+        "wrong": [
+          "It never communicates",
+          "It removes all overhead",
+          "It requires one processor only"
+        ],
+        "explanation": "Separate processes can run across many machines and communicate through messages."
+      },
+      {
+        "id": "module-final-a-20",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Debugging",
+        "prompt": "Which is a common debugging issue in message-passing programs?",
+        "answer": "Message deadlock or unexpected message order",
+        "wrong": [
+          "No communication pattern exists",
+          "All variables are shared by default",
+          "There are no synchronization concerns"
+        ],
+        "explanation": "Message-passing bugs often involve blocking messages, unexpected order, or deadlocks."
+      },
+      {
+        "id": "module-final-a-21",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Data Parallelism",
+        "prompt": "Which statement best defines data parallelism?",
+        "answer": "The same operation is applied to different partitions of a dataset",
+        "wrong": [
+          "Different unrelated tasks are always executed one after another",
+          "All processes use one lock",
+          "One message is broadcast to all users"
+        ],
+        "explanation": "Data parallelism is about splitting data and repeating the same computation."
+      },
+      {
+        "id": "module-final-a-22",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Data Parallelism",
+        "prompt": "Data parallelism is often associated with which execution style?",
+        "answer": "SIMD",
+        "wrong": [
+          "Backtracking",
+          "Linear programming",
+          "Non-repudiation"
+        ],
+        "explanation": "SIMD means Single Instruction, Multiple Data, matching the same operation over many data elements."
+      },
+      {
+        "id": "module-final-a-23",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Load Balancing",
+        "prompt": "Why is load balancing important in data parallelism?",
+        "answer": "It keeps processing units from receiving uneven amounts of work",
+        "wrong": [
+          "It prevents all communication from existing",
+          "It forces all data into one partition",
+          "It converts O(n) into O(1)"
+        ],
+        "explanation": "Uneven partitions cause some processors to finish early while others continue working."
+      },
+      {
+        "id": "module-final-a-24",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Data Parallelism",
+        "prompt": "Which statement is usually true for ideal data parallelism?",
+        "answer": "Communication between processing units is minimal or unnecessary",
+        "wrong": [
+          "Every task must exchange messages every step",
+          "Each unit performs a different algorithm",
+          "All work must run on one core"
+        ],
+        "explanation": "Independent partitions allow parallel work with little coordination."
+      },
+      {
+        "id": "module-final-a-25",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Data Parallelism",
+        "prompt": "Applying the same brightness adjustment to every pixel of a large image is an example of what?",
+        "answer": "Data parallelism",
+        "wrong": [
+          "Task parallelism",
+          "Branch and bound",
+          "Linear programming"
+        ],
+        "explanation": "The same operation is applied to many independent pixel values."
+      },
+      {
+        "id": "module-final-a-26",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Task Parallelism",
+        "prompt": "Which statement best defines task parallelism?",
+        "answer": "Different independent tasks are executed concurrently",
+        "wrong": [
+          "The same instruction must run on all data elements",
+          "All processors share one variable only",
+          "Every task must wait for a network message"
+        ],
+        "explanation": "Task parallelism focuses on separate tasks, not just separate data chunks."
+      },
+      {
+        "id": "module-final-a-27",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Task Parallelism",
+        "prompt": "Which situation most clearly uses task parallelism?",
+        "answer": "A program searches files, downloads data, and compresses output at the same time",
+        "wrong": [
+          "A GPU applies one blur operation to every pixel",
+          "A loop prints each element sequentially",
+          "A binary search halves a sorted array"
+        ],
+        "explanation": "The tasks are distinct operations executing concurrently."
+      },
+      {
+        "id": "module-final-a-28",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Task Parallelism",
+        "prompt": "Why does task parallelism often need dynamic load balancing?",
+        "answer": "Tasks may have different execution times or complexity",
+        "wrong": [
+          "All tasks are guaranteed identical",
+          "Data partitions are always the same size",
+          "Messages cannot be sent"
+        ],
+        "explanation": "Dynamic scheduling keeps units busy when tasks vary."
+      },
+      {
+        "id": "module-final-a-29",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Task Parallelism",
+        "prompt": "When one task depends on another task's result, task parallelism may require what?",
+        "answer": "Synchronization",
+        "wrong": [
+          "Factorial growth",
+          "No coordination",
+          "Only greedy selection"
+        ],
+        "explanation": "Dependencies require coordination so tasks use correct results."
+      },
+      {
+        "id": "module-final-a-30",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Task Parallelism",
+        "prompt": "Parallel recursive algorithms often fit task parallelism because what can become independent work?",
+        "answer": "Recursive calls",
+        "wrong": [
+          "Only one global variable",
+          "The final print statement",
+          "All memory addresses"
+        ],
+        "explanation": "Each recursive branch can sometimes be treated as an independent task."
+      },
+      {
+        "id": "module-final-a-31",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Task Parallelism",
+        "prompt": "Parallel loop iterations are task-parallel only when what is true?",
+        "answer": "Iterations can execute independently",
+        "wrong": [
+          "Every iteration writes the same shared variable without locks",
+          "The loop must be O(n!)",
+          "Only one iteration exists"
+        ],
+        "explanation": "Independent iterations can be treated as separate tasks."
+      },
+      {
+        "id": "module-final-a-32",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Parallelism Types",
+        "prompt": "Which clue separates data parallelism from task parallelism?",
+        "answer": "Same operation on data chunks versus different operations as tasks",
+        "wrong": [
+          "Both require no processors",
+          "Data parallelism cannot use datasets",
+          "Task parallelism always means one task"
+        ],
+        "explanation": "This is the central distinction the exam often tests."
+      },
+      {
+        "id": "module-final-a-33",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "OpenMP is most commonly associated with what environment?",
+        "answer": "Shared-memory multi-core programming",
+        "wrong": [
+          "Only wide-area message passing",
+          "Only database normalization",
+          "Only cryptography"
+        ],
+        "explanation": "OpenMP is commonly used to express parallelism in shared-memory systems."
+      },
+      {
+        "id": "module-final-a-34",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Divide and conquer has which core sequence?",
+        "answer": "Divide -> Conquer -> Combine",
+        "wrong": [
+          "Send -> Receive -> Broadcast",
+          "Lock -> Sleep -> Ignore",
+          "Guess -> Encrypt -> Delete"
+        ],
+        "explanation": "The method divides the problem, solves subproblems recursively, and combines results."
+      },
+      {
+        "id": "module-final-a-35",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Which algorithm is a classic divide-and-conquer example?",
+        "answer": "Merge sort",
+        "wrong": [
+          "Sudoku backtracking as the only answer",
+          "A password policy",
+          "Linear objective optimization"
+        ],
+        "explanation": "Merge sort divides, recursively sorts, and merges the subresults."
+      },
+      {
+        "id": "module-final-a-36",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Which technique chooses the best-looking option at the current step?",
+        "answer": "Greedy method",
+        "wrong": [
+          "Backtracking",
+          "Message passing",
+          "Quadratic space"
+        ],
+        "explanation": "Greedy algorithms make local choices and typically do not reconsider them."
+      },
+      {
+        "id": "module-final-a-37",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Why is the greedy method considered risky on some problems?",
+        "answer": "A local best choice may not produce the global best result",
+        "wrong": [
+          "It always checks all permutations",
+          "It is impossible to implement",
+          "It requires shared memory"
+        ],
+        "explanation": "Greedy choices are simple, but local optimality is not always enough."
+      },
+      {
+        "id": "module-final-a-38",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Which technique solves subproblems and reuses their stored answers?",
+        "answer": "Dynamic programming",
+        "wrong": [
+          "Message passing",
+          "Constant space only",
+          "Point-to-point communication"
+        ],
+        "explanation": "Dynamic programming avoids repeated work by reusing subproblem solutions."
+      },
+      {
+        "id": "module-final-a-39",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Why is Fibonacci often used to explain dynamic programming?",
+        "answer": "It has repeated overlapping subproblems",
+        "wrong": [
+          "It requires no memory at all",
+          "It is only a message-passing protocol",
+          "It always uses linear constraints"
+        ],
+        "explanation": "Naive Fibonacci recomputes many values; DP stores and reuses them."
+      },
+      {
+        "id": "module-final-a-40",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "A Sudoku solver tries a number, fails later, and returns to choose a different number. Which technique is this?",
+        "answer": "Backtracking",
+        "wrong": [
+          "Data parallelism",
+          "Linear programming",
+          "Constant time"
+        ],
+        "explanation": "Backtracking tries a candidate and retreats when the path becomes invalid."
+      },
+      {
+        "id": "module-final-a-41",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Which problem is commonly linked to backtracking?",
+        "answer": "Eight queen problem",
+        "wrong": [
+          "Direct array access",
+          "Simple variable assignment",
+          "Point-to-point send only"
+        ],
+        "explanation": "Eight queens, Sudoku, and maze traversal are classic backtracking examples."
+      },
+      {
+        "id": "module-final-a-42",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Which technique keeps a current best solution and prunes paths that cannot beat it?",
+        "answer": "Branch and bound",
+        "wrong": [
+          "Greedy method only",
+          "Shared variable communication",
+          "Big-Omega notation"
+        ],
+        "explanation": "Branch and bound uses bounds to remove weak parts of the solution space."
+      },
+      {
+        "id": "module-final-a-43",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "What is a key purpose of branch and bound search?",
+        "answer": "Maintain or improve the lowest-cost path to a target",
+        "wrong": [
+          "Avoid optimization entirely",
+          "Force every process to share memory",
+          "Make all loops nested"
+        ],
+        "explanation": "The method searches for an optimal solution while pruning."
+      },
+      {
+        "id": "module-final-a-44",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Linear programming is used when the objective and constraints are what?",
+        "answer": "Linear functions",
+        "wrong": [
+          "Random message orders",
+          "Only recursive calls",
+          "Only shared variables"
+        ],
+        "explanation": "Linear programming optimizes a linear objective subject to linear constraints."
+      },
+      {
+        "id": "module-final-a-45",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Which is a typical linear programming goal?",
+        "answer": "Maximize profit or minimize cost",
+        "wrong": [
+          "Create a race condition",
+          "Broadcast every pixel",
+          "Ignore all constraints"
+        ],
+        "explanation": "The source lists maximum profit, shortest path, and lowest cost style outcomes."
+      },
+      {
+        "id": "module-final-a-46",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Complexity",
+        "prompt": "What does time complexity measure?",
+        "answer": "How runtime grows as input size grows",
+        "wrong": [
+          "Only the color of a chart",
+          "Only the number of processors",
+          "Only the size of source code comments"
+        ],
+        "explanation": "Time complexity is runtime as a function of input size."
+      },
+      {
+        "id": "module-final-a-47",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Complexity",
+        "prompt": "Directly printing the first array element is usually what time complexity?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(n^2)",
+          "O(n!)"
+        ],
+        "explanation": "The work does not depend on how many elements the array contains."
+      },
+      {
+        "id": "module-final-a-48",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Complexity",
+        "prompt": "Binary search on a sorted array is usually what time complexity?",
+        "answer": "O(log n)",
+        "wrong": [
+          "O(n^2)",
+          "O(n!)",
+          "O(1) for all cases"
+        ],
+        "explanation": "Binary search repeatedly halves the search range."
+      },
+      {
+        "id": "module-final-a-49",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Complexity",
+        "prompt": "Two nested loops that print every ordered pair from an array usually have what time complexity?",
+        "answer": "O(n^2)",
+        "wrong": [
+          "O(log n)",
+          "O(1)",
+          "O(n log n) always"
+        ],
+        "explanation": "A loop inside another loop over n elements creates n times n work."
+      },
+      {
+        "id": "module-final-a-50",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Complexity",
+        "prompt": "Which growth order is generally best among these for large input?",
+        "answer": "O(log n)",
+        "wrong": [
+          "O(n^2)",
+          "O(2^n)",
+          "O(n!)"
+        ],
+        "explanation": "Logarithmic growth increases very slowly compared with polynomial, exponential, and factorial growth."
+      },
+      {
+        "id": "module-final-b-1",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A hospital AI system splits millions of records into equal chunks and runs the same risk-scoring formula on each chunk. Which model is the best fit?",
+        "answer": "Data parallelism",
+        "wrong": [
+          "Task parallelism",
+          "Backtracking",
+          "Linear programming"
+        ],
+        "explanation": "The same computation is applied to independent data partitions."
+      },
+      {
+        "id": "module-final-b-2",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A video editor applies the same filter to every frame block on a GPU. What is the best classification?",
+        "answer": "Data parallelism using SIMD-style work",
+        "wrong": [
+          "Message passing with no data partitioning",
+          "Greedy local selection",
+          "Branch and bound search"
+        ],
+        "explanation": "The same operation is repeated over many independent data elements."
+      },
+      {
+        "id": "module-final-b-3",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A web server handles login, payment, and notification jobs at the same time, and each job uses different logic. What is the best fit?",
+        "answer": "Task parallelism",
+        "wrong": [
+          "Pure data parallelism",
+          "O(1) direct access",
+          "Linear programming"
+        ],
+        "explanation": "Different independent operations executing concurrently point to task parallelism."
+      },
+      {
+        "id": "module-final-b-4",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A cluster has 200 nodes, each with its own memory, and nodes exchange work updates through MPI. Which model is this?",
+        "answer": "Message-passing programming",
+        "wrong": [
+          "Shared-memory programming",
+          "Constant-space programming",
+          "Greedy method"
+        ],
+        "explanation": "Separate memory spaces plus MPI are message-passing clues."
+      },
+      {
+        "id": "module-final-b-5",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "Four threads in one process update a shared transaction balance. What must be added to avoid inconsistent balances?",
+        "answer": "Synchronization such as a lock",
+        "wrong": [
+          "More unsynchronized writes",
+          "A factorial algorithm",
+          "A public broadcast only"
+        ],
+        "explanation": "Shared updates need controlled access to avoid race conditions."
+      },
+      {
+        "id": "module-final-b-6",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "An image-processing job has 1,000 chunks, but some chunks are much harder than others. What problem should the developer watch?",
+        "answer": "Load imbalance",
+        "wrong": [
+          "No possible parallelism",
+          "Big-Omega notation",
+          "Only greedy recursion"
+        ],
+        "explanation": "Uneven work makes some processors idle while others keep running."
+      },
+      {
+        "id": "module-final-b-7",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A process waits forever for a message that another process never sends. What kind of issue is most likely?",
+        "answer": "Message deadlock",
+        "wrong": [
+          "Cache-friendly shared memory",
+          "Constant time success",
+          "Linear objective optimization"
+        ],
+        "explanation": "Message-passing programs can deadlock when waiting conditions are not satisfied."
+      },
+      {
+        "id": "module-final-b-8",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A programmer wants to send one configuration value from a root process to all worker processes. Which operation type fits?",
+        "answer": "Collective communication",
+        "wrong": [
+          "Point-to-point only",
+          "Backtracking",
+          "Quadratic space"
+        ],
+        "explanation": "Broadcasting to a group is collective communication."
+      },
+      {
+        "id": "module-final-b-9",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A worker sends a result only to process 7. Which message-passing communication type is this?",
+        "answer": "Point-to-point communication",
+        "wrong": [
+          "Collective communication",
+          "Shared variable access",
+          "Branch and bound"
+        ],
+        "explanation": "A specific sender-to-target pattern is point-to-point."
+      },
+      {
+        "id": "module-final-b-10",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A shared-memory app becomes slower after adding more threads because they all compete for one lock. What is the best explanation?",
+        "answer": "Synchronization contention reduces scalability",
+        "wrong": [
+          "Message passing removed all overhead",
+          "Binary search became O(n!)",
+          "The program stopped using memory"
+        ],
+        "explanation": "Too much lock contention can erase parallel speedup."
+      },
+      {
+        "id": "module-final-b-11",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A program divides a large search tree into branches, but some branches depend on earlier choices and invalid paths must be abandoned. Which algorithm style fits?",
+        "answer": "Backtracking",
+        "wrong": [
+          "Data parallelism only",
+          "O(1) direct access",
+          "Message broadcast"
+        ],
+        "explanation": "Trying a path and retreating when it fails is backtracking."
+      },
+      {
+        "id": "module-final-b-12",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A delivery company wants the cheapest route and prunes any path already more expensive than the best current route. Which technique is being used?",
+        "answer": "Branch and bound",
+        "wrong": [
+          "Shared memory only",
+          "Greedy with no pruning",
+          "Constant-space array creation"
+        ],
+        "explanation": "The bound lets the algorithm eliminate paths that cannot beat the current best."
+      },
+      {
+        "id": "module-final-b-13",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A scheduling problem has a linear cost equation and linear resource constraints. What technique is most appropriate?",
+        "answer": "Linear programming",
+        "wrong": [
+          "Backtracking only",
+          "Message passing only",
+          "Dynamic work stealing"
+        ],
+        "explanation": "Linear programming optimizes a linear objective under linear constraints."
+      },
+      {
+        "id": "module-final-b-14",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A recursive Fibonacci implementation keeps recomputing the same values. Which technique is designed to fix that?",
+        "answer": "Dynamic programming",
+        "wrong": [
+          "Greedy method",
+          "Message deadlock",
+          "O(n!) sorting"
+        ],
+        "explanation": "Dynamic programming stores and reuses overlapping subproblem results."
+      },
+      {
+        "id": "module-final-b-15",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A sorting method splits an array, sorts the halves, then merges the halves. Which design technique is this?",
+        "answer": "Divide and conquer",
+        "wrong": [
+          "Linear programming",
+          "Point-to-point messaging",
+          "Race condition"
+        ],
+        "explanation": "Split, recursively solve, and combine is divide and conquer."
+      },
+      {
+        "id": "module-final-b-16",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A navigation app always chooses the currently closest next stop without reconsidering previous choices. Which method is this closest to?",
+        "answer": "Greedy method",
+        "wrong": [
+          "Dynamic programming",
+          "Backtracking",
+          "Message passing"
+        ],
+        "explanation": "Greedy chooses the best immediate option and typically does not reconsider."
+      },
+      {
+        "id": "module-final-b-17",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A classmate says greedy always gives the globally optimal answer. What is the best correction?",
+        "answer": "Greedy can fail when the local best choice is not globally best",
+        "wrong": [
+          "Greedy always checks every possible solution",
+          "Greedy is only for shared memory",
+          "Greedy never makes choices"
+        ],
+        "explanation": "Greedy is efficient and simple, but it needs problem conditions that make local choices safe."
+      },
+      {
+        "id": "module-final-b-18",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Complexity Scenario",
+        "prompt": "A security scan checks every pair of modules for compatibility using two nested loops. What time complexity should you expect?",
+        "answer": "O(n^2)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n!)"
+        ],
+        "explanation": "Checking all pairs creates quadratic growth."
+      },
+      {
+        "id": "module-final-b-19",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Complexity Scenario",
+        "prompt": "A monitoring tool reads only the first log entry no matter how many logs exist. What time complexity is this action?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(n log n)",
+          "O(2^n)"
+        ],
+        "explanation": "The number of operations is fixed and does not grow with input size."
+      },
+      {
+        "id": "module-final-b-20",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Complexity Scenario",
+        "prompt": "A sorted database repeatedly halves the remaining search range while looking for an ID. What time complexity is this?",
+        "answer": "O(log n)",
+        "wrong": [
+          "O(n^2)",
+          "O(n!)",
+          "O(n^3)"
+        ],
+        "explanation": "Halving the search space is the signature of logarithmic time."
+      },
+      {
+        "id": "module-final-b-21",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Complexity Scenario",
+        "prompt": "A program prints every item in a list once. What time complexity is most likely?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(n^2)",
+          "O(2^n)"
+        ],
+        "explanation": "One pass through n items gives linear time."
+      },
+      {
+        "id": "module-final-b-22",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Complexity Scenario",
+        "prompt": "A merge-sort style algorithm divides data and combines sorted results. What typical complexity appears in many efficient sorting algorithms?",
+        "answer": "O(n log n)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n!)"
+        ],
+        "explanation": "Efficient comparison sorting is commonly O(n log n)."
+      },
+      {
+        "id": "module-final-b-23",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Space Complexity",
+        "prompt": "A program creates an array of size n before processing. What space complexity is introduced by that array?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n!)"
+        ],
+        "explanation": "Memory grows in direct proportion to n."
+      },
+      {
+        "id": "module-final-b-24",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Space Complexity",
+        "prompt": "A program creates an n by n table for dynamic programming. What space complexity is likely?",
+        "answer": "O(n^2)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n) only"
+        ],
+        "explanation": "An n by n matrix contains n squared cells."
+      },
+      {
+        "id": "module-final-b-25",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Space Complexity",
+        "prompt": "A function only stores three integer variables regardless of input size. What space complexity is likely?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(n^2)",
+          "O(2^n)"
+        ],
+        "explanation": "A fixed number of variables is constant space."
+      },
+      {
+        "id": "module-final-b-26",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Asymptotic Notation",
+        "prompt": "Which notation describes an upper bound or worst-case-style ceiling?",
+        "answer": "Big-O",
+        "wrong": [
+          "Big-Omega",
+          "Big-Theta only",
+          "SIMD"
+        ],
+        "explanation": "Big-O gives an upper bound on growth."
+      },
+      {
+        "id": "module-final-b-27",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Asymptotic Notation",
+        "prompt": "Which notation describes a lower bound or minimum growth guarantee?",
+        "answer": "Big-Omega",
+        "wrong": [
+          "Big-O",
+          "Big-Theta only",
+          "MPI"
+        ],
+        "explanation": "Big-Omega gives a lower bound."
+      },
+      {
+        "id": "module-final-b-28",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Asymptotic Notation",
+        "prompt": "Which notation describes a tight bound with both upper and lower limits?",
+        "answer": "Big-Theta",
+        "wrong": [
+          "Big-O only",
+          "Big-Omega only",
+          "OpenMP"
+        ],
+        "explanation": "Big-Theta is used when the growth is bounded above and below by the same class."
+      },
+      {
+        "id": "module-final-b-29",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A team uses OpenMP pragmas to parallelize loops on a multi-core machine with shared RAM. Which model is most likely?",
+        "answer": "Shared-memory programming",
+        "wrong": [
+          "Message-passing programming",
+          "Blockchain consensus",
+          "Linear programming"
+        ],
+        "explanation": "OpenMP is commonly used for shared-memory multi-core parallelism."
+      },
+      {
+        "id": "module-final-b-30",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A team uses MPI to coordinate jobs across machines with separate memory. Which model is most likely?",
+        "answer": "Message-passing programming",
+        "wrong": [
+          "Shared-memory programming only",
+          "Backtracking only",
+          "O(1) space only"
+        ],
+        "explanation": "MPI is the standard clue for message passing."
+      },
+      {
+        "id": "module-final-b-31",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Message Passing",
+        "prompt": "A developer says asynchronous message passing means no synchronization is ever needed. What is the best response?",
+        "answer": "Processes still need explicit coordination around message receipt",
+        "wrong": [
+          "Asynchronous means all processes share memory",
+          "Asynchronous means no messages are sent",
+          "Asynchronous converts all code to O(1)"
+        ],
+        "explanation": "Asynchronous communication can reduce waiting, but coordination is still explicit."
+      },
+      {
+        "id": "module-final-b-32",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Shared Memory",
+        "prompt": "A shared array is updated by many threads, but each thread writes to a separate index and no thread reads incomplete results. What is the likely benefit?",
+        "answer": "Reduced synchronization need compared with shared writes to one location",
+        "wrong": [
+          "Guaranteed factorial complexity",
+          "Mandatory message deadlock",
+          "No memory access"
+        ],
+        "explanation": "Independent partitions reduce conflicts, though final coordination may still be needed."
+      },
+      {
+        "id": "module-final-b-33",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Taxonomy",
+        "prompt": "A GPU applies one instruction to thousands of pixels at the same time. Which taxonomy idea matches this?",
+        "answer": "SIMD",
+        "wrong": [
+          "MIMD only",
+          "SISD only",
+          "Branch and bound"
+        ],
+        "explanation": "Single Instruction, Multiple Data fits the GPU pixel example."
+      },
+      {
+        "id": "module-final-b-34",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Taxonomy",
+        "prompt": "A normal single-core program executes one instruction stream over one data stream. Which Flynn category is closest?",
+        "answer": "SISD",
+        "wrong": [
+          "SIMD",
+          "MISD",
+          "MIMD"
+        ],
+        "explanation": "SISD means Single Instruction, Single Data."
+      },
+      {
+        "id": "module-final-b-35",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Taxonomy",
+        "prompt": "Different processors run different tasks on different data at the same time. Which Flynn category is closest?",
+        "answer": "MIMD",
+        "wrong": [
+          "SISD",
+          "SIMD",
+          "Constant space"
+        ],
+        "explanation": "MIMD means Multiple Instruction, Multiple Data."
+      },
+      {
+        "id": "module-final-b-36",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Taxonomy",
+        "prompt": "Different processors run different analyses on the same sensor stream. Which Flynn category is closest?",
+        "answer": "MISD",
+        "wrong": [
+          "SISD",
+          "SIMD",
+          "O(n log n)"
+        ],
+        "explanation": "MISD means Multiple Instruction, Single Data, a rare but testable category."
+      },
+      {
+        "id": "module-final-b-37",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Granularity",
+        "prompt": "A task-parallel program has many small tasks, and scheduling overhead becomes large compared with useful computation. What issue is this?",
+        "answer": "Too fine-grained task decomposition",
+        "wrong": [
+          "Perfect load balancing",
+          "Constant-time execution",
+          "No synchronization"
+        ],
+        "explanation": "Very fine-grained tasks can spend too much time on overhead."
+      },
+      {
+        "id": "module-final-b-38",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Performance",
+        "prompt": "A distributed program sends huge messages every millisecond and spends more time communicating than computing. What factor is hurting performance?",
+        "answer": "Communication overhead",
+        "wrong": [
+          "Greedy optimality",
+          "O(1) direct access",
+          "Backtracking success"
+        ],
+        "explanation": "Excessive data transfer can dominate runtime."
+      },
+      {
+        "id": "module-final-b-39",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Performance",
+        "prompt": "A program gets faster when processors are added, but not proportionally. Which explanation is most realistic?",
+        "answer": "Coordination, communication, and synchronization overhead reduce ideal speedup",
+        "wrong": [
+          "Parallelism always gives perfect speedup",
+          "More processors remove all memory limits",
+          "The program becomes serial by definition"
+        ],
+        "explanation": "Parallel systems often have overhead and non-parallel portions."
+      },
+      {
+        "id": "module-final-b-40",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Performance",
+        "prompt": "Which metric describes how effectively processors are used in a parallel system?",
+        "answer": "Efficiency",
+        "wrong": [
+          "Voltage",
+          "Screen resolution",
+          "Database color"
+        ],
+        "explanation": "Efficiency compares useful speedup with processor resources used."
+      },
+      {
+        "id": "module-final-b-41",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Granularity",
+        "prompt": "A program divides a 4K video into independent frames processed by many computers. What phrase best fits?",
+        "answer": "Coarse-grained parallel workload",
+        "wrong": [
+          "One shared lock workload",
+          "O(1) direct access only",
+          "No parallelism"
+        ],
+        "explanation": "Independent large tasks are coarse-grained and suited to distributed processing."
+      },
+      {
+        "id": "module-final-b-42",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Data Parallelism",
+        "prompt": "A data-parallel workload needs almost no communication. What is the performance advantage?",
+        "answer": "Less communication overhead",
+        "wrong": [
+          "More message deadlocks",
+          "More lock contention",
+          "Factorial growth"
+        ],
+        "explanation": "Minimal communication helps preserve speedup."
+      },
+      {
+        "id": "module-final-b-43",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Task Parallelism",
+        "prompt": "A task-parallel system has tasks whose durations are unknown until runtime. Which scheduling idea helps most?",
+        "answer": "Dynamic load balancing",
+        "wrong": [
+          "Fixed one-time partitioning only",
+          "No scheduling",
+          "Only linear programming"
+        ],
+        "explanation": "Dynamic balancing adapts as tasks vary."
+      },
+      {
+        "id": "module-final-b-44",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Message Passing",
+        "prompt": "Which option is the clearest example of collective communication?",
+        "answer": "Reducing partial sums from all workers into one total",
+        "wrong": [
+          "Thread A writes x = 5",
+          "A single direct array lookup",
+          "A Sudoku solver backtracks"
+        ],
+        "explanation": "Reduce gathers and combines data from many processes."
+      },
+      {
+        "id": "module-final-b-45",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A programmer moves a program from one multi-core server to a cluster of independent machines. Which shift is most likely needed?",
+        "answer": "From shared-memory assumptions to message-passing communication",
+        "wrong": [
+          "From O(n) to O(1) automatically",
+          "From data structures to no data",
+          "From messages to one global variable"
+        ],
+        "explanation": "Clusters usually do not share one address space across machines."
+      },
+      {
+        "id": "module-final-b-46",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "Which model is best if all worker units must frequently update one shared object with low-latency access?",
+        "answer": "Shared-memory programming with careful synchronization",
+        "wrong": [
+          "Message passing with no communication",
+          "Linear programming only",
+          "Backtracking only"
+        ],
+        "explanation": "Low-latency shared access fits shared memory, but synchronization remains necessary."
+      },
+      {
+        "id": "module-final-b-47",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "Which model is best if workers are on different networked machines and memory is not shared?",
+        "answer": "Message-passing programming",
+        "wrong": [
+          "Pure shared memory",
+          "O(1) constant space only",
+          "Single-threaded SISD only"
+        ],
+        "explanation": "Separate networked nodes usually coordinate by messages."
+      },
+      {
+        "id": "module-final-b-48",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Concurrency Trap",
+        "prompt": "What is the most likely bug if two tasks keep responding to each other but never make progress?",
+        "answer": "Livelock",
+        "wrong": [
+          "Linear time",
+          "Direct access",
+          "Perfect scalability"
+        ],
+        "explanation": "Livelock means activity continues but no useful progress is made."
+      },
+      {
+        "id": "module-final-b-49",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Concurrency Trap",
+        "prompt": "What is the most likely bug if two threads each hold one lock and wait forever for the other lock?",
+        "answer": "Deadlock",
+        "wrong": [
+          "SIMD",
+          "O(n log n)",
+          "Greedy choice"
+        ],
+        "explanation": "Deadlock occurs when each side waits for resources held by the other."
+      },
+      {
+        "id": "module-final-b-50",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A cloud analytics job partitions data by user ID and runs the same aggregation on every partition. Which concept is strongest?",
+        "answer": "Data parallelism",
+        "wrong": [
+          "Backtracking",
+          "Linear programming",
+          "SISD"
+        ],
+        "explanation": "Partitioned data with identical aggregation is data parallel."
+      },
+      {
+        "id": "module-final-c-1",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Tricky",
+        "prompt": "Which answer is most accurate: shared-memory programming simplifies communication because...",
+        "answer": "Threads can directly read and write shared data structures",
+        "wrong": [
+          "It removes the need for synchronization",
+          "It works only across remote clusters",
+          "It forbids shared variables"
+        ],
+        "explanation": "Shared memory simplifies data exchange, but it does not remove synchronization needs."
+      },
+      {
+        "id": "module-final-c-2",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Tricky",
+        "prompt": "Which statement is false about message-passing programming?",
+        "answer": "Processes must share the same address space",
+        "wrong": [
+          "Processes exchange messages",
+          "Synchronization is explicit",
+          "MPI is a common standard"
+        ],
+        "explanation": "Message passing is defined by separate memory spaces, not a shared address space."
+      },
+      {
+        "id": "module-final-c-3",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Tricky",
+        "prompt": "A question says 'same operation, many data items.' Which answer should you suspect first?",
+        "answer": "Data parallelism",
+        "wrong": [
+          "Task parallelism",
+          "Branch and bound",
+          "Linear programming"
+        ],
+        "explanation": "That phrase is the exam shortcut for data parallelism."
+      },
+      {
+        "id": "module-final-c-4",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Tricky",
+        "prompt": "A question says 'many independent operations, different work.' Which answer should you suspect first?",
+        "answer": "Task parallelism",
+        "wrong": [
+          "Data parallelism",
+          "SIMD only",
+          "O(log n)"
+        ],
+        "explanation": "Distinct independent work points to task parallelism."
+      },
+      {
+        "id": "module-final-c-5",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Tricky",
+        "prompt": "Which item is not a shared-memory synchronization mechanism from the lesson?",
+        "answer": "Broadcast",
+        "wrong": [
+          "Lock",
+          "Semaphore",
+          "Barrier"
+        ],
+        "explanation": "Broadcast is a collective message-passing operation; locks, semaphores, and barriers coordinate shared memory."
+      },
+      {
+        "id": "module-final-c-6",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Tricky",
+        "prompt": "Which item is not a message-passing library or standard listed in the lesson?",
+        "answer": "OpenMP",
+        "wrong": [
+          "MPI",
+          "Open MPI",
+          "Microsoft MPI"
+        ],
+        "explanation": "OpenMP is usually associated with shared-memory parallel programming, not message passing."
+      },
+      {
+        "id": "module-final-c-7",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Debugging",
+        "prompt": "Which choice best describes why shared-memory debugging can be difficult?",
+        "answer": "Race conditions may be hard to reproduce",
+        "wrong": [
+          "There are no shared variables",
+          "Messages always arrive in perfect order",
+          "No concurrency is possible"
+        ],
+        "explanation": "Timing-dependent race conditions can appear inconsistently."
+      },
+      {
+        "id": "module-final-c-8",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Debugging",
+        "prompt": "Which choice best describes why message-passing debugging can be difficult?",
+        "answer": "Message order and waiting behavior can create subtle failures",
+        "wrong": [
+          "All data is automatically consistent",
+          "Only one process is allowed",
+          "It never uses communication"
+        ],
+        "explanation": "Deadlocks and unexpected message ordering are common message-passing debugging traps."
+      },
+      {
+        "id": "module-final-c-9",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "A problem can be split into subproblems, but the same subproblem appears many times. Which technique usually beats plain divide and conquer?",
+        "answer": "Dynamic programming",
+        "wrong": [
+          "Greedy method",
+          "Point-to-point messaging",
+          "Constant time"
+        ],
+        "explanation": "Dynamic programming stores repeated subproblem results."
+      },
+      {
+        "id": "module-final-c-10",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which phrase is the best clue for backtracking?",
+        "answer": "Try a candidate, retreat when constraints fail",
+        "wrong": [
+          "Choose local best and never reconsider",
+          "Apply same operation to pixels",
+          "Send a message to process 3"
+        ],
+        "explanation": "Backtracking moves forward and returns when a path cannot lead to a valid solution."
+      },
+      {
+        "id": "module-final-c-11",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which phrase is the best clue for branch and bound?",
+        "answer": "Prune solution paths using a bound and current best answer",
+        "wrong": [
+          "Split only into equal data partitions",
+          "Read the first array item",
+          "Broadcast to all workers"
+        ],
+        "explanation": "Bounds eliminate parts of the search space that cannot improve the solution."
+      },
+      {
+        "id": "module-final-c-12",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which phrase is the best clue for linear programming?",
+        "answer": "Linear objective and linear constraints",
+        "wrong": [
+          "Many shared variables",
+          "Unexpected message order",
+          "Nested loops only"
+        ],
+        "explanation": "Linear programming is defined by linear objective and constraint functions."
+      },
+      {
+        "id": "module-final-c-13",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "A classmate says divide and conquer and dynamic programming are identical because both use subproblems. What is the best distinction?",
+        "answer": "Dynamic programming reuses overlapping subproblem solutions",
+        "wrong": [
+          "Divide and conquer never uses recursion",
+          "Dynamic programming is only for networks",
+          "Divide and conquer always uses locks"
+        ],
+        "explanation": "DP is distinguished by storing/reusing repeated subproblems."
+      },
+      {
+        "id": "module-final-c-14",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which algorithm technique is most likely for binary search?",
+        "answer": "Divide and conquer",
+        "wrong": [
+          "Backtracking",
+          "Linear programming",
+          "Message passing"
+        ],
+        "explanation": "Binary search repeatedly divides the search interval."
+      },
+      {
+        "id": "module-final-c-15",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which algorithm technique is most likely for Sudoku?",
+        "answer": "Backtracking",
+        "wrong": [
+          "Greedy method only",
+          "Data parallelism only",
+          "O(1) direct access"
+        ],
+        "explanation": "Sudoku solvers often try candidates and backtrack when constraints fail."
+      },
+      {
+        "id": "module-final-c-16",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which algorithm technique is most likely when choosing the best current component and never reconsidering it?",
+        "answer": "Greedy method",
+        "wrong": [
+          "Dynamic programming",
+          "Branch and bound",
+          "Shared memory"
+        ],
+        "explanation": "The defining clue is choosing the current best-looking option."
+      },
+      {
+        "id": "module-final-c-17",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which algorithm technique is most likely for optimizing maximum profit with linear restrictions?",
+        "answer": "Linear programming",
+        "wrong": [
+          "Message passing",
+          "Backtracking only",
+          "SIMD"
+        ],
+        "explanation": "Maximum profit under linear constraints is a linear programming scenario."
+      },
+      {
+        "id": "module-final-c-18",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which technique searches the entire solution space more intelligently by eliminating impossible or weak areas?",
+        "answer": "Branch and bound",
+        "wrong": [
+          "Constant time",
+          "Point-to-point communication",
+          "Direct array lookup"
+        ],
+        "explanation": "Branch and bound explores possible solutions while pruning using bounds."
+      },
+      {
+        "id": "module-final-c-19",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Which complexity class grows slowest among the options?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(log n)",
+          "O(n)",
+          "O(n log n)"
+        ],
+        "explanation": "Constant time does not grow with input size."
+      },
+      {
+        "id": "module-final-c-20",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Which complexity class grows fastest among the options?",
+        "answer": "O(n!)",
+        "wrong": [
+          "O(n^2)",
+          "O(n log n)",
+          "O(log n)"
+        ],
+        "explanation": "Factorial time grows extremely fast and is worse than the listed polynomial/logarithmic classes."
+      },
+      {
+        "id": "module-final-c-21",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Which pair is in correct increasing growth order?",
+        "answer": "O(1), O(log n), O(n), O(n log n)",
+        "wrong": [
+          "O(n^2), O(n), O(log n), O(1)",
+          "O(n!), O(2^n), O(n), O(1)",
+          "O(log n), O(1), O(n^2), O(n)"
+        ],
+        "explanation": "The usual order is constant, logarithmic, linear, log-linear."
+      },
+      {
+        "id": "module-final-c-22",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "A loop inside a loop inside a loop over n items is most likely what?",
+        "answer": "O(n^3)",
+        "wrong": [
+          "O(log n)",
+          "O(1)",
+          "O(n log n)"
+        ],
+        "explanation": "Three nested n-sized loops imply cubic time."
+      },
+      {
+        "id": "module-final-c-23",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Trying every subset of n items is commonly associated with what growth?",
+        "answer": "O(2^n)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n)"
+        ],
+        "explanation": "Each item often creates an include/exclude choice, producing exponential growth."
+      },
+      {
+        "id": "module-final-c-24",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Trying every ordering of n items is commonly associated with what growth?",
+        "answer": "O(n!)",
+        "wrong": [
+          "O(n)",
+          "O(log n)",
+          "O(n log n)"
+        ],
+        "explanation": "Every permutation of n items produces factorial growth."
+      },
+      {
+        "id": "module-final-c-25",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Asymptotic Notation",
+        "prompt": "Which notation is the tightest statement when an algorithm is both O(n log n) and Omega(n log n)?",
+        "answer": "Theta(n log n)",
+        "wrong": [
+          "O(1)",
+          "Omega(1) only",
+          "SIMD"
+        ],
+        "explanation": "Matching upper and lower bounds give a Theta bound."
+      },
+      {
+        "id": "module-final-c-26",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Asymptotic Notation",
+        "prompt": "If an algorithm has worst-case O(n^2), what does that most directly tell you?",
+        "answer": "Its runtime is bounded above by a quadratic function for large input",
+        "wrong": [
+          "It always runs exactly n^2 steps",
+          "It has no lower bound",
+          "It must use message passing"
+        ],
+        "explanation": "Big-O is an upper bound, not necessarily an exact count."
+      },
+      {
+        "id": "module-final-c-27",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Which is the best example of O(n) time?",
+        "answer": "Scanning every item once",
+        "wrong": [
+          "Directly reading array[0]",
+          "Binary searching sorted data",
+          "Trying every permutation"
+        ],
+        "explanation": "A single pass through all items is linear."
+      },
+      {
+        "id": "module-final-c-28",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Which is the best example of O(log n) time?",
+        "answer": "Binary search",
+        "wrong": [
+          "Printing all pairs",
+          "Creating an n by n matrix",
+          "Trying all subsets"
+        ],
+        "explanation": "Binary search repeatedly halves the possible range."
+      },
+      {
+        "id": "module-final-c-29",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Which is the best example of O(n log n) time?",
+        "answer": "Efficient comparison sorting such as merge sort",
+        "wrong": [
+          "Direct access",
+          "Two nested loops over all pairs",
+          "Trying every permutation"
+        ],
+        "explanation": "Merge sort and many efficient sorts are O(n log n)."
+      },
+      {
+        "id": "module-final-c-30",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Space Complexity",
+        "prompt": "Which is the best example of O(n^2) space?",
+        "answer": "Creating a square matrix of size n by n",
+        "wrong": [
+          "Using one sum variable",
+          "Reading only the first element",
+          "Sending one direct message"
+        ],
+        "explanation": "An n by n matrix stores n squared cells."
+      },
+      {
+        "id": "module-final-c-31",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "What is the main difference between time and space complexity?",
+        "answer": "Time measures runtime growth; space measures memory growth",
+        "wrong": [
+          "Time measures colors; space measures processors",
+          "Both only mean Big-Omega",
+          "Space complexity ignores input size"
+        ],
+        "explanation": "Time and space analyze different resource growth."
+      },
+      {
+        "id": "module-final-c-32",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "A program is fast on small input but explodes as n grows because it checks permutations. What is the likely problem?",
+        "answer": "Factorial growth",
+        "wrong": [
+          "Constant time",
+          "No synchronization",
+          "SIMD efficiency"
+        ],
+        "explanation": "Permutation-based search often has O(n!) behavior."
+      },
+      {
+        "id": "module-final-c-33",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "A distributed cluster processes work successfully even when one node fails and others continue. Which distributed-systems property is this?",
+        "answer": "Fault tolerance",
+        "wrong": [
+          "Race condition",
+          "Linear programming",
+          "Constant space"
+        ],
+        "explanation": "Fault tolerance means the system continues despite component failures."
+      },
+      {
+        "id": "module-final-c-34",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "A tightly connected group of computers works as a single system for HPC. What is this called?",
+        "answer": "Cluster computing",
+        "wrong": [
+          "Greedy method",
+          "Direct array access",
+          "Single-core SISD"
+        ],
+        "explanation": "Cluster computing uses interconnected computers as one system, often for HPC."
+      },
+      {
+        "id": "module-final-c-35",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "A large resource-sharing system spans multiple organizations and locations. What is this called?",
+        "answer": "Grid computing",
+        "wrong": [
+          "Shared local variable",
+          "Constant-time lookup",
+          "Backtracking only"
+        ],
+        "explanation": "Grid computing extends resource sharing across wide areas and organizations."
+      },
+      {
+        "id": "module-final-c-36",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "Which architecture has every node act as both client and server?",
+        "answer": "Peer-to-peer architecture",
+        "wrong": [
+          "Client-server only",
+          "SISD",
+          "Linear programming"
+        ],
+        "explanation": "P2P nodes can serve and request resources without a central server."
+      },
+      {
+        "id": "module-final-c-37",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "Which architecture relies on centralized services responding to client requests?",
+        "answer": "Client-server architecture",
+        "wrong": [
+          "Peer-to-peer only",
+          "Backtracking",
+          "SIMD"
+        ],
+        "explanation": "Client-server has clients requesting services from a server."
+      },
+      {
+        "id": "module-final-c-38",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "MapReduce's Map phase primarily does what?",
+        "answer": "Processes split data chunks in parallel",
+        "wrong": [
+          "Combines all final results only",
+          "Locks one shared variable",
+          "Chooses a local greedy option"
+        ],
+        "explanation": "Map splits work into chunks processed in parallel."
+      },
+      {
+        "id": "module-final-c-39",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "MapReduce's Reduce phase primarily does what?",
+        "answer": "Aggregates intermediate results",
+        "wrong": [
+          "Applies a pixel filter to one image only",
+          "Creates locks",
+          "Runs binary search"
+        ],
+        "explanation": "Reduce combines mapped outputs into final results."
+      },
+      {
+        "id": "module-final-c-40",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Model Comparison",
+        "prompt": "Which statement about shared memory vs message passing is most accurate?",
+        "answer": "Shared memory can be faster locally, while message passing fits distributed nodes",
+        "wrong": [
+          "Message passing always shares one address space",
+          "Shared memory never needs synchronization",
+          "Both are exactly the same"
+        ],
+        "explanation": "This captures the key tradeoff between speed and distributed scalability."
+      },
+      {
+        "id": "module-final-c-41",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Model Comparison",
+        "prompt": "Which statement about data and task parallelism is most accurate?",
+        "answer": "Data parallelism repeats one operation over data; task parallelism runs distinct tasks",
+        "wrong": [
+          "They are identical terms",
+          "Data parallelism means no data exists",
+          "Task parallelism means only one task runs"
+        ],
+        "explanation": "This is the cleanest distinction."
+      },
+      {
+        "id": "module-final-c-42",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Synchronization",
+        "prompt": "Which choice is most likely to create a race condition?",
+        "answer": "Two threads writing the same shared variable without synchronization",
+        "wrong": [
+          "Binary search on a read-only sorted array",
+          "A process receiving a message",
+          "A linear objective function"
+        ],
+        "explanation": "Concurrent unsynchronized shared writes are the classic race-condition setup."
+      },
+      {
+        "id": "module-final-c-43",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Performance",
+        "prompt": "Which choice is most likely to create communication overhead?",
+        "answer": "Processes frequently exchange large messages across a network",
+        "wrong": [
+          "A thread reads a local variable once",
+          "An algorithm uses O(1) space",
+          "A direct array access"
+        ],
+        "explanation": "Network message exchange costs time."
+      },
+      {
+        "id": "module-final-c-44",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Performance",
+        "prompt": "Which choice best explains why increasing processors may not improve performance proportionally?",
+        "answer": "Some work is serial and coordination adds overhead",
+        "wrong": [
+          "All parallel programs are automatically perfect",
+          "Big-O always becomes O(1)",
+          "Memory disappears"
+        ],
+        "explanation": "Real speedup is limited by serial portions and overhead."
+      },
+      {
+        "id": "module-final-c-45",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Granularity",
+        "prompt": "A program divides tasks into extremely small pieces, causing scheduling and communication to dominate. What is the issue?",
+        "answer": "Fine-grained overhead",
+        "wrong": [
+          "Perfect coarse-grained balance",
+          "No parallelism possible",
+          "Big-Theta notation"
+        ],
+        "explanation": "Too-small work units can cost more to manage than execute."
+      },
+      {
+        "id": "module-final-c-46",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Granularity",
+        "prompt": "A program divides work into large independent frames for rendering. What granularity is this?",
+        "answer": "Coarse-grained",
+        "wrong": [
+          "Fine-grained every instruction",
+          "Constant-space only",
+          "No workload"
+        ],
+        "explanation": "Large independent chunks are coarse-grained."
+      },
+      {
+        "id": "module-final-c-47",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Shared Memory",
+        "prompt": "Which model fits a multi-core CPU where threads share a global memory space?",
+        "answer": "Shared-memory programming",
+        "wrong": [
+          "Message passing across clusters only",
+          "Grid computing only",
+          "Linear programming"
+        ],
+        "explanation": "One machine with shared memory and multiple cores is the shared-memory setting."
+      },
+      {
+        "id": "module-final-c-48",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Message Passing",
+        "prompt": "Which model fits a networked cluster where each node has its own local memory?",
+        "answer": "Message-passing programming",
+        "wrong": [
+          "Shared-memory only",
+          "O(1) only",
+          "Greedy method only"
+        ],
+        "explanation": "Separate local memories and network communication point to message passing."
+      },
+      {
+        "id": "module-final-c-49",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Taxonomy",
+        "prompt": "Which phrase is the clearest sign of SIMD?",
+        "answer": "One instruction applied to many data values",
+        "wrong": [
+          "Many instructions on no data",
+          "One thread waits for one lock",
+          "A linear constraint is optimized"
+        ],
+        "explanation": "SIMD expands to Single Instruction, Multiple Data."
+      },
+      {
+        "id": "module-final-c-50",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Taxonomy",
+        "prompt": "Which phrase is the clearest sign of MIMD?",
+        "answer": "Different instructions operating on different data streams",
+        "wrong": [
+          "One instruction and one data stream",
+          "A single direct array access",
+          "A square matrix allocation"
+        ],
+        "explanation": "MIMD expands to Multiple Instruction, Multiple Data."
+      },
+      {
+        "id": "quiz-a-1",
+        "number": 1,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What is the primary characteristic that defines message-passing programming as distinct from shared-memory programming?",
+        "answer": "Processes run in separate memory spaces and communicate explicitly by sending and receiving messages to each other.",
+        "wrong": [
+          "Processes share a distributed cache layer that all nodes can read from and write to simultaneously.",
+          "Processes communicate through a central coordinator node that manages all data transfers between workers.",
+          "Processes share a single common memory space and communicate by reading and writing the same variables directly."
+        ],
+        "explanation": "Processes run in separate memory spaces and communicate explicitly by sending and receiving messages to each other."
+      },
+      {
+        "id": "quiz-a-2",
+        "number": 2,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement best describes asynchronous communication in a message-passing program?",
+        "answer": "A sending process posts its message and immediately continues executing other work without waiting for the receiver to accept it.",
+        "wrong": [
+          "A sending process suspends all computation and remains idle until the receiving process explicitly confirms the message arrived.",
+          "All participating processes coordinate to send and receive messages at a pre-agreed synchronized time checkpoint.",
+          "The operating system buffers all messages and delivers them in the exact sequence they were originally transmitted."
+        ],
+        "explanation": "A sending process posts its message and immediately continues executing other work without waiting for the receiver to accept it."
+      },
+      {
+        "id": "quiz-a-3",
+        "number": 3,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "In message-passing programming, what accurately describes point-to-point communication?",
+        "answer": "One process sends a message to one specific, individually addressed target process for direct exchange.",
+        "wrong": [
+          "Every process in the group sends its local data to every other process simultaneously in a ring pattern.",
+          "A group of processes collectively computes a result and delivers it to all members of the communicator.",
+          "One root process distributes identical copies of a message to every other process in the communicator group."
+        ],
+        "explanation": "One process sends a message to one specific, individually addressed target process for direct exchange."
+      },
+      {
+        "id": "quiz-a-4",
+        "number": 4,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What does the acronym MPI stand for in high-performance parallel computing?",
+        "answer": "Message Passing Interface, the widely adopted standard library for distributed-memory parallel programming.",
+        "wrong": [
+          "Memory Partitioned Interface, the specification for dividing RAM equally among parallel worker threads.",
+          "Modular Parallel Implementation, a framework for automatically decomposing sequential programs into tasks.",
+          "Multi-Process Integration, the standard protocol for combining results across multi-core processors."
+        ],
+        "explanation": "Message Passing Interface, the widely adopted standard library for distributed-memory parallel programming."
+      },
+      {
+        "id": "quiz-a-5",
+        "number": 5,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A 500-node cluster runs a weather simulation where each node independently processes one geographic region and exchanges boundary values only with adjacent nodes. Which parallel paradigm fits best?",
+        "answer": "Message-passing using MPI, because each node has separate memory and communicates boundary data via explicit send and receive calls.",
+        "wrong": [
+          "Shared-memory using Intel TBB, because the threading library efficiently manages work queues across all cluster nodes.",
+          "Shared-memory using POSIX threads, because pthreads allow fine-grained control over each node's regional data buffer.",
+          "Shared-memory using OpenMP, because compiler directives automatically distribute the regional computation across all 500 nodes."
+        ],
+        "explanation": "Message-passing using MPI, because each node has separate memory and communicates boundary data via explicit send and receive calls."
+      },
+      {
+        "id": "quiz-a-6",
+        "number": 6,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement correctly describes a key scalability advantage of message-passing programming over shared-memory programming?",
+        "answer": "Message-passing programs scale across hundreds of distributed nodes because each process owns private memory and communicates explicitly.",
+        "wrong": [
+          "Message-passing programs use a global shared bus so that adding more nodes directly increases available memory bandwidth.",
+          "Message-passing programs depend on a shared heap segment that grows proportionally as more compute nodes join the cluster.",
+          "Message-passing programs run on a single machine with shared RAM and scale well because the OS manages lock contention automatically."
+        ],
+        "explanation": "Message-passing programs scale across hundreds of distributed nodes because each process owns private memory and communicates explicitly."
+      },
+      {
+        "id": "quiz-a-7",
+        "number": 7,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What is collective communication in message-passing systems and which operation is an example of it?",
+        "answer": "Collective communication describes group-level operations involving all processes, such as MPI_Bcast which sends one value to every process.",
+        "wrong": [
+          "Collective communication describes the technique of buffering multiple point-to-point messages to reduce individual transmission overhead.",
+          "Collective communication describes a fault-tolerance protocol where surviving processes redistribute work from a failed process automatically.",
+          "Collective communication describes one process sending a private message to one specific partner, as in a standard MPI_Send call."
+        ],
+        "explanation": "Collective communication describes group-level operations involving all processes, such as MPI_Bcast which sends one value to every process."
+      },
+      {
+        "id": "quiz-a-8",
+        "number": 8,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Two MPI processes — P0 and P1 — each call a blocking MPI_Send to the other before calling MPI_Recv. Neither process ever proceeds past its send call and the program freezes permanently. What condition has occurred and how is it resolved?",
+        "answer": "A message deadlock has occurred; the fix is to reorder calls so one process sends while the other receives, or to use non-blocking MPI_Isend.",
+        "wrong": [
+          "A scheduling conflict has occurred; the fix is to assign each process to a dedicated CPU core using processor affinity settings.",
+          "A collective communication mismatch has occurred; the fix is to replace MPI_Send with MPI_Bcast so both processes receive the message.",
+          "A memory overflow has occurred because each blocking send allocated a buffer larger than the available RAM on each node."
+        ],
+        "explanation": "A message deadlock has occurred; the fix is to reorder calls so one process sends while the other receives, or to use non-blocking MPI_Isend."
+      },
+      {
+        "id": "quiz-a-9",
+        "number": 9,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A financial HPC cluster shows no speedup gain after 150 nodes even when 50 more nodes are added. The computation per node remains constant but inter-node messaging has grown. What does this indicate about the message-passing workload?",
+        "answer": "Communication overhead between processes is growing fast enough to cancel out the computational benefit that the extra nodes provide.",
+        "wrong": [
+          "The financial dataset is too small for the cluster size, so each extra node receives zero work items and sits idle during the run.",
+          "The network switch is running at capacity so the OS automatically throttles new nodes to prevent packet loss on the interconnect.",
+          "The MPI library reached its maximum registered process count of 150 and stopped accepting new worker registrations."
+        ],
+        "explanation": "Communication overhead between processes is growing fast enough to cancel out the computational benefit that the extra nodes provide."
+      },
+      {
+        "id": "quiz-a-10",
+        "number": 10,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement correctly identifies a significant debugging challenge that is specific to message-passing programs?",
+        "answer": "Message-passing programs can suffer from deadlocks or non-deterministic message ordering, making bugs difficult to reproduce consistently.",
+        "wrong": [
+          "Message-passing programs share a global heap, so memory corruption in one process is immediately visible and easy to isolate.",
+          "Message-passing programs always execute sequentially on one core, so the debugger can single-step through every instruction in order.",
+          "Message-passing programs store all communication logs in a shared database, giving the developer a complete audit trail of every exchange."
+        ],
+        "explanation": "Message-passing programs can suffer from deadlocks or non-deterministic message ordering, making bugs difficult to reproduce consistently."
+      },
+      {
+        "id": "quiz-a-11",
+        "number": 11,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "How is synchronization between processes handled in the message-passing programming model?",
+        "answer": "Synchronization is explicit; processes deliberately issue send, receive, or barrier calls to coordinate their activities with other processes.",
+        "wrong": [
+          "Synchronization is fully automatic; the MPI runtime inserts barriers between every communication call without developer intervention.",
+          "Synchronization is unnecessary because each process runs in complete isolation and never needs to coordinate timing with any peer.",
+          "Synchronization is handled by a dedicated master process that polls all workers and issues clock signals at fixed time intervals."
+        ],
+        "explanation": "Synchronization is explicit; processes deliberately issue send, receive, or barrier calls to coordinate their activities with other processes."
+      },
+      {
+        "id": "quiz-a-12",
+        "number": 12,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A physics simulation on 1,000 nodes produces partial results on each node. At the end, all partial sums must be totaled into a single global result held on Node 0. Which MPI collective operation is the correct and most efficient choice?",
+        "answer": "MPI_Reduce, where all processes send their partial values to Node 0 which combines them using a SUM operation into one result.",
+        "wrong": [
+          "MPI_Bcast, where Node 0 transmits its partial result to all other nodes so every process holds the same starting value.",
+          "MPI_Scatter, where Node 0 breaks a large dataset into chunks and distributes one unique chunk to each of the 1,000 nodes.",
+          "MPI_Alltoall, where every node exchanges its partial result with every other node so all nodes hold all partial sums."
+        ],
+        "explanation": "MPI_Reduce, where all processes send their partial values to Node 0 which combines them using a SUM operation into one result."
+      },
+      {
+        "id": "quiz-a-13",
+        "number": 13,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "What are the three sequential steps that the Divide and Conquer algorithm technique performs at each level of recursion?",
+        "answer": "Divide the problem into smaller sub-problems, conquer each sub-problem recursively, then combine their solutions into the final answer.",
+        "wrong": [
+          "Initialize the data structure, process each element sequentially, then output the final combined result to storage.",
+          "Partition the input data evenly, sort each partition with an insertion pass, then merge adjacent sorted partitions repeatedly.",
+          "Select the optimal sub-problem to solve first, execute it greedily, then propagate the result to dependent sub-problems."
+        ],
+        "explanation": "Divide the problem into smaller sub-problems, conquer each sub-problem recursively, then combine their solutions into the final answer."
+      },
+      {
+        "id": "quiz-a-14",
+        "number": 14,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which algorithm design technique makes the locally optimal choice at each decision step and never revisits a previous decision?",
+        "answer": "The Greedy Method, which always selects the best-looking option at the current step without reconsidering earlier choices.",
+        "wrong": [
+          "Dynamic Programming, which stores every sub-problem solution in a table and reuses those stored answers in future computations.",
+          "Backtracking, which explores each candidate solution fully and retreats to the previous checkpoint when a dead end is encountered.",
+          "Branch and Bound, which maintains a priority queue of partial solutions ranked by their lower-bound cost estimate."
+        ],
+        "explanation": "The Greedy Method, which always selects the best-looking option at the current step without reconsidering earlier choices."
+      },
+      {
+        "id": "quiz-a-15",
+        "number": 15,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "What is the key distinguishing difference between Dynamic Programming and the Divide and Conquer technique?",
+        "answer": "Dynamic Programming stores and reuses overlapping sub-problem solutions, while Divide and Conquer solves each sub-problem independently.",
+        "wrong": [
+          "Divide and Conquer stores solutions to sub-problems in a lookup table while Dynamic Programming always recomputes them from scratch.",
+          "Dynamic Programming works only on graph problems while Divide and Conquer applies only to array and sorting problems.",
+          "Divide and Conquer requires distributed memory clusters while Dynamic Programming runs only on shared-memory multi-core systems."
+        ],
+        "explanation": "Dynamic Programming stores and reuses overlapping sub-problem solutions, while Divide and Conquer solves each sub-problem independently."
+      },
+      {
+        "id": "quiz-a-16",
+        "number": 16,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which description most accurately defines how the Backtracking algorithm works?",
+        "answer": "The algorithm starts with a promising candidate, advances step by step checking constraints, and retreats one level when a constraint fails.",
+        "wrong": [
+          "The algorithm builds a priority queue of candidate solutions ranked by their estimated cost and processes the cheapest candidate first.",
+          "The algorithm expresses the problem as a set of linear constraints and finds the assignment of variables that satisfies all constraints optimally.",
+          "The algorithm divides the solution space into two halves repeatedly and processes each half on a separate processor simultaneously."
+        ],
+        "explanation": "The algorithm starts with a promising candidate, advances step by step checking constraints, and retreats one level when a constraint fails."
+      },
+      {
+        "id": "quiz-a-17",
+        "number": 17,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which real-world combinatorial puzzle is the most classically cited example of the Backtracking algorithm in computer science textbooks?",
+        "answer": "The Eight Queens Problem, where eight chess queens must be placed on a board so that no queen threatens any other queen.",
+        "wrong": [
+          "The Fibonacci Series problem, where each term depends on the sum of the two immediately preceding terms in the sequence.",
+          "The Travelling Salesman Problem, where the total distance of a route connecting all cities must be minimized globally.",
+          "The Shortest Path Problem, where the minimum-cost route between two nodes in a weighted graph must be identified."
+        ],
+        "explanation": "The Eight Queens Problem, where eight chess queens must be placed on a board so that no queen threatens any other queen."
+      },
+      {
+        "id": "quiz-a-18",
+        "number": 18,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A delivery company must find the minimum-distance route visiting 12 cities. The solution space is enormous. Which design technique intelligently prunes unpromising routes without evaluating every possibility?",
+        "answer": "Branch and Bound, which explores partial routes and discards any branch whose lower-bound cost already exceeds the best complete route found.",
+        "wrong": [
+          "The Greedy Method, which builds the route one city at a time by always traveling to the nearest unvisited city from the current location.",
+          "Dynamic Programming, which breaks the route into overlapping city-pair sub-problems and stores the shortest sub-route for each pair.",
+          "Linear Programming, which models the routing decision as a set of linear equations and solves for the assignment that minimizes total distance."
+        ],
+        "explanation": "Branch and Bound, which explores partial routes and discards any branch whose lower-bound cost already exceeds the best complete route found."
+      },
+      {
+        "id": "quiz-a-19",
+        "number": 19,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "The Fibonacci algorithm (Fib(n) = Fib(n-1) + Fib(n-2)) implemented with a lookup table to avoid repeated computation is a classic example of which technique?",
+        "answer": "Dynamic Programming, because overlapping sub-problems (Fib(n-1), Fib(n-2)) are computed once, stored, and reused in later calls.",
+        "wrong": [
+          "Backtracking, because the recursion explores multiple candidate values before settling on the correct Fibonacci term at depth n.",
+          "Branch and Bound, because the recursion tree branches into two sub-calls and prunes branches where Fib values are already known.",
+          "Divide and Conquer, because the problem is split into two independent halves that are solved separately and their results summed."
+        ],
+        "explanation": "Dynamic Programming, because overlapping sub-problems (Fib(n-1), Fib(n-2)) are computed once, stored, and reused in later calls."
+      },
+      {
+        "id": "quiz-a-20",
+        "number": 20,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Both Binary Search and Merge Sort are textbook examples of which parallel algorithm design technique?",
+        "answer": "Divide and Conquer, because both algorithms recursively split the input in half, solve each half, and then combine the results.",
+        "wrong": [
+          "Greedy Method, because both algorithms commit to a locally optimal decision at each step without reconsidering prior choices.",
+          "Dynamic Programming, because both algorithms store results from smaller input sizes to avoid re-scanning previously processed data.",
+          "Branch and Bound, because both algorithms prune sections of the input that cannot possibly contribute to the final answer."
+        ],
+        "explanation": "Divide and Conquer, because both algorithms recursively split the input in half, solve each half, and then combine the results."
+      },
+      {
+        "id": "quiz-a-21",
+        "number": 21,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A logistics firm assigns delivery drivers to routes to maximize total deliveries in an 8-hour shift. Driver assignment, shift-hour limits, and vehicle capacity all have linear relationships. Which design technique directly models and solves this optimization problem?",
+        "answer": "Linear Programming, which models the objective and all constraints as linear functions and finds the optimal variable assignment mathematically.",
+        "wrong": [
+          "Branch and Bound, which generates a tree of partial assignments and prunes branches where estimated deliveries fall below the current best.",
+          "Greedy Method, which assigns the driver with the greatest remaining shift time to the longest available route at each decision step.",
+          "Backtracking, which tries every possible driver-to-route assignment and retreats whenever a shift-hour or capacity constraint is violated."
+        ],
+        "explanation": "Linear Programming, which models the objective and all constraints as linear functions and finds the optimal variable assignment mathematically."
+      },
+      {
+        "id": "quiz-a-22",
+        "number": 22,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A game developer builds a maze solver that explores a path step by step, and when it hits a dead end, it reverses to the last junction and tries a different direction. This continues until the exit is found. Which design technique is being implemented?",
+        "answer": "Backtracking, because the solver builds a path incrementally and retreats to the previous decision point whenever a dead end is encountered.",
+        "wrong": [
+          "Greedy Method, because at each junction the solver picks the corridor that appears to lead most directly toward the exit position.",
+          "Branch and Bound, because at each junction the solver calculates the minimum remaining distance and prunes corridors that exceed the limit.",
+          "Divide and Conquer, because the maze is split into quadrants and each quadrant is solved independently by a recursive sub-call."
+        ],
+        "explanation": "Backtracking, because the solver builds a path incrementally and retreats to the previous decision point whenever a dead end is encountered."
+      },
+      {
+        "id": "quiz-a-23",
+        "number": 23,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "What is the defining characteristic of the shared-memory parallel programming model?",
+        "answer": "All threads running on the same system can access the same memory addresses and communicate by reading and writing shared variables.",
+        "wrong": [
+          "Threads are assigned to separate physical servers and synchronize by exchanging data packets over a high-speed network interconnect.",
+          "Each thread operates on an independent memory bank that is readable by the CPU but not directly accessible by any other thread.",
+          "Each thread holds a private copy of all program variables and must explicitly send updates to other threads through a message queue."
+        ],
+        "explanation": "All threads running on the same system can access the same memory addresses and communicate by reading and writing shared variables."
+      },
+      {
+        "id": "quiz-a-24",
+        "number": 24,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Two threads simultaneously read a shared counter, each adds one to it, and each writes back the result. The counter increments by one instead of two. What is this concurrency problem called?",
+        "answer": "A race condition, where two threads access and modify shared data concurrently without synchronization causing one update to be lost.",
+        "wrong": [
+          "A memory leak, where each thread allocates a new buffer for the counter value but never frees the old buffer after writing.",
+          "A stack overflow, where the counter variable exceeds the maximum integer range supported by the thread's private call stack memory.",
+          "A deadlock, where both threads are blocked waiting for a resource that the other thread currently holds and refuses to release."
+        ],
+        "explanation": "A race condition, where two threads access and modify shared data concurrently without synchronization causing one update to be lost."
+      },
+      {
+        "id": "quiz-a-25",
+        "number": 25,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which synchronization mechanism in shared-memory programming ensures that only one thread at a time can execute a critical section of code?",
+        "answer": "A mutex lock (mutual exclusion lock), which allows only the thread holding the lock to enter the critical section at any given time.",
+        "wrong": [
+          "A network socket, which provides a reliable byte-stream channel between two threads running on different CPU cores.",
+          "A memory-mapped file, which maps shared data to a file on disk so multiple threads can access it through the file system.",
+          "A message queue, which buffers outgoing data from one thread and delivers it to another thread in the order it was enqueued."
+        ],
+        "explanation": "A mutex lock (mutual exclusion lock), which allows only the thread holding the lock to enter the critical section at any given time."
+      },
+      {
+        "id": "quiz-b-26",
+        "number": 26,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "In shared-memory programming, what is the key difference between multithreading and multiprocessing?",
+        "answer": "Multithreading creates multiple execution units within one process sharing the same memory; multiprocessing creates separate processes each with independent memory.",
+        "wrong": [
+          "Multithreading allocates a separate CPU socket to each thread while multiprocessing runs all tasks on a single CPU core in rotation.",
+          "Multithreading is exclusively used for input/output tasks while multiprocessing handles all mathematical and computational operations.",
+          "Multithreading requires a special OS kernel module while multiprocessing runs on any standard operating system without modification."
+        ],
+        "explanation": "Multithreading creates multiple execution units within one process sharing the same memory; multiprocessing creates separate processes each with independent memory."
+      },
+      {
+        "id": "quiz-b-27",
+        "number": 27,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which parallel processing framework uses pragma compiler directives to parallelize loops and is specifically designed for shared-memory multi-core systems?",
+        "answer": "OpenMP, which uses #pragma omp directives so developers can parallelize loops and sections without restructuring sequential code.",
+        "wrong": [
+          "CUDA (Compute Unified Device Architecture), which offloads massively parallel computations to GPU streaming multiprocessors.",
+          "MPI (Message Passing Interface), which uses explicit send/receive calls to coordinate work across distributed-memory compute nodes.",
+          "Hadoop MapReduce, which distributes large dataset processing across a cluster of commodity servers using a key-value paradigm."
+        ],
+        "explanation": "OpenMP, which uses #pragma omp directives so developers can parallelize loops and sections without restructuring sequential code."
+      },
+      {
+        "id": "quiz-b-28",
+        "number": 28,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Thread A and Thread B both execute 'counter++' on a shared variable 1,000 times each without any synchronization. The final value is 1,743 instead of 2,000. What caused the discrepancy of 257?",
+        "answer": "A race condition caused both threads to read the same counter value before either could write back, so some increments were overwritten and lost.",
+        "wrong": [
+          "The operating system's thread scheduler assigned both threads to the same CPU core, causing them to alternate too slowly to complete all increments.",
+          "The threads consumed excessive CPU cache capacity causing some increment operations to be silently discarded by the cache coherence protocol.",
+          "The compiler optimized away 257 redundant increment operations because it detected that both threads were modifying the same variable."
+        ],
+        "explanation": "A race condition caused both threads to read the same counter value before either could write back, so some increments were overwritten and lost."
+      },
+      {
+        "id": "quiz-b-29",
+        "number": 29,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "As the number of threads in a shared-memory program increases to very large numbers, what performance limitation typically emerges?",
+        "answer": "Scalability degrades because increasing threads means more contention for shared resources and growing synchronization overhead that reduces gains.",
+        "wrong": [
+          "The operating system automatically converts the shared-memory program to a message-passing program to handle the extra threads efficiently.",
+          "Memory usage drops to zero because the threads share so much data that very little unique information needs to be stored per thread.",
+          "The compiler automatically inserts additional mutex locks that protect all shared variables so thread safety improves as thread count grows."
+        ],
+        "explanation": "Scalability degrades because increasing threads means more contention for shared resources and growing synchronization overhead that reduces gains."
+      },
+      {
+        "id": "quiz-b-30",
+        "number": 30,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "An online exam system on a 32-core server handles 5,000 simultaneous student registrations. Each registration decrements a shared 'seats_remaining' counter. Which approach correctly prevents registration count errors in shared-memory programming?",
+        "answer": "Use a mutex lock around the decrement operation so only one thread modifies seats_remaining at a time, preventing lost updates.",
+        "wrong": [
+          "Allow all 5,000 threads to update the counter simultaneously and rely on the CPU's out-of-order execution to merge the updates correctly.",
+          "Run each student's session on a separate virtual machine so that each VM maintains its own independent copy of the counter value.",
+          "Use file locking to write the counter to disk before each decrement so the persistent file serves as the authoritative shared state."
+        ],
+        "explanation": "Use a mutex lock around the decrement operation so only one thread modifies seats_remaining at a time, preventing lost updates."
+      },
+      {
+        "id": "quiz-b-31",
+        "number": 31,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Two Java threads process bank account transactions on the same account object. Both read a balance of PHP 10,000, each deducts PHP 8,000, and both write PHP 2,000 back — leaving PHP 2,000 instead of detecting an overdraft. Which concurrency problem caused this and what is the correct fix?",
+        "answer": "A race condition caused a lost update; using Java's synchronized keyword on the transaction method ensures only one thread reads-and-writes at a time.",
+        "wrong": [
+          "A deadlock caused both threads to block waiting for the account object lock; adding a second lock object on the transaction class resolves it.",
+          "A memory leak caused transaction objects to pile up; calling System.gc() after each transaction frees the excess objects and corrects the balance.",
+          "A stack overflow in the transaction recursion caused the balance to be partially written; increasing the JVM thread stack size resolves the issue."
+        ],
+        "explanation": "A race condition caused a lost update; using Java's synchronized keyword on the transaction method ensures only one thread reads-and-writes at a time."
+      },
+      {
+        "id": "quiz-b-32",
+        "number": 32,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which statement accurately describes the communication advantage of shared-memory programming over message-passing for tasks on a single machine?",
+        "answer": "Shared-memory programs allow threads to communicate by directly reading and writing shared data structures with no message serialization overhead.",
+        "wrong": [
+          "Shared-memory programs automatically distribute their computations across multiple physical servers with no network configuration needed.",
+          "Shared-memory programs prevent all race conditions by default because the compiler inserts atomic operations around every memory access.",
+          "Shared-memory programs scale to unlimited thread counts because lock contention decreases automatically as more cores are added to the system."
+        ],
+        "explanation": "Shared-memory programs allow threads to communicate by directly reading and writing shared data structures with no message serialization overhead."
+      },
+      {
+        "id": "quiz-b-33",
+        "number": 33,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does complexity analysis measure about a computer program or algorithm?",
+        "answer": "Complexity analysis measures how efficiently an algorithm uses time (number of operations) and memory (RAM) as input size grows.",
+        "wrong": [
+          "Complexity analysis counts the total number of lines of source code and evaluates how readable the code is for future developers.",
+          "Complexity analysis evaluates the quality of a program's user interface and measures user interaction response times under load.",
+          "Complexity analysis audits the number of external library dependencies and scores how maintainable the program is over time."
+        ],
+        "explanation": "Complexity analysis measures how efficiently an algorithm uses time (number of operations) and memory (RAM) as input size grows."
+      },
+      {
+        "id": "quiz-b-34",
+        "number": 34,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does Big O notation (O) specifically represent when describing algorithm complexity?",
+        "answer": "Big O represents the worst-case upper bound",
+        "wrong": [
+          "Big O represents the best-case minimum number of steps the algorithm will perform when given the most favorable possible input.",
+          "Big O represents the average-case expected performance across all typical real-world inputs for the algorithm.",
+          "Big O represents the exact number of operations the algorithm performs for every specific input of a given size n."
+        ],
+        "explanation": "the maximum growth rate the algorithm's resource usage will ever reach."
+      },
+      {
+        "id": "quiz-b-35",
+        "number": 35,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does Big Omega notation (Ω) represent in algorithm complexity analysis?",
+        "answer": "Big Omega represents the best-case lower bound",
+        "wrong": [
+          "Big Omega represents the worst-case upper bound",
+          "Big Omega represents the average-case expected growth rate when inputs are drawn uniformly at random from all possible values.",
+          "Big Omega represents the memory complexity of the algorithm expressed in terms of the number of recursive function call frames."
+        ],
+        "explanation": "the minimum number of steps the algorithm will ever need on any input."
+      },
+      {
+        "id": "quiz-b-36",
+        "number": 36,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An algorithm performs exactly 7 operations whether the input list has 10 items or 10,000,000 items. What time complexity class does this represent?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "explanation": "constant complexity, because the number of operations never changes regardless of how large the input becomes."
+      },
+      {
+        "id": "quiz-b-37",
+        "number": 37,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Binary Search on a sorted array of 1,024 elements finds the target in at most 10 steps. On 1,048,576 elements it finds it in at most 20 steps. What time complexity does this pattern represent?",
+        "answer": "O(log n)",
+        "wrong": [
+          "O(n)",
+          "O(n²)",
+          "O(1)"
+        ],
+        "explanation": "logarithmic complexity, where each step eliminates half the remaining candidates so steps grow very slowly with array size."
+      },
+      {
+        "id": "quiz-b-38",
+        "number": 38,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A loop visits every element in an array of n items exactly once and performs one operation on each. What is the time complexity of this loop?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "explanation": "linear complexity, because the total number of operations grows in direct proportion to the number of items in the array."
+      },
+      {
+        "id": "quiz-b-39",
+        "number": 39,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An algorithm contains an outer loop running n times and an inner loop that also runs n times for each outer iteration. What is the time complexity?",
+        "answer": "O(n²)",
+        "wrong": [
+          "O(n)",
+          "O(n log n)",
+          "O(2n)"
+        ],
+        "explanation": "quadratic, because the inner loop executes n times for each of the n outer iterations giving n multiplied by n total steps."
+      },
+      {
+        "id": "quiz-b-40",
+        "number": 40,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A hospital's patient lookup system uses linear search on 1,000,000 unsorted records. In the worst case, approximately how many record comparisons are made and what is the Big O complexity?",
+        "answer": "Up to 1,000,000 comparisons",
+        "wrong": [
+          "About 20 comparisons",
+          "Exactly 1 comparison",
+          "Up to 1,000,000,000,000 comparisons"
+        ],
+        "explanation": "O(n), because linear search checks every record until a match is found or the list is exhausted."
+      },
+      {
+        "id": "quiz-b-41",
+        "number": 41,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Sorting 1,000 student scores with Merge Sort takes roughly 10,000 operations. Using the same O(n log n) relationship, approximately how many operations does sorting 1,000,000 scores require?",
+        "answer": "About 20,000,000 operations, because O(n log n) scales as n × log₂(n), and 1,000,000 × log₂(1,000,000) ≈ 1,000,000 × 20 = 20,000,000.",
+        "wrong": [
+          "About 20,000,000,000 operations, because the sort switches to O(n²) behavior once the input exceeds one million elements.",
+          "About 1,000,000 operations, because O(n log n) scales at the same rate as O(n) when the logarithmic factor remains near constant.",
+          "About 1,000 operations, because the logarithmic factor reduces the linear component proportionally."
+        ],
+        "explanation": "About 20,000,000 operations, because O(n log n) scales as n × log₂(n), and 1,000,000 × log₂(1,000,000) ≈ 1,000,000 × 20 = 20,000,000."
+      },
+      {
+        "id": "quiz-b-42",
+        "number": 42,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A cashier program sums all item prices in a shopping cart using one variable: 'int sum = 0; for(item: cart) sum += item.price;'. What is the space complexity of this algorithm?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(n²)",
+          "O(log n)"
+        ],
+        "explanation": "constant space, because only one variable (sum) is ever allocated regardless of how many items appear in the cart."
+      },
+      {
+        "id": "quiz-b-43",
+        "number": 43,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Binary Search runs in O(log n) time. What critical requirement must the data meet BEFORE Binary Search can be applied correctly?",
+        "answer": "The data must be sorted in either ascending or descending order so that Binary Search can correctly determine which half to discard.",
+        "wrong": [
+          "The data must be stored in a hash table so that each element can be located by computing its position from its key value directly.",
+          "The data must be stored in a linked list so that Binary Search can traverse forward and backward from a given starting element.",
+          "The data must fit entirely within the CPU's L1 cache so that each Binary Search probe accesses an element in a single clock cycle."
+        ],
+        "explanation": "The data must be sorted in either ascending or descending order so that Binary Search can correctly determine which half to discard."
+      },
+      {
+        "id": "quiz-b-44",
+        "number": 44,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An app runs in 0.1 seconds for 500 users. After going viral with 500,000 users (a 1,000× growth), response time is 100,000 seconds. A developer suspects a quadratic algorithm. Is O(n²) consistent with this observation?",
+        "answer": "Yes",
+        "wrong": [
+          "No",
+          "No",
+          "Yes"
+        ],
+        "explanation": "under O(n²), a 1,000× user increase causes a 1,000²=1,000,000× time increase: 0.1s × 1,000,000 = 100,000s, which matches exactly."
+      },
+      {
+        "id": "quiz-b-45",
+        "number": 45,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An e-commerce platform with 10 million products evaluates two search algorithms. Algorithm X completes in 23 fixed operations regardless of product count. Algorithm Y takes up to 10,000,000 operations. What are their complexities and which should power the product search?",
+        "answer": "Algorithm X is O(1); Algorithm Y is O(n). Algorithm X should be used because its operation count stays constant even if products grow to 1 billion.",
+        "wrong": [
+          "Both are O(n); Algorithm X should be chosen because 23 operations is numerically smaller than 10,000,000 for this specific dataset.",
+          "Algorithm X is O(log n); Algorithm Y is O(n²). Algorithm X is better because logarithmic growth is slower than quadratic growth at all sizes.",
+          "Both are O(log n); Algorithm X is preferred because its constant factor of 23 is smaller than Algorithm Y's constant factor at this dataset size."
+        ],
+        "explanation": "Algorithm X is O(1); Algorithm Y is O(n). Algorithm X should be used because its operation count stays constant even if products grow to 1 billion."
+      },
+      {
+        "id": "quiz-b-46",
+        "number": 46,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A mobile app loads all contacts into memory so users can scroll through them. A user with 50 contacts uses 50 memory slots; a user with 5,000 contacts uses 5,000 slots. What is the space complexity and is it appropriate?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(n²)",
+          "O(log n)"
+        ],
+        "explanation": "linear space; memory grows proportionally with contact count, which is expected and acceptable for a contact list application."
+      },
+      {
+        "id": "quiz-b-47",
+        "number": 47,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "When Ω (best case) = Θ (average case) = O (worst case) for an algorithm, what does this equal relationship mean for the algorithm's behavior?",
+        "answer": "The algorithm has tight complexity",
+        "wrong": [
+          "The algorithm is asymptotically unstable and produces widely varying step counts on different inputs even of the same size n.",
+          "The algorithm uses exponential memory in all three cases, making it impractical for any input size larger than a few dozen elements.",
+          "The algorithm degenerates to sequential execution when best and worst cases match, losing all parallel performance benefits."
+        ],
+        "explanation": "it performs the same number of steps on every input of size n, making its behavior perfectly predictable."
+      },
+      {
+        "id": "quiz-b-48",
+        "number": 48,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A naive duplicate file detector compares every file to every other file. With 10,000 files, how many comparisons are made, what is the complexity, and what smarter approach reduces it?",
+        "answer": "100,000,000 comparisons",
+        "wrong": [
+          "10,000 comparisons",
+          "20,000 comparisons",
+          "10,000,000,000,000 comparisons"
+        ],
+        "explanation": "O(n²); computing a hash for each file and comparing hashes instead of file contents reduces this to O(n)."
+      },
+      {
+        "id": "quiz-b-49",
+        "number": 49,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A government portal expects 50 million citizen logins. System A stores usernames in an unsorted list and checks them sequentially. System B uses a hash table. What are their Big O worst-case complexities and which must be chosen?",
+        "answer": "System A is O(n); System B is O(1). System B must be chosen because O(n) means up to 50 million comparisons per login while O(1) stays constant.",
+        "wrong": [
+          "System A is O(log n); System B is O(n²). System A is the better choice because logarithmic growth is manageable at 50 million users.",
+          "Both systems are O(1) in the worst case; System B should be chosen because hash tables have a smaller constant factor than linear search.",
+          "System A is O(n log n); System B is O(n). System B is better because linear growth is slower than linearithmic growth for large user counts."
+        ],
+        "explanation": "System A is O(n); System B is O(1). System B must be chosen because O(n) means up to 50 million comparisons per login while O(1) stays constant."
+      },
+      {
+        "id": "quiz-b-50",
+        "number": 50,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A teacher asks students to rank these five algorithms from MOST efficient to LEAST efficient for very large inputs: (I) O(n) Linear Search, (II) O(1) Hash Lookup, (III) O(n log n) Merge Sort, (IV) O(n²) Bubble Sort, (V) O(log n) Binary Search. What is the correct ranking?",
+        "answer": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort",
+        "wrong": [
+          "O(n) Linear Search → O(1) Hash Lookup → O(log n) Binary Search → O(n log n) Merge Sort → O(n²) Bubble Sort",
+          "O(log n) Binary Search → O(n) Linear Search → O(1) Hash Lookup → O(n log n) Merge Sort → O(n²) Bubble Sort",
+          "O(1) Hash Lookup → O(n) Linear Search → O(n²) Bubble Sort → O(log n) Binary Search → O(n log n) Merge Sort"
+        ],
+        "explanation": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort"
+      }
+    ],
+    "everythingA": [
+      {
+        "id": "prelim-a-1",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What is the primary objective of parallel computing systems?",
+        "answer": "Reducing program execution time through simultaneous processing",
+        "wrong": [
+          "Improving reliability by duplicating hardware resources",
+          "Organizing large databases across independent machines",
+          "Expanding network connectivity between computer systems"
+        ],
+        "explanation": "Parallel computing uses simultaneous processing to reduce wall-clock execution time."
+      },
+      {
+        "id": "prelim-a-2",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "In shared memory programming, what is a major responsibility of the developer?",
+        "answer": "Coordinating synchronization to prevent race conditions",
+        "wrong": [
+          "Managing distributed file replication across clusters",
+          "Configuring communication protocols between remote nodes",
+          "Creating routing policies for message transmission systems"
+        ],
+        "explanation": "Shared memory is fast, but the developer must protect shared data with synchronization."
+      },
+      {
+        "id": "prelim-a-3",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which option best represents distributed computing?",
+        "answer": "A Hadoop cluster analyzing massive datasets collaboratively",
+        "wrong": [
+          "A graphics card rendering frames for a video game",
+          "A desktop processor running several browser applications",
+          "A laptop processor executing spreadsheet calculations locally"
+        ],
+        "explanation": "A Hadoop cluster is made of multiple computers collaborating across a network."
+      },
+      {
+        "id": "prelim-a-4",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What is the main function of the Map phase in MapReduce?",
+        "answer": "Splitting data into segments for simultaneous computation",
+        "wrong": [
+          "Saving generated outputs within distributed storage systems",
+          "Directing communication requests among participating servers",
+          "Combining processed results into a completed final output"
+        ],
+        "explanation": "The Map phase splits and processes chunks in parallel. Reduce combines the intermediate results."
+      },
+      {
+        "id": "prelim-a-5",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which architecture provides each processor with independent local memory?",
+        "answer": "An architecture using separate local memory per processor",
+        "wrong": [
+          "A multiprocessing model built around centralized memory access",
+          "A design where memory latency varies between processors",
+          "A memory structure where all processors share equal access"
+        ],
+        "explanation": "Distributed memory gives processors or nodes their own local memory."
+      },
+      {
+        "id": "prelim-a-6",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which pair of operations forms the basis of message passing systems?",
+        "answer": "Sending information packets and receiving transmitted data",
+        "wrong": [
+          "Reading information and writing information to storage",
+          "Allocating memory blocks and releasing unused resources",
+          "Encoding communication streams and decoding transferred signals"
+        ],
+        "explanation": "Message passing is built on send and receive operations."
+      },
+      {
+        "id": "prelim-a-7",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which architecture allows every node to function as both client and server?",
+        "answer": "A decentralized model where nodes share equal responsibilities",
+        "wrong": [
+          "A processing framework based on mapping and reducing tasks",
+          "A cloud platform distributing applications through virtual servers",
+          "A centralized system controlled by dedicated server machines"
+        ],
+        "explanation": "Peer-to-peer architecture gives each node both client and server roles."
+      },
+      {
+        "id": "prelim-a-8",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Flynn's taxonomy categorizes parallel systems according to what criteria?",
+        "answer": "The arrangement of instruction streams and data streams",
+        "wrong": [
+          "The operating systems and processor manufacturing designs",
+          "The communication speed and network transmission capacity",
+          "The quantity of processors and available memory resources"
+        ],
+        "explanation": "Flynn's taxonomy uses instruction streams and data streams."
+      },
+      {
+        "id": "prelim-a-9",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A computer executing one instruction stream on one data stream belongs to which category?",
+        "answer": "A system processing one instruction and one data stream",
+        "wrong": [
+          "A model supporting multiple instructions on shared datasets",
+          "A configuration applying varied operations to identical inputs",
+          "A structure executing many tasks across separate processors"
+        ],
+        "explanation": "Single Instruction, Single Data is SISD, the classic serial category."
+      },
+      {
+        "id": "prelim-a-10",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which term describes the relationship between computation and communication in parallel systems?",
+        "answer": "The balance between computational work and communication",
+        "wrong": [
+          "The quantity of completed operations within a time period",
+          "The delay experienced during data transfer between systems",
+          "The capability of a system to increase processing capacity"
+        ],
+        "explanation": "Granularity describes the ratio or balance between computation and communication."
+      },
+      {
+        "id": "prelim-a-11",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A hospital system must analyze millions of patient records for an AI diagnosis platform. Their current single-server setup requires 72 hours to finish processing. Which approach is most appropriate?",
+        "answer": "Using parallel processing across multiple processing cores",
+        "wrong": [
+          "Migrating services toward a decentralized peer network design",
+          "Replacing the current processor with a higher clock-speed model",
+          "Implementing a traditional client-server communication structure"
+        ],
+        "explanation": "Large analysis workloads can be split and processed in parallel to reduce completion time."
+      },
+      {
+        "id": "prelim-a-12",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "An online shopping platform experiences severe slowdowns during holiday traffic spikes. The company wants to increase server capacity without redesigning the application. Which distributed computing characteristic best solves this issue?",
+        "answer": "The ability to scale resources efficiently as demand grows",
+        "wrong": [
+          "A single instruction single data processing organization",
+          "Uniform processor access to centrally managed memory blocks",
+          "A memory-sharing structure across connected processing units"
+        ],
+        "explanation": "Scalability lets a distributed or cloud system add resources as demand grows."
+      },
+      {
+        "id": "prelim-a-13",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "During a climate simulation, one node in a computing cluster unexpectedly crashes. The simulation continues operating successfully without losing results. Which distributed computing feature enabled this?",
+        "answer": "Maintaining operation despite hardware or software failures",
+        "wrong": [
+          "Exchanging information continuously between independent processes",
+          "Executing instructions sequentially through staged processing units",
+          "Automatically distributing workloads across active processors evenly"
+        ],
+        "explanation": "Fault tolerance means the system can keep operating despite component failures."
+      },
+      {
+        "id": "prelim-a-14",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A rendering studio divides a 4K movie into thousands of independent frames processed simultaneously across 200 computers. Which concept best describes this situation?",
+        "answer": "Large processing tasks divided into loosely connected workloads",
+        "wrong": [
+          "Multiple instruction streams operating on identical data values",
+          "A memory-sharing approach spanning several distributed systems",
+          "Highly independent tasks executed simultaneously without interaction"
+        ],
+        "explanation": "This is coarse-grained or embarrassingly parallel work: large tasks split into mostly independent units."
+      },
+      {
+        "id": "prelim-a-15",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Two processors running on the same machine frequently exchange extremely large datasets. Performance speed is the highest priority. Which communication method is most suitable?",
+        "answer": "Shared memory because it minimizes communication overhead costs",
+        "wrong": [
+          "Shared memory because synchronization is completely unnecessary",
+          "Message passing because operating system calls improve protection",
+          "Message passing because it supports communication across networks"
+        ],
+        "explanation": "Shared memory is usually faster for large same-machine data exchange because it avoids per-message overhead."
+      },
+      {
+        "id": "prelim-a-16",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A startup rapidly increases from 5 to 50 virtual machines during a product launch, then reduces usage afterward. Which computing model makes this possible?",
+        "answer": "An elastic infrastructure delivered through cloud platforms",
+        "wrong": [
+          "A tightly coupled cluster operating within one local network",
+          "A decentralized network without dedicated control mechanisms",
+          "A grid-based environment connecting geographically separated systems"
+        ],
+        "explanation": "Cloud computing provides elastic, on-demand resources."
+      },
+      {
+        "id": "prelim-a-17",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A graphics processor applies the same blur operation simultaneously across thousands of image pixels. Which Flynn taxonomy category best represents this process?",
+        "answer": "A single operation applied simultaneously to multiple datasets",
+        "wrong": [
+          "One instruction stream operating on one sequence of data",
+          "Multiple operations performed on one shared stream of data",
+          "Different instructions executing independently across many datasets"
+        ],
+        "explanation": "SIMD applies a single instruction or operation across many data elements."
+      },
+      {
+        "id": "prelim-a-18",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Engineers design a fraud-detection system where several processors perform different analyses on the same transaction stream. Which Flynn classification matches this setup?",
+        "answer": "Multiple instruction streams analyzing the same incoming dataset",
+        "wrong": [
+          "A single processor executing sequential instructions on data",
+          "One instruction stream simultaneously handling many data values",
+          "Independent processors executing separate tasks on unique data"
+        ],
+        "explanation": "Multiple instructions acting on a single data stream is MISD."
+      },
+      {
+        "id": "prelim-a-19",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A parallel program finishes in 2 hours using 16 processors, while the serial version requires 20 hours. A colleague claims the parallel version is always more efficient. Which response is most accurate?",
+        "answer": "Coordination overhead can reduce benefits for smaller workloads",
+        "wrong": [
+          "Parallel systems waste processing resources because of idle time",
+          "Additional processors consistently improve efficiency for all workloads",
+          "Parallel execution always decreases total processor utilization time"
+        ],
+        "explanation": "This key was corrected: more processors do not always improve efficiency because overhead can dominate."
+      },
+      {
+        "id": "prelim-a-20",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A developer notices performance decreases after adding more processors because processors spend excessive time exchanging information. Which overhead factor is the likely cause?",
+        "answer": "The communication costs associated with transferring shared data",
+        "wrong": [
+          "The delay occurring when tasks complete and release resources",
+          "The licensing restrictions imposed by distributed software vendors",
+          "The initialization time required before parallel tasks can begin"
+        ],
+        "explanation": "Communication overhead can erase the benefits of adding processors."
+      },
+      {
+        "id": "prelim-a-21",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A NUMA architecture links two SMP systems. Processor A accesses local memory in 50ns but remote memory in 150ns. Which statement is most accurate?",
+        "answer": "Memory access latency differs between regions in NUMA systems",
+        "wrong": [
+          "The system qualifies as UMA because processors remain identical",
+          "Separate SMP systems require exclusive use of message passing",
+          "Cache coherency cannot function correctly in NUMA architectures"
+        ],
+        "explanation": "NUMA means memory access time is non-uniform and depends on memory location."
+      },
+      {
+        "id": "prelim-a-22",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Why does increasing CPUs in a shared memory system not always improve performance proportionally?",
+        "answer": "Traffic contention creates bottlenecks on memory communication paths",
+        "wrong": [
+          "Shared memory systems cannot expand storage capacity efficiently",
+          "Distributed memory becomes mandatory after adding several processors",
+          "Shared memory processors cannot execute tasks independently"
+        ],
+        "explanation": "More CPUs can increase traffic and contention on shared memory paths."
+      },
+      {
+        "id": "prelim-a-23",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A parallel application uses fine-grained granularity. What consequence is most likely?",
+        "answer": "Communication overhead becomes larger relative to computation",
+        "wrong": [
+          "Execution becomes slower because fewer tasks are generated",
+          "Distributed architectures become unnecessary for coordination",
+          "Communication demands decrease as processor counts increase"
+        ],
+        "explanation": "Fine-grained tasks communicate frequently, so overhead can become large."
+      },
+      {
+        "id": "prelim-a-24",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What distinguishes distributed shared memory systems from pure distributed memory systems?",
+        "answer": "Software creates a shared-memory illusion across distributed nodes",
+        "wrong": [
+          "Every processor physically accesses one universal memory structure",
+          "Communication between machines becomes completely unnecessary",
+          "All processors execute identical instructions on identical datasets"
+        ],
+        "explanation": "DSM hides physical distribution and presents an illusion of shared memory."
+      },
+      {
+        "id": "prelim-a-25",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A MIMD computer may execute tasks non-deterministically. What does this imply for developers?",
+        "answer": "Synchronization mechanisms are required to ensure correctness",
+        "wrong": [
+          "Scientific applications cannot operate reliably on MIMD systems",
+          "Deterministic execution is unnecessary in parallel applications",
+          "SIMD systems experience more synchronization concerns than MIMD"
+        ],
+        "explanation": "Non-deterministic execution means synchronization is needed to keep shared results correct."
+      },
+      {
+        "id": "prelim-b-1",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What distinguishes distributed computing from parallel computing?",
+        "answer": "Distributed computing uses multiple networked computers with independent memory spaces",
+        "wrong": [
+          "Parallel computing depends entirely on wide-area communication architecture systems",
+          "Distributed computing always requires identical processors within shared architectures",
+          "Parallel computing eliminates coordination between processors during task execution"
+        ],
+        "explanation": "Distributed computing uses independent networked machines, while parallel computing often focuses on simultaneous execution using multiple processors or cores."
+      },
+      {
+        "id": "prelim-b-2",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which of the following is a key advantage of distributed memory architecture over shared memory?",
+        "answer": "Higher scalability through independent nodes added across environments",
+        "wrong": [
+          "Faster synchronization between tightly coupled computational workloads",
+          "Simplified address spaces allowing transparent memory access globally",
+          "Lower communication overhead during real-time synchronization across processor groups"
+        ],
+        "explanation": "Distributed memory can scale by adding independent nodes, each with its own memory."
+      },
+      {
+        "id": "prelim-b-3",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "In the von Neumann architecture, what is stored in electronic memory?",
+        "answer": "Program instructions together with data required for execution processes",
+        "wrong": [
+          "Operating system services and communication protocols",
+          "Arithmetic processing rules controlling processor execution stages",
+          "Hardware interrupt signals coordinating communication between connected input devices"
+        ],
+        "explanation": "The von Neumann model stores both program instructions and data in memory."
+      },
+      {
+        "id": "prelim-b-4",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is the Reduce phase responsible for in MapReduce?",
+        "answer": "Combining intermediate outputs into summarized results for final processing stages",
+        "wrong": [
+          "Splitting data before assigning tasks across processing nodes",
+          "Replicating distributed data across clusters for system fault tolerance",
+          "Scheduling worker processes during parallel execution of distributed jobs"
+        ],
+        "explanation": "Reduce combines intermediate Map outputs into final summarized results."
+      },
+      {
+        "id": "prelim-b-5",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which parallel computing resource is specifically mentioned as suitable for machine learning and scientific simulations?",
+        "answer": "Graphics processing units (GPUs) enabling repetitive mathematical operations efficiently simultaneously",
+        "wrong": [
+          "Distributed storage platforms coordinating replicated blocks across computing environments",
+          "Symmetric multiprocessing architectures supporting coordinated memory sharing operations globally",
+          "Cluster middleware frameworks balancing workloads among geographically separated processors"
+        ],
+        "explanation": "GPUs are well suited for repetitive parallel mathematical operations used in machine learning and simulations."
+      },
+      {
+        "id": "prelim-b-6",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is a node in the context of parallel computing clusters?",
+        "answer": "Independent computers containing processors, memory and networking communication interfaces together",
+        "wrong": [
+          "Routing hardware connecting distributed systems across communication infrastructure environments",
+          "Virtualized services executing distributed applications within cloud infrastructures remotely",
+          "Shared processor cores executing synchronized instructions within multiprocessor architectures"
+        ],
+        "explanation": "A cluster node is a standalone computer with processors, memory, and network interfaces."
+      },
+      {
+        "id": "prelim-b-7",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which statement correctly describes the shared memory inter-process communication model?",
+        "answer": "Processes access and coordinate through spaces and regions containing shared information together",
+        "wrong": [
+          "Processes exchange information exclusively through synchronized message queue communication mechanisms",
+          "Processes communicate indirectly using distributed packet switching across network infrastructures",
+          "Processes isolate execution environments while communicating through independent storage replication systems"
+        ],
+        "explanation": "Shared memory IPC lets processes communicate by reading and writing a shared memory region."
+      },
+      {
+        "id": "prelim-b-8",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is the primary purpose of synchronization in parallel applications?",
+        "answer": "Coordinating concurrent tasks while preventing inconsistent shared data modifications simultaneously",
+        "wrong": [
+          "Increasing processor speed during independent execution of distributed computational workloads",
+          "Minimizing memory allocation requirements across geographically distributed processing environments globally",
+          "Reducing network latency between geographically distributed computational resource infrastructures entirely"
+        ],
+        "explanation": "Synchronization coordinates concurrent work and protects shared data from inconsistent updates."
+      },
+      {
+        "id": "prelim-b-9",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "An SMP (Symmetric Multi-Processor) system is characterized by:",
+        "answer": "Processors sharing equal access to memory and computing resources together",
+        "wrong": [
+          "Processors connected geographically using distributed communication infrastructures and middleware frameworks",
+          "Nodes maintaining isolated memory spaces without coordinated synchronization mechanisms",
+          "Nonuniform memory access architectures requiring specialized optimization and coordination strategies"
+        ],
+        "explanation": "In SMP, processors share memory and resources with equal access."
+      },
+      {
+        "id": "prelim-b-10",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Why is message passing described as both useful and slower compared to shared memory communication?",
+        "answer": "Message passing requires physical data transfers through operating system communication services",
+        "wrong": [
+          "Shared memory communication depends entirely upon geographically distributed network infrastructures globally",
+          "Variable-length communication reduces synchronization requirements between processing components completely",
+          "Message passing architectures require fewer processing distributed computational coordination tasks"
+        ],
+        "explanation": "Message passing is useful across separate address spaces, but it is slower because data transfer is mediated by the OS or network services."
+      },
+      {
+        "id": "prelim-b-11",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A developer converts a serial program to run on 16 processors. Total CPU time increases from 4 hours to 48 hours while wall-clock time decreases slightly. What conclusion is most accurate?",
+        "answer": "Parallel overhead may reduce overall efficiency when workload distribution across processors consumes resources",
+        "wrong": [
+          "Additional processors automatically guarantee greater processing resources",
+          "Serial execution remains best because synchronization always reduces performance substantially",
+          "Processor utilization increases substantially despite application executed across clustered infrastructures"
+        ],
+        "explanation": "The program may use more total CPU time because overhead, communication, and coordination reduce efficiency."
+      },
+      {
+        "id": "prelim-b-12",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "In P2P architecture, each node is both client and server. What makes this fundamentally different from client-server regarding fault tolerance?",
+        "answer": "Distributed peer participation removes central dependency while improving system resilience significantly",
+        "wrong": [
+          "Centralized coordination improves replicated communication routing infrastructures globally",
+          "Dedicated servers eliminate synchronization problems during workload distribution between participating systems",
+          "Peer architectures depend entirely upon specialized hardware supporting coordinated resource allocation mechanisms"
+        ],
+        "explanation": "P2P removes a central server dependency, improving resilience compared with a single central server design."
+      },
+      {
+        "id": "prelim-b-13",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A SIMD architecture processes the same data stream for fraud detection, where multiple independent cryptographic algorithms simultaneously analyze the same data stream. Which Flynn classification applies and why?",
+        "answer": "MISD because multiple instructions analyze one shared transaction data stream",
+        "wrong": [
+          "SIMD because identical instructions operate across multiple independent transaction datasets simultaneously",
+          "MIMD because processors execute unrelated algorithms using independent transaction processing streams",
+          "SISD because transaction processing occurs sequentially through centralized computing architecture exclusively"
+        ],
+        "explanation": "Multiple instruction streams analyzing the same data stream corresponds to MISD."
+      },
+      {
+        "id": "prelim-b-14",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A grid computing system spans multiple organizations globally. Compare this to cluster computing regarding governance, resource ownership, and scale.",
+        "answer": "Grid systems involve distributed governance and heterogeneous resources across organizations globally",
+        "wrong": [
+          "Cluster systems depend entirely upon geographically separated organizations coordinating shared control",
+          "Grid architectures operate exclusively within homogeneous environments managed through centralized administration systems",
+          "Cluster infrastructures require distributed governance supporting independently managed computational resource networks worldwide"
+        ],
+        "explanation": "Grid computing often spans organizations and heterogeneous resources, while clusters are usually more tightly managed."
+      },
+      {
+        "id": "prelim-b-15",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Why is complexity listed as both a challenge and cost multiplier in parallel software development?",
+        "answer": "Concurrent execution coordination increases effort across design, debugging, tuning, and maintenance phases",
+        "wrong": [
+          "Specialized hardware infrastructures dramatically eliminate software licensing and deployment requirements globally",
+          "Parallel programming languages restrict interoperability between distributed applications and operating systems entirely",
+          "Proprietary debugging frameworks eliminate open-source development support for distributed computing projects globally"
+        ],
+        "explanation": "Parallel software adds coordination complexity throughout design, coding, debugging, tuning, and maintenance."
+      },
+      {
+        "id": "prelim-b-16",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A weather forecasting agency must process satellite data from 50 regions simultaneously and independently. What is the most appropriate computing model?",
+        "answer": "Embarrassingly parallel distribution supporting independent regional processing tasks simultaneously efficiently",
+        "wrong": [
+          "Client-server architecture coordinating centralized processing through dedicated communication infrastructures globally",
+          "SISD processing executing sequential instructions through synchronized processor architectures exclusively",
+          "High-speed serial processing environments minimizing synchronization across distributed computational infrastructures entirely"
+        ],
+        "explanation": "Independent regional workloads are a good fit for embarrassingly parallel processing."
+      },
+      {
+        "id": "prelim-b-17",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A logistics company stores shipment records across geographically separate data centers. A query must search all locations simultaneously. Which component addresses this?",
+        "answer": "Distributed file systems enabling coordinated access across geographically separated storage infrastructures",
+        "wrong": [
+          "Shared memory architectures supporting centralized synchronization between geographically separated processors globally",
+          "Vector processing pipelines accelerating repetitive instructions during sequential database search operations",
+          "Symmetric multiprocessing systems coordinating shared memory access between distributed processing systems"
+        ],
+        "explanation": "Distributed file systems coordinate access to data stored across geographically separated locations."
+      },
+      {
+        "id": "prelim-b-18",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Two processes on different machines connected by a network need to share computation results. Shared memory is unavailable. Which IPC mechanism must they use?",
+        "answer": "Message passing through send and receive communication operations across network infrastructures",
+        "wrong": [
+          "Direct cache coherency mechanisms coordinating memory synchronization between distributed processors continuously",
+          "Shared address spaces supporting transparent remote memory access across geographically separated processing systems globally",
+          "Uniform memory architectures coordinating synchronized processor access within shared computing environments together"
+        ],
+        "explanation": "Processes on different machines without shared memory communicate through message passing."
+      },
+      {
+        "id": "prelim-b-19",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A machine learning model trains by splitting datasets into batches processed by GPU cores applying identical operations. Which Flynn taxonomy class describes this?",
+        "answer": "SIMD because processing occurs through synchronized instruction execution across processor architectures",
+        "wrong": [
+          "SISD because processing occurs sequentially through synchronized processor architecture globally",
+          "MIMD because processors execute unrelated instructions across multiple independent computational data streams independently",
+          "MISD because multiple instruction streams coordinate processing across centralized communication environments globally"
+        ],
+        "explanation": "GPU cores applying the same operation to many data items are an example of SIMD."
+      },
+      {
+        "id": "prelim-b-20",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "An online multiplayer game server crashes but users reconnect seamlessly to a backup server without data loss. Which distributed characteristic enabled this?",
+        "answer": "Fault tolerance maintaining service continuity despite failures within distributed computing environments effectively",
+        "wrong": [
+          "Load balancing distributing computational requests across synchronized server communication infrastructures globally",
+          "Scalability mechanisms supporting increased processor coordination during high-demand computational workloads simultaneously",
+          "Parallel decomposition separating independent tasks during coordinated distributed application processing operations globally"
+        ],
+        "explanation": "Fault tolerance allows service continuity when a server fails."
+      },
+      {
+        "id": "prelim-b-21",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A university shares CPU cycles from multiple countries to simulate protein folding. Which distributed architecture best fits?",
+        "answer": "Grid computing integrating heterogeneous resources from geographically distributed organizations collaboratively worldwide",
+        "wrong": [
+          "Cluster computing supporting homogeneous systems managed through centralized administrative infrastructures together",
+          "Peer-to-peer architectures coordinating decentralized file exchanges between participating computational environments globally",
+          "Client-server computing centralizing resource allocation through dedicated administrative infrastructure globally"
+        ],
+        "explanation": "Grid computing fits geographically distributed, heterogeneous resources across organizations."
+      },
+      {
+        "id": "prelim-b-22",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A parallel program splits work into microtasks constantly exchanging small updates. Performance becomes worse than the serial version. What is the most likely cause?",
+        "answer": "Excessive communication overhead caused by extremely fine-grained task decomposition strategies continuously",
+        "wrong": [
+          "Coarse-grained decomposition reducing synchronization requirements across distributed processing environments entirely globally",
+          "Distributed memory architectures providing synchronized communication between computational microtasks completely",
+          "Processor underutilization resulting from insufficient workload distribution across available computing infrastructures globally"
+        ],
+        "explanation": "Fine-grained work can communicate so frequently that overhead outweighs parallel speedup."
+      },
+      {
+        "id": "prelim-b-23",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A social media recommendation engine processes different users with different algorithms simultaneously across thousands of servers. Which Flynn classification applies?",
+        "answer": "MIMD because independent instructions process separate datasets across distributed processors concurrently",
+        "wrong": [
+          "SIMD because identical operations process recommendation datasets simultaneously together",
+          "SISD because execution remains sequential through centralized algorithmic processing architectures exclusively",
+          "MISD because multiple algorithms analyze synchronized datasets through coordinated instruction execution simultaneously"
+        ],
+        "explanation": "Different algorithms on separate user datasets across many servers is MIMD."
+      },
+      {
+        "id": "prelim-b-24",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A developer prioritizes simpler programming over system-level efficiency when choosing between fixed-size and variable-size messages. Which should they choose?",
+        "answer": "Variable-size messages simplifying application programming despite increased implementation complexity internally globally",
+        "wrong": [
+          "Fixed-size messages because implementation through predictable communication packet structures globally",
+          "Fixed-size communication structures automatically supporting flexible distributed application requirements completely",
+          "Variable-length communication packets consistently reducing transmission overhead across distributed infrastructures worldwide"
+        ],
+        "explanation": "Variable-size messages require more system-level implementation but make the programming task simpler."
+      },
+      {
+        "id": "prelim-b-25",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A parallel scientific simulation runs correctly on 8 processors but produces inconsistent results on 32 processors. What is the most likely cause?",
+        "answer": "Improper synchronization causing race conditions during larger-scale parallel execution environments simultaneously",
+        "wrong": [
+          "Network communication bandwidth preventing synchronization between distributed processing environments effectively globally",
+          "NUMA architectures introducing incompatible processor communication patterns during synchronized computational execution processes",
+          "Insufficient memory allocation preventing processor coordination across distributed computational workloads successfully"
+        ],
+        "explanation": "Inconsistent results at larger scale often point to race conditions from improper synchronization."
+      },
+      {
+        "id": "week3-1",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What best describes a process?",
+        "answer": "A running program with its own memory space and resources",
+        "wrong": [
+          "A single variable stored inside shared memory",
+          "A hardware-only instruction decoder",
+          "A message header used in distributed systems"
+        ],
+        "explanation": "A process is an independent running program with its own memory space."
+      },
+      {
+        "id": "week3-2",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What best describes a thread?",
+        "answer": "A lightweight execution unit inside a process",
+        "wrong": [
+          "A separate physical computer in a cluster",
+          "A storage partition in HDFS",
+          "A network protocol for RPC"
+        ],
+        "explanation": "A thread is the smallest execution unit inside a process and shares process memory."
+      },
+      {
+        "id": "week3-3",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What is the key distinction between concurrency and parallelism?",
+        "answer": "Concurrency manages multiple tasks; parallelism executes tasks simultaneously",
+        "wrong": [
+          "Concurrency requires multiple machines; parallelism requires only one core",
+          "Concurrency is slower storage; parallelism is faster storage",
+          "Concurrency means no synchronization is required"
+        ],
+        "explanation": "Concurrency is about dealing with multiple tasks; parallelism is about doing them at the same time."
+      },
+      {
+        "id": "week3-4",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Why do threads require synchronization?",
+        "answer": "They share memory within a process",
+        "wrong": [
+          "They cannot communicate with each other",
+          "They always run on separate networks",
+          "They only execute serial instructions"
+        ],
+        "explanation": "Threads share memory, so access to shared data must be coordinated."
+      },
+      {
+        "id": "week3-5",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Which primitive provides exclusive access to a shared resource?",
+        "answer": "Mutex or lock",
+        "wrong": [
+          "Map phase",
+          "HDFS block",
+          "Client request"
+        ],
+        "explanation": "A lock or mutex allows only one thread or process to enter a protected section at a time."
+      },
+      {
+        "id": "week3-6",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Which synchronization primitive uses a counter for limited resources?",
+        "answer": "Semaphore",
+        "wrong": [
+          "Condition variable",
+          "RPC",
+          "Pipeline"
+        ],
+        "explanation": "A semaphore tracks available resource count."
+      },
+      {
+        "id": "week3-7",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What is a condition variable used for?",
+        "answer": "Waiting until a specific condition becomes true",
+        "wrong": [
+          "Classifying instruction streams",
+          "Storing files across Hadoop nodes",
+          "Dividing a program into Map and Reduce"
+        ],
+        "explanation": "Condition variables let threads wait and be signaled when a condition changes."
+      },
+      {
+        "id": "week3-8",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What is a monitor?",
+        "answer": "An abstraction that encapsulates shared data and controlled access procedures",
+        "wrong": [
+          "A screen that displays processor temperature",
+          "A network cable for clusters",
+          "A serial-only execution unit"
+        ],
+        "explanation": "A monitor bundles shared data with synchronized procedures."
+      },
+      {
+        "id": "week3-9",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Which communication primitive supports asynchronous ordered messages?",
+        "answer": "Message queue",
+        "wrong": [
+          "Mutex",
+          "Barrier",
+          "SMP"
+        ],
+        "explanation": "Message queues let tasks send asynchronous messages while preserving order."
+      },
+      {
+        "id": "week3-10",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Which primitive is used to execute a procedure on another machine?",
+        "answer": "RPC",
+        "wrong": [
+          "UMA",
+          "SIMD",
+          "Pthreads"
+        ],
+        "explanation": "Remote Procedure Call invokes a remote procedure as if it were local."
+      },
+      {
+        "id": "week3-11",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What is a deadlock?",
+        "answer": "Tasks wait forever for each other to release resources",
+        "wrong": [
+          "Tasks execute the same instruction on many data values",
+          "A cluster scales down after demand falls",
+          "A program completes with perfect speedup"
+        ],
+        "explanation": "Deadlock is permanent waiting caused by circular resource dependencies."
+      },
+      {
+        "id": "week3-12",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "What is a livelock?",
+        "answer": "Tasks keep reacting to each other but fail to make progress",
+        "wrong": [
+          "A single instruction operates on one data stream",
+          "A file is replicated across nodes",
+          "A GPU applies one operation to pixels"
+        ],
+        "explanation": "In livelock, tasks are active but still make no progress."
+      },
+      {
+        "id": "week3-13",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Which technique lets a web server handle many client requests concurrently without one request blocking all others?",
+        "answer": "Threads or asynchronous I/O",
+        "wrong": [
+          "Only SISD execution",
+          "Turning off IPC",
+          "Using no synchronization primitives"
+        ],
+        "explanation": "Web servers commonly use threads, async I/O, or event loops to handle concurrent requests."
+      },
+      {
+        "id": "week3-14",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Why are processes more isolated than threads?",
+        "answer": "Each process has its own memory space",
+        "wrong": [
+          "Each process always runs on a different physical country",
+          "Processes cannot use operating system resources",
+          "Threads never share memory"
+        ],
+        "explanation": "Process memory isolation improves stability and security."
+      },
+      {
+        "id": "week3-15",
+        "source": "Week 3 Drill",
+        "set": "Week 3",
+        "tag": "Week 3",
+        "prompt": "Which is an example of communication rather than synchronization?",
+        "answer": "Channel",
+        "wrong": [
+          "Mutex",
+          "Semaphore",
+          "Barrier"
+        ],
+        "explanation": "Channels pass messages. Mutexes, semaphores, and barriers primarily coordinate access or timing."
+      },
+      {
+        "id": "module-final-a-1",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "A program creates several threads inside one process, and each thread reads and writes the same array. Which model is being used?",
+        "answer": "Shared-memory programming",
+        "wrong": [
+          "Message-passing programming",
+          "Linear programming",
+          "Branch and bound"
+        ],
+        "explanation": "Shared-memory programming uses a common memory space that all threads can access."
+      },
+      {
+        "id": "module-final-a-2",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "Which statement best describes shared memory?",
+        "answer": "All threads can access the same memory addresses",
+        "wrong": [
+          "Every process must use separate private memory",
+          "Data is exchanged only through network packets",
+          "Only one processor can read memory at a time"
+        ],
+        "explanation": "The key clue is common memory addresses accessible by multiple threads or processes."
+      },
+      {
+        "id": "module-final-a-3",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "In shared-memory programming, how do threads usually communicate?",
+        "answer": "By reading and writing shared variables",
+        "wrong": [
+          "By sending emails between processes",
+          "By compiling separate programs",
+          "By using only linear constraints"
+        ],
+        "explanation": "Shared variables are the communication channel in a shared-memory model."
+      },
+      {
+        "id": "module-final-a-4",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Synchronization",
+        "prompt": "Two threads update the same counter at the same time and the final value is wrong. What is the most likely issue?",
+        "answer": "Race condition",
+        "wrong": [
+          "Point-to-point communication",
+          "Linearithmic runtime",
+          "Greedy selection"
+        ],
+        "explanation": "Race conditions happen when concurrent access to shared data is not properly synchronized."
+      },
+      {
+        "id": "module-final-a-5",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Synchronization",
+        "prompt": "Which mechanism is used to coordinate access to shared variables?",
+        "answer": "Locks, semaphores, and barriers",
+        "wrong": [
+          "Only binary search",
+          "Only message broadcasting",
+          "Only matrix multiplication"
+        ],
+        "explanation": "Locks, semaphores, and barriers prevent conflicting updates in shared memory."
+      },
+      {
+        "id": "module-final-a-6",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "What is the key difference between multithreading and multiprocessing in the shared-memory discussion?",
+        "answer": "Multithreading creates multiple threads within one process, while multiprocessing uses independent processes",
+        "wrong": [
+          "Multithreading always uses networks, while multiprocessing never uses memory",
+          "Multiprocessing is another name for binary search",
+          "Multithreading cannot run in parallel"
+        ],
+        "explanation": "The distinction is thread units inside a process versus independent processes."
+      },
+      {
+        "id": "module-final-a-7",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "Why is shared-memory communication often fast?",
+        "answer": "Threads can directly access shared data structures",
+        "wrong": [
+          "Every message must cross a wide-area network",
+          "It always avoids all synchronization",
+          "It uses factorial-time scheduling"
+        ],
+        "explanation": "Direct memory access is usually faster than communication between distributed nodes."
+      },
+      {
+        "id": "module-final-a-8",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "Which is a real challenge of shared-memory programming?",
+        "answer": "Synchronization overhead",
+        "wrong": [
+          "No possibility of data sharing",
+          "No need for debugging",
+          "Automatic perfect scalability"
+        ],
+        "explanation": "Correct synchronization is necessary, but too much synchronization can reduce performance."
+      },
+      {
+        "id": "module-final-a-9",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Scalability",
+        "prompt": "As the number of shared-memory threads increases, performance may stop improving because of what?",
+        "answer": "Contention for shared resources",
+        "wrong": [
+          "Lack of any common address space",
+          "Guaranteed message ordering",
+          "Fewer variables in memory"
+        ],
+        "explanation": "More threads can fight over shared data, locks, cache lines, or memory bandwidth."
+      },
+      {
+        "id": "module-final-a-10",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Synchronization",
+        "prompt": "A developer says shared memory is easy because threads can share variables. What important warning should you add?",
+        "answer": "Shared variables must be synchronized to avoid inconsistent data",
+        "wrong": [
+          "Shared variables remove all debugging problems",
+          "Shared memory cannot create race conditions",
+          "Threads are never allowed to write shared data"
+        ],
+        "explanation": "The convenience of shared variables is exactly why synchronization is important."
+      },
+      {
+        "id": "module-final-a-11",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "Which programming paradigm uses independent processes that exchange explicit messages?",
+        "answer": "Message-passing programming",
+        "wrong": [
+          "Shared-memory programming",
+          "Dynamic programming",
+          "Constant-space programming"
+        ],
+        "explanation": "Message passing uses send/receive communication instead of a common memory space."
+      },
+      {
+        "id": "module-final-a-12",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "In message-passing programming, what is usually true about memory?",
+        "answer": "Processes run in separate memory spaces",
+        "wrong": [
+          "All processes share one global address space",
+          "Only GPU memory can be used",
+          "Memory is replaced by linear equations"
+        ],
+        "explanation": "The model communicates by explicit messages because memory is not shared."
+      },
+      {
+        "id": "module-final-a-13",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "Which pair best represents the basic operations of message passing?",
+        "answer": "Send and receive",
+        "wrong": [
+          "Divide and combine",
+          "Lock and unlock only",
+          "Push and pop only"
+        ],
+        "explanation": "Message-passing programs coordinate by sending and receiving messages."
+      },
+      {
+        "id": "module-final-a-14",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "What does asynchronous communication mean in message passing?",
+        "answer": "A process can continue execution while waiting for a message",
+        "wrong": [
+          "All processes must stop until every message arrives",
+          "Messages are impossible to receive out of order",
+          "Only one process may exist"
+        ],
+        "explanation": "Asynchronous communication lets execution continue instead of always blocking immediately."
+      },
+      {
+        "id": "module-final-a-15",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "What makes synchronization explicit in message passing?",
+        "answer": "Processes intentionally wait for or react to message receipt",
+        "wrong": [
+          "The operating system hides all communication decisions",
+          "Shared variables are automatically protected",
+          "The compiler removes all messages"
+        ],
+        "explanation": "The program explicitly coordinates around messages."
+      },
+      {
+        "id": "module-final-a-16",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "A process sends a message directly to one specific target process. What communication pattern is this?",
+        "answer": "Point-to-point communication",
+        "wrong": [
+          "Collective communication",
+          "Dynamic programming",
+          "Quadratic space"
+        ],
+        "explanation": "Point-to-point means one sender targets one receiver."
+      },
+      {
+        "id": "module-final-a-17",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "Broadcasting a value from one process to all processes is what kind of message-passing operation?",
+        "answer": "Collective communication",
+        "wrong": [
+          "Constant-time access",
+          "Backtracking",
+          "Shared variable assignment"
+        ],
+        "explanation": "Collective communication involves a group of processes exchanging data by a pattern like broadcast, reduce, or gather."
+      },
+      {
+        "id": "module-final-a-18",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Message Passing",
+        "prompt": "Which standard is widely used for high-performance message passing?",
+        "answer": "MPI",
+        "wrong": [
+          "HTML",
+          "CSS",
+          "SQL injection"
+        ],
+        "explanation": "MPI stands for Message Passing Interface and is widely used in HPC and distributed memory systems."
+      },
+      {
+        "id": "module-final-a-19",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Scalability",
+        "prompt": "Why does message passing scale well for clusters?",
+        "answer": "It does not depend on a single shared memory space",
+        "wrong": [
+          "It never communicates",
+          "It removes all overhead",
+          "It requires one processor only"
+        ],
+        "explanation": "Separate processes can run across many machines and communicate through messages."
+      },
+      {
+        "id": "module-final-a-20",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Debugging",
+        "prompt": "Which is a common debugging issue in message-passing programs?",
+        "answer": "Message deadlock or unexpected message order",
+        "wrong": [
+          "No communication pattern exists",
+          "All variables are shared by default",
+          "There are no synchronization concerns"
+        ],
+        "explanation": "Message-passing bugs often involve blocking messages, unexpected order, or deadlocks."
+      },
+      {
+        "id": "module-final-a-21",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Data Parallelism",
+        "prompt": "Which statement best defines data parallelism?",
+        "answer": "The same operation is applied to different partitions of a dataset",
+        "wrong": [
+          "Different unrelated tasks are always executed one after another",
+          "All processes use one lock",
+          "One message is broadcast to all users"
+        ],
+        "explanation": "Data parallelism is about splitting data and repeating the same computation."
+      },
+      {
+        "id": "module-final-a-22",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Data Parallelism",
+        "prompt": "Data parallelism is often associated with which execution style?",
+        "answer": "SIMD",
+        "wrong": [
+          "Backtracking",
+          "Linear programming",
+          "Non-repudiation"
+        ],
+        "explanation": "SIMD means Single Instruction, Multiple Data, matching the same operation over many data elements."
+      },
+      {
+        "id": "module-final-a-23",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Load Balancing",
+        "prompt": "Why is load balancing important in data parallelism?",
+        "answer": "It keeps processing units from receiving uneven amounts of work",
+        "wrong": [
+          "It prevents all communication from existing",
+          "It forces all data into one partition",
+          "It converts O(n) into O(1)"
+        ],
+        "explanation": "Uneven partitions cause some processors to finish early while others continue working."
+      },
+      {
+        "id": "module-final-a-24",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Data Parallelism",
+        "prompt": "Which statement is usually true for ideal data parallelism?",
+        "answer": "Communication between processing units is minimal or unnecessary",
+        "wrong": [
+          "Every task must exchange messages every step",
+          "Each unit performs a different algorithm",
+          "All work must run on one core"
+        ],
+        "explanation": "Independent partitions allow parallel work with little coordination."
+      },
+      {
+        "id": "module-final-a-25",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Data Parallelism",
+        "prompt": "Applying the same brightness adjustment to every pixel of a large image is an example of what?",
+        "answer": "Data parallelism",
+        "wrong": [
+          "Task parallelism",
+          "Branch and bound",
+          "Linear programming"
+        ],
+        "explanation": "The same operation is applied to many independent pixel values."
+      },
+      {
+        "id": "module-final-a-26",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Task Parallelism",
+        "prompt": "Which statement best defines task parallelism?",
+        "answer": "Different independent tasks are executed concurrently",
+        "wrong": [
+          "The same instruction must run on all data elements",
+          "All processors share one variable only",
+          "Every task must wait for a network message"
+        ],
+        "explanation": "Task parallelism focuses on separate tasks, not just separate data chunks."
+      },
+      {
+        "id": "module-final-a-27",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Task Parallelism",
+        "prompt": "Which situation most clearly uses task parallelism?",
+        "answer": "A program searches files, downloads data, and compresses output at the same time",
+        "wrong": [
+          "A GPU applies one blur operation to every pixel",
+          "A loop prints each element sequentially",
+          "A binary search halves a sorted array"
+        ],
+        "explanation": "The tasks are distinct operations executing concurrently."
+      },
+      {
+        "id": "module-final-a-28",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Task Parallelism",
+        "prompt": "Why does task parallelism often need dynamic load balancing?",
+        "answer": "Tasks may have different execution times or complexity",
+        "wrong": [
+          "All tasks are guaranteed identical",
+          "Data partitions are always the same size",
+          "Messages cannot be sent"
+        ],
+        "explanation": "Dynamic scheduling keeps units busy when tasks vary."
+      },
+      {
+        "id": "module-final-a-29",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Task Parallelism",
+        "prompt": "When one task depends on another task's result, task parallelism may require what?",
+        "answer": "Synchronization",
+        "wrong": [
+          "Factorial growth",
+          "No coordination",
+          "Only greedy selection"
+        ],
+        "explanation": "Dependencies require coordination so tasks use correct results."
+      },
+      {
+        "id": "module-final-a-30",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Task Parallelism",
+        "prompt": "Parallel recursive algorithms often fit task parallelism because what can become independent work?",
+        "answer": "Recursive calls",
+        "wrong": [
+          "Only one global variable",
+          "The final print statement",
+          "All memory addresses"
+        ],
+        "explanation": "Each recursive branch can sometimes be treated as an independent task."
+      },
+      {
+        "id": "module-final-a-31",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Task Parallelism",
+        "prompt": "Parallel loop iterations are task-parallel only when what is true?",
+        "answer": "Iterations can execute independently",
+        "wrong": [
+          "Every iteration writes the same shared variable without locks",
+          "The loop must be O(n!)",
+          "Only one iteration exists"
+        ],
+        "explanation": "Independent iterations can be treated as separate tasks."
+      },
+      {
+        "id": "module-final-a-32",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Parallelism Types",
+        "prompt": "Which clue separates data parallelism from task parallelism?",
+        "answer": "Same operation on data chunks versus different operations as tasks",
+        "wrong": [
+          "Both require no processors",
+          "Data parallelism cannot use datasets",
+          "Task parallelism always means one task"
+        ],
+        "explanation": "This is the central distinction the exam often tests."
+      },
+      {
+        "id": "module-final-a-33",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Shared Memory",
+        "prompt": "OpenMP is most commonly associated with what environment?",
+        "answer": "Shared-memory multi-core programming",
+        "wrong": [
+          "Only wide-area message passing",
+          "Only database normalization",
+          "Only cryptography"
+        ],
+        "explanation": "OpenMP is commonly used to express parallelism in shared-memory systems."
+      },
+      {
+        "id": "module-final-a-34",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Divide and conquer has which core sequence?",
+        "answer": "Divide -> Conquer -> Combine",
+        "wrong": [
+          "Send -> Receive -> Broadcast",
+          "Lock -> Sleep -> Ignore",
+          "Guess -> Encrypt -> Delete"
+        ],
+        "explanation": "The method divides the problem, solves subproblems recursively, and combines results."
+      },
+      {
+        "id": "module-final-a-35",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Which algorithm is a classic divide-and-conquer example?",
+        "answer": "Merge sort",
+        "wrong": [
+          "Sudoku backtracking as the only answer",
+          "A password policy",
+          "Linear objective optimization"
+        ],
+        "explanation": "Merge sort divides, recursively sorts, and merges the subresults."
+      },
+      {
+        "id": "module-final-a-36",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Which technique chooses the best-looking option at the current step?",
+        "answer": "Greedy method",
+        "wrong": [
+          "Backtracking",
+          "Message passing",
+          "Quadratic space"
+        ],
+        "explanation": "Greedy algorithms make local choices and typically do not reconsider them."
+      },
+      {
+        "id": "module-final-a-37",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Why is the greedy method considered risky on some problems?",
+        "answer": "A local best choice may not produce the global best result",
+        "wrong": [
+          "It always checks all permutations",
+          "It is impossible to implement",
+          "It requires shared memory"
+        ],
+        "explanation": "Greedy choices are simple, but local optimality is not always enough."
+      },
+      {
+        "id": "module-final-a-38",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Which technique solves subproblems and reuses their stored answers?",
+        "answer": "Dynamic programming",
+        "wrong": [
+          "Message passing",
+          "Constant space only",
+          "Point-to-point communication"
+        ],
+        "explanation": "Dynamic programming avoids repeated work by reusing subproblem solutions."
+      },
+      {
+        "id": "module-final-a-39",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Why is Fibonacci often used to explain dynamic programming?",
+        "answer": "It has repeated overlapping subproblems",
+        "wrong": [
+          "It requires no memory at all",
+          "It is only a message-passing protocol",
+          "It always uses linear constraints"
+        ],
+        "explanation": "Naive Fibonacci recomputes many values; DP stores and reuses them."
+      },
+      {
+        "id": "module-final-a-40",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "A Sudoku solver tries a number, fails later, and returns to choose a different number. Which technique is this?",
+        "answer": "Backtracking",
+        "wrong": [
+          "Data parallelism",
+          "Linear programming",
+          "Constant time"
+        ],
+        "explanation": "Backtracking tries a candidate and retreats when the path becomes invalid."
+      },
+      {
+        "id": "module-final-a-41",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Which problem is commonly linked to backtracking?",
+        "answer": "Eight queen problem",
+        "wrong": [
+          "Direct array access",
+          "Simple variable assignment",
+          "Point-to-point send only"
+        ],
+        "explanation": "Eight queens, Sudoku, and maze traversal are classic backtracking examples."
+      },
+      {
+        "id": "module-final-a-42",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Which technique keeps a current best solution and prunes paths that cannot beat it?",
+        "answer": "Branch and bound",
+        "wrong": [
+          "Greedy method only",
+          "Shared variable communication",
+          "Big-Omega notation"
+        ],
+        "explanation": "Branch and bound uses bounds to remove weak parts of the solution space."
+      },
+      {
+        "id": "module-final-a-43",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "What is a key purpose of branch and bound search?",
+        "answer": "Maintain or improve the lowest-cost path to a target",
+        "wrong": [
+          "Avoid optimization entirely",
+          "Force every process to share memory",
+          "Make all loops nested"
+        ],
+        "explanation": "The method searches for an optimal solution while pruning."
+      },
+      {
+        "id": "module-final-a-44",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Linear programming is used when the objective and constraints are what?",
+        "answer": "Linear functions",
+        "wrong": [
+          "Random message orders",
+          "Only recursive calls",
+          "Only shared variables"
+        ],
+        "explanation": "Linear programming optimizes a linear objective subject to linear constraints."
+      },
+      {
+        "id": "module-final-a-45",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Algorithms",
+        "prompt": "Which is a typical linear programming goal?",
+        "answer": "Maximize profit or minimize cost",
+        "wrong": [
+          "Create a race condition",
+          "Broadcast every pixel",
+          "Ignore all constraints"
+        ],
+        "explanation": "The source lists maximum profit, shortest path, and lowest cost style outcomes."
+      },
+      {
+        "id": "module-final-a-46",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Complexity",
+        "prompt": "What does time complexity measure?",
+        "answer": "How runtime grows as input size grows",
+        "wrong": [
+          "Only the color of a chart",
+          "Only the number of processors",
+          "Only the size of source code comments"
+        ],
+        "explanation": "Time complexity is runtime as a function of input size."
+      },
+      {
+        "id": "module-final-a-47",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Complexity",
+        "prompt": "Directly printing the first array element is usually what time complexity?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(n^2)",
+          "O(n!)"
+        ],
+        "explanation": "The work does not depend on how many elements the array contains."
+      },
+      {
+        "id": "module-final-a-48",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Complexity",
+        "prompt": "Binary search on a sorted array is usually what time complexity?",
+        "answer": "O(log n)",
+        "wrong": [
+          "O(n^2)",
+          "O(n!)",
+          "O(1) for all cases"
+        ],
+        "explanation": "Binary search repeatedly halves the search range."
+      },
+      {
+        "id": "module-final-a-49",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Complexity",
+        "prompt": "Two nested loops that print every ordered pair from an array usually have what time complexity?",
+        "answer": "O(n^2)",
+        "wrong": [
+          "O(log n)",
+          "O(1)",
+          "O(n log n) always"
+        ],
+        "explanation": "A loop inside another loop over n elements creates n times n work."
+      },
+      {
+        "id": "module-final-a-50",
+        "source": "PaD Module Finals",
+        "set": "A",
+        "tag": "Complexity",
+        "prompt": "Which growth order is generally best among these for large input?",
+        "answer": "O(log n)",
+        "wrong": [
+          "O(n^2)",
+          "O(2^n)",
+          "O(n!)"
+        ],
+        "explanation": "Logarithmic growth increases very slowly compared with polynomial, exponential, and factorial growth."
+      },
+      {
+        "id": "module-final-b-1",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A hospital AI system splits millions of records into equal chunks and runs the same risk-scoring formula on each chunk. Which model is the best fit?",
+        "answer": "Data parallelism",
+        "wrong": [
+          "Task parallelism",
+          "Backtracking",
+          "Linear programming"
+        ],
+        "explanation": "The same computation is applied to independent data partitions."
+      },
+      {
+        "id": "module-final-b-2",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A video editor applies the same filter to every frame block on a GPU. What is the best classification?",
+        "answer": "Data parallelism using SIMD-style work",
+        "wrong": [
+          "Message passing with no data partitioning",
+          "Greedy local selection",
+          "Branch and bound search"
+        ],
+        "explanation": "The same operation is repeated over many independent data elements."
+      },
+      {
+        "id": "module-final-b-3",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A web server handles login, payment, and notification jobs at the same time, and each job uses different logic. What is the best fit?",
+        "answer": "Task parallelism",
+        "wrong": [
+          "Pure data parallelism",
+          "O(1) direct access",
+          "Linear programming"
+        ],
+        "explanation": "Different independent operations executing concurrently point to task parallelism."
+      },
+      {
+        "id": "module-final-b-4",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A cluster has 200 nodes, each with its own memory, and nodes exchange work updates through MPI. Which model is this?",
+        "answer": "Message-passing programming",
+        "wrong": [
+          "Shared-memory programming",
+          "Constant-space programming",
+          "Greedy method"
+        ],
+        "explanation": "Separate memory spaces plus MPI are message-passing clues."
+      },
+      {
+        "id": "module-final-b-5",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "Four threads in one process update a shared transaction balance. What must be added to avoid inconsistent balances?",
+        "answer": "Synchronization such as a lock",
+        "wrong": [
+          "More unsynchronized writes",
+          "A factorial algorithm",
+          "A public broadcast only"
+        ],
+        "explanation": "Shared updates need controlled access to avoid race conditions."
+      },
+      {
+        "id": "module-final-b-6",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "An image-processing job has 1,000 chunks, but some chunks are much harder than others. What problem should the developer watch?",
+        "answer": "Load imbalance",
+        "wrong": [
+          "No possible parallelism",
+          "Big-Omega notation",
+          "Only greedy recursion"
+        ],
+        "explanation": "Uneven work makes some processors idle while others keep running."
+      },
+      {
+        "id": "module-final-b-7",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A process waits forever for a message that another process never sends. What kind of issue is most likely?",
+        "answer": "Message deadlock",
+        "wrong": [
+          "Cache-friendly shared memory",
+          "Constant time success",
+          "Linear objective optimization"
+        ],
+        "explanation": "Message-passing programs can deadlock when waiting conditions are not satisfied."
+      },
+      {
+        "id": "module-final-b-8",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A programmer wants to send one configuration value from a root process to all worker processes. Which operation type fits?",
+        "answer": "Collective communication",
+        "wrong": [
+          "Point-to-point only",
+          "Backtracking",
+          "Quadratic space"
+        ],
+        "explanation": "Broadcasting to a group is collective communication."
+      },
+      {
+        "id": "module-final-b-9",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A worker sends a result only to process 7. Which message-passing communication type is this?",
+        "answer": "Point-to-point communication",
+        "wrong": [
+          "Collective communication",
+          "Shared variable access",
+          "Branch and bound"
+        ],
+        "explanation": "A specific sender-to-target pattern is point-to-point."
+      },
+      {
+        "id": "module-final-b-10",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A shared-memory app becomes slower after adding more threads because they all compete for one lock. What is the best explanation?",
+        "answer": "Synchronization contention reduces scalability",
+        "wrong": [
+          "Message passing removed all overhead",
+          "Binary search became O(n!)",
+          "The program stopped using memory"
+        ],
+        "explanation": "Too much lock contention can erase parallel speedup."
+      },
+      {
+        "id": "module-final-b-11",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A program divides a large search tree into branches, but some branches depend on earlier choices and invalid paths must be abandoned. Which algorithm style fits?",
+        "answer": "Backtracking",
+        "wrong": [
+          "Data parallelism only",
+          "O(1) direct access",
+          "Message broadcast"
+        ],
+        "explanation": "Trying a path and retreating when it fails is backtracking."
+      },
+      {
+        "id": "module-final-b-12",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A delivery company wants the cheapest route and prunes any path already more expensive than the best current route. Which technique is being used?",
+        "answer": "Branch and bound",
+        "wrong": [
+          "Shared memory only",
+          "Greedy with no pruning",
+          "Constant-space array creation"
+        ],
+        "explanation": "The bound lets the algorithm eliminate paths that cannot beat the current best."
+      },
+      {
+        "id": "module-final-b-13",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A scheduling problem has a linear cost equation and linear resource constraints. What technique is most appropriate?",
+        "answer": "Linear programming",
+        "wrong": [
+          "Backtracking only",
+          "Message passing only",
+          "Dynamic work stealing"
+        ],
+        "explanation": "Linear programming optimizes a linear objective under linear constraints."
+      },
+      {
+        "id": "module-final-b-14",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A recursive Fibonacci implementation keeps recomputing the same values. Which technique is designed to fix that?",
+        "answer": "Dynamic programming",
+        "wrong": [
+          "Greedy method",
+          "Message deadlock",
+          "O(n!) sorting"
+        ],
+        "explanation": "Dynamic programming stores and reuses overlapping subproblem results."
+      },
+      {
+        "id": "module-final-b-15",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A sorting method splits an array, sorts the halves, then merges the halves. Which design technique is this?",
+        "answer": "Divide and conquer",
+        "wrong": [
+          "Linear programming",
+          "Point-to-point messaging",
+          "Race condition"
+        ],
+        "explanation": "Split, recursively solve, and combine is divide and conquer."
+      },
+      {
+        "id": "module-final-b-16",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A navigation app always chooses the currently closest next stop without reconsidering previous choices. Which method is this closest to?",
+        "answer": "Greedy method",
+        "wrong": [
+          "Dynamic programming",
+          "Backtracking",
+          "Message passing"
+        ],
+        "explanation": "Greedy chooses the best immediate option and typically does not reconsider."
+      },
+      {
+        "id": "module-final-b-17",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A classmate says greedy always gives the globally optimal answer. What is the best correction?",
+        "answer": "Greedy can fail when the local best choice is not globally best",
+        "wrong": [
+          "Greedy always checks every possible solution",
+          "Greedy is only for shared memory",
+          "Greedy never makes choices"
+        ],
+        "explanation": "Greedy is efficient and simple, but it needs problem conditions that make local choices safe."
+      },
+      {
+        "id": "module-final-b-18",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Complexity Scenario",
+        "prompt": "A security scan checks every pair of modules for compatibility using two nested loops. What time complexity should you expect?",
+        "answer": "O(n^2)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n!)"
+        ],
+        "explanation": "Checking all pairs creates quadratic growth."
+      }
+    ],
+    "everythingB": [
+      {
+        "id": "module-final-b-19",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Complexity Scenario",
+        "prompt": "A monitoring tool reads only the first log entry no matter how many logs exist. What time complexity is this action?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(n log n)",
+          "O(2^n)"
+        ],
+        "explanation": "The number of operations is fixed and does not grow with input size."
+      },
+      {
+        "id": "module-final-b-20",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Complexity Scenario",
+        "prompt": "A sorted database repeatedly halves the remaining search range while looking for an ID. What time complexity is this?",
+        "answer": "O(log n)",
+        "wrong": [
+          "O(n^2)",
+          "O(n!)",
+          "O(n^3)"
+        ],
+        "explanation": "Halving the search space is the signature of logarithmic time."
+      },
+      {
+        "id": "module-final-b-21",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Complexity Scenario",
+        "prompt": "A program prints every item in a list once. What time complexity is most likely?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(n^2)",
+          "O(2^n)"
+        ],
+        "explanation": "One pass through n items gives linear time."
+      },
+      {
+        "id": "module-final-b-22",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Complexity Scenario",
+        "prompt": "A merge-sort style algorithm divides data and combines sorted results. What typical complexity appears in many efficient sorting algorithms?",
+        "answer": "O(n log n)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n!)"
+        ],
+        "explanation": "Efficient comparison sorting is commonly O(n log n)."
+      },
+      {
+        "id": "module-final-b-23",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Space Complexity",
+        "prompt": "A program creates an array of size n before processing. What space complexity is introduced by that array?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n!)"
+        ],
+        "explanation": "Memory grows in direct proportion to n."
+      },
+      {
+        "id": "module-final-b-24",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Space Complexity",
+        "prompt": "A program creates an n by n table for dynamic programming. What space complexity is likely?",
+        "answer": "O(n^2)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n) only"
+        ],
+        "explanation": "An n by n matrix contains n squared cells."
+      },
+      {
+        "id": "module-final-b-25",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Space Complexity",
+        "prompt": "A function only stores three integer variables regardless of input size. What space complexity is likely?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(n^2)",
+          "O(2^n)"
+        ],
+        "explanation": "A fixed number of variables is constant space."
+      },
+      {
+        "id": "module-final-b-26",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Asymptotic Notation",
+        "prompt": "Which notation describes an upper bound or worst-case-style ceiling?",
+        "answer": "Big-O",
+        "wrong": [
+          "Big-Omega",
+          "Big-Theta only",
+          "SIMD"
+        ],
+        "explanation": "Big-O gives an upper bound on growth."
+      },
+      {
+        "id": "module-final-b-27",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Asymptotic Notation",
+        "prompt": "Which notation describes a lower bound or minimum growth guarantee?",
+        "answer": "Big-Omega",
+        "wrong": [
+          "Big-O",
+          "Big-Theta only",
+          "MPI"
+        ],
+        "explanation": "Big-Omega gives a lower bound."
+      },
+      {
+        "id": "module-final-b-28",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Asymptotic Notation",
+        "prompt": "Which notation describes a tight bound with both upper and lower limits?",
+        "answer": "Big-Theta",
+        "wrong": [
+          "Big-O only",
+          "Big-Omega only",
+          "OpenMP"
+        ],
+        "explanation": "Big-Theta is used when the growth is bounded above and below by the same class."
+      },
+      {
+        "id": "module-final-b-29",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A team uses OpenMP pragmas to parallelize loops on a multi-core machine with shared RAM. Which model is most likely?",
+        "answer": "Shared-memory programming",
+        "wrong": [
+          "Message-passing programming",
+          "Blockchain consensus",
+          "Linear programming"
+        ],
+        "explanation": "OpenMP is commonly used for shared-memory multi-core parallelism."
+      },
+      {
+        "id": "module-final-b-30",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A team uses MPI to coordinate jobs across machines with separate memory. Which model is most likely?",
+        "answer": "Message-passing programming",
+        "wrong": [
+          "Shared-memory programming only",
+          "Backtracking only",
+          "O(1) space only"
+        ],
+        "explanation": "MPI is the standard clue for message passing."
+      },
+      {
+        "id": "module-final-b-31",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Message Passing",
+        "prompt": "A developer says asynchronous message passing means no synchronization is ever needed. What is the best response?",
+        "answer": "Processes still need explicit coordination around message receipt",
+        "wrong": [
+          "Asynchronous means all processes share memory",
+          "Asynchronous means no messages are sent",
+          "Asynchronous converts all code to O(1)"
+        ],
+        "explanation": "Asynchronous communication can reduce waiting, but coordination is still explicit."
+      },
+      {
+        "id": "module-final-b-32",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Shared Memory",
+        "prompt": "A shared array is updated by many threads, but each thread writes to a separate index and no thread reads incomplete results. What is the likely benefit?",
+        "answer": "Reduced synchronization need compared with shared writes to one location",
+        "wrong": [
+          "Guaranteed factorial complexity",
+          "Mandatory message deadlock",
+          "No memory access"
+        ],
+        "explanation": "Independent partitions reduce conflicts, though final coordination may still be needed."
+      },
+      {
+        "id": "module-final-b-33",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Taxonomy",
+        "prompt": "A GPU applies one instruction to thousands of pixels at the same time. Which taxonomy idea matches this?",
+        "answer": "SIMD",
+        "wrong": [
+          "MIMD only",
+          "SISD only",
+          "Branch and bound"
+        ],
+        "explanation": "Single Instruction, Multiple Data fits the GPU pixel example."
+      },
+      {
+        "id": "module-final-b-34",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Taxonomy",
+        "prompt": "A normal single-core program executes one instruction stream over one data stream. Which Flynn category is closest?",
+        "answer": "SISD",
+        "wrong": [
+          "SIMD",
+          "MISD",
+          "MIMD"
+        ],
+        "explanation": "SISD means Single Instruction, Single Data."
+      },
+      {
+        "id": "module-final-b-35",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Taxonomy",
+        "prompt": "Different processors run different tasks on different data at the same time. Which Flynn category is closest?",
+        "answer": "MIMD",
+        "wrong": [
+          "SISD",
+          "SIMD",
+          "Constant space"
+        ],
+        "explanation": "MIMD means Multiple Instruction, Multiple Data."
+      },
+      {
+        "id": "module-final-b-36",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Taxonomy",
+        "prompt": "Different processors run different analyses on the same sensor stream. Which Flynn category is closest?",
+        "answer": "MISD",
+        "wrong": [
+          "SISD",
+          "SIMD",
+          "O(n log n)"
+        ],
+        "explanation": "MISD means Multiple Instruction, Single Data, a rare but testable category."
+      },
+      {
+        "id": "module-final-b-37",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Granularity",
+        "prompt": "A task-parallel program has many small tasks, and scheduling overhead becomes large compared with useful computation. What issue is this?",
+        "answer": "Too fine-grained task decomposition",
+        "wrong": [
+          "Perfect load balancing",
+          "Constant-time execution",
+          "No synchronization"
+        ],
+        "explanation": "Very fine-grained tasks can spend too much time on overhead."
+      },
+      {
+        "id": "module-final-b-38",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Performance",
+        "prompt": "A distributed program sends huge messages every millisecond and spends more time communicating than computing. What factor is hurting performance?",
+        "answer": "Communication overhead",
+        "wrong": [
+          "Greedy optimality",
+          "O(1) direct access",
+          "Backtracking success"
+        ],
+        "explanation": "Excessive data transfer can dominate runtime."
+      },
+      {
+        "id": "module-final-b-39",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Performance",
+        "prompt": "A program gets faster when processors are added, but not proportionally. Which explanation is most realistic?",
+        "answer": "Coordination, communication, and synchronization overhead reduce ideal speedup",
+        "wrong": [
+          "Parallelism always gives perfect speedup",
+          "More processors remove all memory limits",
+          "The program becomes serial by definition"
+        ],
+        "explanation": "Parallel systems often have overhead and non-parallel portions."
+      },
+      {
+        "id": "module-final-b-40",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Performance",
+        "prompt": "Which metric describes how effectively processors are used in a parallel system?",
+        "answer": "Efficiency",
+        "wrong": [
+          "Voltage",
+          "Screen resolution",
+          "Database color"
+        ],
+        "explanation": "Efficiency compares useful speedup with processor resources used."
+      },
+      {
+        "id": "module-final-b-41",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Granularity",
+        "prompt": "A program divides a 4K video into independent frames processed by many computers. What phrase best fits?",
+        "answer": "Coarse-grained parallel workload",
+        "wrong": [
+          "One shared lock workload",
+          "O(1) direct access only",
+          "No parallelism"
+        ],
+        "explanation": "Independent large tasks are coarse-grained and suited to distributed processing."
+      },
+      {
+        "id": "module-final-b-42",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Data Parallelism",
+        "prompt": "A data-parallel workload needs almost no communication. What is the performance advantage?",
+        "answer": "Less communication overhead",
+        "wrong": [
+          "More message deadlocks",
+          "More lock contention",
+          "Factorial growth"
+        ],
+        "explanation": "Minimal communication helps preserve speedup."
+      },
+      {
+        "id": "module-final-b-43",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Task Parallelism",
+        "prompt": "A task-parallel system has tasks whose durations are unknown until runtime. Which scheduling idea helps most?",
+        "answer": "Dynamic load balancing",
+        "wrong": [
+          "Fixed one-time partitioning only",
+          "No scheduling",
+          "Only linear programming"
+        ],
+        "explanation": "Dynamic balancing adapts as tasks vary."
+      },
+      {
+        "id": "module-final-b-44",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Message Passing",
+        "prompt": "Which option is the clearest example of collective communication?",
+        "answer": "Reducing partial sums from all workers into one total",
+        "wrong": [
+          "Thread A writes x = 5",
+          "A single direct array lookup",
+          "A Sudoku solver backtracks"
+        ],
+        "explanation": "Reduce gathers and combines data from many processes."
+      },
+      {
+        "id": "module-final-b-45",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A programmer moves a program from one multi-core server to a cluster of independent machines. Which shift is most likely needed?",
+        "answer": "From shared-memory assumptions to message-passing communication",
+        "wrong": [
+          "From O(n) to O(1) automatically",
+          "From data structures to no data",
+          "From messages to one global variable"
+        ],
+        "explanation": "Clusters usually do not share one address space across machines."
+      },
+      {
+        "id": "module-final-b-46",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "Which model is best if all worker units must frequently update one shared object with low-latency access?",
+        "answer": "Shared-memory programming with careful synchronization",
+        "wrong": [
+          "Message passing with no communication",
+          "Linear programming only",
+          "Backtracking only"
+        ],
+        "explanation": "Low-latency shared access fits shared memory, but synchronization remains necessary."
+      },
+      {
+        "id": "module-final-b-47",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "Which model is best if workers are on different networked machines and memory is not shared?",
+        "answer": "Message-passing programming",
+        "wrong": [
+          "Pure shared memory",
+          "O(1) constant space only",
+          "Single-threaded SISD only"
+        ],
+        "explanation": "Separate networked nodes usually coordinate by messages."
+      },
+      {
+        "id": "module-final-b-48",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Concurrency Trap",
+        "prompt": "What is the most likely bug if two tasks keep responding to each other but never make progress?",
+        "answer": "Livelock",
+        "wrong": [
+          "Linear time",
+          "Direct access",
+          "Perfect scalability"
+        ],
+        "explanation": "Livelock means activity continues but no useful progress is made."
+      },
+      {
+        "id": "module-final-b-49",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Concurrency Trap",
+        "prompt": "What is the most likely bug if two threads each hold one lock and wait forever for the other lock?",
+        "answer": "Deadlock",
+        "wrong": [
+          "SIMD",
+          "O(n log n)",
+          "Greedy choice"
+        ],
+        "explanation": "Deadlock occurs when each side waits for resources held by the other."
+      },
+      {
+        "id": "module-final-b-50",
+        "source": "PaD Module Finals",
+        "set": "B",
+        "tag": "Scenario",
+        "prompt": "A cloud analytics job partitions data by user ID and runs the same aggregation on every partition. Which concept is strongest?",
+        "answer": "Data parallelism",
+        "wrong": [
+          "Backtracking",
+          "Linear programming",
+          "SISD"
+        ],
+        "explanation": "Partitioned data with identical aggregation is data parallel."
+      },
+      {
+        "id": "module-final-c-1",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Tricky",
+        "prompt": "Which answer is most accurate: shared-memory programming simplifies communication because...",
+        "answer": "Threads can directly read and write shared data structures",
+        "wrong": [
+          "It removes the need for synchronization",
+          "It works only across remote clusters",
+          "It forbids shared variables"
+        ],
+        "explanation": "Shared memory simplifies data exchange, but it does not remove synchronization needs."
+      },
+      {
+        "id": "module-final-c-2",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Tricky",
+        "prompt": "Which statement is false about message-passing programming?",
+        "answer": "Processes must share the same address space",
+        "wrong": [
+          "Processes exchange messages",
+          "Synchronization is explicit",
+          "MPI is a common standard"
+        ],
+        "explanation": "Message passing is defined by separate memory spaces, not a shared address space."
+      },
+      {
+        "id": "module-final-c-3",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Tricky",
+        "prompt": "A question says 'same operation, many data items.' Which answer should you suspect first?",
+        "answer": "Data parallelism",
+        "wrong": [
+          "Task parallelism",
+          "Branch and bound",
+          "Linear programming"
+        ],
+        "explanation": "That phrase is the exam shortcut for data parallelism."
+      },
+      {
+        "id": "module-final-c-4",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Tricky",
+        "prompt": "A question says 'many independent operations, different work.' Which answer should you suspect first?",
+        "answer": "Task parallelism",
+        "wrong": [
+          "Data parallelism",
+          "SIMD only",
+          "O(log n)"
+        ],
+        "explanation": "Distinct independent work points to task parallelism."
+      },
+      {
+        "id": "module-final-c-5",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Tricky",
+        "prompt": "Which item is not a shared-memory synchronization mechanism from the lesson?",
+        "answer": "Broadcast",
+        "wrong": [
+          "Lock",
+          "Semaphore",
+          "Barrier"
+        ],
+        "explanation": "Broadcast is a collective message-passing operation; locks, semaphores, and barriers coordinate shared memory."
+      },
+      {
+        "id": "module-final-c-6",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Tricky",
+        "prompt": "Which item is not a message-passing library or standard listed in the lesson?",
+        "answer": "OpenMP",
+        "wrong": [
+          "MPI",
+          "Open MPI",
+          "Microsoft MPI"
+        ],
+        "explanation": "OpenMP is usually associated with shared-memory parallel programming, not message passing."
+      },
+      {
+        "id": "module-final-c-7",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Debugging",
+        "prompt": "Which choice best describes why shared-memory debugging can be difficult?",
+        "answer": "Race conditions may be hard to reproduce",
+        "wrong": [
+          "There are no shared variables",
+          "Messages always arrive in perfect order",
+          "No concurrency is possible"
+        ],
+        "explanation": "Timing-dependent race conditions can appear inconsistently."
+      },
+      {
+        "id": "module-final-c-8",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Debugging",
+        "prompt": "Which choice best describes why message-passing debugging can be difficult?",
+        "answer": "Message order and waiting behavior can create subtle failures",
+        "wrong": [
+          "All data is automatically consistent",
+          "Only one process is allowed",
+          "It never uses communication"
+        ],
+        "explanation": "Deadlocks and unexpected message ordering are common message-passing debugging traps."
+      },
+      {
+        "id": "module-final-c-9",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "A problem can be split into subproblems, but the same subproblem appears many times. Which technique usually beats plain divide and conquer?",
+        "answer": "Dynamic programming",
+        "wrong": [
+          "Greedy method",
+          "Point-to-point messaging",
+          "Constant time"
+        ],
+        "explanation": "Dynamic programming stores repeated subproblem results."
+      },
+      {
+        "id": "module-final-c-10",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which phrase is the best clue for backtracking?",
+        "answer": "Try a candidate, retreat when constraints fail",
+        "wrong": [
+          "Choose local best and never reconsider",
+          "Apply same operation to pixels",
+          "Send a message to process 3"
+        ],
+        "explanation": "Backtracking moves forward and returns when a path cannot lead to a valid solution."
+      },
+      {
+        "id": "module-final-c-11",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which phrase is the best clue for branch and bound?",
+        "answer": "Prune solution paths using a bound and current best answer",
+        "wrong": [
+          "Split only into equal data partitions",
+          "Read the first array item",
+          "Broadcast to all workers"
+        ],
+        "explanation": "Bounds eliminate parts of the search space that cannot improve the solution."
+      },
+      {
+        "id": "module-final-c-12",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which phrase is the best clue for linear programming?",
+        "answer": "Linear objective and linear constraints",
+        "wrong": [
+          "Many shared variables",
+          "Unexpected message order",
+          "Nested loops only"
+        ],
+        "explanation": "Linear programming is defined by linear objective and constraint functions."
+      },
+      {
+        "id": "module-final-c-13",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "A classmate says divide and conquer and dynamic programming are identical because both use subproblems. What is the best distinction?",
+        "answer": "Dynamic programming reuses overlapping subproblem solutions",
+        "wrong": [
+          "Divide and conquer never uses recursion",
+          "Dynamic programming is only for networks",
+          "Divide and conquer always uses locks"
+        ],
+        "explanation": "DP is distinguished by storing/reusing repeated subproblems."
+      },
+      {
+        "id": "module-final-c-14",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which algorithm technique is most likely for binary search?",
+        "answer": "Divide and conquer",
+        "wrong": [
+          "Backtracking",
+          "Linear programming",
+          "Message passing"
+        ],
+        "explanation": "Binary search repeatedly divides the search interval."
+      },
+      {
+        "id": "module-final-c-15",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which algorithm technique is most likely for Sudoku?",
+        "answer": "Backtracking",
+        "wrong": [
+          "Greedy method only",
+          "Data parallelism only",
+          "O(1) direct access"
+        ],
+        "explanation": "Sudoku solvers often try candidates and backtrack when constraints fail."
+      },
+      {
+        "id": "module-final-c-16",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which algorithm technique is most likely when choosing the best current component and never reconsidering it?",
+        "answer": "Greedy method",
+        "wrong": [
+          "Dynamic programming",
+          "Branch and bound",
+          "Shared memory"
+        ],
+        "explanation": "The defining clue is choosing the current best-looking option."
+      },
+      {
+        "id": "module-final-c-17",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which algorithm technique is most likely for optimizing maximum profit with linear restrictions?",
+        "answer": "Linear programming",
+        "wrong": [
+          "Message passing",
+          "Backtracking only",
+          "SIMD"
+        ],
+        "explanation": "Maximum profit under linear constraints is a linear programming scenario."
+      },
+      {
+        "id": "module-final-c-18",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Algorithms",
+        "prompt": "Which technique searches the entire solution space more intelligently by eliminating impossible or weak areas?",
+        "answer": "Branch and bound",
+        "wrong": [
+          "Constant time",
+          "Point-to-point communication",
+          "Direct array lookup"
+        ],
+        "explanation": "Branch and bound explores possible solutions while pruning using bounds."
+      },
+      {
+        "id": "module-final-c-19",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Which complexity class grows slowest among the options?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(log n)",
+          "O(n)",
+          "O(n log n)"
+        ],
+        "explanation": "Constant time does not grow with input size."
+      },
+      {
+        "id": "module-final-c-20",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Which complexity class grows fastest among the options?",
+        "answer": "O(n!)",
+        "wrong": [
+          "O(n^2)",
+          "O(n log n)",
+          "O(log n)"
+        ],
+        "explanation": "Factorial time grows extremely fast and is worse than the listed polynomial/logarithmic classes."
+      },
+      {
+        "id": "module-final-c-21",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Which pair is in correct increasing growth order?",
+        "answer": "O(1), O(log n), O(n), O(n log n)",
+        "wrong": [
+          "O(n^2), O(n), O(log n), O(1)",
+          "O(n!), O(2^n), O(n), O(1)",
+          "O(log n), O(1), O(n^2), O(n)"
+        ],
+        "explanation": "The usual order is constant, logarithmic, linear, log-linear."
+      },
+      {
+        "id": "module-final-c-22",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "A loop inside a loop inside a loop over n items is most likely what?",
+        "answer": "O(n^3)",
+        "wrong": [
+          "O(log n)",
+          "O(1)",
+          "O(n log n)"
+        ],
+        "explanation": "Three nested n-sized loops imply cubic time."
+      },
+      {
+        "id": "module-final-c-23",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Trying every subset of n items is commonly associated with what growth?",
+        "answer": "O(2^n)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n)"
+        ],
+        "explanation": "Each item often creates an include/exclude choice, producing exponential growth."
+      },
+      {
+        "id": "module-final-c-24",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Trying every ordering of n items is commonly associated with what growth?",
+        "answer": "O(n!)",
+        "wrong": [
+          "O(n)",
+          "O(log n)",
+          "O(n log n)"
+        ],
+        "explanation": "Every permutation of n items produces factorial growth."
+      },
+      {
+        "id": "module-final-c-25",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Asymptotic Notation",
+        "prompt": "Which notation is the tightest statement when an algorithm is both O(n log n) and Omega(n log n)?",
+        "answer": "Theta(n log n)",
+        "wrong": [
+          "O(1)",
+          "Omega(1) only",
+          "SIMD"
+        ],
+        "explanation": "Matching upper and lower bounds give a Theta bound."
+      },
+      {
+        "id": "module-final-c-26",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Asymptotic Notation",
+        "prompt": "If an algorithm has worst-case O(n^2), what does that most directly tell you?",
+        "answer": "Its runtime is bounded above by a quadratic function for large input",
+        "wrong": [
+          "It always runs exactly n^2 steps",
+          "It has no lower bound",
+          "It must use message passing"
+        ],
+        "explanation": "Big-O is an upper bound, not necessarily an exact count."
+      },
+      {
+        "id": "module-final-c-27",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Which is the best example of O(n) time?",
+        "answer": "Scanning every item once",
+        "wrong": [
+          "Directly reading array[0]",
+          "Binary searching sorted data",
+          "Trying every permutation"
+        ],
+        "explanation": "A single pass through all items is linear."
+      },
+      {
+        "id": "module-final-c-28",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Which is the best example of O(log n) time?",
+        "answer": "Binary search",
+        "wrong": [
+          "Printing all pairs",
+          "Creating an n by n matrix",
+          "Trying all subsets"
+        ],
+        "explanation": "Binary search repeatedly halves the possible range."
+      },
+      {
+        "id": "module-final-c-29",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "Which is the best example of O(n log n) time?",
+        "answer": "Efficient comparison sorting such as merge sort",
+        "wrong": [
+          "Direct access",
+          "Two nested loops over all pairs",
+          "Trying every permutation"
+        ],
+        "explanation": "Merge sort and many efficient sorts are O(n log n)."
+      },
+      {
+        "id": "module-final-c-30",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Space Complexity",
+        "prompt": "Which is the best example of O(n^2) space?",
+        "answer": "Creating a square matrix of size n by n",
+        "wrong": [
+          "Using one sum variable",
+          "Reading only the first element",
+          "Sending one direct message"
+        ],
+        "explanation": "An n by n matrix stores n squared cells."
+      },
+      {
+        "id": "module-final-c-31",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "What is the main difference between time and space complexity?",
+        "answer": "Time measures runtime growth; space measures memory growth",
+        "wrong": [
+          "Time measures colors; space measures processors",
+          "Both only mean Big-Omega",
+          "Space complexity ignores input size"
+        ],
+        "explanation": "Time and space analyze different resource growth."
+      },
+      {
+        "id": "module-final-c-32",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Complexity",
+        "prompt": "A program is fast on small input but explodes as n grows because it checks permutations. What is the likely problem?",
+        "answer": "Factorial growth",
+        "wrong": [
+          "Constant time",
+          "No synchronization",
+          "SIMD efficiency"
+        ],
+        "explanation": "Permutation-based search often has O(n!) behavior."
+      },
+      {
+        "id": "module-final-c-33",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "A distributed cluster processes work successfully even when one node fails and others continue. Which distributed-systems property is this?",
+        "answer": "Fault tolerance",
+        "wrong": [
+          "Race condition",
+          "Linear programming",
+          "Constant space"
+        ],
+        "explanation": "Fault tolerance means the system continues despite component failures."
+      },
+      {
+        "id": "module-final-c-34",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "A tightly connected group of computers works as a single system for HPC. What is this called?",
+        "answer": "Cluster computing",
+        "wrong": [
+          "Greedy method",
+          "Direct array access",
+          "Single-core SISD"
+        ],
+        "explanation": "Cluster computing uses interconnected computers as one system, often for HPC."
+      },
+      {
+        "id": "module-final-c-35",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "A large resource-sharing system spans multiple organizations and locations. What is this called?",
+        "answer": "Grid computing",
+        "wrong": [
+          "Shared local variable",
+          "Constant-time lookup",
+          "Backtracking only"
+        ],
+        "explanation": "Grid computing extends resource sharing across wide areas and organizations."
+      },
+      {
+        "id": "module-final-c-36",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "Which architecture has every node act as both client and server?",
+        "answer": "Peer-to-peer architecture",
+        "wrong": [
+          "Client-server only",
+          "SISD",
+          "Linear programming"
+        ],
+        "explanation": "P2P nodes can serve and request resources without a central server."
+      },
+      {
+        "id": "module-final-c-37",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "Which architecture relies on centralized services responding to client requests?",
+        "answer": "Client-server architecture",
+        "wrong": [
+          "Peer-to-peer only",
+          "Backtracking",
+          "SIMD"
+        ],
+        "explanation": "Client-server has clients requesting services from a server."
+      },
+      {
+        "id": "module-final-c-38",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "MapReduce's Map phase primarily does what?",
+        "answer": "Processes split data chunks in parallel",
+        "wrong": [
+          "Combines all final results only",
+          "Locks one shared variable",
+          "Chooses a local greedy option"
+        ],
+        "explanation": "Map splits work into chunks processed in parallel."
+      },
+      {
+        "id": "module-final-c-39",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Distributed Concepts",
+        "prompt": "MapReduce's Reduce phase primarily does what?",
+        "answer": "Aggregates intermediate results",
+        "wrong": [
+          "Applies a pixel filter to one image only",
+          "Creates locks",
+          "Runs binary search"
+        ],
+        "explanation": "Reduce combines mapped outputs into final results."
+      },
+      {
+        "id": "module-final-c-40",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Model Comparison",
+        "prompt": "Which statement about shared memory vs message passing is most accurate?",
+        "answer": "Shared memory can be faster locally, while message passing fits distributed nodes",
+        "wrong": [
+          "Message passing always shares one address space",
+          "Shared memory never needs synchronization",
+          "Both are exactly the same"
+        ],
+        "explanation": "This captures the key tradeoff between speed and distributed scalability."
+      },
+      {
+        "id": "module-final-c-41",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Model Comparison",
+        "prompt": "Which statement about data and task parallelism is most accurate?",
+        "answer": "Data parallelism repeats one operation over data; task parallelism runs distinct tasks",
+        "wrong": [
+          "They are identical terms",
+          "Data parallelism means no data exists",
+          "Task parallelism means only one task runs"
+        ],
+        "explanation": "This is the cleanest distinction."
+      },
+      {
+        "id": "module-final-c-42",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Synchronization",
+        "prompt": "Which choice is most likely to create a race condition?",
+        "answer": "Two threads writing the same shared variable without synchronization",
+        "wrong": [
+          "Binary search on a read-only sorted array",
+          "A process receiving a message",
+          "A linear objective function"
+        ],
+        "explanation": "Concurrent unsynchronized shared writes are the classic race-condition setup."
+      },
+      {
+        "id": "module-final-c-43",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Performance",
+        "prompt": "Which choice is most likely to create communication overhead?",
+        "answer": "Processes frequently exchange large messages across a network",
+        "wrong": [
+          "A thread reads a local variable once",
+          "An algorithm uses O(1) space",
+          "A direct array access"
+        ],
+        "explanation": "Network message exchange costs time."
+      },
+      {
+        "id": "module-final-c-44",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Performance",
+        "prompt": "Which choice best explains why increasing processors may not improve performance proportionally?",
+        "answer": "Some work is serial and coordination adds overhead",
+        "wrong": [
+          "All parallel programs are automatically perfect",
+          "Big-O always becomes O(1)",
+          "Memory disappears"
+        ],
+        "explanation": "Real speedup is limited by serial portions and overhead."
+      },
+      {
+        "id": "module-final-c-45",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Granularity",
+        "prompt": "A program divides tasks into extremely small pieces, causing scheduling and communication to dominate. What is the issue?",
+        "answer": "Fine-grained overhead",
+        "wrong": [
+          "Perfect coarse-grained balance",
+          "No parallelism possible",
+          "Big-Theta notation"
+        ],
+        "explanation": "Too-small work units can cost more to manage than execute."
+      },
+      {
+        "id": "module-final-c-46",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Granularity",
+        "prompt": "A program divides work into large independent frames for rendering. What granularity is this?",
+        "answer": "Coarse-grained",
+        "wrong": [
+          "Fine-grained every instruction",
+          "Constant-space only",
+          "No workload"
+        ],
+        "explanation": "Large independent chunks are coarse-grained."
+      },
+      {
+        "id": "module-final-c-47",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Shared Memory",
+        "prompt": "Which model fits a multi-core CPU where threads share a global memory space?",
+        "answer": "Shared-memory programming",
+        "wrong": [
+          "Message passing across clusters only",
+          "Grid computing only",
+          "Linear programming"
+        ],
+        "explanation": "One machine with shared memory and multiple cores is the shared-memory setting."
+      },
+      {
+        "id": "module-final-c-48",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Message Passing",
+        "prompt": "Which model fits a networked cluster where each node has its own local memory?",
+        "answer": "Message-passing programming",
+        "wrong": [
+          "Shared-memory only",
+          "O(1) only",
+          "Greedy method only"
+        ],
+        "explanation": "Separate local memories and network communication point to message passing."
+      },
+      {
+        "id": "module-final-c-49",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Taxonomy",
+        "prompt": "Which phrase is the clearest sign of SIMD?",
+        "answer": "One instruction applied to many data values",
+        "wrong": [
+          "Many instructions on no data",
+          "One thread waits for one lock",
+          "A linear constraint is optimized"
+        ],
+        "explanation": "SIMD expands to Single Instruction, Multiple Data."
+      },
+      {
+        "id": "module-final-c-50",
+        "source": "PaD Module Finals",
+        "set": "C",
+        "tag": "Taxonomy",
+        "prompt": "Which phrase is the clearest sign of MIMD?",
+        "answer": "Different instructions operating on different data streams",
+        "wrong": [
+          "One instruction and one data stream",
+          "A single direct array access",
+          "A square matrix allocation"
+        ],
+        "explanation": "MIMD expands to Multiple Instruction, Multiple Data."
+      },
+      {
+        "id": "quiz-a-1",
+        "number": 1,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What is the primary characteristic that defines message-passing programming as distinct from shared-memory programming?",
+        "answer": "Processes run in separate memory spaces and communicate explicitly by sending and receiving messages to each other.",
+        "wrong": [
+          "Processes share a distributed cache layer that all nodes can read from and write to simultaneously.",
+          "Processes communicate through a central coordinator node that manages all data transfers between workers.",
+          "Processes share a single common memory space and communicate by reading and writing the same variables directly."
+        ],
+        "explanation": "Processes run in separate memory spaces and communicate explicitly by sending and receiving messages to each other."
+      },
+      {
+        "id": "quiz-a-2",
+        "number": 2,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement best describes asynchronous communication in a message-passing program?",
+        "answer": "A sending process posts its message and immediately continues executing other work without waiting for the receiver to accept it.",
+        "wrong": [
+          "A sending process suspends all computation and remains idle until the receiving process explicitly confirms the message arrived.",
+          "All participating processes coordinate to send and receive messages at a pre-agreed synchronized time checkpoint.",
+          "The operating system buffers all messages and delivers them in the exact sequence they were originally transmitted."
+        ],
+        "explanation": "A sending process posts its message and immediately continues executing other work without waiting for the receiver to accept it."
+      },
+      {
+        "id": "quiz-a-3",
+        "number": 3,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "In message-passing programming, what accurately describes point-to-point communication?",
+        "answer": "One process sends a message to one specific, individually addressed target process for direct exchange.",
+        "wrong": [
+          "Every process in the group sends its local data to every other process simultaneously in a ring pattern.",
+          "A group of processes collectively computes a result and delivers it to all members of the communicator.",
+          "One root process distributes identical copies of a message to every other process in the communicator group."
+        ],
+        "explanation": "One process sends a message to one specific, individually addressed target process for direct exchange."
+      },
+      {
+        "id": "quiz-a-4",
+        "number": 4,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What does the acronym MPI stand for in high-performance parallel computing?",
+        "answer": "Message Passing Interface, the widely adopted standard library for distributed-memory parallel programming.",
+        "wrong": [
+          "Memory Partitioned Interface, the specification for dividing RAM equally among parallel worker threads.",
+          "Modular Parallel Implementation, a framework for automatically decomposing sequential programs into tasks.",
+          "Multi-Process Integration, the standard protocol for combining results across multi-core processors."
+        ],
+        "explanation": "Message Passing Interface, the widely adopted standard library for distributed-memory parallel programming."
+      },
+      {
+        "id": "quiz-a-5",
+        "number": 5,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A 500-node cluster runs a weather simulation where each node independently processes one geographic region and exchanges boundary values only with adjacent nodes. Which parallel paradigm fits best?",
+        "answer": "Message-passing using MPI, because each node has separate memory and communicates boundary data via explicit send and receive calls.",
+        "wrong": [
+          "Shared-memory using Intel TBB, because the threading library efficiently manages work queues across all cluster nodes.",
+          "Shared-memory using POSIX threads, because pthreads allow fine-grained control over each node's regional data buffer.",
+          "Shared-memory using OpenMP, because compiler directives automatically distribute the regional computation across all 500 nodes."
+        ],
+        "explanation": "Message-passing using MPI, because each node has separate memory and communicates boundary data via explicit send and receive calls."
+      },
+      {
+        "id": "quiz-a-6",
+        "number": 6,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement correctly describes a key scalability advantage of message-passing programming over shared-memory programming?",
+        "answer": "Message-passing programs scale across hundreds of distributed nodes because each process owns private memory and communicates explicitly.",
+        "wrong": [
+          "Message-passing programs use a global shared bus so that adding more nodes directly increases available memory bandwidth.",
+          "Message-passing programs depend on a shared heap segment that grows proportionally as more compute nodes join the cluster.",
+          "Message-passing programs run on a single machine with shared RAM and scale well because the OS manages lock contention automatically."
+        ],
+        "explanation": "Message-passing programs scale across hundreds of distributed nodes because each process owns private memory and communicates explicitly."
+      },
+      {
+        "id": "quiz-a-7",
+        "number": 7,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What is collective communication in message-passing systems and which operation is an example of it?",
+        "answer": "Collective communication describes group-level operations involving all processes, such as MPI_Bcast which sends one value to every process.",
+        "wrong": [
+          "Collective communication describes the technique of buffering multiple point-to-point messages to reduce individual transmission overhead.",
+          "Collective communication describes a fault-tolerance protocol where surviving processes redistribute work from a failed process automatically.",
+          "Collective communication describes one process sending a private message to one specific partner, as in a standard MPI_Send call."
+        ],
+        "explanation": "Collective communication describes group-level operations involving all processes, such as MPI_Bcast which sends one value to every process."
+      },
+      {
+        "id": "quiz-a-8",
+        "number": 8,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Two MPI processes — P0 and P1 — each call a blocking MPI_Send to the other before calling MPI_Recv. Neither process ever proceeds past its send call and the program freezes permanently. What condition has occurred and how is it resolved?",
+        "answer": "A message deadlock has occurred; the fix is to reorder calls so one process sends while the other receives, or to use non-blocking MPI_Isend.",
+        "wrong": [
+          "A scheduling conflict has occurred; the fix is to assign each process to a dedicated CPU core using processor affinity settings.",
+          "A collective communication mismatch has occurred; the fix is to replace MPI_Send with MPI_Bcast so both processes receive the message.",
+          "A memory overflow has occurred because each blocking send allocated a buffer larger than the available RAM on each node."
+        ],
+        "explanation": "A message deadlock has occurred; the fix is to reorder calls so one process sends while the other receives, or to use non-blocking MPI_Isend."
+      },
+      {
+        "id": "quiz-a-9",
+        "number": 9,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A financial HPC cluster shows no speedup gain after 150 nodes even when 50 more nodes are added. The computation per node remains constant but inter-node messaging has grown. What does this indicate about the message-passing workload?",
+        "answer": "Communication overhead between processes is growing fast enough to cancel out the computational benefit that the extra nodes provide.",
+        "wrong": [
+          "The financial dataset is too small for the cluster size, so each extra node receives zero work items and sits idle during the run.",
+          "The network switch is running at capacity so the OS automatically throttles new nodes to prevent packet loss on the interconnect.",
+          "The MPI library reached its maximum registered process count of 150 and stopped accepting new worker registrations."
+        ],
+        "explanation": "Communication overhead between processes is growing fast enough to cancel out the computational benefit that the extra nodes provide."
+      },
+      {
+        "id": "quiz-a-10",
+        "number": 10,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement correctly identifies a significant debugging challenge that is specific to message-passing programs?",
+        "answer": "Message-passing programs can suffer from deadlocks or non-deterministic message ordering, making bugs difficult to reproduce consistently.",
+        "wrong": [
+          "Message-passing programs share a global heap, so memory corruption in one process is immediately visible and easy to isolate.",
+          "Message-passing programs always execute sequentially on one core, so the debugger can single-step through every instruction in order.",
+          "Message-passing programs store all communication logs in a shared database, giving the developer a complete audit trail of every exchange."
+        ],
+        "explanation": "Message-passing programs can suffer from deadlocks or non-deterministic message ordering, making bugs difficult to reproduce consistently."
+      },
+      {
+        "id": "quiz-a-11",
+        "number": 11,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "How is synchronization between processes handled in the message-passing programming model?",
+        "answer": "Synchronization is explicit; processes deliberately issue send, receive, or barrier calls to coordinate their activities with other processes.",
+        "wrong": [
+          "Synchronization is fully automatic; the MPI runtime inserts barriers between every communication call without developer intervention.",
+          "Synchronization is unnecessary because each process runs in complete isolation and never needs to coordinate timing with any peer.",
+          "Synchronization is handled by a dedicated master process that polls all workers and issues clock signals at fixed time intervals."
+        ],
+        "explanation": "Synchronization is explicit; processes deliberately issue send, receive, or barrier calls to coordinate their activities with other processes."
+      },
+      {
+        "id": "quiz-a-12",
+        "number": 12,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A physics simulation on 1,000 nodes produces partial results on each node. At the end, all partial sums must be totaled into a single global result held on Node 0. Which MPI collective operation is the correct and most efficient choice?",
+        "answer": "MPI_Reduce, where all processes send their partial values to Node 0 which combines them using a SUM operation into one result.",
+        "wrong": [
+          "MPI_Bcast, where Node 0 transmits its partial result to all other nodes so every process holds the same starting value.",
+          "MPI_Scatter, where Node 0 breaks a large dataset into chunks and distributes one unique chunk to each of the 1,000 nodes.",
+          "MPI_Alltoall, where every node exchanges its partial result with every other node so all nodes hold all partial sums."
+        ],
+        "explanation": "MPI_Reduce, where all processes send their partial values to Node 0 which combines them using a SUM operation into one result."
+      },
+      {
+        "id": "quiz-a-13",
+        "number": 13,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "What are the three sequential steps that the Divide and Conquer algorithm technique performs at each level of recursion?",
+        "answer": "Divide the problem into smaller sub-problems, conquer each sub-problem recursively, then combine their solutions into the final answer.",
+        "wrong": [
+          "Initialize the data structure, process each element sequentially, then output the final combined result to storage.",
+          "Partition the input data evenly, sort each partition with an insertion pass, then merge adjacent sorted partitions repeatedly.",
+          "Select the optimal sub-problem to solve first, execute it greedily, then propagate the result to dependent sub-problems."
+        ],
+        "explanation": "Divide the problem into smaller sub-problems, conquer each sub-problem recursively, then combine their solutions into the final answer."
+      },
+      {
+        "id": "quiz-a-14",
+        "number": 14,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which algorithm design technique makes the locally optimal choice at each decision step and never revisits a previous decision?",
+        "answer": "The Greedy Method, which always selects the best-looking option at the current step without reconsidering earlier choices.",
+        "wrong": [
+          "Dynamic Programming, which stores every sub-problem solution in a table and reuses those stored answers in future computations.",
+          "Backtracking, which explores each candidate solution fully and retreats to the previous checkpoint when a dead end is encountered.",
+          "Branch and Bound, which maintains a priority queue of partial solutions ranked by their lower-bound cost estimate."
+        ],
+        "explanation": "The Greedy Method, which always selects the best-looking option at the current step without reconsidering earlier choices."
+      },
+      {
+        "id": "quiz-a-15",
+        "number": 15,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "What is the key distinguishing difference between Dynamic Programming and the Divide and Conquer technique?",
+        "answer": "Dynamic Programming stores and reuses overlapping sub-problem solutions, while Divide and Conquer solves each sub-problem independently.",
+        "wrong": [
+          "Divide and Conquer stores solutions to sub-problems in a lookup table while Dynamic Programming always recomputes them from scratch.",
+          "Dynamic Programming works only on graph problems while Divide and Conquer applies only to array and sorting problems.",
+          "Divide and Conquer requires distributed memory clusters while Dynamic Programming runs only on shared-memory multi-core systems."
+        ],
+        "explanation": "Dynamic Programming stores and reuses overlapping sub-problem solutions, while Divide and Conquer solves each sub-problem independently."
+      },
+      {
+        "id": "quiz-a-16",
+        "number": 16,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which description most accurately defines how the Backtracking algorithm works?",
+        "answer": "The algorithm starts with a promising candidate, advances step by step checking constraints, and retreats one level when a constraint fails.",
+        "wrong": [
+          "The algorithm builds a priority queue of candidate solutions ranked by their estimated cost and processes the cheapest candidate first.",
+          "The algorithm expresses the problem as a set of linear constraints and finds the assignment of variables that satisfies all constraints optimally.",
+          "The algorithm divides the solution space into two halves repeatedly and processes each half on a separate processor simultaneously."
+        ],
+        "explanation": "The algorithm starts with a promising candidate, advances step by step checking constraints, and retreats one level when a constraint fails."
+      },
+      {
+        "id": "quiz-a-17",
+        "number": 17,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which real-world combinatorial puzzle is the most classically cited example of the Backtracking algorithm in computer science textbooks?",
+        "answer": "The Eight Queens Problem, where eight chess queens must be placed on a board so that no queen threatens any other queen.",
+        "wrong": [
+          "The Fibonacci Series problem, where each term depends on the sum of the two immediately preceding terms in the sequence.",
+          "The Travelling Salesman Problem, where the total distance of a route connecting all cities must be minimized globally.",
+          "The Shortest Path Problem, where the minimum-cost route between two nodes in a weighted graph must be identified."
+        ],
+        "explanation": "The Eight Queens Problem, where eight chess queens must be placed on a board so that no queen threatens any other queen."
+      },
+      {
+        "id": "quiz-a-18",
+        "number": 18,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A delivery company must find the minimum-distance route visiting 12 cities. The solution space is enormous. Which design technique intelligently prunes unpromising routes without evaluating every possibility?",
+        "answer": "Branch and Bound, which explores partial routes and discards any branch whose lower-bound cost already exceeds the best complete route found.",
+        "wrong": [
+          "The Greedy Method, which builds the route one city at a time by always traveling to the nearest unvisited city from the current location.",
+          "Dynamic Programming, which breaks the route into overlapping city-pair sub-problems and stores the shortest sub-route for each pair.",
+          "Linear Programming, which models the routing decision as a set of linear equations and solves for the assignment that minimizes total distance."
+        ],
+        "explanation": "Branch and Bound, which explores partial routes and discards any branch whose lower-bound cost already exceeds the best complete route found."
+      },
+      {
+        "id": "quiz-a-19",
+        "number": 19,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "The Fibonacci algorithm (Fib(n) = Fib(n-1) + Fib(n-2)) implemented with a lookup table to avoid repeated computation is a classic example of which technique?",
+        "answer": "Dynamic Programming, because overlapping sub-problems (Fib(n-1), Fib(n-2)) are computed once, stored, and reused in later calls.",
+        "wrong": [
+          "Backtracking, because the recursion explores multiple candidate values before settling on the correct Fibonacci term at depth n.",
+          "Branch and Bound, because the recursion tree branches into two sub-calls and prunes branches where Fib values are already known.",
+          "Divide and Conquer, because the problem is split into two independent halves that are solved separately and their results summed."
+        ],
+        "explanation": "Dynamic Programming, because overlapping sub-problems (Fib(n-1), Fib(n-2)) are computed once, stored, and reused in later calls."
+      },
+      {
+        "id": "quiz-a-20",
+        "number": 20,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Both Binary Search and Merge Sort are textbook examples of which parallel algorithm design technique?",
+        "answer": "Divide and Conquer, because both algorithms recursively split the input in half, solve each half, and then combine the results.",
+        "wrong": [
+          "Greedy Method, because both algorithms commit to a locally optimal decision at each step without reconsidering prior choices.",
+          "Dynamic Programming, because both algorithms store results from smaller input sizes to avoid re-scanning previously processed data.",
+          "Branch and Bound, because both algorithms prune sections of the input that cannot possibly contribute to the final answer."
+        ],
+        "explanation": "Divide and Conquer, because both algorithms recursively split the input in half, solve each half, and then combine the results."
+      },
+      {
+        "id": "quiz-a-21",
+        "number": 21,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A logistics firm assigns delivery drivers to routes to maximize total deliveries in an 8-hour shift. Driver assignment, shift-hour limits, and vehicle capacity all have linear relationships. Which design technique directly models and solves this optimization problem?",
+        "answer": "Linear Programming, which models the objective and all constraints as linear functions and finds the optimal variable assignment mathematically.",
+        "wrong": [
+          "Branch and Bound, which generates a tree of partial assignments and prunes branches where estimated deliveries fall below the current best.",
+          "Greedy Method, which assigns the driver with the greatest remaining shift time to the longest available route at each decision step.",
+          "Backtracking, which tries every possible driver-to-route assignment and retreats whenever a shift-hour or capacity constraint is violated."
+        ],
+        "explanation": "Linear Programming, which models the objective and all constraints as linear functions and finds the optimal variable assignment mathematically."
+      },
+      {
+        "id": "quiz-a-22",
+        "number": 22,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A game developer builds a maze solver that explores a path step by step, and when it hits a dead end, it reverses to the last junction and tries a different direction. This continues until the exit is found. Which design technique is being implemented?",
+        "answer": "Backtracking, because the solver builds a path incrementally and retreats to the previous decision point whenever a dead end is encountered.",
+        "wrong": [
+          "Greedy Method, because at each junction the solver picks the corridor that appears to lead most directly toward the exit position.",
+          "Branch and Bound, because at each junction the solver calculates the minimum remaining distance and prunes corridors that exceed the limit.",
+          "Divide and Conquer, because the maze is split into quadrants and each quadrant is solved independently by a recursive sub-call."
+        ],
+        "explanation": "Backtracking, because the solver builds a path incrementally and retreats to the previous decision point whenever a dead end is encountered."
+      },
+      {
+        "id": "quiz-a-23",
+        "number": 23,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "What is the defining characteristic of the shared-memory parallel programming model?",
+        "answer": "All threads running on the same system can access the same memory addresses and communicate by reading and writing shared variables.",
+        "wrong": [
+          "Threads are assigned to separate physical servers and synchronize by exchanging data packets over a high-speed network interconnect.",
+          "Each thread operates on an independent memory bank that is readable by the CPU but not directly accessible by any other thread.",
+          "Each thread holds a private copy of all program variables and must explicitly send updates to other threads through a message queue."
+        ],
+        "explanation": "All threads running on the same system can access the same memory addresses and communicate by reading and writing shared variables."
+      },
+      {
+        "id": "quiz-a-24",
+        "number": 24,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Two threads simultaneously read a shared counter, each adds one to it, and each writes back the result. The counter increments by one instead of two. What is this concurrency problem called?",
+        "answer": "A race condition, where two threads access and modify shared data concurrently without synchronization causing one update to be lost.",
+        "wrong": [
+          "A memory leak, where each thread allocates a new buffer for the counter value but never frees the old buffer after writing.",
+          "A stack overflow, where the counter variable exceeds the maximum integer range supported by the thread's private call stack memory.",
+          "A deadlock, where both threads are blocked waiting for a resource that the other thread currently holds and refuses to release."
+        ],
+        "explanation": "A race condition, where two threads access and modify shared data concurrently without synchronization causing one update to be lost."
+      },
+      {
+        "id": "quiz-a-25",
+        "number": 25,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which synchronization mechanism in shared-memory programming ensures that only one thread at a time can execute a critical section of code?",
+        "answer": "A mutex lock (mutual exclusion lock), which allows only the thread holding the lock to enter the critical section at any given time.",
+        "wrong": [
+          "A network socket, which provides a reliable byte-stream channel between two threads running on different CPU cores.",
+          "A memory-mapped file, which maps shared data to a file on disk so multiple threads can access it through the file system.",
+          "A message queue, which buffers outgoing data from one thread and delivers it to another thread in the order it was enqueued."
+        ],
+        "explanation": "A mutex lock (mutual exclusion lock), which allows only the thread holding the lock to enter the critical section at any given time."
+      },
+      {
+        "id": "quiz-b-26",
+        "number": 26,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "In shared-memory programming, what is the key difference between multithreading and multiprocessing?",
+        "answer": "Multithreading creates multiple execution units within one process sharing the same memory; multiprocessing creates separate processes each with independent memory.",
+        "wrong": [
+          "Multithreading allocates a separate CPU socket to each thread while multiprocessing runs all tasks on a single CPU core in rotation.",
+          "Multithreading is exclusively used for input/output tasks while multiprocessing handles all mathematical and computational operations.",
+          "Multithreading requires a special OS kernel module while multiprocessing runs on any standard operating system without modification."
+        ],
+        "explanation": "Multithreading creates multiple execution units within one process sharing the same memory; multiprocessing creates separate processes each with independent memory."
+      },
+      {
+        "id": "quiz-b-27",
+        "number": 27,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which parallel processing framework uses pragma compiler directives to parallelize loops and is specifically designed for shared-memory multi-core systems?",
+        "answer": "OpenMP, which uses #pragma omp directives so developers can parallelize loops and sections without restructuring sequential code.",
+        "wrong": [
+          "CUDA (Compute Unified Device Architecture), which offloads massively parallel computations to GPU streaming multiprocessors.",
+          "MPI (Message Passing Interface), which uses explicit send/receive calls to coordinate work across distributed-memory compute nodes.",
+          "Hadoop MapReduce, which distributes large dataset processing across a cluster of commodity servers using a key-value paradigm."
+        ],
+        "explanation": "OpenMP, which uses #pragma omp directives so developers can parallelize loops and sections without restructuring sequential code."
+      },
+      {
+        "id": "quiz-b-28",
+        "number": 28,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Thread A and Thread B both execute 'counter++' on a shared variable 1,000 times each without any synchronization. The final value is 1,743 instead of 2,000. What caused the discrepancy of 257?",
+        "answer": "A race condition caused both threads to read the same counter value before either could write back, so some increments were overwritten and lost.",
+        "wrong": [
+          "The operating system's thread scheduler assigned both threads to the same CPU core, causing them to alternate too slowly to complete all increments.",
+          "The threads consumed excessive CPU cache capacity causing some increment operations to be silently discarded by the cache coherence protocol.",
+          "The compiler optimized away 257 redundant increment operations because it detected that both threads were modifying the same variable."
+        ],
+        "explanation": "A race condition caused both threads to read the same counter value before either could write back, so some increments were overwritten and lost."
+      },
+      {
+        "id": "quiz-b-29",
+        "number": 29,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "As the number of threads in a shared-memory program increases to very large numbers, what performance limitation typically emerges?",
+        "answer": "Scalability degrades because increasing threads means more contention for shared resources and growing synchronization overhead that reduces gains.",
+        "wrong": [
+          "The operating system automatically converts the shared-memory program to a message-passing program to handle the extra threads efficiently.",
+          "Memory usage drops to zero because the threads share so much data that very little unique information needs to be stored per thread.",
+          "The compiler automatically inserts additional mutex locks that protect all shared variables so thread safety improves as thread count grows."
+        ],
+        "explanation": "Scalability degrades because increasing threads means more contention for shared resources and growing synchronization overhead that reduces gains."
+      },
+      {
+        "id": "quiz-b-30",
+        "number": 30,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "An online exam system on a 32-core server handles 5,000 simultaneous student registrations. Each registration decrements a shared 'seats_remaining' counter. Which approach correctly prevents registration count errors in shared-memory programming?",
+        "answer": "Use a mutex lock around the decrement operation so only one thread modifies seats_remaining at a time, preventing lost updates.",
+        "wrong": [
+          "Allow all 5,000 threads to update the counter simultaneously and rely on the CPU's out-of-order execution to merge the updates correctly.",
+          "Run each student's session on a separate virtual machine so that each VM maintains its own independent copy of the counter value.",
+          "Use file locking to write the counter to disk before each decrement so the persistent file serves as the authoritative shared state."
+        ],
+        "explanation": "Use a mutex lock around the decrement operation so only one thread modifies seats_remaining at a time, preventing lost updates."
+      },
+      {
+        "id": "quiz-b-31",
+        "number": 31,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Two Java threads process bank account transactions on the same account object. Both read a balance of PHP 10,000, each deducts PHP 8,000, and both write PHP 2,000 back — leaving PHP 2,000 instead of detecting an overdraft. Which concurrency problem caused this and what is the correct fix?",
+        "answer": "A race condition caused a lost update; using Java's synchronized keyword on the transaction method ensures only one thread reads-and-writes at a time.",
+        "wrong": [
+          "A deadlock caused both threads to block waiting for the account object lock; adding a second lock object on the transaction class resolves it.",
+          "A memory leak caused transaction objects to pile up; calling System.gc() after each transaction frees the excess objects and corrects the balance.",
+          "A stack overflow in the transaction recursion caused the balance to be partially written; increasing the JVM thread stack size resolves the issue."
+        ],
+        "explanation": "A race condition caused a lost update; using Java's synchronized keyword on the transaction method ensures only one thread reads-and-writes at a time."
+      },
+      {
+        "id": "quiz-b-32",
+        "number": 32,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which statement accurately describes the communication advantage of shared-memory programming over message-passing for tasks on a single machine?",
+        "answer": "Shared-memory programs allow threads to communicate by directly reading and writing shared data structures with no message serialization overhead.",
+        "wrong": [
+          "Shared-memory programs automatically distribute their computations across multiple physical servers with no network configuration needed.",
+          "Shared-memory programs prevent all race conditions by default because the compiler inserts atomic operations around every memory access.",
+          "Shared-memory programs scale to unlimited thread counts because lock contention decreases automatically as more cores are added to the system."
+        ],
+        "explanation": "Shared-memory programs allow threads to communicate by directly reading and writing shared data structures with no message serialization overhead."
+      },
+      {
+        "id": "quiz-b-33",
+        "number": 33,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does complexity analysis measure about a computer program or algorithm?",
+        "answer": "Complexity analysis measures how efficiently an algorithm uses time (number of operations) and memory (RAM) as input size grows.",
+        "wrong": [
+          "Complexity analysis counts the total number of lines of source code and evaluates how readable the code is for future developers.",
+          "Complexity analysis evaluates the quality of a program's user interface and measures user interaction response times under load.",
+          "Complexity analysis audits the number of external library dependencies and scores how maintainable the program is over time."
+        ],
+        "explanation": "Complexity analysis measures how efficiently an algorithm uses time (number of operations) and memory (RAM) as input size grows."
+      },
+      {
+        "id": "quiz-b-34",
+        "number": 34,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does Big O notation (O) specifically represent when describing algorithm complexity?",
+        "answer": "Big O represents the worst-case upper bound",
+        "wrong": [
+          "Big O represents the best-case minimum number of steps the algorithm will perform when given the most favorable possible input.",
+          "Big O represents the average-case expected performance across all typical real-world inputs for the algorithm.",
+          "Big O represents the exact number of operations the algorithm performs for every specific input of a given size n."
+        ],
+        "explanation": "the maximum growth rate the algorithm's resource usage will ever reach."
+      },
+      {
+        "id": "quiz-b-35",
+        "number": 35,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does Big Omega notation (Ω) represent in algorithm complexity analysis?",
+        "answer": "Big Omega represents the best-case lower bound",
+        "wrong": [
+          "Big Omega represents the worst-case upper bound",
+          "Big Omega represents the average-case expected growth rate when inputs are drawn uniformly at random from all possible values.",
+          "Big Omega represents the memory complexity of the algorithm expressed in terms of the number of recursive function call frames."
+        ],
+        "explanation": "the minimum number of steps the algorithm will ever need on any input."
+      },
+      {
+        "id": "quiz-b-36",
+        "number": 36,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An algorithm performs exactly 7 operations whether the input list has 10 items or 10,000,000 items. What time complexity class does this represent?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "explanation": "constant complexity, because the number of operations never changes regardless of how large the input becomes."
+      },
+      {
+        "id": "quiz-b-37",
+        "number": 37,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Binary Search on a sorted array of 1,024 elements finds the target in at most 10 steps. On 1,048,576 elements it finds it in at most 20 steps. What time complexity does this pattern represent?",
+        "answer": "O(log n)",
+        "wrong": [
+          "O(n)",
+          "O(n²)",
+          "O(1)"
+        ],
+        "explanation": "logarithmic complexity, where each step eliminates half the remaining candidates so steps grow very slowly with array size."
+      },
+      {
+        "id": "quiz-b-38",
+        "number": 38,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A loop visits every element in an array of n items exactly once and performs one operation on each. What is the time complexity of this loop?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "explanation": "linear complexity, because the total number of operations grows in direct proportion to the number of items in the array."
+      },
+      {
+        "id": "quiz-b-39",
+        "number": 39,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An algorithm contains an outer loop running n times and an inner loop that also runs n times for each outer iteration. What is the time complexity?",
+        "answer": "O(n²)",
+        "wrong": [
+          "O(n)",
+          "O(n log n)",
+          "O(2n)"
+        ],
+        "explanation": "quadratic, because the inner loop executes n times for each of the n outer iterations giving n multiplied by n total steps."
+      },
+      {
+        "id": "quiz-b-40",
+        "number": 40,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A hospital's patient lookup system uses linear search on 1,000,000 unsorted records. In the worst case, approximately how many record comparisons are made and what is the Big O complexity?",
+        "answer": "Up to 1,000,000 comparisons",
+        "wrong": [
+          "About 20 comparisons",
+          "Exactly 1 comparison",
+          "Up to 1,000,000,000,000 comparisons"
+        ],
+        "explanation": "O(n), because linear search checks every record until a match is found or the list is exhausted."
+      },
+      {
+        "id": "quiz-b-41",
+        "number": 41,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Sorting 1,000 student scores with Merge Sort takes roughly 10,000 operations. Using the same O(n log n) relationship, approximately how many operations does sorting 1,000,000 scores require?",
+        "answer": "About 20,000,000 operations, because O(n log n) scales as n × log₂(n), and 1,000,000 × log₂(1,000,000) ≈ 1,000,000 × 20 = 20,000,000.",
+        "wrong": [
+          "About 20,000,000,000 operations, because the sort switches to O(n²) behavior once the input exceeds one million elements.",
+          "About 1,000,000 operations, because O(n log n) scales at the same rate as O(n) when the logarithmic factor remains near constant.",
+          "About 1,000 operations, because the logarithmic factor reduces the linear component proportionally."
+        ],
+        "explanation": "About 20,000,000 operations, because O(n log n) scales as n × log₂(n), and 1,000,000 × log₂(1,000,000) ≈ 1,000,000 × 20 = 20,000,000."
+      },
+      {
+        "id": "quiz-b-42",
+        "number": 42,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A cashier program sums all item prices in a shopping cart using one variable: 'int sum = 0; for(item: cart) sum += item.price;'. What is the space complexity of this algorithm?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(n²)",
+          "O(log n)"
+        ],
+        "explanation": "constant space, because only one variable (sum) is ever allocated regardless of how many items appear in the cart."
+      },
+      {
+        "id": "quiz-b-43",
+        "number": 43,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Binary Search runs in O(log n) time. What critical requirement must the data meet BEFORE Binary Search can be applied correctly?",
+        "answer": "The data must be sorted in either ascending or descending order so that Binary Search can correctly determine which half to discard.",
+        "wrong": [
+          "The data must be stored in a hash table so that each element can be located by computing its position from its key value directly.",
+          "The data must be stored in a linked list so that Binary Search can traverse forward and backward from a given starting element.",
+          "The data must fit entirely within the CPU's L1 cache so that each Binary Search probe accesses an element in a single clock cycle."
+        ],
+        "explanation": "The data must be sorted in either ascending or descending order so that Binary Search can correctly determine which half to discard."
+      },
+      {
+        "id": "quiz-b-44",
+        "number": 44,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An app runs in 0.1 seconds for 500 users. After going viral with 500,000 users (a 1,000× growth), response time is 100,000 seconds. A developer suspects a quadratic algorithm. Is O(n²) consistent with this observation?",
+        "answer": "Yes",
+        "wrong": [
+          "No",
+          "No",
+          "Yes"
+        ],
+        "explanation": "under O(n²), a 1,000× user increase causes a 1,000²=1,000,000× time increase: 0.1s × 1,000,000 = 100,000s, which matches exactly."
+      },
+      {
+        "id": "quiz-b-45",
+        "number": 45,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An e-commerce platform with 10 million products evaluates two search algorithms. Algorithm X completes in 23 fixed operations regardless of product count. Algorithm Y takes up to 10,000,000 operations. What are their complexities and which should power the product search?",
+        "answer": "Algorithm X is O(1); Algorithm Y is O(n). Algorithm X should be used because its operation count stays constant even if products grow to 1 billion.",
+        "wrong": [
+          "Both are O(n); Algorithm X should be chosen because 23 operations is numerically smaller than 10,000,000 for this specific dataset.",
+          "Algorithm X is O(log n); Algorithm Y is O(n²). Algorithm X is better because logarithmic growth is slower than quadratic growth at all sizes.",
+          "Both are O(log n); Algorithm X is preferred because its constant factor of 23 is smaller than Algorithm Y's constant factor at this dataset size."
+        ],
+        "explanation": "Algorithm X is O(1); Algorithm Y is O(n). Algorithm X should be used because its operation count stays constant even if products grow to 1 billion."
+      },
+      {
+        "id": "quiz-b-46",
+        "number": 46,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A mobile app loads all contacts into memory so users can scroll through them. A user with 50 contacts uses 50 memory slots; a user with 5,000 contacts uses 5,000 slots. What is the space complexity and is it appropriate?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(n²)",
+          "O(log n)"
+        ],
+        "explanation": "linear space; memory grows proportionally with contact count, which is expected and acceptable for a contact list application."
+      },
+      {
+        "id": "quiz-b-47",
+        "number": 47,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "When Ω (best case) = Θ (average case) = O (worst case) for an algorithm, what does this equal relationship mean for the algorithm's behavior?",
+        "answer": "The algorithm has tight complexity",
+        "wrong": [
+          "The algorithm is asymptotically unstable and produces widely varying step counts on different inputs even of the same size n.",
+          "The algorithm uses exponential memory in all three cases, making it impractical for any input size larger than a few dozen elements.",
+          "The algorithm degenerates to sequential execution when best and worst cases match, losing all parallel performance benefits."
+        ],
+        "explanation": "it performs the same number of steps on every input of size n, making its behavior perfectly predictable."
+      },
+      {
+        "id": "quiz-b-48",
+        "number": 48,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A naive duplicate file detector compares every file to every other file. With 10,000 files, how many comparisons are made, what is the complexity, and what smarter approach reduces it?",
+        "answer": "100,000,000 comparisons",
+        "wrong": [
+          "10,000 comparisons",
+          "20,000 comparisons",
+          "10,000,000,000,000 comparisons"
+        ],
+        "explanation": "O(n²); computing a hash for each file and comparing hashes instead of file contents reduces this to O(n)."
+      },
+      {
+        "id": "quiz-b-49",
+        "number": 49,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A government portal expects 50 million citizen logins. System A stores usernames in an unsorted list and checks them sequentially. System B uses a hash table. What are their Big O worst-case complexities and which must be chosen?",
+        "answer": "System A is O(n); System B is O(1). System B must be chosen because O(n) means up to 50 million comparisons per login while O(1) stays constant.",
+        "wrong": [
+          "System A is O(log n); System B is O(n²). System A is the better choice because logarithmic growth is manageable at 50 million users.",
+          "Both systems are O(1) in the worst case; System B should be chosen because hash tables have a smaller constant factor than linear search.",
+          "System A is O(n log n); System B is O(n). System B is better because linear growth is slower than linearithmic growth for large user counts."
+        ],
+        "explanation": "System A is O(n); System B is O(1). System B must be chosen because O(n) means up to 50 million comparisons per login while O(1) stays constant."
+      },
+      {
+        "id": "quiz-b-50",
+        "number": 50,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A teacher asks students to rank these five algorithms from MOST efficient to LEAST efficient for very large inputs: (I) O(n) Linear Search, (II) O(1) Hash Lookup, (III) O(n log n) Merge Sort, (IV) O(n²) Bubble Sort, (V) O(log n) Binary Search. What is the correct ranking?",
+        "answer": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort",
+        "wrong": [
+          "O(n) Linear Search → O(1) Hash Lookup → O(log n) Binary Search → O(n log n) Merge Sort → O(n²) Bubble Sort",
+          "O(log n) Binary Search → O(n) Linear Search → O(1) Hash Lookup → O(n log n) Merge Sort → O(n²) Bubble Sort",
+          "O(1) Hash Lookup → O(n) Linear Search → O(n²) Bubble Sort → O(log n) Binary Search → O(n log n) Merge Sort"
+        ],
+        "explanation": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort"
+      }
     ]
   },
   "quizCounts": {
     "prelimA": 25,
     "prelimB": 25,
+    "combinedPrelimA": 25,
+    "combinedPrelimB": 25,
     "quizA": 25,
     "quizB": 25,
+    "combinedQuizA": 25,
+    "combinedQuizB": 25,
     "combinedPrelim": 50,
+    "combinedQuiz": 50,
     "everything": 265,
+    "everythingA": 133,
+    "everythingB": 132,
     "moduleFinalsIncluded": 150,
     "week3Included": 15
   }
