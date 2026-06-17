@@ -328,11 +328,6 @@ def build_glossary(main: dict, finals: dict) -> list[dict]:
     return list(terms.values())
 
 
-def split_half(items: list[dict]) -> tuple[list[dict], list[dict]]:
-    midpoint = (len(items) + 1) // 2
-    return items[:midpoint], items[midpoint:]
-
-
 def main() -> None:
     if not SOURCE_DATA.exists():
         raise FileNotFoundError(f"Missing extracted live-page data: {SOURCE_DATA}")
@@ -355,11 +350,9 @@ def main() -> None:
     recent_b = [question for question in recent_all if question["set"] == "B"]
 
     combined_prelim = prelim_a + prelim_b
-    combined_prelim_a, combined_prelim_b = split_half(combined_prelim)
     combined_quiz = recent_a + recent_b
-    combined_quiz_a, combined_quiz_b = split_half(combined_quiz)
+    combined_prelim_quiz = combined_prelim + combined_quiz
     all_everything = prelim_a + prelim_b + week3 + module_finals + recent_a + recent_b
-    everything_a, everything_b = split_half(all_everything)
     study_sections = build_study_sections(main_data)
 
     reviewer_data = {
@@ -414,33 +407,23 @@ def main() -> None:
             "prelimA": prelim_a,
             "prelimB": prelim_b,
             "combinedPrelim": combined_prelim,
-            "combinedPrelimA": combined_prelim_a,
-            "combinedPrelimB": combined_prelim_b,
             "quizA": recent_a,
             "quizB": recent_b,
             "combinedQuiz": combined_quiz,
-            "combinedQuizA": combined_quiz_a,
-            "combinedQuizB": combined_quiz_b,
+            "combinedPrelimQuiz": combined_prelim_quiz,
             "week3": week3,
             "moduleFinals": module_finals,
             "everything": all_everything,
-            "everythingA": everything_a,
-            "everythingB": everything_b,
         },
         "quizCounts": {
             "prelimA": len(prelim_a),
             "prelimB": len(prelim_b),
-            "combinedPrelimA": len(combined_prelim_a),
-            "combinedPrelimB": len(combined_prelim_b),
             "quizA": len(recent_a),
             "quizB": len(recent_b),
-            "combinedQuizA": len(combined_quiz_a),
-            "combinedQuizB": len(combined_quiz_b),
             "combinedPrelim": len(combined_prelim),
             "combinedQuiz": len(combined_quiz),
+            "combinedPrelimQuiz": len(combined_prelim_quiz),
             "everything": len(all_everything),
-            "everythingA": len(everything_a),
-            "everythingB": len(everything_b),
             "moduleFinalsIncluded": len(module_finals),
             "week3Included": len(week3),
         },
@@ -457,10 +440,11 @@ def main() -> None:
         "Static GitHub Pages reviewer for Parallel and Distributed Computing.\n\n"
         "## Contents\n\n"
         "- Prelim Exam Set A and Set B from the existing live reviewer\n"
-        "- Combined Prelim Exam Set A and Set B, plus the full Combine Prelim Exam mode\n"
         "- Recent 50-question final quiz split into Quiz Set A and Quiz Set B\n"
-        "- Combined Quiz Set A and Set B, plus the full combined recent quiz mode\n"
-        "- Combined Quiz of Everything Set A and Set B, plus the full everything mode including prelim, Week 3, module-finals, and recent quiz banks\n"
+        "- Combined Prelim Exam mode\n"
+        "- Combined Quiz mode\n"
+        "- Combined Prelim Exam and Quiz mode\n"
+        "- Combined Everything Including the Modules mode with prelim, quiz, Week 3, and module-final banks\n"
         "- Study guide, full notes explorer, glossary, and comparison tables\n\n"
         "This site is designed to be served directly from the repository root with GitHub Pages. "
         "No build step or GitHub Actions workflow is required.\n",
