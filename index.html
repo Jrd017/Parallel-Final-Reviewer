@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Parallel and Distributed Computing final exam reviewer with study notes, glossary, and quiz modes.">
+  <title>Final Exam Reviewer</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/data.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <p class="eyebrow">Parallel & Distributed Computing</p>
+        <h1>Final Exam Reviewer</h1>
+        <p class="brand-sub">Prelim to finals, with distributed systems and middleware.</p>
+      </div>
+      <nav class="main-nav" aria-label="Reviewer sections">
+        <button class="nav-button active" data-view="overview">Overview</button>
+        <button class="nav-button" data-view="study">Study Guide</button>
+        <button class="nav-button" data-view="notes">Full Notes</button>
+        <button class="nav-button" data-view="glossary">Glossary</button>
+        <button class="nav-button" data-view="quiz">Quiz Center</button>
+      </nav>
+      <div class="sidebar-footer" id="source-summary"></div>
+    </aside>
+
+    <main class="workspace">
+      <section class="view active" id="view-overview" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="eyebrow">Reviewer map</p>
+          <h2 id="overview-title">Everything Topic Coverage</h2>
+        </div>
+        <div class="stats-grid" id="overview-stats"></div>
+        <div class="overview-layout">
+          <div class="panel visual-panel">
+            <h3>Concept Flow</h3>
+            <svg class="concept-map" viewBox="0 0 760 300" role="img" aria-labelledby="map-title map-desc">
+              <title id="map-title">Parallel and distributed computing concept flow</title>
+              <desc id="map-desc">A task is decomposed, coordinated, executed by workers, and evaluated through performance and reliability.</desc>
+              <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" fill="#31423b"></path>
+                </marker>
+              </defs>
+              <g class="map-node node-a"><rect x="30" y="92" width="145" height="82" rx="8"></rect><text x="102" y="128">Problem</text><text x="102" y="152">workload</text></g>
+              <g class="map-node node-b"><rect x="225" y="40" width="155" height="82" rx="8"></rect><text x="302" y="76">Decompose</text><text x="302" y="100">data or tasks</text></g>
+              <g class="map-node node-c"><rect x="225" y="174" width="155" height="82" rx="8"></rect><text x="302" y="210">Coordinate</text><text x="302" y="234">sync or messages</text></g>
+              <g class="map-node node-d"><rect x="440" y="92" width="145" height="82" rx="8"></rect><text x="512" y="128">Execute</text><text x="512" y="152">cores or nodes</text></g>
+              <g class="map-node node-e"><rect x="632" y="40" width="100" height="82" rx="8"></rect><text x="682" y="76">Speed</text><text x="682" y="100">scale</text></g>
+              <g class="map-node node-f"><rect x="632" y="174" width="100" height="82" rx="8"></rect><text x="682" y="210">Fault</text><text x="682" y="234">tolerance</text></g>
+              <path class="map-line" d="M175 133 C195 105 204 86 225 81"></path>
+              <path class="map-line" d="M175 133 C195 165 204 202 225 215"></path>
+              <path class="map-line" d="M380 81 C404 91 417 112 440 133"></path>
+              <path class="map-line" d="M380 215 C404 199 417 159 440 133"></path>
+              <path class="map-line" d="M585 133 C610 100 616 84 632 81"></path>
+              <path class="map-line" d="M585 133 C610 168 616 206 632 215"></path>
+            </svg>
+          </div>
+          <div class="panel" id="coverage-panel"></div>
+        </div>
+        <div class="panel table-panel" id="comparison-panel"></div>
+      </section>
+
+      <section class="view" id="view-study" aria-labelledby="study-title">
+        <div class="section-heading">
+          <p class="eyebrow">Study guide</p>
+          <h2 id="study-title">High-Yield Sections</h2>
+        </div>
+        <div class="toolbar" id="study-filters"></div>
+        <div class="study-grid" id="study-grid"></div>
+        <div class="panel" id="algorithm-panel"></div>
+      </section>
+
+      <section class="view" id="view-notes" aria-labelledby="notes-title">
+        <div class="section-heading">
+          <p class="eyebrow">Source notebook</p>
+          <h2 id="notes-title">Uploaded and Live-Page Notes</h2>
+        </div>
+        <div class="notes-shell">
+          <div class="notes-list-panel">
+            <label class="field-label" for="notes-search">Search notes</label>
+            <input id="notes-search" class="text-field" type="search" placeholder="message passing, middleware, Big O">
+            <label class="field-label" for="notes-source">Source</label>
+            <select id="notes-source" class="text-field"></select>
+            <div class="notes-list" id="notes-list"></div>
+          </div>
+          <article class="panel note-reader" id="note-reader"></article>
+        </div>
+      </section>
+
+      <section class="view" id="view-glossary" aria-labelledby="glossary-title">
+        <div class="section-heading">
+          <p class="eyebrow">Glossary</p>
+          <h2 id="glossary-title">Terms and Fast Recall</h2>
+        </div>
+        <div class="toolbar glossary-toolbar">
+          <input id="glossary-search" class="text-field" type="search" placeholder="Search a term or definition">
+          <div id="glossary-filters" class="chip-row"></div>
+        </div>
+        <div class="term-grid" id="term-grid"></div>
+      </section>
+
+      <section class="view" id="view-quiz" aria-labelledby="quiz-title">
+        <div class="section-heading">
+          <p class="eyebrow">Quiz center</p>
+          <h2 id="quiz-title">Exam Practice Modes</h2>
+        </div>
+        <div class="quiz-mode-grid" id="quiz-modes"></div>
+        <div class="quiz-runner" id="quiz-runner">
+          <div class="quiz-topline">
+            <div class="progress-track"><div id="quiz-progress" class="progress-fill"></div></div>
+            <div id="quiz-meta" class="quiz-meta">Pick a quiz mode</div>
+          </div>
+          <div id="quiz-tag" class="question-tag"></div>
+          <h3 id="quiz-question" class="quiz-question">Quiz will appear here.</h3>
+          <div id="quiz-options" class="option-list"></div>
+          <div id="quiz-feedback" class="feedback"></div>
+          <div class="quiz-actions">
+            <div id="quiz-score" class="score-box">Score: 0</div>
+            <button id="quiz-next" class="primary-button" disabled>Start</button>
+          </div>
+        </div>
+        <div class="result-panel" id="quiz-result"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
