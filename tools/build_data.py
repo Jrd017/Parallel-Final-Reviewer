@@ -98,6 +98,207 @@ def normalize_final_module(item: dict, set_name: str, index: int) -> dict:
     }
 
 
+def make_new_quiz_question(
+    index: int,
+    prompt: str,
+    answer: str,
+    wrong: list[str],
+    explanation: str,
+    tag: str,
+) -> dict:
+    return {
+        "id": f"new-docx-quiz-{index}",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": tag,
+        "prompt": normalize_space(prompt),
+        "answer": normalize_space(answer),
+        "wrong": [normalize_space(option) for option in wrong],
+        "explanation": normalize_space(explanation),
+    }
+
+
+def build_new_docx_quiz() -> list[dict]:
+    raw = [
+        (
+            "What is a distributed system?",
+            "Multiple interconnected computers or devices working together on a task beyond one system's capacity",
+            ["A single computer running one local program", "A user interface design pattern", "A database table stored on one disk"],
+            "The document defines distributed systems as multiple interconnected devices collaborating, sharing resources, and coordinating processes.",
+            "Distributed Systems",
+        ),
+        (
+            "Why are distributed systems useful during events like Cyber Monday traffic spikes?",
+            "They can distribute changing workloads across multiple nodes",
+            ["They remove the need for networking", "They force all traffic through one server", "They make every process sequential"],
+            "Distributed systems are useful when workloads change because capacity can be spread across nodes.",
+            "Distributed Systems",
+        ),
+        (
+            "Which is an example of a distributed system from the new notes?",
+            "Peer-to-peer file-sharing systems",
+            ["A standalone calculator", "A single-user text editor with no network", "One local CPU register"],
+            "The notes list telecommunications, video rendering, scientific computing, reservations, cryptocurrency, P2P, multiplayer games, and supply chains.",
+            "Distributed Systems",
+        ),
+        (
+            "In the video-rendering example, how does the distributed system speed up the task?",
+            "It splits the video into frames and assigns work to many nodes",
+            ["It waits for one node to render every frame", "It disables coordination between computers", "It stores all frames without processing them"],
+            "The managing application assigns frames to multiple computers and gives nodes new work as they finish.",
+            "Distributed Systems",
+        ),
+        (
+            "Which pair of patterns is mentioned for designing distributed systems?",
+            "CQRS and Two-phase commit",
+            ["HTML and CSS", "Bubble sort and linear search", "SISD and SIMD only"],
+            "The notes mention Command and Query Responsibility Segregation and Two-phase commit as distributed-system patterns.",
+            "Distributed Systems",
+        ),
+        (
+            "What describes a client-server distributed system?",
+            "Many networked clients interact with a central server for storage, processing, or services",
+            ["Every node avoids communication", "Only one offline computer is used", "All clients become unrelated standalone apps"],
+            "Client-server is the traditional model where clients request services from a central server.",
+            "Distributed Systems",
+        ),
+        (
+            "What describes peer-to-peer networks?",
+            "Workloads are distributed among many computers running the same software",
+            ["All work is handled by one central keyboard", "The network has no communication between peers", "Only the database administrator can process requests"],
+            "The notes describe P2P networks as distributing workloads among hundreds or thousands of computers.",
+            "Distributed Systems",
+        ),
+        (
+            "What does scalability mean in a distributed system?",
+            "The system can grow by adding processing units or nodes as workload increases",
+            ["The system must stay the same size forever", "The system becomes slower whenever a node is added", "The system removes all redundancy"],
+            "Scalability is the ability to grow as workload increases.",
+            "Distributed Systems",
+        ),
+        (
+            "What does concurrency mean in distributed systems?",
+            "Components run simultaneously, often without a single global clock",
+            ["Only one component can run at a time", "Every task must happen in exact local order", "All nodes share one CPU instruction pointer"],
+            "The notes connect concurrency with simultaneous components and the lack of a global clock.",
+            "Distributed Systems",
+        ),
+        (
+            "Which characteristic lets remaining nodes continue when one node fails?",
+            "Availability and fault tolerance",
+            ["Vendor lock-in", "Over-engineering", "Manual-only deployment"],
+            "Availability and fault tolerance help the system keep operating despite node failure.",
+            "Distributed Systems",
+        ),
+        (
+            "What is heterogeneity in distributed systems?",
+            "Nodes and components may use different hardware, middleware, software, or operating systems",
+            ["Every node must be identical", "All messages are forbidden", "Only one programming language can exist"],
+            "Heterogeneous distributed systems can include asynchronous nodes with different platforms.",
+            "Distributed Systems",
+        ),
+        (
+            "Why is replication useful in distributed systems?",
+            "It improves consistency, fault tolerance, reliability, and accessibility through redundant resources",
+            ["It prevents all communication", "It removes every backup", "It guarantees zero cost"],
+            "Replication shares information or resources redundantly to improve reliability and access.",
+            "Distributed Systems",
+        ),
+        (
+            "What does transparency mean to an end user?",
+            "The system appears as one logical application instead of many distributed parts",
+            ["The user must manually control every node", "The system hides all results", "The system cannot scale"],
+            "Transparency hides distribution details from users and applications.",
+            "Distributed Systems",
+        ),
+        (
+            "Why is synchronization challenging in distributed systems?",
+            "Distributed systems often work without a global clock, so ordering and timing must be managed carefully",
+            ["All nodes execute in one CPU cycle", "Network delays never happen", "Processes cannot run simultaneously"],
+            "Without a global clock, synchronization must handle delays, ordering, and consistency.",
+            "Distributed Systems",
+        ),
+        (
+            "Which is a risk of distributed systems that depend on public networks?",
+            "A network segment outage or overload can reduce performance",
+            ["A local monitor color can change", "A single desktop shortcut may disappear", "The system automatically avoids all costs"],
+            "The notes list risk of network failure as a distributed-system risk.",
+            "Distributed Systems",
+        ),
+        (
+            "What is distributed tracing used for?",
+            "Following a request or transaction as it moves across many services or nodes",
+            ["Choosing a random programming language", "Removing logs from every server", "Turning a distributed system into one monolithic file"],
+            "Distributed tracing helps observe complex distributed applications and find latency, bottlenecks, and bugs.",
+            "Distributed Systems",
+        ),
+        (
+            "What does ABAC use to control access?",
+            "Rules based on attributes such as user, requested action, and request environment",
+            ["Only the first letter of the username", "A single shared password for all users", "The screen resolution of the client"],
+            "Attribute-based access control uses attributes about the user, action, object, and environment.",
+            "Distributed Systems",
+        ),
+        (
+            "How do microservices differ from distributed systems in the new notes?",
+            "Microservices focus on modular independent services, while distributed systems focus on cooperating computers and resource sharing",
+            ["Microservices never use networks", "Distributed systems only describe UI widgets", "They are exactly the same concept in all cases"],
+            "The notes distinguish microservice design from the broader idea of distributed systems.",
+            "Distributed Systems",
+        ),
+        (
+            "What is middleware in distributed systems?",
+            "Software that binds distributed components together and abstracts hardware and network complexity",
+            ["A physical cable only", "A spreadsheet formula", "A single local CPU instruction"],
+            "The middleware notes describe it as glue that enables communication and coordination through a unified interface.",
+            "Middleware",
+        ),
+        (
+            "What does middleware transparency provide?",
+            "Location, access, and replication transparency so users need not worry about distribution details",
+            ["Manual node-by-node configuration by every user", "No replication under any condition", "A guarantee that no network is used"],
+            "Middleware transparency hides where resources are and how they are accessed or replicated.",
+            "Middleware",
+        ),
+        (
+            "Why is middleware interoperability important?",
+            "It enables heterogeneous systems, platforms, and technologies to communicate and integrate",
+            ["It prevents different platforms from connecting", "It requires one vendor-only system", "It stops service-to-service communication"],
+            "Interoperability lets different systems work together.",
+            "Middleware",
+        ),
+        (
+            "Which middleware feature handles failures through redundancy and failover?",
+            "Fault tolerance",
+            ["Vendor lock-in", "Over-engineering", "Manual repetition"],
+            "The notes say middleware fault tolerance handles failures gracefully using redundancy and failover.",
+            "Middleware",
+        ),
+        (
+            "Which is a common middleware implementation pitfall?",
+            "Lack of standardization causing compatibility issues and vendor lock-in",
+            ["Using open standards", "Conducting thorough testing", "Applying regular security audits"],
+            "The middleware notes list over-engineering, poor scalability, inadequate security, and lack of standardization as pitfalls.",
+            "Middleware",
+        ),
+        (
+            "Which tools are examples of message brokers for middleware?",
+            "Apache Kafka and RabbitMQ",
+            ["Prometheus and Grafana", "Istio and Linkerd", "GDPR and HIPAA"],
+            "The notes list Kafka and RabbitMQ as message brokers that support efficient message passing.",
+            "Middleware",
+        ),
+        (
+            "Which middleware technologies manage service-to-service communication in microservices?",
+            "Istio and Linkerd service meshes",
+            ["Two-phase commit and CQRS only", "Single-user desktop apps", "Standalone calculators"],
+            "Service meshes such as Istio and Linkerd manage communication between services.",
+            "Middleware",
+        ),
+    ]
+    return [make_new_quiz_question(index, *item) for index, item in enumerate(raw, 1)]
+
+
 def split_answer_key_option(text: str) -> tuple[str, str]:
     parts = re.split(r"\s+—\s+", text.strip(), maxsplit=1)
     option = parts[0].strip()
@@ -286,8 +487,8 @@ def build_source_notes() -> list[dict]:
             source_notes.append({"id": f"md-{index + 1}", "source": "combinedPDC.md", "title": title, "body": body})
 
     doc_paths = [
-        DOWNLOADS / "What are distributed systems.docx",
-        DOWNLOADS / "Distributed system middleware applications (1).docx",
+        DOWNLOADS / "What are distributed systems (1).docx",
+        DOWNLOADS / "Distributed system middleware applications (2).docx",
     ]
     for index, path in enumerate(doc_paths, 1):
         if path.exists():
@@ -348,11 +549,13 @@ def main() -> None:
     recent_all = parse_answer_key(DOWNLOADS / "ParallelComputing_Quiz_AnswerKey.md")
     recent_a = [question for question in recent_all if question["set"] == "A"]
     recent_b = [question for question in recent_all if question["set"] == "B"]
+    new_quiz = build_new_docx_quiz()
 
     combined_prelim = prelim_a + prelim_b
     combined_quiz = recent_a + recent_b
     combined_prelim_quiz = combined_prelim + combined_quiz
-    all_everything = prelim_a + prelim_b + week3 + module_finals + recent_a + recent_b
+    combined_prelim_quiz_new = combined_prelim + combined_quiz + new_quiz
+    all_everything = prelim_a + prelim_b + week3 + module_finals + recent_a + recent_b + new_quiz
     study_sections = build_study_sections(main_data)
 
     reviewer_data = {
@@ -363,8 +566,8 @@ def main() -> None:
             {"label": "PaD Module Finals live page", "url": "https://jrd017.github.io/parallel-distributed-computing-reviewer/parallel-programming-models-reviewer/"},
             {"label": "combinedPDC.md", "url": "local upload"},
             {"label": "ParallelComputing_Quiz_AnswerKey.md", "url": "local upload"},
-            {"label": "What are distributed systems.docx", "url": "local upload"},
-            {"label": "Distributed system middleware applications (1).docx", "url": "local upload"},
+            {"label": "What are distributed systems (1).docx", "url": "local upload"},
+            {"label": "Distributed system middleware applications (2).docx", "url": "local upload"},
         ],
         "studySections": study_sections,
         "comparisonTables": [
@@ -410,7 +613,9 @@ def main() -> None:
             "quizA": recent_a,
             "quizB": recent_b,
             "combinedQuiz": combined_quiz,
+            "newQuiz": new_quiz,
             "combinedPrelimQuiz": combined_prelim_quiz,
+            "combinedPrelimQuizNew": combined_prelim_quiz_new,
             "week3": week3,
             "moduleFinals": module_finals,
             "everything": all_everything,
@@ -422,7 +627,9 @@ def main() -> None:
             "quizB": len(recent_b),
             "combinedPrelim": len(combined_prelim),
             "combinedQuiz": len(combined_quiz),
+            "newQuiz": len(new_quiz),
             "combinedPrelimQuiz": len(combined_prelim_quiz),
+            "combinedPrelimQuizNew": len(combined_prelim_quiz_new),
             "everything": len(all_everything),
             "moduleFinalsIncluded": len(module_finals),
             "week3Included": len(week3),
@@ -444,7 +651,9 @@ def main() -> None:
         "- Combined Prelim Exam mode\n"
         "- Combined Quiz mode\n"
         "- Combined Prelim Exam and Quiz mode\n"
-        "- Combined Everything Including the Modules mode with prelim, quiz, Week 3, and module-final banks\n"
+        "- New Quiz focused on distributed systems and middleware DOCX files\n"
+        "- Combined Prelim Exam, Quiz, and New Quiz mode\n"
+        "- Combined Everything Including the Modules mode with prelim, quiz, new quiz, Week 3, and module-final banks\n"
         "- Study guide, full notes explorer, glossary, and comparison tables\n\n"
         "This site is designed to be served directly from the repository root with GitHub Pages. "
         "No build step or GitHub Actions workflow is required.\n",

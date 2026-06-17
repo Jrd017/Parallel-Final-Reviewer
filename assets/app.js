@@ -12,11 +12,16 @@ const state = {
 const banks = REVIEWER_DATA.quizBanks;
 const combinedPrelimQuestions = banks.combinedPrelim || [...banks.prelimA, ...banks.prelimB];
 const combinedQuizQuestions = banks.combinedQuiz || [...banks.quizA, ...banks.quizB];
+const newQuizQuestions = banks.newQuiz || [];
 const combinedPrelimQuizQuestions = banks.combinedPrelimQuiz || [
   ...banks.prelimA,
   ...banks.prelimB,
   ...banks.quizA,
   ...banks.quizB,
+];
+const combinedPrelimQuizNewQuestions = banks.combinedPrelimQuizNew || [
+  ...combinedPrelimQuizQuestions,
+  ...newQuizQuestions,
 ];
 const everythingQuestions = banks.everything || [
   ...banks.prelimA,
@@ -25,6 +30,7 @@ const everythingQuestions = banks.everything || [
   ...banks.moduleFinals,
   ...banks.quizA,
   ...banks.quizB,
+  ...newQuizQuestions,
 ];
 
 const quizModes = [
@@ -32,10 +38,12 @@ const quizModes = [
   { id: "prelimB", title: "Prelim Exam Set B", detail: "Second original prelim bank from the live reviewer.", questions: banks.prelimB },
   { id: "quizA", title: "Quiz Set A", detail: "Recent final quiz split from Q1 to Q25.", questions: banks.quizA },
   { id: "quizB", title: "Quiz Set B", detail: "Recent final quiz split from Q26 to Q50.", questions: banks.quizB },
+  { id: "newQuiz", title: "New Quiz", detail: "Focused on distributed systems and middleware DOCX files.", questions: newQuizQuestions },
   { id: "combinedPrelim", title: "Combined Prelim Exam", detail: "Prelim Exam Set A and Set B together.", questions: combinedPrelimQuestions },
   { id: "combinedQuiz", title: "Combined Quiz", detail: "Quiz Set A and Quiz Set B together.", questions: combinedQuizQuestions },
   { id: "combinedPrelimQuiz", title: "Combined Prelim Exam and Quiz", detail: "Prelim Exam Set A/B plus Quiz Set A/B.", questions: combinedPrelimQuizQuestions },
-  { id: "everything", title: "Combined Everything Including the Modules", detail: "Prelim, quiz, Week 3, and module-final banks together.", questions: everythingQuestions },
+  { id: "combinedPrelimQuizNew", title: "Combined Prelim Exam, Quiz, and New Quiz", detail: "Prelim Exam Set A/B, Quiz Set A/B, and the new DOCX quiz.", questions: combinedPrelimQuizNewQuestions },
+  { id: "everything", title: "Combined Everything Including the Modules", detail: "Prelim, quiz, new quiz, Week 3, and module-final banks together.", questions: everythingQuestions },
 ];
 
 function escapeHtml(value) {
@@ -153,8 +161,8 @@ function renderOverview() {
   const stats = [
     ["Prelim modes", REVIEWER_DATA.quizCounts.combinedPrelim],
     ["Recent quiz", REVIEWER_DATA.quizCounts.quizA + REVIEWER_DATA.quizCounts.quizB],
+    ["New quiz", REVIEWER_DATA.quizCounts.newQuiz || 0],
     ["Everything bank", REVIEWER_DATA.quizCounts.everything],
-    ["Source sections", REVIEWER_DATA.sourceNotes.length],
   ];
 
   document.getElementById("overview-stats").innerHTML = stats.map(([label, value]) => `
@@ -165,6 +173,7 @@ function renderOverview() {
     ["Prelim exam", "Parallel vs distributed, architectures, taxonomy, IPC, synchronization, performance."],
     ["Module finals", "Shared memory, message passing, data/task parallelism, algorithm design, complexity."],
     ["Final topic DOCX", "Distributed systems, middleware applications, tracing, access control, deployment risks."],
+    ["New quiz", "Focused DOCX quiz for distributed-system characteristics, risks, tracing, ABAC, middleware concepts, tools, and best practices."],
     ["Recent quiz", "50 final-style questions split into Set A and Set B, plus combined everything practice."],
   ];
 

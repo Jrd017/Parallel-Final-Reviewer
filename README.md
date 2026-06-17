@@ -9,7 +9,9 @@ Static GitHub Pages reviewer for Parallel and Distributed Computing.
 - Combined Prelim Exam mode
 - Combined Quiz mode
 - Combined Prelim Exam and Quiz mode
-- Combined Everything Including the Modules mode with prelim, quiz, Week 3, and module-final banks
+- New Quiz focused on distributed systems and middleware DOCX files
+- Combined Prelim Exam, Quiz, and New Quiz mode
+- Combined Everything Including the Modules mode with prelim, quiz, new quiz, Week 3, and module-final banks
 - Study guide, full notes explorer, glossary, and comparison tables
 
 This site is designed to be served directly from the repository root with GitHub Pages. No build step or GitHub Actions workflow is required.

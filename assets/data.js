@@ -19,11 +19,11 @@ window.REVIEWER_DATA = {
       "url": "local upload"
     },
     {
-      "label": "What are distributed systems.docx",
+      "label": "What are distributed systems (1).docx",
       "url": "local upload"
     },
     {
-      "label": "Distributed system middleware applications (1).docx",
+      "label": "Distributed system middleware applications (2).docx",
       "url": "local upload"
     }
   ],
@@ -624,14 +624,14 @@ window.REVIEWER_DATA = {
     },
     {
       "id": "docx-1",
-      "source": "What are distributed systems.docx",
-      "title": "What are distributed systems",
+      "source": "What are distributed systems (1).docx",
+      "title": "What are distributed systems (1)",
       "body": "What are distributed systems?\n\nDistributed systems generally consist of multiple interconnected devices or computers that work together to perform a task that is beyond the capacity of a single system. These systems work by collaborating, sharing resources and coordinating processes to handle complex workloads. (Distributed systems are the entire basis of the internet, after all.) Distributed systems are essential in situations when the workload is subject to change, such as:\n\nE-commerce traffic on Cyber Monday\n\nA sudden wave of web traffic in response to news about your organization\n\nHistorically, distributed computing was expensive, complex to configure, and difficult to manage. Thanks to SaaS, Paas, and Iaas solutions, however, distributed computing has become more streamlined and affordable for businesses of all stripes and sizes.\n\nToday, all types of computing jobs — from database management to video games — use distributed computing. In fact, many types of software, such as cryptocurrency systems, scientific simulations, blockchain technologies and AI platforms, wouldn’t be possible at all without these platforms.\n\nFeatures of distributed systems\n\nBecause they draw on the capabilities of other computing devices and processes, distributed systems can offer features that would be difficult or impossible to develop on a single system.\n\nThis includes things like performing an off-site server and application backup — if the master catalog doesn’t see the segment bits it needs for a restore, it can ask the other off-site node or nodes to send the segments. Virtually everything you do now with a computing device takes advantage of the power of distributed systems, whether that’s sending an email, playing a game or reading this article on the web.\n\nExamples of distributed systems\n\nHere are some very common examples of distributed systems:\n\nTelecommunications networks that support mobile and internet networks\n\nGraphical and video-rendering systems\n\nScientific computing, such as protein folding and genetic research\n\nAirline and hotel reservation systems\n\nMultiuser video conferencing systems\n\nCryptocurrency processing systems (e.g. Bitcoin)\n\nPeer-to-peer file-sharing systems\n\nDistributed community computing systems\n\nMultiplayer video games\n\nGlobal, distributed retailers and supply chain management\n\nHow distributed systems work\n\nA distributed system begins with a task. Let’s pretend you need to render a video to create a finished product.\n\nThe application (really, the distributed applications) managing this task — like a video editor on a client computer — splits the job into pieces. In this simple example, the algorithm gives one frame of the video to each of a dozen different computers (or nodes) to complete the rendering. Once the frame is complete, the managing application gives the node a new frame to work on. This process continues until the video is finished and all the pieces are put back together.\n\nA system like this doesn’t have to stop at just 12 nodes: the job may be distributed among hundreds or thousands of nodes, turning a task that might have taken days for a single computer to complete into one that is finished in a matter of minutes.\n\nWhen thinking about the challenges of a distributed computing platform, the trick is to break it down into a series of interconnected patterns. Simplifying the system into smaller, more manageable and more easily understood components helps abstract a complicated architecture. Patterns are commonly used to describe distributed systems, such as:\n\nCommand and query responsibility segregation (CQRS)\n\nTwo-phase commit (2PC)\n\nDifferent combinations of patterns are used to design distributed systems, and each approach has unique benefits and drawbacks.\n\nTypes of distributed systems\n\nThere are many models and architectures of distributed systems in use today.\n\nClient-server systems, the most traditional and simple type of distributed system, involve a multitude of networked computers that interact with a central server for data storage, data processing, or other common goal.\n\nPeer-to-peer networks distribute workloads among hundreds or thousands of computers all running the same software.\n\nCell phone networks are an advanced distributed system, sharing workloads among handsets, switching systems and internet-based devices.\n\nAt this point, you might realize this: The most common forms of distributed systems today operate over the internet, handing off workloads to dozens of cloud-based virtual server instances that are created as needed, then terminated when the task is complete.\n\nKey characteristics of a distributed system\n\nSo now that we “get” what distributed systems are, we can start to assign key features to them. Here’s what good distributed systems have in common:\n\nScalability. The ability to grow as the size of the workload increases is an essential feature of distributed systems, accomplished by adding additional processing units or nodes to the network as needed.\n\nConcurrency. Distributed system components run simultaneously. They’re also characterized by the lack of a “global clock,” when tasks occur out of sequence and at different rates.\n\nAvailability and fault tolerance. If one node fails, the remaining nodes can continue to operate without disrupting the overall computation.\n\nHeterogeneity. In most distributed systems, the nodes and components are often asynchronous, with different hardware, middleware, software and operating systems. This allows the distributed systems to be extended with the addition of new components.\n\nReplication. Distributed systems enable shared information and messaging, ensuring consistency between redundant resources, such as software or hardware components, thus improving fault tolerance, reliability, and accessibility.\n\nTransparency. The end user sees a distributed system as a single computational unit (a single app) rather than as its underlying parts, allowing users to interact with a single logical device rather than being concerned with the system’s architecture.\n\nBenefits, challenges & risks of distributed systems\n\nBefore moving on further, let's discuss the advantages, risks and challenges of distributed systems.\n\nBenefits of distributed systems\n\nDistributed systems offer a number of advantages over monolithic, or single, systems:\n\nScalability & flexibility. It is easier to add computing power as the need for services grows. In most cases today, you can spin up servers to a distributed system on the fly, increasing performance and further reducing time to completion.\n\nFault tolerance. Distributed systems reduce the risks involved with having a single point of failure, bolstering reliability and fault tolerance.\n\nReliability. A well-designed distributed system can withstand failures in one or more of its nodes without severely impacting performance. In a monolithic system, the entire application goes down if the server goes down.\n\nSpeed. Heavy traffic can bog down single servers when traffic gets heavy, impacting performance for everyone. The scalability of distributed databases and other distributed systems makes them easier to maintain and also sustain high-performance levels.\n\nGeo-distribution. Distributed content delivery is both intuitive for any internet user, and vital for global organizations.\n\nChallenges of distributed systems\n\nDistributed systems are considerably more complex than monolithic computing environments, and raise a number of challenges around design, operations and maintenance. These include:\n\nMore opportunities for failure. The more systems added to a computing environment, the more opportunity there is for failure. If a system is not carefully designed and a single node crashes, the entire system can go down. While distributed systems are designed to be fault tolerant, that fault tolerance is neither automatic nor foolproof.\n\nSynchronization process challenges. Distributed systems work without a global clock, requiring careful programming to ensure that processes are properly synchronized to avoid transmission delays that result in errors and data corruption. In a complex system — such as a multiplayer video game — synchronization can be challenging, especially on a public network that carries data traffic.\n\nImperfect scalability. Doubling the number of nodes in a distributed system doesn’t necessarily double performance. Architecting an effective distributed system that maximizes scalability is a complex undertaking that needs to take into account load balancing, bandwidth management, and other issues.\n\nMore complex security. Managing a large number of nodes in a heterogeneous or globally distributed environment creates numerous security challenges. A single weak link in a file system or larger distributed system network can expose the entire system to attack.\n\nIncreased complexity: Distributed systems are more complex to design, manage and understand than traditional computing environments.\n\nWith connected devices, IoT sensors, and remote endpoints, distributed visibility now includes the quality of the underlying ISP connection. Incorporating ISP monitoring ensures that latency, packet loss, and jitter affecting remote users or AI-powered workloads are detected in real time, enabling faster troubleshooting and better user experience.\n\nRisks of distributed systems\n\nThe challenges of distributed systems create a number of correlating risks.\n\nSecurity. Distributed systems are as vulnerable to attack as any other system, but their distributed nature creates a much larger attack surface that exposes organizations to threats.\n\nRisk of network failure. Distributed systems are beholden to public networks to transmit and receive data. If one segment of the internet becomes unavailable or overloaded, distributed system performance may decline.\n\nGovernance and control issues. Distributed systems lack the governability of monolithic, single-server-based systems, creating auditing and adherence issues around data privacy laws. Globally distributed environments are challenging when it comes to providing certain levels of assurance and understanding exactly where data resides.\n\nCost control. Unlike centralized systems, the scalability of distributed systems allows administrators to easily add additional capacity as needed, which can also increase costs. Pricing for cloud-based distributed computing systems are based on usage (such as the number of memory resources and CPU power consumed over time). If demand suddenly spikes, you might face a massive bill.\n\nReal-world guidance: How to set up a distributed system\n\nDistributed deployments can range from tiny, single department deployments on local area networks to large-scale, global deployments. In addition to their size and overall complexity, organizations can consider deployments based on:\n\nThe size and capacity of their computer network\n\nThe amount of data they’ll consume\n\nHow frequently they run processes and whether they'll be scheduled or ad hoc\n\nThe number of users accessing the system\n\nCapacity of their data center\n\nThe necessary data fidelity and availability requirements\n\nThe management of distributed systems is simplified by deploying:\n\nContainer orchestraters (Kubernetes is the prime example) that offer automated scaling, deployment, and operation of containers across the cluster of hosts.\n\nDatabases that provide a consistent data layer, at the same time ensuring that all the nodes in the system can access the same data while supporting data replication for fault tolerance.\n\nDistributed deployments are categorized as departmental, small enterprise, medium enterprise, or large enterprise. By no means formal, these categories are a starting point for planning the needed resources to implement a distributed computing system. Importantly, expect distributed systems to evolve over time, transitioning from departmental to small enterprise as the enterprise grows and expands.\n\nTracking what goes on in distributed systems\n\nWe know clearly that, for all their benefits, distributed systems are complicated. Knowing what goes on within — the observability of that system — is a distinct advantage. Luckily, it’s one you can achieve with distributed tracing.\n\nWithout distributed tracing, a globally distributed system environment would be impossible to monitor effectively.\n\nDistributed tracing, sometimes called distributed request tracing, is a method for monitoring applications — typically those built on a microservices architecture — which are commonly deployed on distributed systems. Distributed tracing is essentially a form of distributed computing in that it’s commonly used to monitor the operations of applications running on distributed systems.\n\nIn software development and operations, tracing is used to follow the course of a transaction as it travels through an application. An online credit card transaction as it winds its way from a customer’s initial purchase to the verification and approval process to the completion of the transaction, for example. A tracing system monitors this process step by step, helping a developer to uncover bugs, bottlenecks, latency issues, or other problems with the application.\n\nDistributed tracing is necessary because of the considerable complexity of modern software architectures. A distributed tracing system is designed to operate on a distributed services infrastructure, where it can track multiple applications and processes simultaneously across numerous concurrent nodes and computing environments.\n\nApplying access control in distributed systems\n\nAdministrators use a variety of approaches to manage access control in distributed computing environments. The approaches range from traditional access control lists (ACLs) to role-based access control (RBAC).\n\nOne of the most promising access control mechanisms for distributed systems is attribute-based access control (ABAC), which controls access to objects and processes using rules that include information about the user, the action requested, and the environment of that request. Administrators can also refine these types of roles to restrict access to certain times of day or certain locations.\n\nDistributed systems vs. microservices: what's the difference?\n\nAlthough there are some similarities between microservices and distributed systems, they are not the same.\n\nMicroservices are an approach to design where an application is broken into multiple smaller services that can be deployed independently.\n\nDistributed systems consist of multiple computers that work together to perform a single task.\n\nThe main difference is that microservices focus on flexibility and making the system modular. On the other hand, distributed systems focus on resource sharing and making the system scalable.\n\nOn the contrary, an SOA (Service oriented architecture) is a broader design approach where multiple services communicate over a network. We can consider microservices to be a well-refined version of SOA, with more focus on independent deployment and lightweight communication.\n\nDistributed systems aren’t going away\n\nDistributed systems are well-positioned to dominate computing as we know it for the foreseeable future, and almost any type of application or service will incorporate some form of distributed computing. The need for always-on, available-anywhere computing isn’t disappearing anytime soon."
     },
     {
       "id": "docx-2",
-      "source": "Distributed system middleware applications (1).docx",
-      "title": "Distributed system middleware applications (1)",
+      "source": "Distributed system middleware applications (2).docx",
+      "title": "Distributed system middleware applications (2)",
       "body": "Understanding the basics of distributed system middleware applications\n\nKey Concepts in Distributed System Middleware Applications\n\nMiddleware serves as the glue that binds distributed systems together, enabling communication and coordination between disparate components. It abstracts the complexities of the underlying hardware and network, providing a unified interface for developers. Key concepts include:\n\nTransparency: Middleware ensures location, access, and replication transparency, allowing users to interact with the system without worrying about its distributed nature.\n\nInteroperability: Middleware facilitates communication between heterogeneous systems, enabling seamless integration of different platforms and technologies.\n\nScalability: Middleware supports the addition of new nodes or resources without significant reconfiguration.\n\nFault Tolerance: Middleware ensures system reliability by handling failures gracefully, often through redundancy and failover mechanisms.\n\nImportance of Distributed System Middleware Applications in Modern Systems\n\nMiddleware is indispensable in modern distributed systems for several reasons:\n\nSimplified Development: Middleware abstracts low-level complexities, allowing developers to focus on application logic rather than infrastructure.\n\nEnhanced Performance: Middleware optimizes resource allocation and communication, ensuring efficient system operation.\n\nImproved Security: Middleware often includes built-in security features like encryption and authentication, safeguarding data and communication.\n\nSupport for Emerging Technologies: Middleware is critical for integrating advanced technologies like AI, IoT, and blockchain into distributed systems.\n\nChallenges in implementing distributed system middleware applications\n\nCommon Pitfalls to Avoid\n\nImplementing middleware in distributed systems is fraught with challenges. Common pitfalls include:\n\nOver-Engineering: Adding unnecessary features can complicate the middleware, making it harder to maintain and scale.\n\nPoor Scalability: Middleware that cannot handle increased loads or additional nodes can become a bottleneck.\n\nInadequate Security: Failing to address security concerns can expose the system to vulnerabilities.\n\nLack of Standardization: Using proprietary solutions can lead to compatibility issues and vendor lock-in.\n\nSolutions to Overcome Challenges\n\nTo address these challenges, consider the following strategies:\n\nAdopt Modular Design: Build middleware with a modular architecture to simplify updates and scalability.\n\nImplement Robust Security Measures: Use encryption, authentication, and regular security audits to protect the system.\n\nLeverage Open Standards: Opt for middleware solutions that adhere to industry standards to ensure compatibility and flexibility.\n\nConduct Thorough Testing: Regularly test the middleware under various conditions to identify and resolve potential issues.\n\nBest practices for distributed system middleware applications\n\nIndustry Standards and Guidelines\n\nAdhering to industry standards ensures that your middleware is robust, secure, and compatible. Key guidelines include:\n\nFollow the OSI Model: Design middleware that aligns with the Open Systems Interconnection (OSI) model for better interoperability.\n\nUse Established Protocols: Employ widely accepted communication protocols like HTTP, MQTT, or gRPC.\n\nPrioritize Security: Implement best practices like secure coding, regular updates, and compliance with regulations like GDPR or HIPAA.\n\nTools and Technologies for Optimization\n\nSeveral tools and technologies can enhance the performance and reliability of middleware:\n\nMessage Brokers: Tools like Apache Kafka and RabbitMQ facilitate efficient message passing between components.\n\nService Meshes: Solutions like Istio and Linkerd manage service-to-service communication in microservices architectures.\n\nMonitoring Tools: Platforms like Prometheus and Grafana provide real-time insights into system performance.\n\nMiddleware Frameworks: Frameworks like CORBA, JBoss, and Spring Boot simplify middleware development.\n\nCase studies: successful applications of distributed system middleware\n\nReal-World Examples\n\nNetflix: Netflix uses middleware to manage its microservices architecture, ensuring seamless streaming for millions of users worldwide.\n\nAmazon Web Services (AWS): AWS employs middleware to provide scalable and reliable cloud services, supporting businesses of all sizes.\n\nSmart Cities: Middleware enables IoT devices in smart cities to communicate and share data, improving urban planning and resource management.\n\nLessons Learned from Implementation\n\nScalability is Key: Systems must be designed to handle growth without compromising performance.\n\nFocus on User Experience: Middleware should enhance, not hinder, the end-user experience.\n\nContinuous Improvement: Regular updates and optimizations are essential to keep middleware relevant and effective.\n\nFuture trends in distributed system middleware applications\n\nEmerging Technologies\n\nAI-Driven Middleware: Artificial intelligence is being integrated into middleware to enable predictive analytics and automated decision-making.\n\nEdge Computing: Middleware is evolving to support edge computing, bringing computation closer to data sources.\n\nBlockchain Integration: Middleware is being developed to facilitate secure and transparent transactions in blockchain networks.\n\nPredictions for the Next Decade\n\nIncreased Automation: Middleware will become more autonomous, reducing the need for manual intervention.\n\nEnhanced Security: Future middleware will incorporate advanced security features to counter emerging threats.\n\nGreater Interoperability: Middleware will support a wider range of platforms and technologies, fostering innovation and collaboration.\n\nStep-by-step guide to implementing distributed system middleware applications\n\nDefine Requirements: Identify the specific needs and goals of your distributed system.\n\nChoose the Right Middleware: Select a middleware solution that aligns with your requirements and budget.\n\nDesign the Architecture: Plan the system architecture, including communication protocols and data flow.\n\nDevelop and Test: Build the middleware and conduct thorough testing to ensure reliability and performance.\n\nDeploy and Monitor: Roll out the middleware and use monitoring tools to track its performance and address issues.\n\nTips for do's and don'ts\n\nDo's\n\nDon'ts\n\nUse modular and scalable designs\n\nOvercomplicate the middleware architecture\n\nPrioritize security and compliance\n\nIgnore potential vulnerabilities\n\nRegularly update and maintain the middleware\n\nRely on outdated or unsupported solutions\n\nConduct thorough testing before deployment\n\nSkip testing to save time\n\nLeverage industry standards and best practices\n\nUse proprietary solutions without flexibility"
     }
   ],
@@ -4576,6 +4576,358 @@ window.REVIEWER_DATA = {
         "explanation": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort"
       }
     ],
+    "newQuiz": [
+      {
+        "id": "new-docx-quiz-1",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What is a distributed system?",
+        "answer": "Multiple interconnected computers or devices working together on a task beyond one system's capacity",
+        "wrong": [
+          "A single computer running one local program",
+          "A user interface design pattern",
+          "A database table stored on one disk"
+        ],
+        "explanation": "The document defines distributed systems as multiple interconnected devices collaborating, sharing resources, and coordinating processes."
+      },
+      {
+        "id": "new-docx-quiz-2",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Why are distributed systems useful during events like Cyber Monday traffic spikes?",
+        "answer": "They can distribute changing workloads across multiple nodes",
+        "wrong": [
+          "They remove the need for networking",
+          "They force all traffic through one server",
+          "They make every process sequential"
+        ],
+        "explanation": "Distributed systems are useful when workloads change because capacity can be spread across nodes."
+      },
+      {
+        "id": "new-docx-quiz-3",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Which is an example of a distributed system from the new notes?",
+        "answer": "Peer-to-peer file-sharing systems",
+        "wrong": [
+          "A standalone calculator",
+          "A single-user text editor with no network",
+          "One local CPU register"
+        ],
+        "explanation": "The notes list telecommunications, video rendering, scientific computing, reservations, cryptocurrency, P2P, multiplayer games, and supply chains."
+      },
+      {
+        "id": "new-docx-quiz-4",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "In the video-rendering example, how does the distributed system speed up the task?",
+        "answer": "It splits the video into frames and assigns work to many nodes",
+        "wrong": [
+          "It waits for one node to render every frame",
+          "It disables coordination between computers",
+          "It stores all frames without processing them"
+        ],
+        "explanation": "The managing application assigns frames to multiple computers and gives nodes new work as they finish."
+      },
+      {
+        "id": "new-docx-quiz-5",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Which pair of patterns is mentioned for designing distributed systems?",
+        "answer": "CQRS and Two-phase commit",
+        "wrong": [
+          "HTML and CSS",
+          "Bubble sort and linear search",
+          "SISD and SIMD only"
+        ],
+        "explanation": "The notes mention Command and Query Responsibility Segregation and Two-phase commit as distributed-system patterns."
+      },
+      {
+        "id": "new-docx-quiz-6",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What describes a client-server distributed system?",
+        "answer": "Many networked clients interact with a central server for storage, processing, or services",
+        "wrong": [
+          "Every node avoids communication",
+          "Only one offline computer is used",
+          "All clients become unrelated standalone apps"
+        ],
+        "explanation": "Client-server is the traditional model where clients request services from a central server."
+      },
+      {
+        "id": "new-docx-quiz-7",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What describes peer-to-peer networks?",
+        "answer": "Workloads are distributed among many computers running the same software",
+        "wrong": [
+          "All work is handled by one central keyboard",
+          "The network has no communication between peers",
+          "Only the database administrator can process requests"
+        ],
+        "explanation": "The notes describe P2P networks as distributing workloads among hundreds or thousands of computers."
+      },
+      {
+        "id": "new-docx-quiz-8",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What does scalability mean in a distributed system?",
+        "answer": "The system can grow by adding processing units or nodes as workload increases",
+        "wrong": [
+          "The system must stay the same size forever",
+          "The system becomes slower whenever a node is added",
+          "The system removes all redundancy"
+        ],
+        "explanation": "Scalability is the ability to grow as workload increases."
+      },
+      {
+        "id": "new-docx-quiz-9",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What does concurrency mean in distributed systems?",
+        "answer": "Components run simultaneously, often without a single global clock",
+        "wrong": [
+          "Only one component can run at a time",
+          "Every task must happen in exact local order",
+          "All nodes share one CPU instruction pointer"
+        ],
+        "explanation": "The notes connect concurrency with simultaneous components and the lack of a global clock."
+      },
+      {
+        "id": "new-docx-quiz-10",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Which characteristic lets remaining nodes continue when one node fails?",
+        "answer": "Availability and fault tolerance",
+        "wrong": [
+          "Vendor lock-in",
+          "Over-engineering",
+          "Manual-only deployment"
+        ],
+        "explanation": "Availability and fault tolerance help the system keep operating despite node failure."
+      },
+      {
+        "id": "new-docx-quiz-11",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What is heterogeneity in distributed systems?",
+        "answer": "Nodes and components may use different hardware, middleware, software, or operating systems",
+        "wrong": [
+          "Every node must be identical",
+          "All messages are forbidden",
+          "Only one programming language can exist"
+        ],
+        "explanation": "Heterogeneous distributed systems can include asynchronous nodes with different platforms."
+      },
+      {
+        "id": "new-docx-quiz-12",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Why is replication useful in distributed systems?",
+        "answer": "It improves consistency, fault tolerance, reliability, and accessibility through redundant resources",
+        "wrong": [
+          "It prevents all communication",
+          "It removes every backup",
+          "It guarantees zero cost"
+        ],
+        "explanation": "Replication shares information or resources redundantly to improve reliability and access."
+      },
+      {
+        "id": "new-docx-quiz-13",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What does transparency mean to an end user?",
+        "answer": "The system appears as one logical application instead of many distributed parts",
+        "wrong": [
+          "The user must manually control every node",
+          "The system hides all results",
+          "The system cannot scale"
+        ],
+        "explanation": "Transparency hides distribution details from users and applications."
+      },
+      {
+        "id": "new-docx-quiz-14",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Why is synchronization challenging in distributed systems?",
+        "answer": "Distributed systems often work without a global clock, so ordering and timing must be managed carefully",
+        "wrong": [
+          "All nodes execute in one CPU cycle",
+          "Network delays never happen",
+          "Processes cannot run simultaneously"
+        ],
+        "explanation": "Without a global clock, synchronization must handle delays, ordering, and consistency."
+      },
+      {
+        "id": "new-docx-quiz-15",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Which is a risk of distributed systems that depend on public networks?",
+        "answer": "A network segment outage or overload can reduce performance",
+        "wrong": [
+          "A local monitor color can change",
+          "A single desktop shortcut may disappear",
+          "The system automatically avoids all costs"
+        ],
+        "explanation": "The notes list risk of network failure as a distributed-system risk."
+      },
+      {
+        "id": "new-docx-quiz-16",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What is distributed tracing used for?",
+        "answer": "Following a request or transaction as it moves across many services or nodes",
+        "wrong": [
+          "Choosing a random programming language",
+          "Removing logs from every server",
+          "Turning a distributed system into one monolithic file"
+        ],
+        "explanation": "Distributed tracing helps observe complex distributed applications and find latency, bottlenecks, and bugs."
+      },
+      {
+        "id": "new-docx-quiz-17",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What does ABAC use to control access?",
+        "answer": "Rules based on attributes such as user, requested action, and request environment",
+        "wrong": [
+          "Only the first letter of the username",
+          "A single shared password for all users",
+          "The screen resolution of the client"
+        ],
+        "explanation": "Attribute-based access control uses attributes about the user, action, object, and environment."
+      },
+      {
+        "id": "new-docx-quiz-18",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "How do microservices differ from distributed systems in the new notes?",
+        "answer": "Microservices focus on modular independent services, while distributed systems focus on cooperating computers and resource sharing",
+        "wrong": [
+          "Microservices never use networks",
+          "Distributed systems only describe UI widgets",
+          "They are exactly the same concept in all cases"
+        ],
+        "explanation": "The notes distinguish microservice design from the broader idea of distributed systems."
+      },
+      {
+        "id": "new-docx-quiz-19",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "What is middleware in distributed systems?",
+        "answer": "Software that binds distributed components together and abstracts hardware and network complexity",
+        "wrong": [
+          "A physical cable only",
+          "A spreadsheet formula",
+          "A single local CPU instruction"
+        ],
+        "explanation": "The middleware notes describe it as glue that enables communication and coordination through a unified interface."
+      },
+      {
+        "id": "new-docx-quiz-20",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "What does middleware transparency provide?",
+        "answer": "Location, access, and replication transparency so users need not worry about distribution details",
+        "wrong": [
+          "Manual node-by-node configuration by every user",
+          "No replication under any condition",
+          "A guarantee that no network is used"
+        ],
+        "explanation": "Middleware transparency hides where resources are and how they are accessed or replicated."
+      },
+      {
+        "id": "new-docx-quiz-21",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Why is middleware interoperability important?",
+        "answer": "It enables heterogeneous systems, platforms, and technologies to communicate and integrate",
+        "wrong": [
+          "It prevents different platforms from connecting",
+          "It requires one vendor-only system",
+          "It stops service-to-service communication"
+        ],
+        "explanation": "Interoperability lets different systems work together."
+      },
+      {
+        "id": "new-docx-quiz-22",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Which middleware feature handles failures through redundancy and failover?",
+        "answer": "Fault tolerance",
+        "wrong": [
+          "Vendor lock-in",
+          "Over-engineering",
+          "Manual repetition"
+        ],
+        "explanation": "The notes say middleware fault tolerance handles failures gracefully using redundancy and failover."
+      },
+      {
+        "id": "new-docx-quiz-23",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Which is a common middleware implementation pitfall?",
+        "answer": "Lack of standardization causing compatibility issues and vendor lock-in",
+        "wrong": [
+          "Using open standards",
+          "Conducting thorough testing",
+          "Applying regular security audits"
+        ],
+        "explanation": "The middleware notes list over-engineering, poor scalability, inadequate security, and lack of standardization as pitfalls."
+      },
+      {
+        "id": "new-docx-quiz-24",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Which tools are examples of message brokers for middleware?",
+        "answer": "Apache Kafka and RabbitMQ",
+        "wrong": [
+          "Prometheus and Grafana",
+          "Istio and Linkerd",
+          "GDPR and HIPAA"
+        ],
+        "explanation": "The notes list Kafka and RabbitMQ as message brokers that support efficient message passing."
+      },
+      {
+        "id": "new-docx-quiz-25",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Which middleware technologies manage service-to-service communication in microservices?",
+        "answer": "Istio and Linkerd service meshes",
+        "wrong": [
+          "Two-phase commit and CQRS only",
+          "Single-user desktop apps",
+          "Standalone calculators"
+        ],
+        "explanation": "Service meshes such as Istio and Linkerd manage communication between services."
+      }
+    ],
     "combinedPrelimQuiz": [
       {
         "id": "prelim-a-1",
@@ -6026,6 +6378,1808 @@ window.REVIEWER_DATA = {
           "O(1) Hash Lookup → O(n) Linear Search → O(n²) Bubble Sort → O(log n) Binary Search → O(n log n) Merge Sort"
         ],
         "explanation": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort"
+      }
+    ],
+    "combinedPrelimQuizNew": [
+      {
+        "id": "prelim-a-1",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What is the primary objective of parallel computing systems?",
+        "answer": "Reducing program execution time through simultaneous processing",
+        "wrong": [
+          "Improving reliability by duplicating hardware resources",
+          "Organizing large databases across independent machines",
+          "Expanding network connectivity between computer systems"
+        ],
+        "explanation": "Parallel computing uses simultaneous processing to reduce wall-clock execution time."
+      },
+      {
+        "id": "prelim-a-2",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "In shared memory programming, what is a major responsibility of the developer?",
+        "answer": "Coordinating synchronization to prevent race conditions",
+        "wrong": [
+          "Managing distributed file replication across clusters",
+          "Configuring communication protocols between remote nodes",
+          "Creating routing policies for message transmission systems"
+        ],
+        "explanation": "Shared memory is fast, but the developer must protect shared data with synchronization."
+      },
+      {
+        "id": "prelim-a-3",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which option best represents distributed computing?",
+        "answer": "A Hadoop cluster analyzing massive datasets collaboratively",
+        "wrong": [
+          "A graphics card rendering frames for a video game",
+          "A desktop processor running several browser applications",
+          "A laptop processor executing spreadsheet calculations locally"
+        ],
+        "explanation": "A Hadoop cluster is made of multiple computers collaborating across a network."
+      },
+      {
+        "id": "prelim-a-4",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What is the main function of the Map phase in MapReduce?",
+        "answer": "Splitting data into segments for simultaneous computation",
+        "wrong": [
+          "Saving generated outputs within distributed storage systems",
+          "Directing communication requests among participating servers",
+          "Combining processed results into a completed final output"
+        ],
+        "explanation": "The Map phase splits and processes chunks in parallel. Reduce combines the intermediate results."
+      },
+      {
+        "id": "prelim-a-5",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which architecture provides each processor with independent local memory?",
+        "answer": "An architecture using separate local memory per processor",
+        "wrong": [
+          "A multiprocessing model built around centralized memory access",
+          "A design where memory latency varies between processors",
+          "A memory structure where all processors share equal access"
+        ],
+        "explanation": "Distributed memory gives processors or nodes their own local memory."
+      },
+      {
+        "id": "prelim-a-6",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which pair of operations forms the basis of message passing systems?",
+        "answer": "Sending information packets and receiving transmitted data",
+        "wrong": [
+          "Reading information and writing information to storage",
+          "Allocating memory blocks and releasing unused resources",
+          "Encoding communication streams and decoding transferred signals"
+        ],
+        "explanation": "Message passing is built on send and receive operations."
+      },
+      {
+        "id": "prelim-a-7",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which architecture allows every node to function as both client and server?",
+        "answer": "A decentralized model where nodes share equal responsibilities",
+        "wrong": [
+          "A processing framework based on mapping and reducing tasks",
+          "A cloud platform distributing applications through virtual servers",
+          "A centralized system controlled by dedicated server machines"
+        ],
+        "explanation": "Peer-to-peer architecture gives each node both client and server roles."
+      },
+      {
+        "id": "prelim-a-8",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Flynn's taxonomy categorizes parallel systems according to what criteria?",
+        "answer": "The arrangement of instruction streams and data streams",
+        "wrong": [
+          "The operating systems and processor manufacturing designs",
+          "The communication speed and network transmission capacity",
+          "The quantity of processors and available memory resources"
+        ],
+        "explanation": "Flynn's taxonomy uses instruction streams and data streams."
+      },
+      {
+        "id": "prelim-a-9",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A computer executing one instruction stream on one data stream belongs to which category?",
+        "answer": "A system processing one instruction and one data stream",
+        "wrong": [
+          "A model supporting multiple instructions on shared datasets",
+          "A configuration applying varied operations to identical inputs",
+          "A structure executing many tasks across separate processors"
+        ],
+        "explanation": "Single Instruction, Single Data is SISD, the classic serial category."
+      },
+      {
+        "id": "prelim-a-10",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Which term describes the relationship between computation and communication in parallel systems?",
+        "answer": "The balance between computational work and communication",
+        "wrong": [
+          "The quantity of completed operations within a time period",
+          "The delay experienced during data transfer between systems",
+          "The capability of a system to increase processing capacity"
+        ],
+        "explanation": "Granularity describes the ratio or balance between computation and communication."
+      },
+      {
+        "id": "prelim-a-11",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A hospital system must analyze millions of patient records for an AI diagnosis platform. Their current single-server setup requires 72 hours to finish processing. Which approach is most appropriate?",
+        "answer": "Using parallel processing across multiple processing cores",
+        "wrong": [
+          "Migrating services toward a decentralized peer network design",
+          "Replacing the current processor with a higher clock-speed model",
+          "Implementing a traditional client-server communication structure"
+        ],
+        "explanation": "Large analysis workloads can be split and processed in parallel to reduce completion time."
+      },
+      {
+        "id": "prelim-a-12",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "An online shopping platform experiences severe slowdowns during holiday traffic spikes. The company wants to increase server capacity without redesigning the application. Which distributed computing characteristic best solves this issue?",
+        "answer": "The ability to scale resources efficiently as demand grows",
+        "wrong": [
+          "A single instruction single data processing organization",
+          "Uniform processor access to centrally managed memory blocks",
+          "A memory-sharing structure across connected processing units"
+        ],
+        "explanation": "Scalability lets a distributed or cloud system add resources as demand grows."
+      },
+      {
+        "id": "prelim-a-13",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "During a climate simulation, one node in a computing cluster unexpectedly crashes. The simulation continues operating successfully without losing results. Which distributed computing feature enabled this?",
+        "answer": "Maintaining operation despite hardware or software failures",
+        "wrong": [
+          "Exchanging information continuously between independent processes",
+          "Executing instructions sequentially through staged processing units",
+          "Automatically distributing workloads across active processors evenly"
+        ],
+        "explanation": "Fault tolerance means the system can keep operating despite component failures."
+      },
+      {
+        "id": "prelim-a-14",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A rendering studio divides a 4K movie into thousands of independent frames processed simultaneously across 200 computers. Which concept best describes this situation?",
+        "answer": "Large processing tasks divided into loosely connected workloads",
+        "wrong": [
+          "Multiple instruction streams operating on identical data values",
+          "A memory-sharing approach spanning several distributed systems",
+          "Highly independent tasks executed simultaneously without interaction"
+        ],
+        "explanation": "This is coarse-grained or embarrassingly parallel work: large tasks split into mostly independent units."
+      },
+      {
+        "id": "prelim-a-15",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Two processors running on the same machine frequently exchange extremely large datasets. Performance speed is the highest priority. Which communication method is most suitable?",
+        "answer": "Shared memory because it minimizes communication overhead costs",
+        "wrong": [
+          "Shared memory because synchronization is completely unnecessary",
+          "Message passing because operating system calls improve protection",
+          "Message passing because it supports communication across networks"
+        ],
+        "explanation": "Shared memory is usually faster for large same-machine data exchange because it avoids per-message overhead."
+      },
+      {
+        "id": "prelim-a-16",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A startup rapidly increases from 5 to 50 virtual machines during a product launch, then reduces usage afterward. Which computing model makes this possible?",
+        "answer": "An elastic infrastructure delivered through cloud platforms",
+        "wrong": [
+          "A tightly coupled cluster operating within one local network",
+          "A decentralized network without dedicated control mechanisms",
+          "A grid-based environment connecting geographically separated systems"
+        ],
+        "explanation": "Cloud computing provides elastic, on-demand resources."
+      },
+      {
+        "id": "prelim-a-17",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A graphics processor applies the same blur operation simultaneously across thousands of image pixels. Which Flynn taxonomy category best represents this process?",
+        "answer": "A single operation applied simultaneously to multiple datasets",
+        "wrong": [
+          "One instruction stream operating on one sequence of data",
+          "Multiple operations performed on one shared stream of data",
+          "Different instructions executing independently across many datasets"
+        ],
+        "explanation": "SIMD applies a single instruction or operation across many data elements."
+      },
+      {
+        "id": "prelim-a-18",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Engineers design a fraud-detection system where several processors perform different analyses on the same transaction stream. Which Flynn classification matches this setup?",
+        "answer": "Multiple instruction streams analyzing the same incoming dataset",
+        "wrong": [
+          "A single processor executing sequential instructions on data",
+          "One instruction stream simultaneously handling many data values",
+          "Independent processors executing separate tasks on unique data"
+        ],
+        "explanation": "Multiple instructions acting on a single data stream is MISD."
+      },
+      {
+        "id": "prelim-a-19",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A parallel program finishes in 2 hours using 16 processors, while the serial version requires 20 hours. A colleague claims the parallel version is always more efficient. Which response is most accurate?",
+        "answer": "Coordination overhead can reduce benefits for smaller workloads",
+        "wrong": [
+          "Parallel systems waste processing resources because of idle time",
+          "Additional processors consistently improve efficiency for all workloads",
+          "Parallel execution always decreases total processor utilization time"
+        ],
+        "explanation": "This key was corrected: more processors do not always improve efficiency because overhead can dominate."
+      },
+      {
+        "id": "prelim-a-20",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A developer notices performance decreases after adding more processors because processors spend excessive time exchanging information. Which overhead factor is the likely cause?",
+        "answer": "The communication costs associated with transferring shared data",
+        "wrong": [
+          "The delay occurring when tasks complete and release resources",
+          "The licensing restrictions imposed by distributed software vendors",
+          "The initialization time required before parallel tasks can begin"
+        ],
+        "explanation": "Communication overhead can erase the benefits of adding processors."
+      },
+      {
+        "id": "prelim-a-21",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A NUMA architecture links two SMP systems. Processor A accesses local memory in 50ns but remote memory in 150ns. Which statement is most accurate?",
+        "answer": "Memory access latency differs between regions in NUMA systems",
+        "wrong": [
+          "The system qualifies as UMA because processors remain identical",
+          "Separate SMP systems require exclusive use of message passing",
+          "Cache coherency cannot function correctly in NUMA architectures"
+        ],
+        "explanation": "NUMA means memory access time is non-uniform and depends on memory location."
+      },
+      {
+        "id": "prelim-a-22",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "Why does increasing CPUs in a shared memory system not always improve performance proportionally?",
+        "answer": "Traffic contention creates bottlenecks on memory communication paths",
+        "wrong": [
+          "Shared memory systems cannot expand storage capacity efficiently",
+          "Distributed memory becomes mandatory after adding several processors",
+          "Shared memory processors cannot execute tasks independently"
+        ],
+        "explanation": "More CPUs can increase traffic and contention on shared memory paths."
+      },
+      {
+        "id": "prelim-a-23",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A parallel application uses fine-grained granularity. What consequence is most likely?",
+        "answer": "Communication overhead becomes larger relative to computation",
+        "wrong": [
+          "Execution becomes slower because fewer tasks are generated",
+          "Distributed architectures become unnecessary for coordination",
+          "Communication demands decrease as processor counts increase"
+        ],
+        "explanation": "Fine-grained tasks communicate frequently, so overhead can become large."
+      },
+      {
+        "id": "prelim-a-24",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "What distinguishes distributed shared memory systems from pure distributed memory systems?",
+        "answer": "Software creates a shared-memory illusion across distributed nodes",
+        "wrong": [
+          "Every processor physically accesses one universal memory structure",
+          "Communication between machines becomes completely unnecessary",
+          "All processors execute identical instructions on identical datasets"
+        ],
+        "explanation": "DSM hides physical distribution and presents an illusion of shared memory."
+      },
+      {
+        "id": "prelim-a-25",
+        "source": "Prelim Exam",
+        "set": "A",
+        "tag": "Set A",
+        "prompt": "A MIMD computer may execute tasks non-deterministically. What does this imply for developers?",
+        "answer": "Synchronization mechanisms are required to ensure correctness",
+        "wrong": [
+          "Scientific applications cannot operate reliably on MIMD systems",
+          "Deterministic execution is unnecessary in parallel applications",
+          "SIMD systems experience more synchronization concerns than MIMD"
+        ],
+        "explanation": "Non-deterministic execution means synchronization is needed to keep shared results correct."
+      },
+      {
+        "id": "prelim-b-1",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What distinguishes distributed computing from parallel computing?",
+        "answer": "Distributed computing uses multiple networked computers with independent memory spaces",
+        "wrong": [
+          "Parallel computing depends entirely on wide-area communication architecture systems",
+          "Distributed computing always requires identical processors within shared architectures",
+          "Parallel computing eliminates coordination between processors during task execution"
+        ],
+        "explanation": "Distributed computing uses independent networked machines, while parallel computing often focuses on simultaneous execution using multiple processors or cores."
+      },
+      {
+        "id": "prelim-b-2",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which of the following is a key advantage of distributed memory architecture over shared memory?",
+        "answer": "Higher scalability through independent nodes added across environments",
+        "wrong": [
+          "Faster synchronization between tightly coupled computational workloads",
+          "Simplified address spaces allowing transparent memory access globally",
+          "Lower communication overhead during real-time synchronization across processor groups"
+        ],
+        "explanation": "Distributed memory can scale by adding independent nodes, each with its own memory."
+      },
+      {
+        "id": "prelim-b-3",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "In the von Neumann architecture, what is stored in electronic memory?",
+        "answer": "Program instructions together with data required for execution processes",
+        "wrong": [
+          "Operating system services and communication protocols",
+          "Arithmetic processing rules controlling processor execution stages",
+          "Hardware interrupt signals coordinating communication between connected input devices"
+        ],
+        "explanation": "The von Neumann model stores both program instructions and data in memory."
+      },
+      {
+        "id": "prelim-b-4",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is the Reduce phase responsible for in MapReduce?",
+        "answer": "Combining intermediate outputs into summarized results for final processing stages",
+        "wrong": [
+          "Splitting data before assigning tasks across processing nodes",
+          "Replicating distributed data across clusters for system fault tolerance",
+          "Scheduling worker processes during parallel execution of distributed jobs"
+        ],
+        "explanation": "Reduce combines intermediate Map outputs into final summarized results."
+      },
+      {
+        "id": "prelim-b-5",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which parallel computing resource is specifically mentioned as suitable for machine learning and scientific simulations?",
+        "answer": "Graphics processing units (GPUs) enabling repetitive mathematical operations efficiently simultaneously",
+        "wrong": [
+          "Distributed storage platforms coordinating replicated blocks across computing environments",
+          "Symmetric multiprocessing architectures supporting coordinated memory sharing operations globally",
+          "Cluster middleware frameworks balancing workloads among geographically separated processors"
+        ],
+        "explanation": "GPUs are well suited for repetitive parallel mathematical operations used in machine learning and simulations."
+      },
+      {
+        "id": "prelim-b-6",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is a node in the context of parallel computing clusters?",
+        "answer": "Independent computers containing processors, memory and networking communication interfaces together",
+        "wrong": [
+          "Routing hardware connecting distributed systems across communication infrastructure environments",
+          "Virtualized services executing distributed applications within cloud infrastructures remotely",
+          "Shared processor cores executing synchronized instructions within multiprocessor architectures"
+        ],
+        "explanation": "A cluster node is a standalone computer with processors, memory, and network interfaces."
+      },
+      {
+        "id": "prelim-b-7",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Which statement correctly describes the shared memory inter-process communication model?",
+        "answer": "Processes access and coordinate through spaces and regions containing shared information together",
+        "wrong": [
+          "Processes exchange information exclusively through synchronized message queue communication mechanisms",
+          "Processes communicate indirectly using distributed packet switching across network infrastructures",
+          "Processes isolate execution environments while communicating through independent storage replication systems"
+        ],
+        "explanation": "Shared memory IPC lets processes communicate by reading and writing a shared memory region."
+      },
+      {
+        "id": "prelim-b-8",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "What is the primary purpose of synchronization in parallel applications?",
+        "answer": "Coordinating concurrent tasks while preventing inconsistent shared data modifications simultaneously",
+        "wrong": [
+          "Increasing processor speed during independent execution of distributed computational workloads",
+          "Minimizing memory allocation requirements across geographically distributed processing environments globally",
+          "Reducing network latency between geographically distributed computational resource infrastructures entirely"
+        ],
+        "explanation": "Synchronization coordinates concurrent work and protects shared data from inconsistent updates."
+      },
+      {
+        "id": "prelim-b-9",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "An SMP (Symmetric Multi-Processor) system is characterized by:",
+        "answer": "Processors sharing equal access to memory and computing resources together",
+        "wrong": [
+          "Processors connected geographically using distributed communication infrastructures and middleware frameworks",
+          "Nodes maintaining isolated memory spaces without coordinated synchronization mechanisms",
+          "Nonuniform memory access architectures requiring specialized optimization and coordination strategies"
+        ],
+        "explanation": "In SMP, processors share memory and resources with equal access."
+      },
+      {
+        "id": "prelim-b-10",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Why is message passing described as both useful and slower compared to shared memory communication?",
+        "answer": "Message passing requires physical data transfers through operating system communication services",
+        "wrong": [
+          "Shared memory communication depends entirely upon geographically distributed network infrastructures globally",
+          "Variable-length communication reduces synchronization requirements between processing components completely",
+          "Message passing architectures require fewer processing distributed computational coordination tasks"
+        ],
+        "explanation": "Message passing is useful across separate address spaces, but it is slower because data transfer is mediated by the OS or network services."
+      },
+      {
+        "id": "prelim-b-11",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A developer converts a serial program to run on 16 processors. Total CPU time increases from 4 hours to 48 hours while wall-clock time decreases slightly. What conclusion is most accurate?",
+        "answer": "Parallel overhead may reduce overall efficiency when workload distribution across processors consumes resources",
+        "wrong": [
+          "Additional processors automatically guarantee greater processing resources",
+          "Serial execution remains best because synchronization always reduces performance substantially",
+          "Processor utilization increases substantially despite application executed across clustered infrastructures"
+        ],
+        "explanation": "The program may use more total CPU time because overhead, communication, and coordination reduce efficiency."
+      },
+      {
+        "id": "prelim-b-12",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "In P2P architecture, each node is both client and server. What makes this fundamentally different from client-server regarding fault tolerance?",
+        "answer": "Distributed peer participation removes central dependency while improving system resilience significantly",
+        "wrong": [
+          "Centralized coordination improves replicated communication routing infrastructures globally",
+          "Dedicated servers eliminate synchronization problems during workload distribution between participating systems",
+          "Peer architectures depend entirely upon specialized hardware supporting coordinated resource allocation mechanisms"
+        ],
+        "explanation": "P2P removes a central server dependency, improving resilience compared with a single central server design."
+      },
+      {
+        "id": "prelim-b-13",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A SIMD architecture processes the same data stream for fraud detection, where multiple independent cryptographic algorithms simultaneously analyze the same data stream. Which Flynn classification applies and why?",
+        "answer": "MISD because multiple instructions analyze one shared transaction data stream",
+        "wrong": [
+          "SIMD because identical instructions operate across multiple independent transaction datasets simultaneously",
+          "MIMD because processors execute unrelated algorithms using independent transaction processing streams",
+          "SISD because transaction processing occurs sequentially through centralized computing architecture exclusively"
+        ],
+        "explanation": "Multiple instruction streams analyzing the same data stream corresponds to MISD."
+      },
+      {
+        "id": "prelim-b-14",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A grid computing system spans multiple organizations globally. Compare this to cluster computing regarding governance, resource ownership, and scale.",
+        "answer": "Grid systems involve distributed governance and heterogeneous resources across organizations globally",
+        "wrong": [
+          "Cluster systems depend entirely upon geographically separated organizations coordinating shared control",
+          "Grid architectures operate exclusively within homogeneous environments managed through centralized administration systems",
+          "Cluster infrastructures require distributed governance supporting independently managed computational resource networks worldwide"
+        ],
+        "explanation": "Grid computing often spans organizations and heterogeneous resources, while clusters are usually more tightly managed."
+      },
+      {
+        "id": "prelim-b-15",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Why is complexity listed as both a challenge and cost multiplier in parallel software development?",
+        "answer": "Concurrent execution coordination increases effort across design, debugging, tuning, and maintenance phases",
+        "wrong": [
+          "Specialized hardware infrastructures dramatically eliminate software licensing and deployment requirements globally",
+          "Parallel programming languages restrict interoperability between distributed applications and operating systems entirely",
+          "Proprietary debugging frameworks eliminate open-source development support for distributed computing projects globally"
+        ],
+        "explanation": "Parallel software adds coordination complexity throughout design, coding, debugging, tuning, and maintenance."
+      },
+      {
+        "id": "prelim-b-16",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A weather forecasting agency must process satellite data from 50 regions simultaneously and independently. What is the most appropriate computing model?",
+        "answer": "Embarrassingly parallel distribution supporting independent regional processing tasks simultaneously efficiently",
+        "wrong": [
+          "Client-server architecture coordinating centralized processing through dedicated communication infrastructures globally",
+          "SISD processing executing sequential instructions through synchronized processor architectures exclusively",
+          "High-speed serial processing environments minimizing synchronization across distributed computational infrastructures entirely"
+        ],
+        "explanation": "Independent regional workloads are a good fit for embarrassingly parallel processing."
+      },
+      {
+        "id": "prelim-b-17",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A logistics company stores shipment records across geographically separate data centers. A query must search all locations simultaneously. Which component addresses this?",
+        "answer": "Distributed file systems enabling coordinated access across geographically separated storage infrastructures",
+        "wrong": [
+          "Shared memory architectures supporting centralized synchronization between geographically separated processors globally",
+          "Vector processing pipelines accelerating repetitive instructions during sequential database search operations",
+          "Symmetric multiprocessing systems coordinating shared memory access between distributed processing systems"
+        ],
+        "explanation": "Distributed file systems coordinate access to data stored across geographically separated locations."
+      },
+      {
+        "id": "prelim-b-18",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "Two processes on different machines connected by a network need to share computation results. Shared memory is unavailable. Which IPC mechanism must they use?",
+        "answer": "Message passing through send and receive communication operations across network infrastructures",
+        "wrong": [
+          "Direct cache coherency mechanisms coordinating memory synchronization between distributed processors continuously",
+          "Shared address spaces supporting transparent remote memory access across geographically separated processing systems globally",
+          "Uniform memory architectures coordinating synchronized processor access within shared computing environments together"
+        ],
+        "explanation": "Processes on different machines without shared memory communicate through message passing."
+      },
+      {
+        "id": "prelim-b-19",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A machine learning model trains by splitting datasets into batches processed by GPU cores applying identical operations. Which Flynn taxonomy class describes this?",
+        "answer": "SIMD because processing occurs through synchronized instruction execution across processor architectures",
+        "wrong": [
+          "SISD because processing occurs sequentially through synchronized processor architecture globally",
+          "MIMD because processors execute unrelated instructions across multiple independent computational data streams independently",
+          "MISD because multiple instruction streams coordinate processing across centralized communication environments globally"
+        ],
+        "explanation": "GPU cores applying the same operation to many data items are an example of SIMD."
+      },
+      {
+        "id": "prelim-b-20",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "An online multiplayer game server crashes but users reconnect seamlessly to a backup server without data loss. Which distributed characteristic enabled this?",
+        "answer": "Fault tolerance maintaining service continuity despite failures within distributed computing environments effectively",
+        "wrong": [
+          "Load balancing distributing computational requests across synchronized server communication infrastructures globally",
+          "Scalability mechanisms supporting increased processor coordination during high-demand computational workloads simultaneously",
+          "Parallel decomposition separating independent tasks during coordinated distributed application processing operations globally"
+        ],
+        "explanation": "Fault tolerance allows service continuity when a server fails."
+      },
+      {
+        "id": "prelim-b-21",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A university shares CPU cycles from multiple countries to simulate protein folding. Which distributed architecture best fits?",
+        "answer": "Grid computing integrating heterogeneous resources from geographically distributed organizations collaboratively worldwide",
+        "wrong": [
+          "Cluster computing supporting homogeneous systems managed through centralized administrative infrastructures together",
+          "Peer-to-peer architectures coordinating decentralized file exchanges between participating computational environments globally",
+          "Client-server computing centralizing resource allocation through dedicated administrative infrastructure globally"
+        ],
+        "explanation": "Grid computing fits geographically distributed, heterogeneous resources across organizations."
+      },
+      {
+        "id": "prelim-b-22",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A parallel program splits work into microtasks constantly exchanging small updates. Performance becomes worse than the serial version. What is the most likely cause?",
+        "answer": "Excessive communication overhead caused by extremely fine-grained task decomposition strategies continuously",
+        "wrong": [
+          "Coarse-grained decomposition reducing synchronization requirements across distributed processing environments entirely globally",
+          "Distributed memory architectures providing synchronized communication between computational microtasks completely",
+          "Processor underutilization resulting from insufficient workload distribution across available computing infrastructures globally"
+        ],
+        "explanation": "Fine-grained work can communicate so frequently that overhead outweighs parallel speedup."
+      },
+      {
+        "id": "prelim-b-23",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A social media recommendation engine processes different users with different algorithms simultaneously across thousands of servers. Which Flynn classification applies?",
+        "answer": "MIMD because independent instructions process separate datasets across distributed processors concurrently",
+        "wrong": [
+          "SIMD because identical operations process recommendation datasets simultaneously together",
+          "SISD because execution remains sequential through centralized algorithmic processing architectures exclusively",
+          "MISD because multiple algorithms analyze synchronized datasets through coordinated instruction execution simultaneously"
+        ],
+        "explanation": "Different algorithms on separate user datasets across many servers is MIMD."
+      },
+      {
+        "id": "prelim-b-24",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A developer prioritizes simpler programming over system-level efficiency when choosing between fixed-size and variable-size messages. Which should they choose?",
+        "answer": "Variable-size messages simplifying application programming despite increased implementation complexity internally globally",
+        "wrong": [
+          "Fixed-size messages because implementation through predictable communication packet structures globally",
+          "Fixed-size communication structures automatically supporting flexible distributed application requirements completely",
+          "Variable-length communication packets consistently reducing transmission overhead across distributed infrastructures worldwide"
+        ],
+        "explanation": "Variable-size messages require more system-level implementation but make the programming task simpler."
+      },
+      {
+        "id": "prelim-b-25",
+        "source": "Prelim Exam",
+        "set": "B",
+        "tag": "Set B",
+        "prompt": "A parallel scientific simulation runs correctly on 8 processors but produces inconsistent results on 32 processors. What is the most likely cause?",
+        "answer": "Improper synchronization causing race conditions during larger-scale parallel execution environments simultaneously",
+        "wrong": [
+          "Network communication bandwidth preventing synchronization between distributed processing environments effectively globally",
+          "NUMA architectures introducing incompatible processor communication patterns during synchronized computational execution processes",
+          "Insufficient memory allocation preventing processor coordination across distributed computational workloads successfully"
+        ],
+        "explanation": "Inconsistent results at larger scale often point to race conditions from improper synchronization."
+      },
+      {
+        "id": "quiz-a-1",
+        "number": 1,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What is the primary characteristic that defines message-passing programming as distinct from shared-memory programming?",
+        "answer": "Processes run in separate memory spaces and communicate explicitly by sending and receiving messages to each other.",
+        "wrong": [
+          "Processes share a distributed cache layer that all nodes can read from and write to simultaneously.",
+          "Processes communicate through a central coordinator node that manages all data transfers between workers.",
+          "Processes share a single common memory space and communicate by reading and writing the same variables directly."
+        ],
+        "explanation": "Processes run in separate memory spaces and communicate explicitly by sending and receiving messages to each other."
+      },
+      {
+        "id": "quiz-a-2",
+        "number": 2,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement best describes asynchronous communication in a message-passing program?",
+        "answer": "A sending process posts its message and immediately continues executing other work without waiting for the receiver to accept it.",
+        "wrong": [
+          "A sending process suspends all computation and remains idle until the receiving process explicitly confirms the message arrived.",
+          "All participating processes coordinate to send and receive messages at a pre-agreed synchronized time checkpoint.",
+          "The operating system buffers all messages and delivers them in the exact sequence they were originally transmitted."
+        ],
+        "explanation": "A sending process posts its message and immediately continues executing other work without waiting for the receiver to accept it."
+      },
+      {
+        "id": "quiz-a-3",
+        "number": 3,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "In message-passing programming, what accurately describes point-to-point communication?",
+        "answer": "One process sends a message to one specific, individually addressed target process for direct exchange.",
+        "wrong": [
+          "Every process in the group sends its local data to every other process simultaneously in a ring pattern.",
+          "A group of processes collectively computes a result and delivers it to all members of the communicator.",
+          "One root process distributes identical copies of a message to every other process in the communicator group."
+        ],
+        "explanation": "One process sends a message to one specific, individually addressed target process for direct exchange."
+      },
+      {
+        "id": "quiz-a-4",
+        "number": 4,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What does the acronym MPI stand for in high-performance parallel computing?",
+        "answer": "Message Passing Interface, the widely adopted standard library for distributed-memory parallel programming.",
+        "wrong": [
+          "Memory Partitioned Interface, the specification for dividing RAM equally among parallel worker threads.",
+          "Modular Parallel Implementation, a framework for automatically decomposing sequential programs into tasks.",
+          "Multi-Process Integration, the standard protocol for combining results across multi-core processors."
+        ],
+        "explanation": "Message Passing Interface, the widely adopted standard library for distributed-memory parallel programming."
+      },
+      {
+        "id": "quiz-a-5",
+        "number": 5,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A 500-node cluster runs a weather simulation where each node independently processes one geographic region and exchanges boundary values only with adjacent nodes. Which parallel paradigm fits best?",
+        "answer": "Message-passing using MPI, because each node has separate memory and communicates boundary data via explicit send and receive calls.",
+        "wrong": [
+          "Shared-memory using Intel TBB, because the threading library efficiently manages work queues across all cluster nodes.",
+          "Shared-memory using POSIX threads, because pthreads allow fine-grained control over each node's regional data buffer.",
+          "Shared-memory using OpenMP, because compiler directives automatically distribute the regional computation across all 500 nodes."
+        ],
+        "explanation": "Message-passing using MPI, because each node has separate memory and communicates boundary data via explicit send and receive calls."
+      },
+      {
+        "id": "quiz-a-6",
+        "number": 6,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement correctly describes a key scalability advantage of message-passing programming over shared-memory programming?",
+        "answer": "Message-passing programs scale across hundreds of distributed nodes because each process owns private memory and communicates explicitly.",
+        "wrong": [
+          "Message-passing programs use a global shared bus so that adding more nodes directly increases available memory bandwidth.",
+          "Message-passing programs depend on a shared heap segment that grows proportionally as more compute nodes join the cluster.",
+          "Message-passing programs run on a single machine with shared RAM and scale well because the OS manages lock contention automatically."
+        ],
+        "explanation": "Message-passing programs scale across hundreds of distributed nodes because each process owns private memory and communicates explicitly."
+      },
+      {
+        "id": "quiz-a-7",
+        "number": 7,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "What is collective communication in message-passing systems and which operation is an example of it?",
+        "answer": "Collective communication describes group-level operations involving all processes, such as MPI_Bcast which sends one value to every process.",
+        "wrong": [
+          "Collective communication describes the technique of buffering multiple point-to-point messages to reduce individual transmission overhead.",
+          "Collective communication describes a fault-tolerance protocol where surviving processes redistribute work from a failed process automatically.",
+          "Collective communication describes one process sending a private message to one specific partner, as in a standard MPI_Send call."
+        ],
+        "explanation": "Collective communication describes group-level operations involving all processes, such as MPI_Bcast which sends one value to every process."
+      },
+      {
+        "id": "quiz-a-8",
+        "number": 8,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Two MPI processes — P0 and P1 — each call a blocking MPI_Send to the other before calling MPI_Recv. Neither process ever proceeds past its send call and the program freezes permanently. What condition has occurred and how is it resolved?",
+        "answer": "A message deadlock has occurred; the fix is to reorder calls so one process sends while the other receives, or to use non-blocking MPI_Isend.",
+        "wrong": [
+          "A scheduling conflict has occurred; the fix is to assign each process to a dedicated CPU core using processor affinity settings.",
+          "A collective communication mismatch has occurred; the fix is to replace MPI_Send with MPI_Bcast so both processes receive the message.",
+          "A memory overflow has occurred because each blocking send allocated a buffer larger than the available RAM on each node."
+        ],
+        "explanation": "A message deadlock has occurred; the fix is to reorder calls so one process sends while the other receives, or to use non-blocking MPI_Isend."
+      },
+      {
+        "id": "quiz-a-9",
+        "number": 9,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A financial HPC cluster shows no speedup gain after 150 nodes even when 50 more nodes are added. The computation per node remains constant but inter-node messaging has grown. What does this indicate about the message-passing workload?",
+        "answer": "Communication overhead between processes is growing fast enough to cancel out the computational benefit that the extra nodes provide.",
+        "wrong": [
+          "The financial dataset is too small for the cluster size, so each extra node receives zero work items and sits idle during the run.",
+          "The network switch is running at capacity so the OS automatically throttles new nodes to prevent packet loss on the interconnect.",
+          "The MPI library reached its maximum registered process count of 150 and stopped accepting new worker registrations."
+        ],
+        "explanation": "Communication overhead between processes is growing fast enough to cancel out the computational benefit that the extra nodes provide."
+      },
+      {
+        "id": "quiz-a-10",
+        "number": 10,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "Which statement correctly identifies a significant debugging challenge that is specific to message-passing programs?",
+        "answer": "Message-passing programs can suffer from deadlocks or non-deterministic message ordering, making bugs difficult to reproduce consistently.",
+        "wrong": [
+          "Message-passing programs share a global heap, so memory corruption in one process is immediately visible and easy to isolate.",
+          "Message-passing programs always execute sequentially on one core, so the debugger can single-step through every instruction in order.",
+          "Message-passing programs store all communication logs in a shared database, giving the developer a complete audit trail of every exchange."
+        ],
+        "explanation": "Message-passing programs can suffer from deadlocks or non-deterministic message ordering, making bugs difficult to reproduce consistently."
+      },
+      {
+        "id": "quiz-a-11",
+        "number": 11,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "How is synchronization between processes handled in the message-passing programming model?",
+        "answer": "Synchronization is explicit; processes deliberately issue send, receive, or barrier calls to coordinate their activities with other processes.",
+        "wrong": [
+          "Synchronization is fully automatic; the MPI runtime inserts barriers between every communication call without developer intervention.",
+          "Synchronization is unnecessary because each process runs in complete isolation and never needs to coordinate timing with any peer.",
+          "Synchronization is handled by a dedicated master process that polls all workers and issues clock signals at fixed time intervals."
+        ],
+        "explanation": "Synchronization is explicit; processes deliberately issue send, receive, or barrier calls to coordinate their activities with other processes."
+      },
+      {
+        "id": "quiz-a-12",
+        "number": 12,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Message-Passing Programming",
+        "prompt": "A physics simulation on 1,000 nodes produces partial results on each node. At the end, all partial sums must be totaled into a single global result held on Node 0. Which MPI collective operation is the correct and most efficient choice?",
+        "answer": "MPI_Reduce, where all processes send their partial values to Node 0 which combines them using a SUM operation into one result.",
+        "wrong": [
+          "MPI_Bcast, where Node 0 transmits its partial result to all other nodes so every process holds the same starting value.",
+          "MPI_Scatter, where Node 0 breaks a large dataset into chunks and distributes one unique chunk to each of the 1,000 nodes.",
+          "MPI_Alltoall, where every node exchanges its partial result with every other node so all nodes hold all partial sums."
+        ],
+        "explanation": "MPI_Reduce, where all processes send their partial values to Node 0 which combines them using a SUM operation into one result."
+      },
+      {
+        "id": "quiz-a-13",
+        "number": 13,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "What are the three sequential steps that the Divide and Conquer algorithm technique performs at each level of recursion?",
+        "answer": "Divide the problem into smaller sub-problems, conquer each sub-problem recursively, then combine their solutions into the final answer.",
+        "wrong": [
+          "Initialize the data structure, process each element sequentially, then output the final combined result to storage.",
+          "Partition the input data evenly, sort each partition with an insertion pass, then merge adjacent sorted partitions repeatedly.",
+          "Select the optimal sub-problem to solve first, execute it greedily, then propagate the result to dependent sub-problems."
+        ],
+        "explanation": "Divide the problem into smaller sub-problems, conquer each sub-problem recursively, then combine their solutions into the final answer."
+      },
+      {
+        "id": "quiz-a-14",
+        "number": 14,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which algorithm design technique makes the locally optimal choice at each decision step and never revisits a previous decision?",
+        "answer": "The Greedy Method, which always selects the best-looking option at the current step without reconsidering earlier choices.",
+        "wrong": [
+          "Dynamic Programming, which stores every sub-problem solution in a table and reuses those stored answers in future computations.",
+          "Backtracking, which explores each candidate solution fully and retreats to the previous checkpoint when a dead end is encountered.",
+          "Branch and Bound, which maintains a priority queue of partial solutions ranked by their lower-bound cost estimate."
+        ],
+        "explanation": "The Greedy Method, which always selects the best-looking option at the current step without reconsidering earlier choices."
+      },
+      {
+        "id": "quiz-a-15",
+        "number": 15,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "What is the key distinguishing difference between Dynamic Programming and the Divide and Conquer technique?",
+        "answer": "Dynamic Programming stores and reuses overlapping sub-problem solutions, while Divide and Conquer solves each sub-problem independently.",
+        "wrong": [
+          "Divide and Conquer stores solutions to sub-problems in a lookup table while Dynamic Programming always recomputes them from scratch.",
+          "Dynamic Programming works only on graph problems while Divide and Conquer applies only to array and sorting problems.",
+          "Divide and Conquer requires distributed memory clusters while Dynamic Programming runs only on shared-memory multi-core systems."
+        ],
+        "explanation": "Dynamic Programming stores and reuses overlapping sub-problem solutions, while Divide and Conquer solves each sub-problem independently."
+      },
+      {
+        "id": "quiz-a-16",
+        "number": 16,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which description most accurately defines how the Backtracking algorithm works?",
+        "answer": "The algorithm starts with a promising candidate, advances step by step checking constraints, and retreats one level when a constraint fails.",
+        "wrong": [
+          "The algorithm builds a priority queue of candidate solutions ranked by their estimated cost and processes the cheapest candidate first.",
+          "The algorithm expresses the problem as a set of linear constraints and finds the assignment of variables that satisfies all constraints optimally.",
+          "The algorithm divides the solution space into two halves repeatedly and processes each half on a separate processor simultaneously."
+        ],
+        "explanation": "The algorithm starts with a promising candidate, advances step by step checking constraints, and retreats one level when a constraint fails."
+      },
+      {
+        "id": "quiz-a-17",
+        "number": 17,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Which real-world combinatorial puzzle is the most classically cited example of the Backtracking algorithm in computer science textbooks?",
+        "answer": "The Eight Queens Problem, where eight chess queens must be placed on a board so that no queen threatens any other queen.",
+        "wrong": [
+          "The Fibonacci Series problem, where each term depends on the sum of the two immediately preceding terms in the sequence.",
+          "The Travelling Salesman Problem, where the total distance of a route connecting all cities must be minimized globally.",
+          "The Shortest Path Problem, where the minimum-cost route between two nodes in a weighted graph must be identified."
+        ],
+        "explanation": "The Eight Queens Problem, where eight chess queens must be placed on a board so that no queen threatens any other queen."
+      },
+      {
+        "id": "quiz-a-18",
+        "number": 18,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A delivery company must find the minimum-distance route visiting 12 cities. The solution space is enormous. Which design technique intelligently prunes unpromising routes without evaluating every possibility?",
+        "answer": "Branch and Bound, which explores partial routes and discards any branch whose lower-bound cost already exceeds the best complete route found.",
+        "wrong": [
+          "The Greedy Method, which builds the route one city at a time by always traveling to the nearest unvisited city from the current location.",
+          "Dynamic Programming, which breaks the route into overlapping city-pair sub-problems and stores the shortest sub-route for each pair.",
+          "Linear Programming, which models the routing decision as a set of linear equations and solves for the assignment that minimizes total distance."
+        ],
+        "explanation": "Branch and Bound, which explores partial routes and discards any branch whose lower-bound cost already exceeds the best complete route found."
+      },
+      {
+        "id": "quiz-a-19",
+        "number": 19,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "The Fibonacci algorithm (Fib(n) = Fib(n-1) + Fib(n-2)) implemented with a lookup table to avoid repeated computation is a classic example of which technique?",
+        "answer": "Dynamic Programming, because overlapping sub-problems (Fib(n-1), Fib(n-2)) are computed once, stored, and reused in later calls.",
+        "wrong": [
+          "Backtracking, because the recursion explores multiple candidate values before settling on the correct Fibonacci term at depth n.",
+          "Branch and Bound, because the recursion tree branches into two sub-calls and prunes branches where Fib values are already known.",
+          "Divide and Conquer, because the problem is split into two independent halves that are solved separately and their results summed."
+        ],
+        "explanation": "Dynamic Programming, because overlapping sub-problems (Fib(n-1), Fib(n-2)) are computed once, stored, and reused in later calls."
+      },
+      {
+        "id": "quiz-a-20",
+        "number": 20,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "Both Binary Search and Merge Sort are textbook examples of which parallel algorithm design technique?",
+        "answer": "Divide and Conquer, because both algorithms recursively split the input in half, solve each half, and then combine the results.",
+        "wrong": [
+          "Greedy Method, because both algorithms commit to a locally optimal decision at each step without reconsidering prior choices.",
+          "Dynamic Programming, because both algorithms store results from smaller input sizes to avoid re-scanning previously processed data.",
+          "Branch and Bound, because both algorithms prune sections of the input that cannot possibly contribute to the final answer."
+        ],
+        "explanation": "Divide and Conquer, because both algorithms recursively split the input in half, solve each half, and then combine the results."
+      },
+      {
+        "id": "quiz-a-21",
+        "number": 21,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A logistics firm assigns delivery drivers to routes to maximize total deliveries in an 8-hour shift. Driver assignment, shift-hour limits, and vehicle capacity all have linear relationships. Which design technique directly models and solves this optimization problem?",
+        "answer": "Linear Programming, which models the objective and all constraints as linear functions and finds the optimal variable assignment mathematically.",
+        "wrong": [
+          "Branch and Bound, which generates a tree of partial assignments and prunes branches where estimated deliveries fall below the current best.",
+          "Greedy Method, which assigns the driver with the greatest remaining shift time to the longest available route at each decision step.",
+          "Backtracking, which tries every possible driver-to-route assignment and retreats whenever a shift-hour or capacity constraint is violated."
+        ],
+        "explanation": "Linear Programming, which models the objective and all constraints as linear functions and finds the optimal variable assignment mathematically."
+      },
+      {
+        "id": "quiz-a-22",
+        "number": 22,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Algorithm Design Techniques",
+        "prompt": "A game developer builds a maze solver that explores a path step by step, and when it hits a dead end, it reverses to the last junction and tries a different direction. This continues until the exit is found. Which design technique is being implemented?",
+        "answer": "Backtracking, because the solver builds a path incrementally and retreats to the previous decision point whenever a dead end is encountered.",
+        "wrong": [
+          "Greedy Method, because at each junction the solver picks the corridor that appears to lead most directly toward the exit position.",
+          "Branch and Bound, because at each junction the solver calculates the minimum remaining distance and prunes corridors that exceed the limit.",
+          "Divide and Conquer, because the maze is split into quadrants and each quadrant is solved independently by a recursive sub-call."
+        ],
+        "explanation": "Backtracking, because the solver builds a path incrementally and retreats to the previous decision point whenever a dead end is encountered."
+      },
+      {
+        "id": "quiz-a-23",
+        "number": 23,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "What is the defining characteristic of the shared-memory parallel programming model?",
+        "answer": "All threads running on the same system can access the same memory addresses and communicate by reading and writing shared variables.",
+        "wrong": [
+          "Threads are assigned to separate physical servers and synchronize by exchanging data packets over a high-speed network interconnect.",
+          "Each thread operates on an independent memory bank that is readable by the CPU but not directly accessible by any other thread.",
+          "Each thread holds a private copy of all program variables and must explicitly send updates to other threads through a message queue."
+        ],
+        "explanation": "All threads running on the same system can access the same memory addresses and communicate by reading and writing shared variables."
+      },
+      {
+        "id": "quiz-a-24",
+        "number": 24,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Two threads simultaneously read a shared counter, each adds one to it, and each writes back the result. The counter increments by one instead of two. What is this concurrency problem called?",
+        "answer": "A race condition, where two threads access and modify shared data concurrently without synchronization causing one update to be lost.",
+        "wrong": [
+          "A memory leak, where each thread allocates a new buffer for the counter value but never frees the old buffer after writing.",
+          "A stack overflow, where the counter variable exceeds the maximum integer range supported by the thread's private call stack memory.",
+          "A deadlock, where both threads are blocked waiting for a resource that the other thread currently holds and refuses to release."
+        ],
+        "explanation": "A race condition, where two threads access and modify shared data concurrently without synchronization causing one update to be lost."
+      },
+      {
+        "id": "quiz-a-25",
+        "number": 25,
+        "source": "Recent Final Quiz",
+        "set": "A",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which synchronization mechanism in shared-memory programming ensures that only one thread at a time can execute a critical section of code?",
+        "answer": "A mutex lock (mutual exclusion lock), which allows only the thread holding the lock to enter the critical section at any given time.",
+        "wrong": [
+          "A network socket, which provides a reliable byte-stream channel between two threads running on different CPU cores.",
+          "A memory-mapped file, which maps shared data to a file on disk so multiple threads can access it through the file system.",
+          "A message queue, which buffers outgoing data from one thread and delivers it to another thread in the order it was enqueued."
+        ],
+        "explanation": "A mutex lock (mutual exclusion lock), which allows only the thread holding the lock to enter the critical section at any given time."
+      },
+      {
+        "id": "quiz-b-26",
+        "number": 26,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "In shared-memory programming, what is the key difference between multithreading and multiprocessing?",
+        "answer": "Multithreading creates multiple execution units within one process sharing the same memory; multiprocessing creates separate processes each with independent memory.",
+        "wrong": [
+          "Multithreading allocates a separate CPU socket to each thread while multiprocessing runs all tasks on a single CPU core in rotation.",
+          "Multithreading is exclusively used for input/output tasks while multiprocessing handles all mathematical and computational operations.",
+          "Multithreading requires a special OS kernel module while multiprocessing runs on any standard operating system without modification."
+        ],
+        "explanation": "Multithreading creates multiple execution units within one process sharing the same memory; multiprocessing creates separate processes each with independent memory."
+      },
+      {
+        "id": "quiz-b-27",
+        "number": 27,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which parallel processing framework uses pragma compiler directives to parallelize loops and is specifically designed for shared-memory multi-core systems?",
+        "answer": "OpenMP, which uses #pragma omp directives so developers can parallelize loops and sections without restructuring sequential code.",
+        "wrong": [
+          "CUDA (Compute Unified Device Architecture), which offloads massively parallel computations to GPU streaming multiprocessors.",
+          "MPI (Message Passing Interface), which uses explicit send/receive calls to coordinate work across distributed-memory compute nodes.",
+          "Hadoop MapReduce, which distributes large dataset processing across a cluster of commodity servers using a key-value paradigm."
+        ],
+        "explanation": "OpenMP, which uses #pragma omp directives so developers can parallelize loops and sections without restructuring sequential code."
+      },
+      {
+        "id": "quiz-b-28",
+        "number": 28,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Thread A and Thread B both execute 'counter++' on a shared variable 1,000 times each without any synchronization. The final value is 1,743 instead of 2,000. What caused the discrepancy of 257?",
+        "answer": "A race condition caused both threads to read the same counter value before either could write back, so some increments were overwritten and lost.",
+        "wrong": [
+          "The operating system's thread scheduler assigned both threads to the same CPU core, causing them to alternate too slowly to complete all increments.",
+          "The threads consumed excessive CPU cache capacity causing some increment operations to be silently discarded by the cache coherence protocol.",
+          "The compiler optimized away 257 redundant increment operations because it detected that both threads were modifying the same variable."
+        ],
+        "explanation": "A race condition caused both threads to read the same counter value before either could write back, so some increments were overwritten and lost."
+      },
+      {
+        "id": "quiz-b-29",
+        "number": 29,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "As the number of threads in a shared-memory program increases to very large numbers, what performance limitation typically emerges?",
+        "answer": "Scalability degrades because increasing threads means more contention for shared resources and growing synchronization overhead that reduces gains.",
+        "wrong": [
+          "The operating system automatically converts the shared-memory program to a message-passing program to handle the extra threads efficiently.",
+          "Memory usage drops to zero because the threads share so much data that very little unique information needs to be stored per thread.",
+          "The compiler automatically inserts additional mutex locks that protect all shared variables so thread safety improves as thread count grows."
+        ],
+        "explanation": "Scalability degrades because increasing threads means more contention for shared resources and growing synchronization overhead that reduces gains."
+      },
+      {
+        "id": "quiz-b-30",
+        "number": 30,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "An online exam system on a 32-core server handles 5,000 simultaneous student registrations. Each registration decrements a shared 'seats_remaining' counter. Which approach correctly prevents registration count errors in shared-memory programming?",
+        "answer": "Use a mutex lock around the decrement operation so only one thread modifies seats_remaining at a time, preventing lost updates.",
+        "wrong": [
+          "Allow all 5,000 threads to update the counter simultaneously and rely on the CPU's out-of-order execution to merge the updates correctly.",
+          "Run each student's session on a separate virtual machine so that each VM maintains its own independent copy of the counter value.",
+          "Use file locking to write the counter to disk before each decrement so the persistent file serves as the authoritative shared state."
+        ],
+        "explanation": "Use a mutex lock around the decrement operation so only one thread modifies seats_remaining at a time, preventing lost updates."
+      },
+      {
+        "id": "quiz-b-31",
+        "number": 31,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Two Java threads process bank account transactions on the same account object. Both read a balance of PHP 10,000, each deducts PHP 8,000, and both write PHP 2,000 back — leaving PHP 2,000 instead of detecting an overdraft. Which concurrency problem caused this and what is the correct fix?",
+        "answer": "A race condition caused a lost update; using Java's synchronized keyword on the transaction method ensures only one thread reads-and-writes at a time.",
+        "wrong": [
+          "A deadlock caused both threads to block waiting for the account object lock; adding a second lock object on the transaction class resolves it.",
+          "A memory leak caused transaction objects to pile up; calling System.gc() after each transaction frees the excess objects and corrects the balance.",
+          "A stack overflow in the transaction recursion caused the balance to be partially written; increasing the JVM thread stack size resolves the issue."
+        ],
+        "explanation": "A race condition caused a lost update; using Java's synchronized keyword on the transaction method ensures only one thread reads-and-writes at a time."
+      },
+      {
+        "id": "quiz-b-32",
+        "number": 32,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Shared-Memory Programming",
+        "prompt": "Which statement accurately describes the communication advantage of shared-memory programming over message-passing for tasks on a single machine?",
+        "answer": "Shared-memory programs allow threads to communicate by directly reading and writing shared data structures with no message serialization overhead.",
+        "wrong": [
+          "Shared-memory programs automatically distribute their computations across multiple physical servers with no network configuration needed.",
+          "Shared-memory programs prevent all race conditions by default because the compiler inserts atomic operations around every memory access.",
+          "Shared-memory programs scale to unlimited thread counts because lock contention decreases automatically as more cores are added to the system."
+        ],
+        "explanation": "Shared-memory programs allow threads to communicate by directly reading and writing shared data structures with no message serialization overhead."
+      },
+      {
+        "id": "quiz-b-33",
+        "number": 33,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does complexity analysis measure about a computer program or algorithm?",
+        "answer": "Complexity analysis measures how efficiently an algorithm uses time (number of operations) and memory (RAM) as input size grows.",
+        "wrong": [
+          "Complexity analysis counts the total number of lines of source code and evaluates how readable the code is for future developers.",
+          "Complexity analysis evaluates the quality of a program's user interface and measures user interaction response times under load.",
+          "Complexity analysis audits the number of external library dependencies and scores how maintainable the program is over time."
+        ],
+        "explanation": "Complexity analysis measures how efficiently an algorithm uses time (number of operations) and memory (RAM) as input size grows."
+      },
+      {
+        "id": "quiz-b-34",
+        "number": 34,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does Big O notation (O) specifically represent when describing algorithm complexity?",
+        "answer": "Big O represents the worst-case upper bound",
+        "wrong": [
+          "Big O represents the best-case minimum number of steps the algorithm will perform when given the most favorable possible input.",
+          "Big O represents the average-case expected performance across all typical real-world inputs for the algorithm.",
+          "Big O represents the exact number of operations the algorithm performs for every specific input of a given size n."
+        ],
+        "explanation": "the maximum growth rate the algorithm's resource usage will ever reach."
+      },
+      {
+        "id": "quiz-b-35",
+        "number": 35,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "What does Big Omega notation (Ω) represent in algorithm complexity analysis?",
+        "answer": "Big Omega represents the best-case lower bound",
+        "wrong": [
+          "Big Omega represents the worst-case upper bound",
+          "Big Omega represents the average-case expected growth rate when inputs are drawn uniformly at random from all possible values.",
+          "Big Omega represents the memory complexity of the algorithm expressed in terms of the number of recursive function call frames."
+        ],
+        "explanation": "the minimum number of steps the algorithm will ever need on any input."
+      },
+      {
+        "id": "quiz-b-36",
+        "number": 36,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An algorithm performs exactly 7 operations whether the input list has 10 items or 10,000,000 items. What time complexity class does this represent?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "explanation": "constant complexity, because the number of operations never changes regardless of how large the input becomes."
+      },
+      {
+        "id": "quiz-b-37",
+        "number": 37,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Binary Search on a sorted array of 1,024 elements finds the target in at most 10 steps. On 1,048,576 elements it finds it in at most 20 steps. What time complexity does this pattern represent?",
+        "answer": "O(log n)",
+        "wrong": [
+          "O(n)",
+          "O(n²)",
+          "O(1)"
+        ],
+        "explanation": "logarithmic complexity, where each step eliminates half the remaining candidates so steps grow very slowly with array size."
+      },
+      {
+        "id": "quiz-b-38",
+        "number": 38,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A loop visits every element in an array of n items exactly once and performs one operation on each. What is the time complexity of this loop?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(log n)",
+          "O(n²)"
+        ],
+        "explanation": "linear complexity, because the total number of operations grows in direct proportion to the number of items in the array."
+      },
+      {
+        "id": "quiz-b-39",
+        "number": 39,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An algorithm contains an outer loop running n times and an inner loop that also runs n times for each outer iteration. What is the time complexity?",
+        "answer": "O(n²)",
+        "wrong": [
+          "O(n)",
+          "O(n log n)",
+          "O(2n)"
+        ],
+        "explanation": "quadratic, because the inner loop executes n times for each of the n outer iterations giving n multiplied by n total steps."
+      },
+      {
+        "id": "quiz-b-40",
+        "number": 40,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A hospital's patient lookup system uses linear search on 1,000,000 unsorted records. In the worst case, approximately how many record comparisons are made and what is the Big O complexity?",
+        "answer": "Up to 1,000,000 comparisons",
+        "wrong": [
+          "About 20 comparisons",
+          "Exactly 1 comparison",
+          "Up to 1,000,000,000,000 comparisons"
+        ],
+        "explanation": "O(n), because linear search checks every record until a match is found or the list is exhausted."
+      },
+      {
+        "id": "quiz-b-41",
+        "number": 41,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Sorting 1,000 student scores with Merge Sort takes roughly 10,000 operations. Using the same O(n log n) relationship, approximately how many operations does sorting 1,000,000 scores require?",
+        "answer": "About 20,000,000 operations, because O(n log n) scales as n × log₂(n), and 1,000,000 × log₂(1,000,000) ≈ 1,000,000 × 20 = 20,000,000.",
+        "wrong": [
+          "About 20,000,000,000 operations, because the sort switches to O(n²) behavior once the input exceeds one million elements.",
+          "About 1,000,000 operations, because O(n log n) scales at the same rate as O(n) when the logarithmic factor remains near constant.",
+          "About 1,000 operations, because the logarithmic factor reduces the linear component proportionally."
+        ],
+        "explanation": "About 20,000,000 operations, because O(n log n) scales as n × log₂(n), and 1,000,000 × log₂(1,000,000) ≈ 1,000,000 × 20 = 20,000,000."
+      },
+      {
+        "id": "quiz-b-42",
+        "number": 42,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A cashier program sums all item prices in a shopping cart using one variable: 'int sum = 0; for(item: cart) sum += item.price;'. What is the space complexity of this algorithm?",
+        "answer": "O(1)",
+        "wrong": [
+          "O(n)",
+          "O(n²)",
+          "O(log n)"
+        ],
+        "explanation": "constant space, because only one variable (sum) is ever allocated regardless of how many items appear in the cart."
+      },
+      {
+        "id": "quiz-b-43",
+        "number": 43,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "Binary Search runs in O(log n) time. What critical requirement must the data meet BEFORE Binary Search can be applied correctly?",
+        "answer": "The data must be sorted in either ascending or descending order so that Binary Search can correctly determine which half to discard.",
+        "wrong": [
+          "The data must be stored in a hash table so that each element can be located by computing its position from its key value directly.",
+          "The data must be stored in a linked list so that Binary Search can traverse forward and backward from a given starting element.",
+          "The data must fit entirely within the CPU's L1 cache so that each Binary Search probe accesses an element in a single clock cycle."
+        ],
+        "explanation": "The data must be sorted in either ascending or descending order so that Binary Search can correctly determine which half to discard."
+      },
+      {
+        "id": "quiz-b-44",
+        "number": 44,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An app runs in 0.1 seconds for 500 users. After going viral with 500,000 users (a 1,000× growth), response time is 100,000 seconds. A developer suspects a quadratic algorithm. Is O(n²) consistent with this observation?",
+        "answer": "Yes",
+        "wrong": [
+          "No",
+          "No",
+          "Yes"
+        ],
+        "explanation": "under O(n²), a 1,000× user increase causes a 1,000²=1,000,000× time increase: 0.1s × 1,000,000 = 100,000s, which matches exactly."
+      },
+      {
+        "id": "quiz-b-45",
+        "number": 45,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "An e-commerce platform with 10 million products evaluates two search algorithms. Algorithm X completes in 23 fixed operations regardless of product count. Algorithm Y takes up to 10,000,000 operations. What are their complexities and which should power the product search?",
+        "answer": "Algorithm X is O(1); Algorithm Y is O(n). Algorithm X should be used because its operation count stays constant even if products grow to 1 billion.",
+        "wrong": [
+          "Both are O(n); Algorithm X should be chosen because 23 operations is numerically smaller than 10,000,000 for this specific dataset.",
+          "Algorithm X is O(log n); Algorithm Y is O(n²). Algorithm X is better because logarithmic growth is slower than quadratic growth at all sizes.",
+          "Both are O(log n); Algorithm X is preferred because its constant factor of 23 is smaller than Algorithm Y's constant factor at this dataset size."
+        ],
+        "explanation": "Algorithm X is O(1); Algorithm Y is O(n). Algorithm X should be used because its operation count stays constant even if products grow to 1 billion."
+      },
+      {
+        "id": "quiz-b-46",
+        "number": 46,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A mobile app loads all contacts into memory so users can scroll through them. A user with 50 contacts uses 50 memory slots; a user with 5,000 contacts uses 5,000 slots. What is the space complexity and is it appropriate?",
+        "answer": "O(n)",
+        "wrong": [
+          "O(1)",
+          "O(n²)",
+          "O(log n)"
+        ],
+        "explanation": "linear space; memory grows proportionally with contact count, which is expected and acceptable for a contact list application."
+      },
+      {
+        "id": "quiz-b-47",
+        "number": 47,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "When Ω (best case) = Θ (average case) = O (worst case) for an algorithm, what does this equal relationship mean for the algorithm's behavior?",
+        "answer": "The algorithm has tight complexity",
+        "wrong": [
+          "The algorithm is asymptotically unstable and produces widely varying step counts on different inputs even of the same size n.",
+          "The algorithm uses exponential memory in all three cases, making it impractical for any input size larger than a few dozen elements.",
+          "The algorithm degenerates to sequential execution when best and worst cases match, losing all parallel performance benefits."
+        ],
+        "explanation": "it performs the same number of steps on every input of size n, making its behavior perfectly predictable."
+      },
+      {
+        "id": "quiz-b-48",
+        "number": 48,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A naive duplicate file detector compares every file to every other file. With 10,000 files, how many comparisons are made, what is the complexity, and what smarter approach reduces it?",
+        "answer": "100,000,000 comparisons",
+        "wrong": [
+          "10,000 comparisons",
+          "20,000 comparisons",
+          "10,000,000,000,000 comparisons"
+        ],
+        "explanation": "O(n²); computing a hash for each file and comparing hashes instead of file contents reduces this to O(n)."
+      },
+      {
+        "id": "quiz-b-49",
+        "number": 49,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A government portal expects 50 million citizen logins. System A stores usernames in an unsorted list and checks them sequentially. System B uses a hash table. What are their Big O worst-case complexities and which must be chosen?",
+        "answer": "System A is O(n); System B is O(1). System B must be chosen because O(n) means up to 50 million comparisons per login while O(1) stays constant.",
+        "wrong": [
+          "System A is O(log n); System B is O(n²). System A is the better choice because logarithmic growth is manageable at 50 million users.",
+          "Both systems are O(1) in the worst case; System B should be chosen because hash tables have a smaller constant factor than linear search.",
+          "System A is O(n log n); System B is O(n). System B is better because linear growth is slower than linearithmic growth for large user counts."
+        ],
+        "explanation": "System A is O(n); System B is O(1). System B must be chosen because O(n) means up to 50 million comparisons per login while O(1) stays constant."
+      },
+      {
+        "id": "quiz-b-50",
+        "number": 50,
+        "source": "Recent Final Quiz",
+        "set": "B",
+        "tag": "Complexity Analysis",
+        "prompt": "A teacher asks students to rank these five algorithms from MOST efficient to LEAST efficient for very large inputs: (I) O(n) Linear Search, (II) O(1) Hash Lookup, (III) O(n log n) Merge Sort, (IV) O(n²) Bubble Sort, (V) O(log n) Binary Search. What is the correct ranking?",
+        "answer": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort",
+        "wrong": [
+          "O(n) Linear Search → O(1) Hash Lookup → O(log n) Binary Search → O(n log n) Merge Sort → O(n²) Bubble Sort",
+          "O(log n) Binary Search → O(n) Linear Search → O(1) Hash Lookup → O(n log n) Merge Sort → O(n²) Bubble Sort",
+          "O(1) Hash Lookup → O(n) Linear Search → O(n²) Bubble Sort → O(log n) Binary Search → O(n log n) Merge Sort"
+        ],
+        "explanation": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort"
+      },
+      {
+        "id": "new-docx-quiz-1",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What is a distributed system?",
+        "answer": "Multiple interconnected computers or devices working together on a task beyond one system's capacity",
+        "wrong": [
+          "A single computer running one local program",
+          "A user interface design pattern",
+          "A database table stored on one disk"
+        ],
+        "explanation": "The document defines distributed systems as multiple interconnected devices collaborating, sharing resources, and coordinating processes."
+      },
+      {
+        "id": "new-docx-quiz-2",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Why are distributed systems useful during events like Cyber Monday traffic spikes?",
+        "answer": "They can distribute changing workloads across multiple nodes",
+        "wrong": [
+          "They remove the need for networking",
+          "They force all traffic through one server",
+          "They make every process sequential"
+        ],
+        "explanation": "Distributed systems are useful when workloads change because capacity can be spread across nodes."
+      },
+      {
+        "id": "new-docx-quiz-3",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Which is an example of a distributed system from the new notes?",
+        "answer": "Peer-to-peer file-sharing systems",
+        "wrong": [
+          "A standalone calculator",
+          "A single-user text editor with no network",
+          "One local CPU register"
+        ],
+        "explanation": "The notes list telecommunications, video rendering, scientific computing, reservations, cryptocurrency, P2P, multiplayer games, and supply chains."
+      },
+      {
+        "id": "new-docx-quiz-4",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "In the video-rendering example, how does the distributed system speed up the task?",
+        "answer": "It splits the video into frames and assigns work to many nodes",
+        "wrong": [
+          "It waits for one node to render every frame",
+          "It disables coordination between computers",
+          "It stores all frames without processing them"
+        ],
+        "explanation": "The managing application assigns frames to multiple computers and gives nodes new work as they finish."
+      },
+      {
+        "id": "new-docx-quiz-5",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Which pair of patterns is mentioned for designing distributed systems?",
+        "answer": "CQRS and Two-phase commit",
+        "wrong": [
+          "HTML and CSS",
+          "Bubble sort and linear search",
+          "SISD and SIMD only"
+        ],
+        "explanation": "The notes mention Command and Query Responsibility Segregation and Two-phase commit as distributed-system patterns."
+      },
+      {
+        "id": "new-docx-quiz-6",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What describes a client-server distributed system?",
+        "answer": "Many networked clients interact with a central server for storage, processing, or services",
+        "wrong": [
+          "Every node avoids communication",
+          "Only one offline computer is used",
+          "All clients become unrelated standalone apps"
+        ],
+        "explanation": "Client-server is the traditional model where clients request services from a central server."
+      },
+      {
+        "id": "new-docx-quiz-7",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What describes peer-to-peer networks?",
+        "answer": "Workloads are distributed among many computers running the same software",
+        "wrong": [
+          "All work is handled by one central keyboard",
+          "The network has no communication between peers",
+          "Only the database administrator can process requests"
+        ],
+        "explanation": "The notes describe P2P networks as distributing workloads among hundreds or thousands of computers."
+      },
+      {
+        "id": "new-docx-quiz-8",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What does scalability mean in a distributed system?",
+        "answer": "The system can grow by adding processing units or nodes as workload increases",
+        "wrong": [
+          "The system must stay the same size forever",
+          "The system becomes slower whenever a node is added",
+          "The system removes all redundancy"
+        ],
+        "explanation": "Scalability is the ability to grow as workload increases."
+      },
+      {
+        "id": "new-docx-quiz-9",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What does concurrency mean in distributed systems?",
+        "answer": "Components run simultaneously, often without a single global clock",
+        "wrong": [
+          "Only one component can run at a time",
+          "Every task must happen in exact local order",
+          "All nodes share one CPU instruction pointer"
+        ],
+        "explanation": "The notes connect concurrency with simultaneous components and the lack of a global clock."
+      },
+      {
+        "id": "new-docx-quiz-10",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Which characteristic lets remaining nodes continue when one node fails?",
+        "answer": "Availability and fault tolerance",
+        "wrong": [
+          "Vendor lock-in",
+          "Over-engineering",
+          "Manual-only deployment"
+        ],
+        "explanation": "Availability and fault tolerance help the system keep operating despite node failure."
+      },
+      {
+        "id": "new-docx-quiz-11",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What is heterogeneity in distributed systems?",
+        "answer": "Nodes and components may use different hardware, middleware, software, or operating systems",
+        "wrong": [
+          "Every node must be identical",
+          "All messages are forbidden",
+          "Only one programming language can exist"
+        ],
+        "explanation": "Heterogeneous distributed systems can include asynchronous nodes with different platforms."
+      },
+      {
+        "id": "new-docx-quiz-12",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Why is replication useful in distributed systems?",
+        "answer": "It improves consistency, fault tolerance, reliability, and accessibility through redundant resources",
+        "wrong": [
+          "It prevents all communication",
+          "It removes every backup",
+          "It guarantees zero cost"
+        ],
+        "explanation": "Replication shares information or resources redundantly to improve reliability and access."
+      },
+      {
+        "id": "new-docx-quiz-13",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What does transparency mean to an end user?",
+        "answer": "The system appears as one logical application instead of many distributed parts",
+        "wrong": [
+          "The user must manually control every node",
+          "The system hides all results",
+          "The system cannot scale"
+        ],
+        "explanation": "Transparency hides distribution details from users and applications."
+      },
+      {
+        "id": "new-docx-quiz-14",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Why is synchronization challenging in distributed systems?",
+        "answer": "Distributed systems often work without a global clock, so ordering and timing must be managed carefully",
+        "wrong": [
+          "All nodes execute in one CPU cycle",
+          "Network delays never happen",
+          "Processes cannot run simultaneously"
+        ],
+        "explanation": "Without a global clock, synchronization must handle delays, ordering, and consistency."
+      },
+      {
+        "id": "new-docx-quiz-15",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Which is a risk of distributed systems that depend on public networks?",
+        "answer": "A network segment outage or overload can reduce performance",
+        "wrong": [
+          "A local monitor color can change",
+          "A single desktop shortcut may disappear",
+          "The system automatically avoids all costs"
+        ],
+        "explanation": "The notes list risk of network failure as a distributed-system risk."
+      },
+      {
+        "id": "new-docx-quiz-16",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What is distributed tracing used for?",
+        "answer": "Following a request or transaction as it moves across many services or nodes",
+        "wrong": [
+          "Choosing a random programming language",
+          "Removing logs from every server",
+          "Turning a distributed system into one monolithic file"
+        ],
+        "explanation": "Distributed tracing helps observe complex distributed applications and find latency, bottlenecks, and bugs."
+      },
+      {
+        "id": "new-docx-quiz-17",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What does ABAC use to control access?",
+        "answer": "Rules based on attributes such as user, requested action, and request environment",
+        "wrong": [
+          "Only the first letter of the username",
+          "A single shared password for all users",
+          "The screen resolution of the client"
+        ],
+        "explanation": "Attribute-based access control uses attributes about the user, action, object, and environment."
+      },
+      {
+        "id": "new-docx-quiz-18",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "How do microservices differ from distributed systems in the new notes?",
+        "answer": "Microservices focus on modular independent services, while distributed systems focus on cooperating computers and resource sharing",
+        "wrong": [
+          "Microservices never use networks",
+          "Distributed systems only describe UI widgets",
+          "They are exactly the same concept in all cases"
+        ],
+        "explanation": "The notes distinguish microservice design from the broader idea of distributed systems."
+      },
+      {
+        "id": "new-docx-quiz-19",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "What is middleware in distributed systems?",
+        "answer": "Software that binds distributed components together and abstracts hardware and network complexity",
+        "wrong": [
+          "A physical cable only",
+          "A spreadsheet formula",
+          "A single local CPU instruction"
+        ],
+        "explanation": "The middleware notes describe it as glue that enables communication and coordination through a unified interface."
+      },
+      {
+        "id": "new-docx-quiz-20",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "What does middleware transparency provide?",
+        "answer": "Location, access, and replication transparency so users need not worry about distribution details",
+        "wrong": [
+          "Manual node-by-node configuration by every user",
+          "No replication under any condition",
+          "A guarantee that no network is used"
+        ],
+        "explanation": "Middleware transparency hides where resources are and how they are accessed or replicated."
+      },
+      {
+        "id": "new-docx-quiz-21",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Why is middleware interoperability important?",
+        "answer": "It enables heterogeneous systems, platforms, and technologies to communicate and integrate",
+        "wrong": [
+          "It prevents different platforms from connecting",
+          "It requires one vendor-only system",
+          "It stops service-to-service communication"
+        ],
+        "explanation": "Interoperability lets different systems work together."
+      },
+      {
+        "id": "new-docx-quiz-22",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Which middleware feature handles failures through redundancy and failover?",
+        "answer": "Fault tolerance",
+        "wrong": [
+          "Vendor lock-in",
+          "Over-engineering",
+          "Manual repetition"
+        ],
+        "explanation": "The notes say middleware fault tolerance handles failures gracefully using redundancy and failover."
+      },
+      {
+        "id": "new-docx-quiz-23",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Which is a common middleware implementation pitfall?",
+        "answer": "Lack of standardization causing compatibility issues and vendor lock-in",
+        "wrong": [
+          "Using open standards",
+          "Conducting thorough testing",
+          "Applying regular security audits"
+        ],
+        "explanation": "The middleware notes list over-engineering, poor scalability, inadequate security, and lack of standardization as pitfalls."
+      },
+      {
+        "id": "new-docx-quiz-24",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Which tools are examples of message brokers for middleware?",
+        "answer": "Apache Kafka and RabbitMQ",
+        "wrong": [
+          "Prometheus and Grafana",
+          "Istio and Linkerd",
+          "GDPR and HIPAA"
+        ],
+        "explanation": "The notes list Kafka and RabbitMQ as message brokers that support efficient message passing."
+      },
+      {
+        "id": "new-docx-quiz-25",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Which middleware technologies manage service-to-service communication in microservices?",
+        "answer": "Istio and Linkerd service meshes",
+        "wrong": [
+          "Two-phase commit and CQRS only",
+          "Single-user desktop apps",
+          "Standalone calculators"
+        ],
+        "explanation": "Service meshes such as Istio and Linkerd manage communication between services."
       }
     ],
     "week3": [
@@ -12102,6 +14256,356 @@ window.REVIEWER_DATA = {
           "O(1) Hash Lookup → O(n) Linear Search → O(n²) Bubble Sort → O(log n) Binary Search → O(n log n) Merge Sort"
         ],
         "explanation": "O(1) Hash Lookup → O(log n) Binary Search → O(n) Linear Search → O(n log n) Merge Sort → O(n²) Bubble Sort"
+      },
+      {
+        "id": "new-docx-quiz-1",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What is a distributed system?",
+        "answer": "Multiple interconnected computers or devices working together on a task beyond one system's capacity",
+        "wrong": [
+          "A single computer running one local program",
+          "A user interface design pattern",
+          "A database table stored on one disk"
+        ],
+        "explanation": "The document defines distributed systems as multiple interconnected devices collaborating, sharing resources, and coordinating processes."
+      },
+      {
+        "id": "new-docx-quiz-2",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Why are distributed systems useful during events like Cyber Monday traffic spikes?",
+        "answer": "They can distribute changing workloads across multiple nodes",
+        "wrong": [
+          "They remove the need for networking",
+          "They force all traffic through one server",
+          "They make every process sequential"
+        ],
+        "explanation": "Distributed systems are useful when workloads change because capacity can be spread across nodes."
+      },
+      {
+        "id": "new-docx-quiz-3",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Which is an example of a distributed system from the new notes?",
+        "answer": "Peer-to-peer file-sharing systems",
+        "wrong": [
+          "A standalone calculator",
+          "A single-user text editor with no network",
+          "One local CPU register"
+        ],
+        "explanation": "The notes list telecommunications, video rendering, scientific computing, reservations, cryptocurrency, P2P, multiplayer games, and supply chains."
+      },
+      {
+        "id": "new-docx-quiz-4",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "In the video-rendering example, how does the distributed system speed up the task?",
+        "answer": "It splits the video into frames and assigns work to many nodes",
+        "wrong": [
+          "It waits for one node to render every frame",
+          "It disables coordination between computers",
+          "It stores all frames without processing them"
+        ],
+        "explanation": "The managing application assigns frames to multiple computers and gives nodes new work as they finish."
+      },
+      {
+        "id": "new-docx-quiz-5",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Which pair of patterns is mentioned for designing distributed systems?",
+        "answer": "CQRS and Two-phase commit",
+        "wrong": [
+          "HTML and CSS",
+          "Bubble sort and linear search",
+          "SISD and SIMD only"
+        ],
+        "explanation": "The notes mention Command and Query Responsibility Segregation and Two-phase commit as distributed-system patterns."
+      },
+      {
+        "id": "new-docx-quiz-6",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What describes a client-server distributed system?",
+        "answer": "Many networked clients interact with a central server for storage, processing, or services",
+        "wrong": [
+          "Every node avoids communication",
+          "Only one offline computer is used",
+          "All clients become unrelated standalone apps"
+        ],
+        "explanation": "Client-server is the traditional model where clients request services from a central server."
+      },
+      {
+        "id": "new-docx-quiz-7",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What describes peer-to-peer networks?",
+        "answer": "Workloads are distributed among many computers running the same software",
+        "wrong": [
+          "All work is handled by one central keyboard",
+          "The network has no communication between peers",
+          "Only the database administrator can process requests"
+        ],
+        "explanation": "The notes describe P2P networks as distributing workloads among hundreds or thousands of computers."
+      },
+      {
+        "id": "new-docx-quiz-8",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What does scalability mean in a distributed system?",
+        "answer": "The system can grow by adding processing units or nodes as workload increases",
+        "wrong": [
+          "The system must stay the same size forever",
+          "The system becomes slower whenever a node is added",
+          "The system removes all redundancy"
+        ],
+        "explanation": "Scalability is the ability to grow as workload increases."
+      },
+      {
+        "id": "new-docx-quiz-9",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What does concurrency mean in distributed systems?",
+        "answer": "Components run simultaneously, often without a single global clock",
+        "wrong": [
+          "Only one component can run at a time",
+          "Every task must happen in exact local order",
+          "All nodes share one CPU instruction pointer"
+        ],
+        "explanation": "The notes connect concurrency with simultaneous components and the lack of a global clock."
+      },
+      {
+        "id": "new-docx-quiz-10",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Which characteristic lets remaining nodes continue when one node fails?",
+        "answer": "Availability and fault tolerance",
+        "wrong": [
+          "Vendor lock-in",
+          "Over-engineering",
+          "Manual-only deployment"
+        ],
+        "explanation": "Availability and fault tolerance help the system keep operating despite node failure."
+      },
+      {
+        "id": "new-docx-quiz-11",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What is heterogeneity in distributed systems?",
+        "answer": "Nodes and components may use different hardware, middleware, software, or operating systems",
+        "wrong": [
+          "Every node must be identical",
+          "All messages are forbidden",
+          "Only one programming language can exist"
+        ],
+        "explanation": "Heterogeneous distributed systems can include asynchronous nodes with different platforms."
+      },
+      {
+        "id": "new-docx-quiz-12",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Why is replication useful in distributed systems?",
+        "answer": "It improves consistency, fault tolerance, reliability, and accessibility through redundant resources",
+        "wrong": [
+          "It prevents all communication",
+          "It removes every backup",
+          "It guarantees zero cost"
+        ],
+        "explanation": "Replication shares information or resources redundantly to improve reliability and access."
+      },
+      {
+        "id": "new-docx-quiz-13",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What does transparency mean to an end user?",
+        "answer": "The system appears as one logical application instead of many distributed parts",
+        "wrong": [
+          "The user must manually control every node",
+          "The system hides all results",
+          "The system cannot scale"
+        ],
+        "explanation": "Transparency hides distribution details from users and applications."
+      },
+      {
+        "id": "new-docx-quiz-14",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Why is synchronization challenging in distributed systems?",
+        "answer": "Distributed systems often work without a global clock, so ordering and timing must be managed carefully",
+        "wrong": [
+          "All nodes execute in one CPU cycle",
+          "Network delays never happen",
+          "Processes cannot run simultaneously"
+        ],
+        "explanation": "Without a global clock, synchronization must handle delays, ordering, and consistency."
+      },
+      {
+        "id": "new-docx-quiz-15",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "Which is a risk of distributed systems that depend on public networks?",
+        "answer": "A network segment outage or overload can reduce performance",
+        "wrong": [
+          "A local monitor color can change",
+          "A single desktop shortcut may disappear",
+          "The system automatically avoids all costs"
+        ],
+        "explanation": "The notes list risk of network failure as a distributed-system risk."
+      },
+      {
+        "id": "new-docx-quiz-16",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What is distributed tracing used for?",
+        "answer": "Following a request or transaction as it moves across many services or nodes",
+        "wrong": [
+          "Choosing a random programming language",
+          "Removing logs from every server",
+          "Turning a distributed system into one monolithic file"
+        ],
+        "explanation": "Distributed tracing helps observe complex distributed applications and find latency, bottlenecks, and bugs."
+      },
+      {
+        "id": "new-docx-quiz-17",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "What does ABAC use to control access?",
+        "answer": "Rules based on attributes such as user, requested action, and request environment",
+        "wrong": [
+          "Only the first letter of the username",
+          "A single shared password for all users",
+          "The screen resolution of the client"
+        ],
+        "explanation": "Attribute-based access control uses attributes about the user, action, object, and environment."
+      },
+      {
+        "id": "new-docx-quiz-18",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Distributed Systems",
+        "prompt": "How do microservices differ from distributed systems in the new notes?",
+        "answer": "Microservices focus on modular independent services, while distributed systems focus on cooperating computers and resource sharing",
+        "wrong": [
+          "Microservices never use networks",
+          "Distributed systems only describe UI widgets",
+          "They are exactly the same concept in all cases"
+        ],
+        "explanation": "The notes distinguish microservice design from the broader idea of distributed systems."
+      },
+      {
+        "id": "new-docx-quiz-19",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "What is middleware in distributed systems?",
+        "answer": "Software that binds distributed components together and abstracts hardware and network complexity",
+        "wrong": [
+          "A physical cable only",
+          "A spreadsheet formula",
+          "A single local CPU instruction"
+        ],
+        "explanation": "The middleware notes describe it as glue that enables communication and coordination through a unified interface."
+      },
+      {
+        "id": "new-docx-quiz-20",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "What does middleware transparency provide?",
+        "answer": "Location, access, and replication transparency so users need not worry about distribution details",
+        "wrong": [
+          "Manual node-by-node configuration by every user",
+          "No replication under any condition",
+          "A guarantee that no network is used"
+        ],
+        "explanation": "Middleware transparency hides where resources are and how they are accessed or replicated."
+      },
+      {
+        "id": "new-docx-quiz-21",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Why is middleware interoperability important?",
+        "answer": "It enables heterogeneous systems, platforms, and technologies to communicate and integrate",
+        "wrong": [
+          "It prevents different platforms from connecting",
+          "It requires one vendor-only system",
+          "It stops service-to-service communication"
+        ],
+        "explanation": "Interoperability lets different systems work together."
+      },
+      {
+        "id": "new-docx-quiz-22",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Which middleware feature handles failures through redundancy and failover?",
+        "answer": "Fault tolerance",
+        "wrong": [
+          "Vendor lock-in",
+          "Over-engineering",
+          "Manual repetition"
+        ],
+        "explanation": "The notes say middleware fault tolerance handles failures gracefully using redundancy and failover."
+      },
+      {
+        "id": "new-docx-quiz-23",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Which is a common middleware implementation pitfall?",
+        "answer": "Lack of standardization causing compatibility issues and vendor lock-in",
+        "wrong": [
+          "Using open standards",
+          "Conducting thorough testing",
+          "Applying regular security audits"
+        ],
+        "explanation": "The middleware notes list over-engineering, poor scalability, inadequate security, and lack of standardization as pitfalls."
+      },
+      {
+        "id": "new-docx-quiz-24",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Which tools are examples of message brokers for middleware?",
+        "answer": "Apache Kafka and RabbitMQ",
+        "wrong": [
+          "Prometheus and Grafana",
+          "Istio and Linkerd",
+          "GDPR and HIPAA"
+        ],
+        "explanation": "The notes list Kafka and RabbitMQ as message brokers that support efficient message passing."
+      },
+      {
+        "id": "new-docx-quiz-25",
+        "source": "New DOCX Quiz",
+        "set": "New Quiz",
+        "tag": "Middleware",
+        "prompt": "Which middleware technologies manage service-to-service communication in microservices?",
+        "answer": "Istio and Linkerd service meshes",
+        "wrong": [
+          "Two-phase commit and CQRS only",
+          "Single-user desktop apps",
+          "Standalone calculators"
+        ],
+        "explanation": "Service meshes such as Istio and Linkerd manage communication between services."
       }
     ]
   },
@@ -12112,8 +14616,10 @@ window.REVIEWER_DATA = {
     "quizB": 25,
     "combinedPrelim": 50,
     "combinedQuiz": 50,
+    "newQuiz": 25,
     "combinedPrelimQuiz": 100,
-    "everything": 265,
+    "combinedPrelimQuizNew": 125,
+    "everything": 290,
     "moduleFinalsIncluded": 150,
     "week3Included": 15
   }
